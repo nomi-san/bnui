@@ -1,0 +1,8225 @@
+{
+ "--logo-icon-scale": [
+  [
+   ".75",
+   ":host",
+   "blz-footer-icon"
+  ],
+  [
+   ".75",
+   ":host",
+   "blz-nav-link-icon"
+  ],
+  [
+   "1",
+   ":host",
+   "blz-footer-icon"
+  ],
+  [
+   "1",
+   ":host",
+   "blz-nav-link-icon"
+  ]
+ ],
+ "--jumbo": [
+  [
+   "var(--global-size-600)",
+   ":host",
+   "blz-footer-icon"
+  ],
+  [
+   "var(--global-size-600)",
+   ":host",
+   "blz-nav-link-icon"
+  ],
+  [
+   "var(--global-size-800)",
+   ":host",
+   "blz-footer-icon"
+  ],
+  [
+   "var(--global-size-800)",
+   ":host",
+   "blz-nav-link-icon"
+  ]
+ ],
+ "--large": [
+  [
+   "var(--global-size-400)",
+   ":host",
+   "blz-footer-icon"
+  ],
+  [
+   "var(--global-size-400)",
+   ":host",
+   "blz-nav-link-icon"
+  ],
+  [
+   "var(--global-size-600)",
+   ":host",
+   "blz-footer-icon"
+  ],
+  [
+   "var(--global-size-600)",
+   ":host",
+   "blz-nav-link-icon"
+  ]
+ ],
+ "--medium": [
+  [
+   "calc(var(--global-size-900) / 2)",
+   ":host",
+   "blz-footer-icon"
+  ],
+  [
+   "calc(var(--global-size-900) / 2)",
+   ":host",
+   "blz-nav-link-icon"
+  ],
+  [
+   "var(--global-size-300)",
+   ":host",
+   "blz-footer-icon"
+  ],
+  [
+   "var(--global-size-300)",
+   ":host",
+   "blz-nav-link-icon"
+  ]
+ ],
+ "--small": [
+  [
+   "var(--global-size-250)",
+   ":host",
+   "blz-footer-icon"
+  ],
+  [
+   "var(--global-size-250)",
+   ":host",
+   "blz-nav-link-icon"
+  ],
+  [
+   "var(--global-size-300)",
+   ":host",
+   "blz-footer-icon"
+  ],
+  [
+   "var(--global-size-300)",
+   ":host",
+   "blz-nav-link-icon"
+  ]
+ ],
+ "--icon-width": [
+  [
+   "var(--global-size-600)",
+   ":host",
+   "blz-footer-icon"
+  ],
+  [
+   "var(--global-size-600)",
+   ":host",
+   "blz-nav-link-icon"
+  ]
+ ],
+ "--icon-height": [
+  [
+   "var(--global-size-600)",
+   ":host",
+   "blz-footer-icon"
+  ],
+  [
+   "var(--global-size-600)",
+   ":host",
+   "blz-nav-link-icon"
+  ]
+ ],
+ "--nav-link-icon-color": [
+  [
+   "#00aeff",
+   ":host(#account[icon=\"employee\"]) blz-nav-link-icon",
+   "blz-footer-link"
+  ],
+  [
+   "#00aeff",
+   ":host([icon=\"blizzard\"][slot*=\"site-icon\"]) blz-nav-link-ico",
+   "blz-footer-link"
+  ],
+  [
+   "#00aeff",
+   ":host([icon=\"blizzard\"][slot*=\"site-logo\"]) blz-nav-link-ico",
+   "blz-footer-link"
+  ],
+  [
+   "var(--battle-net-color-physical-blue-500)",
+   ":host([slot=\"mobile-content-left\"]) blz-nav-link-icon[part=\"",
+   "blz-footer-link"
+  ]
+ ],
+ "--navbar-menu-font-size": [
+  [
+   "var(--nav-font-size-300)",
+   ":host([content=\"battlenet\"])",
+   "blz-nav-footer"
+  ],
+  [
+   "var(--nav-font-size-500)",
+   ":host([class*=\"button\"])",
+   "blz-footer-link"
+  ],
+  [
+   "var(--nav-font-size-500)",
+   ":host([slot=\"navbar-cta\"])",
+   "blz-footer-link"
+  ],
+  [
+   "var(--nav-font-size-500)",
+   ":host([slot=\"secondary-menu\"])",
+   "blz-footer-link"
+  ],
+  [
+   "var(--nav-font-size-550)",
+   ":host",
+   "blz-nav-footer"
+  ],
+  [
+   "var(--nav-font-size-600)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-hover-icon-color": [
+  [
+   "var(--battle-net-color-physical-blue-500)",
+   ":host([slot=\"mobile-content-left\"]) blz-nav-link-icon[part=\"",
+   "blz-footer-link"
+  ],
+  [
+   "var(--navbar-content-color-secondary)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--icon-image-width": [
+  [
+   "auto",
+   ":host([slot=\"site-icon\"][icon-src].horizontal-logo) blz-nav-",
+   "blz-footer-link"
+  ],
+  [
+   "auto",
+   ":host([slot=\"site-icon\"][icon-src].vertical-logo) blz-nav-li",
+   "blz-footer-link"
+  ]
+ ],
+ "--color-stop-100": [
+  [
+   "#283244",
+   ":host",
+   "blz-locale-selector"
+  ]
+ ],
+ "--color-stop-200": [
+  [
+   "#151a23f3",
+   ":host",
+   "blz-locale-selector"
+  ]
+ ],
+ "--color-selector-tick-background": [
+  [
+   "#11151c",
+   ":host",
+   "blz-locale-selector"
+  ]
+ ],
+ "--color-selector-region-tick-background": [
+  [
+   "#202836",
+   ":host",
+   "blz-locale-selector"
+  ]
+ ],
+ "--width-with-region": [
+  [
+   "592px",
+   ":host",
+   "blz-locale-selector"
+  ]
+ ],
+ "--width-without-region": [
+  [
+   "470px",
+   ":host",
+   "blz-locale-selector"
+  ]
+ ],
+ "--global-motion-ease-out": [
+  [
+   "cubic-bezier(0, 0, .2, 1)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-ease-in-out": [
+  [
+   "cubic-bezier(.5, 0, .5, 1)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-duration-100": [
+  [
+   ".1s",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-duration-200": [
+  [
+   ".2s",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-duration-300": [
+  [
+   ".3s",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-duration-400": [
+  [
+   ".4s",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-duration-500": [
+  [
+   ".5s",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-duration-600": [
+  [
+   ".6s",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-duration-700": [
+  [
+   ".7s",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-duration-800": [
+  [
+   ".8s",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-duration-900": [
+  [
+   ".9s",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-duration-1000": [
+  [
+   "1s",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-duration-1100": [
+  [
+   "1.1s",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-duration-1200": [
+  [
+   "1.2s",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-duration-1300": [
+  [
+   "1.3s",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-duration-1400": [
+  [
+   "1.4s",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-duration-1500": [
+  [
+   "1.5s",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-duration-2000": [
+  [
+   "2s",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-duration-slow": [
+  [
+   ".3s",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-duration-medium": [
+  [
+   ".2s",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-duration-fast": [
+  [
+   ".1s",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-motion-ease-in": [
+  [
+   "cubic-bezier(.8, 0, 1, 1)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-transparent": [
+  [
+   "rgba(255, 255, 255, 0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-primary-300": [
+  [
+   "#38a8ff",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-primary-400": [
+  [
+   "#0592ff",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-primary-500": [
+  [
+   "#0076d1",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-primary-600": [
+  [
+   "#00599e",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-primary-700": [
+  [
+   "#003c6b",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-accent-400": [
+  [
+   "rgba(93, 113, 152, .2)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-accent-500": [
+  [
+   "rgba(93, 113, 152, .4)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-accent-600": [
+  [
+   "rgba(93, 113, 152, .6)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-accent-700": [
+  [
+   "rgba(93, 113, 152, .8)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-background-25": [
+  [
+   "#d5d7dd",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-background-50": [
+  [
+   "#5a5d70",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-background-100": [
+  [
+   "#3a465f",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-background-300": [
+  [
+   "#323a48",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-background-500": [
+  [
+   "#232a39",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-background-700": [
+  [
+   "#151c28",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-background-800": [
+  [
+   "#0a0d15",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-warning-400": [
+  [
+   "#ffdd99",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-warning-500": [
+  [
+   "#ffbb33",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-error-400": [
+  [
+   "#f87cb0",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-error-500": [
+  [
+   "#f31d77",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-error-900": [
+  [
+   "#350000",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-success-400": [
+  [
+   "#66ffbf",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-success-500": [
+  [
+   "#00ff94",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-darken-100": [
+  [
+   "rgba(0, 0, 0, .05)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-darken-300": [
+  [
+   "rgba(0, 0, 0, .1)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-darken-400": [
+  [
+   "rgba(0, 0, 0, .15)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-darken-500": [
+  [
+   "rgba(0, 0, 0, .3)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-darken-600": [
+  [
+   "rgba(0, 0, 0, .5)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-darken-700": [
+  [
+   "rgba(0, 0, 0, .7)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-darken-800": [
+  [
+   "rgba(0, 0, 0, .9)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-darken-900": [
+  [
+   "#000000",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-content-100": [
+  [
+   "rgba(255, 255, 255, .05)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-content-200": [
+  [
+   "rgba(255, 255, 255, .1)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-content-300": [
+  [
+   "rgba(255, 255, 255, .12)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-content-400": [
+  [
+   "rgba(255, 255, 255, .15)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-content-500": [
+  [
+   "rgba(255, 255, 255, .3)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-content-600": [
+  [
+   "rgba(255, 255, 255, .5)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-content-700": [
+  [
+   "rgba(255, 255, 255, .7)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-content-800": [
+  [
+   "rgba(255, 255, 255, .8)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-content-900": [
+  [
+   "rgba(255, 255, 255, .9)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-color-content-1000": [
+  [
+   "#ffffff",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-0": [
+  [
+   "0px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-25": [
+  [
+   "2px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-50": [
+  [
+   "4px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-75": [
+  [
+   "6px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-100": [
+  [
+   "8px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-125": [
+  [
+   "10px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-150": [
+  [
+   "12px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-175": [
+  [
+   "14px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-200": [
+  [
+   "16px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-225": [
+  [
+   "18px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-250": [
+  [
+   "20px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-300": [
+  [
+   "24px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-325": [
+  [
+   "26px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-350": [
+  [
+   "28px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-375": [
+  [
+   "30px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-400": [
+  [
+   "32px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-450": [
+  [
+   "36px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-500": [
+  [
+   "40px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-600": [
+  [
+   "48px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-700": [
+  [
+   "56px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-750": [
+  [
+   "60px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-800": [
+  [
+   "64px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-900": [
+  [
+   "72px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-1000": [
+  [
+   "80px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-1100": [
+  [
+   "88px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-1150": [
+  [
+   "92px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-size-1200": [
+  [
+   "100px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-family-accent-alt": [
+  [
+   "Montserrat",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-weight-regular": [
+  [
+   "400",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-weight-medium": [
+  [
+   "500",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-weight-bold": [
+  [
+   "600",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-line-height-default": [
+  [
+   "100%",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-line-height-tight": [
+  [
+   "110%",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-line-height-comfy": [
+  [
+   "140%",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-line-height-relaxed": [
+  [
+   "170%",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-line-height-loose": [
+  [
+   "200%",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-letter-spacing-default": [
+  [
+   "0px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-letter-spacing-comfy": [
+  [
+   ".5px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-letter-spacing-relaxed": [
+  [
+   ".1px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-scale-accent": [
+  [
+   "2",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-scale-default": [
+  [
+   "1",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-xxl-line-height-computed-desktop": [
+  [
+   "34px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-xxl-line-height-computed-mobile": [
+  [
+   "28px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-lg-line-height-computed-desktop": [
+  [
+   "25px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-lg-line-height-computed-mobile": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-sm-line-height-computed-desktop": [
+  [
+   "20px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-sm-line-height-computed-mobile": [
+  [
+   "17px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-xl-line-height-computed-desktop": [
+  [
+   "28px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-xl-line-height-computed-mobile": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-md-line-height-computed-desktop": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-md-line-height-computed-mobile": [
+  [
+   "20px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-xs-line-height-computed-desktop": [
+  [
+   "17px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-xs-line-height-computed-mobile": [
+  [
+   "14px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-lg-line-height-computed-desktop": [
+  [
+   "66px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-lg-line-height-computed-mobile": [
+  [
+   "40px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-sm-line-height-computed-desktop": [
+  [
+   "40px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-sm-line-height-computed-mobile": [
+  [
+   "26px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-md-line-height-computed-desktop": [
+  [
+   "53px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-md-line-height-computed-mobile": [
+  [
+   "33px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xxl-line-height-computed-desktop": [
+  [
+   "35px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xxl-line-height-computed-mobile": [
+  [
+   "26px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xl-line-height-computed-desktop": [
+  [
+   "26px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xl-line-height-computed-mobile": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-md-line-height-computed-desktop": [
+  [
+   "20px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-md-line-height-computed-mobile": [
+  [
+   "18px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-sm-line-height-computed-desktop": [
+  [
+   "18px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-sm-line-height-computed-mobile": [
+  [
+   "15px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xs-line-height-computed-desktop": [
+  [
+   "15px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xs-line-height-computed-mobile": [
+  [
+   "15px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xxs-line-height-computed-desktop": [
+  [
+   "13px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xxs-line-height-computed-mobile": [
+  [
+   "13px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-lg-line-height-computed-desktop": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-lg-line-height-computed-mobile": [
+  [
+   "18px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-subheading-text-lg-line-height-computed-desktop": [
+  [
+   "15px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-subheading-text-lg-line-height-computed-mobile": [
+  [
+   "13px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-subheading-text-md-line-height-computed-desktop": [
+  [
+   "13px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-subheading-text-md-line-height-computed-mobile": [
+  [
+   "11px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-xl-position-x": [
+  [
+   "0px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-xl-position-y": [
+  [
+   "15px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-xl-blur": [
+  [
+   "35px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-lg-position-x": [
+  [
+   "0px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-md-position-x": [
+  [
+   "0px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-md-position-y": [
+  [
+   "5px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-md-blur": [
+  [
+   "15px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-sm-position-x": [
+  [
+   "0px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-xs-position-x": [
+  [
+   "0px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-xs-position-y": [
+  [
+   "1px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-xs-blur": [
+  [
+   "3px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-border-feedback-info": [
+  [
+   "rgba(5, 146, 255, .24)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-border-feedback-success": [
+  [
+   "rgba(102, 255, 191, .24)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-border-feedback-warning": [
+  [
+   "rgba(255, 221, 153, .24)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-border-feedback-error": [
+  [
+   "rgba(248, 124, 176, .24)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-primary-gradient-blend-mode": [
+  [
+   "normal",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-secondary-gradient-blend-mode": [
+  [
+   "normal",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-feedback-info": [
+  [
+   "rgba(5, 146, 255, .12)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-feedback-success": [
+  [
+   "rgba(102, 255, 191, .12)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-feedback-warning": [
+  [
+   "rgba(255, 221, 153, .12)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-border-radius-sm": [
+  [
+   "3px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-border-size-sm": [
+  [
+   "1px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--timing": [
+  [
+   "0ms",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-heading-line-height-computed-desktop": [
+  [
+   "26px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-heading-line-height-computed-mobile": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-subtext-line-height-computed-desktop": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-subtext-line-height-computed-mobile": [
+  [
+   "20px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-max-width-text-desktop": [
+  [
+   "450px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-max-width-text-mobile": [
+  [
+   "250px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-font-text-line-height-computed-desktop": [
+  [
+   "15px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-font-text-line-height-computed-mobile": [
+  [
+   "13px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-xl-line-height-computed-desktop": [
+  [
+   "35px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-xl-line-height-computed-mobile": [
+  [
+   "26px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-lg-line-height-computed-desktop": [
+  [
+   "26px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-lg-line-height-computed-mobile": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-md-line-height-computed-desktop": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-md-line-height-computed-mobile": [
+  [
+   "18px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-sm-line-height-computed-desktop": [
+  [
+   "18px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-sm-line-height-computed-mobile": [
+  [
+   "15px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-border-primary-gradient-blend-mode": [
+  [
+   "normal",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-border-primary-gradient-position": [
+  [
+   "1",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-border-secondary-gradient-blend-mode": [
+  [
+   "normal",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-border-secondary-gradient-position": [
+  [
+   "1",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-border-tertiary-gradient-blend-mode": [
+  [
+   "normal",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-border-tertiary-gradient-position": [
+  [
+   "1",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-lg-line-height-computed-desktop": [
+  [
+   "40px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-lg-line-height-computed-mobile": [
+  [
+   "26px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-md-line-height-computed-desktop": [
+  [
+   "26px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-md-line-height-computed-mobile": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-sm-line-height-computed-desktop": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-sm-line-height-computed-mobile": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-xs-line-height-computed-desktop": [
+  [
+   "15px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-xs-line-height-computed-mobile": [
+  [
+   "15px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-lg-line-height-computed-desktop": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-lg-line-height-computed-mobile": [
+  [
+   "20px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-md-line-height-computed-desktop": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-md-line-height-computed-mobile": [
+  [
+   "20px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-sm-line-height-computed-desktop": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-sm-line-height-computed-mobile": [
+  [
+   "20px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-xs-line-height-computed-desktop": [
+  [
+   "17px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-xs-line-height-computed-mobile": [
+  [
+   "17px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-lg-line-height-computed-desktop": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-lg-line-height-computed-mobile": [
+  [
+   "20px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-md-line-height-computed-desktop": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-md-line-height-computed-mobile": [
+  [
+   "20px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-sm-line-height-computed-desktop": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-sm-line-height-computed-mobile": [
+  [
+   "20px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-xs-line-height-computed-desktop": [
+  [
+   "17px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-xs-line-height-computed-mobile": [
+  [
+   "17px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-lg-line-height-computed-desktop": [
+  [
+   "15px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-lg-line-height-computed-mobile": [
+  [
+   "15px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-md-line-height-computed-desktop": [
+  [
+   "13px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-md-line-height-computed-mobile": [
+  [
+   "13px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-xl-line-height-computed-desktop": [
+  [
+   "15px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-xl-line-height-computed-mobile": [
+  [
+   "15px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-xl-line-height-computed-desktop": [
+  [
+   "66px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-xl-line-height-computed-mobile": [
+  [
+   "40px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-lg-line-height-computed-desktop": [
+  [
+   "53px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-lg-line-height-computed-mobile": [
+  [
+   "40px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-md-line-height-computed-desktop": [
+  [
+   "40px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-md-line-height-computed-mobile": [
+  [
+   "26px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-sm-line-height-computed-desktop": [
+  [
+   "26px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-sm-line-height-computed-mobile": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-xs-line-height-computed-desktop": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-xs-line-height-computed-mobile": [
+  [
+   "18px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-xxs-line-height-computed-desktop": [
+  [
+   "20px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-xxs-line-height-computed-mobile": [
+  [
+   "18px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-font-md-line-height-computed-desktop": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-font-md-line-height-computed-mobile": [
+  [
+   "18px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-font-sm-line-height-computed-desktop": [
+  [
+   "18px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-font-sm-line-height-computed-mobile": [
+  [
+   "15px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-xl-line-height-computed-desktop": [
+  [
+   "53px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-xl-line-height-computed-mobile": [
+  [
+   "33px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-xl-line-height-computed-desktop": [
+  [
+   "26px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-xl-line-height-computed-mobile": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-lg-line-height-computed-desktop": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-lg-line-height-computed-mobile": [
+  [
+   "18px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-md-line-height-computed-desktop": [
+  [
+   "18px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-md-line-height-computed-mobile": [
+  [
+   "18px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-sm-line-height-computed-desktop": [
+  [
+   "18px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-sm-line-height-computed-mobile": [
+  [
+   "15px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-lg-line-height-computed-desktop": [
+  [
+   "40px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-lg-line-height-computed-mobile": [
+  [
+   "26px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-md-line-height-computed-desktop": [
+  [
+   "26px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-md-line-height-computed-mobile": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-sm-line-height-computed-desktop": [
+  [
+   "18px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-sm-line-height-computed-mobile": [
+  [
+   "15px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tab-standard-font-label-line-height-computed-desktop": [
+  [
+   "26px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tab-standard-font-label-line-height-computed-mobile": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tooltip-font-text-line-height-computed-desktop": [
+  [
+   "22px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tooltip-font-text-line-height-computed-mobile": [
+  [
+   "20px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--banner-fixed-height-desktop": [
+  [
+   "500px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--banner-fixed-height-tablet": [
+  [
+   "400px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--banner-fixed-height-mobile": [
+  [
+   "400px",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--theme": [
+  [
+   "base-ui",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-style": [
+  [
+   "Simple",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--font-accent": [
+  [
+   "Montserrat",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--font-default": [
+  [
+   "Roboto",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--font-fallback": [
+  [
+   "sans-serif",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--right-to-left": [
+  [
+   "false",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-family-accent": [
+  [
+   "var(--font-accent)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-family-default": [
+  [
+   "var(--font-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-family-fallback": [
+  [
+   "var(--font-fallback)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-size-75": [
+  [
+   "var(--global-size-125)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-size-100": [
+  [
+   "var(--global-size-150)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-size-200": [
+  [
+   "var(--global-size-175)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-size-300": [
+  [
+   "var(--global-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-size-400": [
+  [
+   "var(--global-size-225)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-size-500": [
+  [
+   "var(--global-size-250)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-size-600": [
+  [
+   "var(--global-size-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-size-625": [
+  [
+   "var(--global-size-375)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-size-650": [
+  [
+   "var(--global-size-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-size-700": [
+  [
+   "var(--global-size-450)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-size-750": [
+  [
+   "var(--global-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-size-800": [
+  [
+   "var(--global-size-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--global-font-size-900": [
+  [
+   "var(--global-size-750)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-animation-duration-fastest": [
+  [
+   "var(--global-motion-duration-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-animation-duration-fast": [
+  [
+   "var(--global-motion-duration-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-animation-duration-medium": [
+  [
+   "var(--global-motion-duration-1000)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-animation-duration-slow": [
+  [
+   "var(--global-motion-duration-1500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-animation-duration-slowest": [
+  [
+   "var(--global-motion-duration-2000)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-font-weight": [
+  [
+   "var(--global-font-weight-regular)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-line-height": [
+  [
+   "var(--global-font-line-height-tight)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-letter-spacing": [
+  [
+   "var(--global-font-letter-spacing-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-font-weight": [
+  [
+   "var(--global-font-weight-bold)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-line-height": [
+  [
+   "var(--global-font-line-height-tight)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-letter-spacing": [
+  [
+   "var(--global-font-letter-spacing-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-font-weight": [
+  [
+   "var(--global-font-weight-bold)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-line-height": [
+  [
+   "var(--global-font-line-height-tight)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-letter-spacing": [
+  [
+   "var(--global-font-letter-spacing-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-subheading-text-font-weight": [
+  [
+   "var(--global-font-weight-bold)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-subheading-text-line-height": [
+  [
+   "var(--global-font-line-height-tight)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-subheading-letter-spacing": [
+  [
+   "var(--global-font-letter-spacing-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-color": [
+  [
+   "var(--global-color-darken-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-xs": [
+  [
+   "var(--semantic-shadow-xs-position-x) var(--semantic-shadow-xs-position-y) var(--semantic-shadow-xs-blur) var(--semantic-shadow-color)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-sm-position-y": [
+  [
+   "var(--global-size-50)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-sm-blur": [
+  [
+   "var(--global-size-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-sm": [
+  [
+   "var(--semantic-shadow-sm-position-x) var(--semantic-shadow-sm-position-y) var(--semantic-shadow-sm-blur) var(--semantic-shadow-color)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-md": [
+  [
+   "var(--semantic-shadow-md-position-x) var(--semantic-shadow-md-position-y) var(--semantic-shadow-md-blur) var(--semantic-shadow-color)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-lg-blur": [
+  [
+   "var(--global-size-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-lg": [
+  [
+   "var(--semantic-shadow-lg-position-x) var(--semantic-shadow-lg-position-y) var(--semantic-shadow-lg-blur) var(--semantic-shadow-color)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-xl": [
+  [
+   "var(--semantic-shadow-xl-position-x) var(--semantic-shadow-xl-position-y) var(--semantic-shadow-xl-blur) var(--semantic-shadow-color)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-lg-position-y": [
+  [
+   "var(--global-size-125)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-heading-position-x": [
+  [
+   "var(--semantic-shadow-sm-position-x)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-action-position-x": [
+  [
+   "var(--semantic-shadow-md-position-x)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-action-position-y": [
+  [
+   "var(--semantic-shadow-md-position-y)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-action-blur": [
+  [
+   "var(--semantic-shadow-md-blur)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-vertical-xxs-desktop": [
+  [
+   "var(--global-size-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-vertical-xxs-mobile": [
+  [
+   "var(--global-size-50)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-vertical-xs-desktop": [
+  [
+   "var(--global-size-125)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-vertical-xs-mobile": [
+  [
+   "var(--global-size-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-vertical-sm-desktop": [
+  [
+   "var(--global-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-vertical-sm-mobile": [
+  [
+   "var(--global-size-150)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-vertical-md-desktop": [
+  [
+   "var(--global-size-250)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-vertical-md-mobile": [
+  [
+   "var(--global-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-vertical-lg-desktop": [
+  [
+   "var(--global-size-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-vertical-lg-mobile": [
+  [
+   "var(--global-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-vertical-xl-desktop": [
+  [
+   "var(--global-size-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-vertical-xl-mobile": [
+  [
+   "var(--global-size-250)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-vertical-xxl-desktop": [
+  [
+   "var(--global-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-vertical-xxl-mobile": [
+  [
+   "var(--global-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-horizontal-xxxs": [
+  [
+   "var(--global-size-50)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-horizontal-xxs": [
+  [
+   "var(--global-size-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-horizontal-xs": [
+  [
+   "var(--global-size-150)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-horizontal-sm": [
+  [
+   "var(--global-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-horizontal-md-desktop": [
+  [
+   "var(--global-size-250)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-horizontal-md-mobile": [
+  [
+   "var(--global-size-250)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-horizontal-lg-desktop": [
+  [
+   "var(--global-size-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-horizontal-lg-mobile": [
+  [
+   "var(--global-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-horizontal-xl-desktop": [
+  [
+   "var(--global-size-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-horizontal-xl-mobile": [
+  [
+   "var(--global-size-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-horizontal-xxl-desktop": [
+  [
+   "var(--global-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-horizontal-xxl-mobile": [
+  [
+   "var(--global-size-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-horizontal-xxxl-desktop": [
+  [
+   "var(--global-size-1000)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-around-horizontal-xxxl-mobile": [
+  [
+   "var(--global-size-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-between-xxxs": [
+  [
+   "var(--global-size-75)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-between-xxs": [
+  [
+   "var(--global-size-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-between-xs": [
+  [
+   "var(--global-size-150)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-between-sm": [
+  [
+   "var(--global-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-between-md": [
+  [
+   "var(--global-size-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-between-lg": [
+  [
+   "var(--global-size-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-between-xl": [
+  [
+   "var(--global-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-between-xxl": [
+  [
+   "var(--global-size-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-space-between-xxxl": [
+  [
+   "var(--global-size-700)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-content-space-xs": [
+  [
+   "var(--global-size-75)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-content-space-sm": [
+  [
+   "var(--global-size-150)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-content-space-md": [
+  [
+   "var(--global-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-content-space-lg-desktop": [
+  [
+   "var(--global-size-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-content-space-lg-mobile": [
+  [
+   "var(--global-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-section-space-horizontal-desktop": [
+  [
+   "var(--global-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-section-space-horizontal-tablet": [
+  [
+   "var(--global-size-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-section-space-horizontal-mobile": [
+  [
+   "var(--global-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-section-space-vertical-md-desktop": [
+  [
+   "var(--global-size-1000)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-section-space-vertical-md-mobile": [
+  [
+   "var(--global-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-section-space-vertical-lg": [
+  [
+   "var(--global-size-1100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-section-space-vertical-sm-desktop": [
+  [
+   "var(--global-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-section-space-vertical-sm-mobile": [
+  [
+   "var(--global-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-header-margin-space-md-desktop": [
+  [
+   "var(--global-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-header-margin-space-md-mobile": [
+  [
+   "var(--global-size-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-header-margin-space-lg-desktop": [
+  [
+   "var(--global-size-700)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-header-margin-space-lg-mobile": [
+  [
+   "var(--global-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-header-margin-space-xl-desktop": [
+  [
+   "var(--global-size-900)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-header-margin-space-xl-mobile": [
+  [
+   "var(--global-size-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-grid-gap-xxxs-desktop": [
+  [
+   "var(--global-size-75)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-grid-gap-xxxs-mobile": [
+  [
+   "var(--global-size-50)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-grid-gap-xxs-desktop": [
+  [
+   "var(--global-size-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-grid-gap-xxs-mobile": [
+  [
+   "var(--global-size-50)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-grid-gap-xs-desktop": [
+  [
+   "var(--global-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-grid-gap-xs-mobile": [
+  [
+   "var(--global-size-150)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-grid-gap-sm-desktop": [
+  [
+   "var(--global-size-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-grid-gap-sm-mobile": [
+  [
+   "var(--global-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-grid-gap-md-desktop": [
+  [
+   "var(--global-size-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-grid-gap-md-mobile": [
+  [
+   "var(--global-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-grid-gap-lg-desktop": [
+  [
+   "var(--global-size-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-grid-gap-lg-mobile": [
+  [
+   "var(--global-size-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-grid-gap-xl-desktop": [
+  [
+   "var(--global-size-1000)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-grid-gap-xl-mobile": [
+  [
+   "var(--global-size-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-height-xs-desktop": [
+  [
+   "var(--global-size-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-height-xs-mobile": [
+  [
+   "var(--global-size-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-height-sm-desktop": [
+  [
+   "var(--global-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-height-sm-mobile": [
+  [
+   "var(--global-size-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-height-md-desktop": [
+  [
+   "var(--global-size-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-height-md-mobile": [
+  [
+   "var(--global-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-height-lg-desktop": [
+  [
+   "var(--global-size-700)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-height-lg-mobile": [
+  [
+   "var(--global-size-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-height-xl-desktop": [
+  [
+   "var(--global-size-900)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-height-xl-mobile": [
+  [
+   "var(--global-size-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-height-xxl-desktop": [
+  [
+   "var(--global-size-900)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-height-xxl-mobile": [
+  [
+   "var(--global-size-800)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-width-lg-desktop": [
+  [
+   "var(--global-size-900)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-width-lg-mobile": [
+  [
+   "var(--global-size-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-width-sm-desktop": [
+  [
+   "var(--global-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-width-sm-mobile": [
+  [
+   "var(--global-size-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-width-md-desktop": [
+  [
+   "var(--global-size-1150)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-width-md-mobile": [
+  [
+   "var(--global-size-900)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-width-xs-desktop": [
+  [
+   "var(--global-size-1000)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-input-width-xs-mobile": [
+  [
+   "var(--global-size-800)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-nav-height-desktop": [
+  [
+   "var(--global-size-1100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-nav-height-mobile": [
+  [
+   "var(--global-size-700)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-icon-height-xl-desktop": [
+  [
+   "var(--global-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-icon-height-xl-mobile": [
+  [
+   "var(--global-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-icon-height-lg-desktop": [
+  [
+   "var(--global-size-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-icon-height-lg-mobile": [
+  [
+   "var(--global-size-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-icon-height-md-desktop": [
+  [
+   "var(--global-size-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-icon-height-md-mobile": [
+  [
+   "var(--global-size-250)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-icon-height-sm-desktop": [
+  [
+   "var(--global-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-icon-height-sm-mobile": [
+  [
+   "var(--global-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-icon-height-xs-desktop": [
+  [
+   "var(--global-size-175)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-size-icon-height-xs-mobile": [
+  [
+   "var(--global-size-175)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-border-action-hover": [
+  [
+   "var(--global-color-transparent)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-border-action-pressed": [
+  [
+   "var(--global-color-content-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-border-action-primary-default": [
+  [
+   "var(--global-color-content-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-border-action-secondary-default": [
+  [
+   "var(--global-color-transparent)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-border-input-default": [
+  [
+   "var(--global-color-content-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-border-input-hover": [
+  [
+   "var(--global-color-content-800)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-border-input-disabled": [
+  [
+   "var(--global-color-content-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-border-input-focus": [
+  [
+   "var(--global-color-content-700)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-border-info-primary": [
+  [
+   "var(--global-color-background-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-border-table-default": [
+  [
+   "var(--global-color-content-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-text-heading": [
+  [
+   "var(--global-color-content-1000)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-text-description": [
+  [
+   "var(--global-color-content-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-text-label": [
+  [
+   "var(--global-color-content-700)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-text-link-default": [
+  [
+   "var(--global-color-primary-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-text-link-hover": [
+  [
+   "var(--global-color-content-1000)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-text-link-subtle-default": [
+  [
+   "var(--global-color-content-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-text-link-subtle-hover": [
+  [
+   "var(--global-color-content-1000)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-text-link-subtle-active": [
+  [
+   "var(--global-color-content-1000)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-text-link-alternate-default": [
+  [
+   "var(--global-color-primary-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-text-link-alternate-hover": [
+  [
+   "var(--global-color-primary-700)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-text-link-alternate-active": [
+  [
+   "var(--global-color-primary-700)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-page-primary": [
+  [
+   "var(--global-color-background-700)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-page-secondary": [
+  [
+   "var(--global-color-background-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-page-tertiary": [
+  [
+   "var(--global-color-darken-800)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-primary-gradient-default": [
+  [
+   "var(--global-color-primary-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-primary-gradient-hover": [
+  [
+   "var(--global-color-primary-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-primary-gradient-disabled": [
+  [
+   "var(--global-color-primary-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-primary-gradient-pressed": [
+  [
+   "var(--global-color-primary-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-secondary-gradient-default": [
+  [
+   "var(--global-color-accent-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-secondary-gradient-hover": [
+  [
+   "var(--global-color-accent-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-secondary-gradient-pressed": [
+  [
+   "var(--global-color-accent-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-secondary-gradient-disabled": [
+  [
+   "var(--global-color-accent-700)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-tertiary-default": [
+  [
+   "var(--global-color-transparent)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-tertiary-hover": [
+  [
+   "var(--global-color-content-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-default-hover": [
+  [
+   "var(--global-color-content-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-info-primary": [
+  [
+   "var(--global-color-background-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-info-secondary": [
+  [
+   "var(--global-color-background-800)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-info-secondary-hover": [
+  [
+   "var(--global-color-background-700)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-info-tertiary": [
+  [
+   "var(--global-color-content-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-info-quaternary": [
+  [
+   "var(--global-color-accent-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-info-quaternary-hover": [
+  [
+   "var(--global-color-accent-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-content-default": [
+  [
+   "var(--global-color-background-800)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-content-hover": [
+  [
+   "var(--global-color-background-700)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-icon-selected": [
+  [
+   "var(--global-color-primary-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-icon-hover": [
+  [
+   "var(--global-color-content-1000)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-state-inactive": [
+  [
+   "var(--global-color-background-50)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-feedback-error": [
+  [
+   "var(--global-color-error-900)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-table-default": [
+  [
+   "var(--global-color-transparent)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-table-hover": [
+  [
+   "var(--global-color-content-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-table-alternate": [
+  [
+   "var(--global-color-content-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-table-header": [
+  [
+   "var(--global-color-accent-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-content-default": [
+  [
+   "var(--global-color-content-1000)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-content-default-dark": [
+  [
+   "var(--global-color-background-800)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-content-info": [
+  [
+   "var(--global-color-content-700)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-content-inactive": [
+  [
+   "var(--global-color-content-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-content-placeholder": [
+  [
+   "var(--global-color-content-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-content-success": [
+  [
+   "var(--global-color-success-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-content-warning": [
+  [
+   "var(--global-color-warning-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-content-error": [
+  [
+   "var(--global-color-error-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-content-critical": [
+  [
+   "var(--global-color-error-900)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-content-heading-hover": [
+  [
+   "var(--global-color-content-1000)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-content-pressed": [
+  [
+   "var(--global-color-content-700)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-content-highlight": [
+  [
+   "var(--global-color-background-800)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-content-callout-primary": [
+  [
+   "var(--global-color-success-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-content-callout-secondary": [
+  [
+   "var(--global-color-warning-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-content-secondary-inactive": [
+  [
+   "var(--global-color-content-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-accessibility-focus-inner-border": [
+  [
+   "var(--global-color-background-800)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-accessibility-focus-outer-border": [
+  [
+   "var(--global-color-content-1000)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-feedback-info": [
+  [
+   "var(--global-color-primary-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-feedback-success": [
+  [
+   "var(--global-color-success-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-feedback-warning": [
+  [
+   "var(--global-color-warning-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-feedback-error": [
+  [
+   "var(--global-color-error-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-feedback-highlight": [
+  [
+   "var(--global-color-content-1000)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-border-radius-none": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-border-radius-xs": [
+  [
+   "var(--global-size-25)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-border-radius-md": [
+  [
+   "var(--global-size-50)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-border-radius-lg": [
+  [
+   "var(--global-size-75)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-border-radius-xl": [
+  [
+   "var(--global-size-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-border-radius-rounded": [
+  [
+   "var(--global-size-1200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-border-size-md": [
+  [
+   "var(--global-size-25)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-space-padding-sm-top": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-space-padding-sm-bottom": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-space-md-desktop-top": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-space-md-desktop-bottom": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-space-md-mobile-top": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-space-md-mobile-bottom": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-sm-desktop": [
+  [
+   "var(--global-font-weight-medium) var(--button-font-label-sm-font-size-desktop)/var(--button-font-label-sm-line-height-computed-desktop) var(--button-font-label-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-sm-mobile": [
+  [
+   "var(--global-font-weight-medium) var(--button-font-label-sm-font-size-mobile)/var(--button-font-label-sm-line-height-computed-mobile) var(--button-font-label-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-space-padding-md-desktop-vertical": [
+  [
+   "var(--global-size-50)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-border-primary-default": [
+  [
+   "var(--global-color-transparent)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-border-secondary-default": [
+  [
+   "var(--global-color-transparent)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-xl-line-height-computed-desktop": [
+  [
+   "var(--semantic-title-text-md-line-height-computed-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-xl-line-height-computed-mobile": [
+  [
+   "var(--semantic-title-text-md-line-height-computed-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-xl-line-height-computed-desktop": [
+  [
+   "var(--semantic-body-text-lg-line-height-computed-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-xl-line-height-computed-mobile": [
+  [
+   "var(--semantic-body-text-lg-line-height-computed-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-xl-line-height-computed-desktop": [
+  [
+   "var(--semantic-body-text-lg-line-height-computed-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-xl-line-height-computed-mobile": [
+  [
+   "var(--semantic-body-text-lg-line-height-computed-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-selection-checkmark-color-icon-active": [
+  [
+   "var(--global-color-primary-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-selection-checkmark-color-icon-hover": [
+  [
+   "var(--global-color-primary-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-text-field-space-padding-sm-top": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-text-field-space-padding-sm-bottom": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-text-field-space-padding-md-top": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-text-field-space-padding-md-bottom": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-text-field-color-background-solid": [
+  [
+   "var(--global-color-background-800)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-select-space-padding-sm-top": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-select-space-padding-sm-bottom": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-select-space-padding-md-top": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-select-space-padding-md-bottom": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--banner-optional-top-heading-gap": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-media-top-left-right": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-media-top-left-bottom": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-media-top-right-bottom": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-media-top-right-left": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-media-bottom-left-top": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-media-bottom-left-right": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-media-bottom-right-top": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-media-bottom-right-left": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--icon-button-color-ghost-background-hover": [
+  [
+   "var(--global-color-content-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--icon-button-color-ghost-background-active": [
+  [
+   "var(--global-color-content-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--icon-button-border-size-sm": [
+  [
+   "var(--semantic-border-size-sm)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--icon-button-border-size-md": [
+  [
+   "var(--semantic-border-size-sm)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--progress-bar-color-border": [
+  [
+   "var(--global-color-transparent)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--progress-bar-border-size": [
+  [
+   "var(--global-size-0)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-xxl-font-size-desktop": [
+  [
+   "var(--global-font-size-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-xxl-desktop": [
+  [
+   "var(--semantic-body-text-font-weight) var(--semantic-body-text-xxl-font-size-desktop)/var(--semantic-body-text-xxl-line-height-computed-desktop) var(--semantic-body-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-xxl-font-size-mobile": [
+  [
+   "var(--global-font-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-xxl-mobile": [
+  [
+   "var(--semantic-body-text-font-weight) var(--semantic-body-text-xxl-font-size-mobile)/var(--semantic-body-text-xxl-line-height-computed-mobile) var(--semantic-body-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-lg-font-size-desktop": [
+  [
+   "var(--global-font-size-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-lg-desktop": [
+  [
+   "var(--semantic-body-text-font-weight) var(--semantic-body-text-lg-font-size-desktop)/var(--semantic-body-text-lg-line-height-computed-desktop) var(--semantic-body-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-lg-font-size-mobile": [
+  [
+   "var(--global-font-size-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-lg-mobile": [
+  [
+   "var(--semantic-body-text-font-weight) var(--semantic-body-text-lg-font-size-mobile)/var(--semantic-body-text-lg-line-height-computed-mobile) var(--semantic-body-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-sm-desktop": [
+  [
+   "var(--semantic-body-text-font-weight) var(--semantic-body-text-sm-font-size-desktop)/var(--semantic-body-text-sm-line-height-computed-desktop) var(--semantic-body-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-sm-mobile": [
+  [
+   "var(--semantic-body-text-font-weight) var(--semantic-body-text-sm-font-size-mobile)/var(--semantic-body-text-sm-line-height-computed-mobile) var(--semantic-body-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-sm-font-size-desktop": [
+  [
+   "var(--global-font-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-sm-font-size-mobile": [
+  [
+   "var(--global-font-size-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-xl-desktop": [
+  [
+   "var(--semantic-body-text-font-weight) var(--semantic-body-text-xl-font-size-desktop)/var(--semantic-body-text-xl-line-height-computed-desktop) var(--semantic-body-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-xl-mobile": [
+  [
+   "var(--semantic-body-text-font-weight) var(--semantic-body-text-xl-font-size-mobile)/var(--semantic-body-text-xl-line-height-computed-mobile) var(--semantic-body-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-xl-font-size-desktop": [
+  [
+   "var(--global-font-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-xl-font-size-mobile": [
+  [
+   "var(--global-font-size-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-md-desktop": [
+  [
+   "var(--semantic-body-text-font-weight) var(--semantic-body-text-md-font-size-desktop)/var(--semantic-body-text-md-line-height-computed-desktop) var(--semantic-body-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-md-mobile": [
+  [
+   "var(--semantic-body-text-font-weight) var(--semantic-body-text-md-font-size-mobile)/var(--semantic-body-text-md-line-height-computed-mobile) var(--semantic-body-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-md-font-size-desktop": [
+  [
+   "var(--global-font-size-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-md-font-size-mobile": [
+  [
+   "var(--global-font-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-font-family": [
+  [
+   "var(--global-font-family-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-xs-desktop": [
+  [
+   "var(--semantic-body-text-font-weight) var(--semantic-body-text-xs-font-size-desktop)/var(--semantic-body-text-xs-line-height-computed-desktop) var(--semantic-body-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-xs-mobile": [
+  [
+   "var(--semantic-body-text-font-weight) var(--semantic-body-text-xs-font-size-mobile)/var(--semantic-body-text-xs-line-height-computed-mobile) var(--semantic-body-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-xs-font-size-desktop": [
+  [
+   "var(--global-font-size-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-body-text-xs-font-size-mobile": [
+  [
+   "var(--global-font-size-75)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-lg-desktop": [
+  [
+   "var(--semantic-title-text-font-weight) var(--semantic-title-text-lg-font-size-desktop)/var(--semantic-title-text-lg-line-height-computed-desktop) var(--semantic-title-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-lg-font-size-mobile": [
+  [
+   "var(--global-font-size-700)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-lg-mobile": [
+  [
+   "var(--semantic-title-text-font-weight) var(--semantic-title-text-lg-font-size-mobile)/var(--semantic-title-text-lg-line-height-computed-mobile) var(--semantic-title-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-lg-font-size-desktop": [
+  [
+   "var(--global-font-size-900)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-sm-font-size-desktop": [
+  [
+   "var(--global-font-size-700)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-font-family": [
+  [
+   "var(--global-font-family-accent)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-sm-desktop": [
+  [
+   "var(--semantic-title-text-font-weight) var(--semantic-title-text-sm-font-size-desktop)/var(--semantic-title-text-sm-line-height-computed-desktop) var(--semantic-title-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-sm-font-size-mobile": [
+  [
+   "var(--global-font-size-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-sm-mobile": [
+  [
+   "var(--semantic-title-text-font-weight) var(--semantic-title-text-sm-font-size-mobile)/var(--semantic-title-text-sm-line-height-computed-mobile) var(--semantic-title-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-md-desktop": [
+  [
+   "var(--semantic-title-text-font-weight) var(--semantic-title-text-md-font-size-desktop)/var(--semantic-title-text-md-line-height-computed-desktop) var(--semantic-title-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-md-mobile": [
+  [
+   "var(--semantic-title-text-font-weight) var(--semantic-title-text-md-font-size-mobile)/var(--semantic-title-text-md-line-height-computed-mobile) var(--semantic-title-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-md-font-size-desktop": [
+  [
+   "var(--global-font-size-800)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-title-text-md-font-size-mobile": [
+  [
+   "var(--global-font-size-625)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xxl-font-size-desktop": [
+  [
+   "var(--global-font-size-650)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xxl-desktop": [
+  [
+   "var(--semantic-heading-text-font-weight) var(--semantic-heading-text-xxl-font-size-desktop)/var(--semantic-heading-text-xxl-line-height-computed-desktop) var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xxl-font-size-mobile": [
+  [
+   "var(--global-font-size-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xxl-mobile": [
+  [
+   "var(--semantic-heading-text-font-weight) var(--semantic-heading-text-xxl-font-size-mobile)/var(--semantic-heading-text-xxl-line-height-computed-mobile) var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xl-font-size-desktop": [
+  [
+   "var(--global-font-size-600)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xl-desktop": [
+  [
+   "var(--semantic-heading-text-font-weight) var(--semantic-heading-text-xl-font-size-desktop)/var(--semantic-heading-text-xl-line-height-computed-desktop) var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xl-font-size-mobile": [
+  [
+   "var(--global-font-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xl-mobile": [
+  [
+   "var(--semantic-heading-text-font-weight) var(--semantic-heading-text-xl-font-size-mobile)/var(--semantic-heading-text-xl-line-height-computed-mobile) var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-md-desktop": [
+  [
+   "var(--semantic-heading-text-font-weight) var(--semantic-heading-text-md-font-size-desktop)/var(--semantic-heading-text-md-line-height-computed-desktop) var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-md-mobile": [
+  [
+   "var(--semantic-heading-text-font-weight) var(--semantic-heading-text-md-font-size-mobile)/var(--semantic-heading-text-md-line-height-computed-mobile) var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-md-font-size-desktop": [
+  [
+   "var(--global-font-size-400)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-md-font-size-mobile": [
+  [
+   "var(--global-font-size-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-sm-desktop": [
+  [
+   "var(--semantic-heading-text-font-weight) var(--semantic-heading-text-sm-font-size-desktop)/var(--semantic-heading-text-sm-line-height-computed-desktop) var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-sm-mobile": [
+  [
+   "var(--semantic-heading-text-font-weight) var(--semantic-heading-text-sm-font-size-mobile)/var(--semantic-heading-text-sm-line-height-computed-mobile) var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-sm-font-size-desktop": [
+  [
+   "var(--global-font-size-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-sm-font-size-mobile": [
+  [
+   "var(--global-font-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xs-desktop": [
+  [
+   "var(--semantic-heading-text-font-weight) var(--semantic-heading-text-xs-font-size-desktop)/var(--semantic-heading-text-xs-line-height-computed-desktop) var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xs-mobile": [
+  [
+   "var(--semantic-heading-text-font-weight) var(--semantic-heading-text-xs-font-size-mobile)/var(--semantic-heading-text-xs-line-height-computed-mobile) var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xs-font-size-desktop": [
+  [
+   "var(--global-font-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xs-font-size-mobile": [
+  [
+   "var(--global-font-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-font-family": [
+  [
+   "var(--global-font-family-accent)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xxs-desktop": [
+  [
+   "var(--semantic-heading-text-font-weight) var(--semantic-heading-text-xxs-font-size-desktop)/var(--semantic-heading-text-xxs-line-height-computed-desktop) var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xxs-mobile": [
+  [
+   "var(--semantic-heading-text-font-weight) var(--semantic-heading-text-xxs-font-size-mobile)/var(--semantic-heading-text-xxs-line-height-computed-mobile) var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xxs-font-size-desktop": [
+  [
+   "var(--global-font-size-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-xxs-font-size-mobile": [
+  [
+   "var(--global-font-size-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-lg-font-size-mobile": [
+  [
+   "var(--global-font-size-300)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-lg-mobile": [
+  [
+   "var(--semantic-heading-text-font-weight) var(--semantic-heading-text-lg-font-size-mobile)/var(--semantic-heading-text-lg-line-height-computed-mobile) var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-lg-font-size-desktop": [
+  [
+   "var(--global-font-size-500)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-heading-text-lg-desktop": [
+  [
+   "var(--semantic-heading-text-font-weight) var(--semantic-heading-text-lg-font-size-desktop)/var(--semantic-heading-text-lg-line-height-computed-desktop) var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-subheading-text-lg-font-size-desktop": [
+  [
+   "var(--global-font-size-200)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-subheading-text-font-family": [
+  [
+   "var(--global-font-family-accent)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-subheading-text-lg-desktop": [
+  [
+   "var(--semantic-subheading-text-font-weight) var(--semantic-subheading-text-lg-font-size-desktop)/var(--semantic-subheading-text-lg-line-height-computed-desktop) var(--semantic-subheading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-subheading-text-lg-desktop-archive": [
+  [
+   "var(--semantic-subheading-text-font-weight) var(--semantic-subheading-text-lg-font-size-desktop)/var(--semantic-subheading-text-lg-line-height-computed-desktop) var(--semantic-subheading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-subheading-text-lg-font-size-mobile": [
+  [
+   "var(--global-font-size-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-subheading-text-lg-mobile": [
+  [
+   "var(--semantic-subheading-text-font-weight) var(--semantic-subheading-text-lg-font-size-mobile)/var(--semantic-subheading-text-lg-line-height-computed-mobile) var(--semantic-subheading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-subheading-text-md-desktop": [
+  [
+   "var(--semantic-subheading-text-font-weight) var(--semantic-subheading-text-md-font-size-desktop)/var(--semantic-subheading-text-md-line-height-computed-desktop) var(--semantic-subheading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-subheading-text-md-mobile": [
+  [
+   "var(--semantic-subheading-text-font-weight) var(--semantic-subheading-text-md-font-size-mobile)/var(--semantic-subheading-text-md-line-height-computed-mobile) var(--semantic-subheading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-subheading-text-md-font-size-desktop": [
+  [
+   "var(--global-font-size-100)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-subheading-text-md-font-size-mobile": [
+  [
+   "var(--global-font-size-75)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-heading-blur": [
+  [
+   "var(--semantic-shadow-sm-blur)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-heading-color": [
+  [
+   "var(--semantic-shadow-color)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-heading": [
+  [
+   "var(--semantic-shadow-heading-position-x) var(--semantic-shadow-heading-position-y) var(--semantic-shadow-heading-blur) var(--semantic-shadow-heading-color)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-action": [
+  [
+   "var(--semantic-shadow-action-position-x) var(--semantic-shadow-action-position-y) var(--semantic-shadow-action-blur) var(--semantic-shadow-action-color)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-heading-position-y": [
+  [
+   "var(--semantic-shadow-sm-position-y)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-shadow-action-color": [
+  [
+   "var(--semantic-shadow-color)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-primary-default": [
+  [
+   "var(--semantic-color-background-action-primary-gradient-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-primary-hover": [
+  [
+   "var(--semantic-color-background-action-primary-gradient-hover)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-primary-pressed": [
+  [
+   "var(--semantic-color-background-action-primary-gradient-pressed)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-primary-disabled": [
+  [
+   "var(--semantic-color-background-action-primary-gradient-disabled)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-secondary-default": [
+  [
+   "var(--semantic-color-background-action-secondary-gradient-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-secondary-hover": [
+  [
+   "var(--semantic-color-background-action-secondary-gradient-hover)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-secondary-pressed": [
+  [
+   "var(--semantic-color-background-action-secondary-gradient-pressed)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-color-background-action-secondary-disabled": [
+  [
+   "var(--semantic-color-background-action-secondary-gradient-disabled)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-border-radius-action-sm": [
+  [
+   "var(--semantic-border-radius-md)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-border-radius-action-md": [
+  [
+   "var(--semantic-border-radius-md)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--semantic-border-radius-action-lg": [
+  [
+   "var(--semantic-border-radius-md)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-heading-desktop": [
+  [
+   "var(--semantic-heading-text-font-weight) var(--announcement-banner-font-heading-font-size-desktop)/var(--announcement-banner-font-heading-line-height-computed-desktop) var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-heading-mobile": [
+  [
+   "var(--semantic-heading-text-font-weight) var(--announcement-banner-font-heading-font-size-mobile)/var(--announcement-banner-font-heading-line-height-computed-mobile) var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-heading-font-weight": [
+  [
+   "var(--semantic-heading-text-font-weight)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-heading-letter-spacing": [
+  [
+   "var(--semantic-heading-text-letter-spacing)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-heading-line-height": [
+  [
+   "var(--semantic-heading-text-line-height)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-subtext-desktop": [
+  [
+   "var(--semantic-body-text-font-weight) var(--semantic-body-text-md-font-size-desktop)/var(--announcement-banner-font-subtext-line-height-computed-desktop) var(--semantic-body-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-subtext-mobile": [
+  [
+   "var(--semantic-body-text-font-weight) var(--semantic-body-text-md-font-size-mobile)/var(--announcement-banner-font-subtext-line-height-computed-mobile) var(--semantic-body-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-subtext-letter-spacing": [
+  [
+   "var(--semantic-body-text-letter-spacing)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-subtext-font-weight": [
+  [
+   "var(--semantic-body-text-font-weight)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-subtext-line-height": [
+  [
+   "var(--semantic-body-text-line-height)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-space-padding-desktop-vertical": [
+  [
+   "var(--semantic-space-around-vertical-xxl-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-space-padding-desktop-horizontal": [
+  [
+   "var(--semantic-space-around-horizontal-lg-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-space-padding-mobile-vertical": [
+  [
+   "var(--semantic-space-around-vertical-xxl-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-space-padding-mobile-horizontal": [
+  [
+   "var(--semantic-space-around-horizontal-lg-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-sticky-space-padding-desktop-vertical": [
+  [
+   "var(--semantic-space-around-vertical-lg-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-sticky-space-padding-desktop-horizontal": [
+  [
+   "var(--semantic-space-around-horizontal-lg-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-sticky-space-padding-mobile-vertical": [
+  [
+   "var(--semantic-space-around-vertical-lg-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-sticky-space-padding-mobile-horizontal": [
+  [
+   "var(--semantic-space-around-horizontal-lg-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-content-gap-horizontal-desktop": [
+  [
+   "var(--semantic-space-between-lg)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-content-gap-horizontal-mobile": [
+  [
+   "var(--semantic-space-between-md)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-content-gap-vertical-desktop": [
+  [
+   "var(--semantic-space-between-sm)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-content-gap-vertical-mobile": [
+  [
+   "var(--semantic-space-between-xxs)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-font-text-font-weight": [
+  [
+   "var(--semantic-subheading-text-font-weight)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-font-text-letter-spacing": [
+  [
+   "var(--semantic-subheading-letter-spacing)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-font-text-line-height": [
+  [
+   "var(--semantic-subheading-text-line-height)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-space-padding-sm-horizontal": [
+  [
+   "var(--semantic-space-around-horizontal-xxxs)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-space-md-desktop-horizontal": [
+  [
+   "var(--semantic-space-around-horizontal-xxs)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-space-md-mobile-horizontal": [
+  [
+   "var(--semantic-space-around-horizontal-xxs)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-color-background-urgent": [
+  [
+   "var(--semantic-color-content-error)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-color-background-neutral": [
+  [
+   "var(--semantic-color-background-info-secondary)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-color-background-positive": [
+  [
+   "var(--semantic-color-content-success)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-color-text-default": [
+  [
+   "var(--semantic-color-content-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-font-weight": [
+  [
+   "var(--semantic-heading-text-font-weight)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-letter-spacing": [
+  [
+   "var(--semantic-heading-text-letter-spacing)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-line-height": [
+  [
+   "var(--semantic-heading-text-line-height)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-space-padding-xl-desktop-vertical": [
+  [
+   "var(--semantic-space-around-vertical-sm-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-space-padding-xl-desktop-horizontal": [
+  [
+   "var(--semantic-space-around-horizontal-xxl-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-space-padding-xl-mobile-vertical": [
+  [
+   "var(--semantic-space-around-vertical-xs-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-space-padding-xl-mobile-horizontal": [
+  [
+   "var(--semantic-space-around-horizontal-xxl-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-space-padding-lg-desktop-vertical": [
+  [
+   "var(--semantic-space-around-vertical-xs-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-space-padding-lg-desktop-horizontal": [
+  [
+   "var(--semantic-space-around-horizontal-xxl-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-space-padding-lg-mobile-vertical": [
+  [
+   "var(--semantic-space-around-vertical-xs-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-space-padding-lg-mobile-horizontal": [
+  [
+   "var(--semantic-space-around-horizontal-xxl-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-space-padding-md-desktop-horizontal": [
+  [
+   "var(--semantic-space-around-vertical-lg-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-space-padding-md-mobile-vertical": [
+  [
+   "var(--semantic-space-around-vertical-sm-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-space-padding-md-mobile-horizontal": [
+  [
+   "var(--semantic-space-around-horizontal-xl-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-space-padding-sm-vertical": [
+  [
+   "var(--semantic-space-around-vertical-xxs-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-space-padding-sm-horizontal": [
+  [
+   "var(--semantic-space-around-horizontal-sm)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-border-primary-hover": [
+  [
+   "var(--semantic-color-border-action-hover)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-border-primary-pressed": [
+  [
+   "var(--semantic-color-border-action-pressed)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-border-primary-disabled": [
+  [
+   "var(--semantic-color-border-action-pressed)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-border-secondary-hover": [
+  [
+   "var(--semantic-color-border-action-hover)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-border-secondary-pressed": [
+  [
+   "var(--semantic-color-border-action-pressed)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-border-secondary-disabled": [
+  [
+   "var(--semantic-color-border-action-pressed)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-border-tertiary-default": [
+  [
+   "var(--semantic-color-border-action-primary-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-border-tertiary-hover": [
+  [
+   "var(--semantic-color-border-action-hover)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-border-tertiary-pressed": [
+  [
+   "var(--semantic-color-border-action-pressed)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-border-tertiary-disabled": [
+  [
+   "var(--semantic-color-border-action-pressed)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-text-pressed": [
+  [
+   "var(--semantic-color-content-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-text-disabled": [
+  [
+   "var(--semantic-color-content-info)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-text-primary-default": [
+  [
+   "var(--semantic-color-content-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-text-primary-disabled": [
+  [
+   "var(--semantic-color-content-inactive)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-text-secondary-default": [
+  [
+   "var(--semantic-color-content-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-text-secondary-disabled": [
+  [
+   "var(--semantic-color-content-inactive)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-font-weight": [
+  [
+   "var(--semantic-heading-text-font-weight)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-letter-spacing": [
+  [
+   "var(--semantic-heading-text-letter-spacing)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-line-height": [
+  [
+   "var(--semantic-heading-text-line-height)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-font-weight": [
+  [
+   "var(--semantic-body-text-font-weight)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-letter-spacing": [
+  [
+   "var(--semantic-body-text-letter-spacing)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-line-height": [
+  [
+   "var(--semantic-body-text-line-height)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-font-weight": [
+  [
+   "var(--semantic-body-text-font-weight)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-letter-spacing": [
+  [
+   "var(--semantic-body-text-letter-spacing)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-line-height": [
+  [
+   "var(--semantic-body-text-line-height)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-font-weight": [
+  [
+   "var(--semantic-subheading-text-font-weight)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-letter-spacing": [
+  [
+   "var(--semantic-subheading-letter-spacing)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-line-height": [
+  [
+   "var(--semantic-subheading-text-line-height)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-description-space-margin-top": [
+  [
+   "var(--semantic-content-space-md)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-space-optional-slot-top-desktop": [
+  [
+   "var(--semantic-space-between-md)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-space-optional-slot-top-mobile": [
+  [
+   "var(--semantic-space-between-md)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-space-optional-slot-bottom-desktop": [
+  [
+   "var(--semantic-space-between-md)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-space-optional-slot-bottom-mobile": [
+  [
+   "var(--semantic-space-between-md)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-font-weight": [
+  [
+   "var(--semantic-title-text-font-weight)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-letter-spacing": [
+  [
+   "var(--semantic-title-text-letter-spacing)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-line-height": [
+  [
+   "var(--semantic-title-text-line-height)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-font-letter-spacing": [
+  [
+   "var(--semantic-heading-text-letter-spacing)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-font-font-weight": [
+  [
+   "var(--semantic-heading-text-font-weight)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-font-line-height": [
+  [
+   "var(--semantic-heading-text-line-height)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-height-sm-desktop": [
+  [
+   "var(--semantic-size-input-height-md-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-height-sm-mobile": [
+  [
+   "var(--semantic-size-input-height-md-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-height-md-desktop": [
+  [
+   "var(--semantic-size-input-height-lg-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-height-md-mobile": [
+  [
+   "var(--semantic-size-input-height-lg-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-selection-label-gap": [
+  [
+   "var(--semantic-space-between-xs)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-selection-color-background": [
+  [
+   "var(--semantic-color-content-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-text-field-space-padding-sm-right": [
+  [
+   "var(--semantic-space-around-horizontal-xxs)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-text-field-space-padding-sm-left": [
+  [
+   "var(--semantic-space-around-horizontal-sm)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-text-field-space-padding-md-right": [
+  [
+   "var(--semantic-space-around-horizontal-xxs)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-text-field-space-padding-md-left": [
+  [
+   "var(--semantic-space-around-horizontal-sm)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-text-field-color-background-default": [
+  [
+   "var(--semantic-color-background-info-quaternary)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-text-field-color-background-hover": [
+  [
+   "var(--semantic-color-background-info-quaternary-hover)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-select-space-padding-sm-right": [
+  [
+   "var(--semantic-space-around-horizontal-xxs)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-select-space-padding-sm-left": [
+  [
+   "var(--semantic-space-around-horizontal-sm)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-select-space-padding-md-right": [
+  [
+   "var(--semantic-space-around-horizontal-xxs)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-select-space-padding-md-left": [
+  [
+   "var(--semantic-space-around-horizontal-sm)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-text-color-disabled": [
+  [
+   "var(--semantic-color-content-inactive)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-letter-spacing": [
+  [
+   "var(--semantic-heading-text-letter-spacing)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-font-weight": [
+  [
+   "var(--semantic-heading-text-font-weight)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-line-height": [
+  [
+   "var(--semantic-heading-text-line-height)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-font-weight": [
+  [
+   "var(--semantic-heading-text-font-weight)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-letter-spacing": [
+  [
+   "var(--semantic-heading-text-letter-spacing)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-line-height": [
+  [
+   "var(--semantic-title-text-line-height)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tab-standard-font-label-font-weight": [
+  [
+   "var(--semantic-heading-text-font-weight)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tab-standard-font-label-letter-spacing": [
+  [
+   "var(--semantic-heading-text-letter-spacing)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tab-standard-font-label-line-heigt": [
+  [
+   "var(--semantic-heading-text-line-height)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tooltip-font-text-font-weight": [
+  [
+   "var(--semantic-body-text-font-weight)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tooltip-font-text-letter-spacing": [
+  [
+   "var(--semantic-body-text-letter-spacing)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tooltip-font-text-line-height": [
+  [
+   "var(--semantic-heading-text-line-height)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tooltip-color-border-primary": [
+  [
+   "var(--semantic-color-border-info-primary)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--banner-space-padding-vertical-desktop": [
+  [
+   "var(--semantic-space-around-vertical-sm-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--banner-space-padding-vertical-mobile": [
+  [
+   "var(--semantic-space-around-vertical-sm-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--banner-space-padding-horizontal-desktop": [
+  [
+   "var(--semantic-space-around-horizontal-xxxl-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--banner-space-padding-horizontal-mobile": [
+  [
+   "var(--semantic-space-around-horizontal-xxxl-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--banner-fixed-height-space-bottom-aligned-padding-vertical-desktop": [
+  [
+   "var(--semantic-space-around-vertical-xxl-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--banner-fixed-height-space-bottom-aligned-padding-vertical-mobile": [
+  [
+   "var(--semantic-space-around-vertical-xxl-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--banner-fixed-height-space-bottom-aligned-padding-horizontal-desktop": [
+  [
+   "var(--semantic-space-around-horizontal-xxxl-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--banner-fixed-height-space-bottom-aligned-padding-horizontal-mobile": [
+  [
+   "var(--semantic-space-around-horizontal-xxxl-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--banner-optional-bottom-description-gap": [
+  [
+   "var(--semantic-content-space-md)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--banner-color-text-heading": [
+  [
+   "var(--semantic-color-text-heading)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-padding-lg-desktop-vertical": [
+  [
+   "var(--semantic-space-around-vertical-lg-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-padding-lg-desktop-horizontal": [
+  [
+   "var(--semantic-space-around-horizontal-lg-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-padding-lg-mobile-vertical": [
+  [
+   "var(--semantic-space-around-vertical-xl-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-padding-lg-mobile-horizontal": [
+  [
+   "var(--semantic-space-around-horizontal-md-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-padding-md-desktop-vertical": [
+  [
+   "var(--semantic-space-around-vertical-md-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-padding-md-desktop-horizontal": [
+  [
+   "var(--semantic-space-around-horizontal-md-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-padding-md-mobile-vertical": [
+  [
+   "var(--semantic-space-around-vertical-md-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-padding-md-mobile-horizontal": [
+  [
+   "var(--semantic-space-around-horizontal-sm)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-padding-sm-desktop-vertical": [
+  [
+   "var(--semantic-space-around-vertical-sm-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-padding-sm-desktop-horizontal": [
+  [
+   "var(--semantic-space-around-horizontal-sm)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-padding-sm-mobile-vertical": [
+  [
+   "var(--semantic-space-around-vertical-md-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-padding-sm-mobile-horizontal": [
+  [
+   "var(--semantic-space-around-horizontal-sm)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-media-top-left-top": [
+  [
+   "var(--semantic-space-around-vertical-xs-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-media-top-left-left": [
+  [
+   "var(--semantic-space-around-horizontal-xxs)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-media-top-right-top": [
+  [
+   "var(--semantic-space-around-vertical-xs-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-media-top-right-right": [
+  [
+   "var(--semantic-space-around-horizontal-xxs)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-media-bottom-left-bottom": [
+  [
+   "var(--semantic-space-around-vertical-xs-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-media-bottom-left-left": [
+  [
+   "var(--semantic-space-around-horizontal-xxs)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-media-bottom-right-right": [
+  [
+   "var(--semantic-space-around-horizontal-xxs)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--base-card-space-media-bottom-right-bottom": [
+  [
+   "var(--semantic-space-around-vertical-xs-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--alert-color-content-background-success": [
+  [
+   "var(--semantic-color-content-success)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--alert-color-content-background-error": [
+  [
+   "var(--semantic-color-content-error)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--card-backplate-color-background-default": [
+  [
+   "var(--semantic-color-background-info-secondary)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--card-backplate-color-background-hover": [
+  [
+   "var(--semantic-color-background-info-secondary-hover)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--dropdown-color-background-default": [
+  [
+   "var(--semantic-color-background-info-quaternary)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--dropdown-color-background-hover": [
+  [
+   "var(--semantic-color-background-info-quaternary-hover)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--dropdown-menu-background": [
+  [
+   "var(--semantic-color-background-info-primary)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--dropdown-menu-border": [
+  [
+   "var(--semantic-color-background-info-primary)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--game-card-heading-color-text-default": [
+  [
+   "var(--semantic-color-content-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--game-card-heading-color-text-hover": [
+  [
+   "var(--semantic-color-content-heading-hover)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--icon-button-color-default": [
+  [
+   "var(--semantic-color-content-info)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--icon-button-color-default-background": [
+  [
+   "var(--semantic-color-background-info-tertiary)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--icon-button-color-default-background-hover": [
+  [
+   "var(--semantic-color-background-action-default-hover)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--icon-button-color-hover": [
+  [
+   "var(--semantic-color-content-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--icon-button-color-tertiary-background-default": [
+  [
+   "var(--semantic-color-background-action-tertiary-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--icon-button-color-tertiary-background-hover": [
+  [
+   "var(--semantic-color-background-action-tertiary-hover)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--icon-button-border-radius-md": [
+  [
+   "var(--semantic-border-radius-rounded)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--icon-button-border-radius-sm": [
+  [
+   "var(--semantic-border-radius-rounded)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--icon-button-border-radius-xs": [
+  [
+   "var(--semantic-border-radius-rounded)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--icon-button-tall-border-radius-md": [
+  [
+   "var(--semantic-border-radius-md)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--icon-color-border-default": [
+  [
+   "var(--semantic-color-border-action-secondary-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--icon-color-border-hover": [
+  [
+   "var(--semantic-color-border-action-secondary-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--pagination-tab-color-active": [
+  [
+   "var(--semantic-color-content-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--pagination-tab-color-hover": [
+  [
+   "var(--semantic-color-content-info)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--pill-color-border-subtle-active": [
+  [
+   "var(--semantic-color-border-action-pressed)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--progress-bar-border-radius": [
+  [
+   "var(--semantic-border-radius-rounded)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-heading-font-family": [
+  [
+   "var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-heading-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-xl-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-heading-font-size-mobile": [
+  [
+   "var(--semantic-heading-text-xl-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-subtext-font-family": [
+  [
+   "var(--semantic-body-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-subtext-font-size-desktop": [
+  [
+   "var(--semantic-body-text-md-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--announcement-banner-font-subtext-font-size-mobile": [
+  [
+   "var(--semantic-body-text-md-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-font-text-font-family": [
+  [
+   "var(--semantic-subheading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-font-text-font-size-desktop": [
+  [
+   "var(--semantic-subheading-text-lg-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-font-text-desktop": [
+  [
+   "var(--badge-font-text-font-weight) var(--badge-font-text-font-size-desktop)/var(--badge-font-text-line-height-computed-desktop) var(--badge-font-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-font-text-font-size-mobile": [
+  [
+   "var(--semantic-subheading-text-lg-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--badge-font-text-mobile": [
+  [
+   "var(--badge-font-text-font-weight) var(--badge-font-text-font-size-mobile)/var(--badge-font-text-line-height-computed-mobile) var(--badge-font-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-xl-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-xxl-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-xl-desktop": [
+  [
+   "var(--button-font-label-font-weight) var(--button-font-label-xl-font-size-desktop)/var(--button-font-label-xl-line-height-computed-desktop) var(--button-font-label-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-xl-font-size-mobile": [
+  [
+   "var(--semantic-title-text-sm-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-font-family": [
+  [
+   "var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-xl-mobile": [
+  [
+   "var(--button-font-label-font-weight) var(--button-font-label-xl-font-size-mobile)/var(--button-font-label-xl-line-height-computed-mobile) var(--button-font-label-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-lg-desktop": [
+  [
+   "var(--button-font-label-font-weight) var(--button-font-label-lg-font-size-desktop)/var(--button-font-label-lg-line-height-computed-desktop) var(--button-font-label-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-lg-mobile": [
+  [
+   "var(--button-font-label-font-weight) var(--button-font-label-lg-font-size-mobile)/var(--button-font-label-lg-line-height-computed-mobile) var(--button-font-label-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-lg-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-xl-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-lg-font-size-mobile": [
+  [
+   "var(--semantic-heading-text-xl-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-md-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-lg-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-md-desktop": [
+  [
+   "var(--button-font-label-font-weight) var(--button-font-label-md-font-size-desktop)/var(--button-font-label-md-line-height-computed-desktop) var(--button-font-label-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-md-font-size-mobile": [
+  [
+   "var(--semantic-heading-text-lg-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-md-mobile": [
+  [
+   "var(--button-font-label-font-weight) var(--button-font-label-md-font-size-mobile)/var(--button-font-label-md-line-height-computed-mobile) var(--button-font-label-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-sm-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-sm-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-font-label-sm-font-size-mobile": [
+  [
+   "var(--semantic-heading-text-sm-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-text-primary-hover": [
+  [
+   "var(--button-color-text-pressed)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-text-primary-active": [
+  [
+   "var(--button-color-text-pressed)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-text-secondary-hover": [
+  [
+   "var(--button-color-text-pressed)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--button-color-text-secondary-active": [
+  [
+   "var(--button-color-text-pressed)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-lg-desktop": [
+  [
+   "var(--content-block-font-heading-font-weight) var(--content-block-font-heading-lg-font-size-desktop)/var(--content-block-font-heading-lg-line-height-computed-desktop) var(--content-block-font-heading-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-lg-mobile": [
+  [
+   "var(--content-block-font-heading-font-weight) var(--content-block-font-heading-lg-font-size-mobile)/var(--content-block-font-heading-lg-line-height-computed-mobile) var(--content-block-font-heading-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-lg-font-size-desktop": [
+  [
+   "var(--semantic-title-text-sm-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-lg-font-size-mobile": [
+  [
+   "var(--semantic-title-text-sm-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-md-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-xl-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-md-desktop": [
+  [
+   "var(--content-block-font-heading-font-weight) var(--content-block-font-heading-md-font-size-desktop)/var(--content-block-font-heading-md-line-height-computed-desktop) var(--content-block-font-heading-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-md-font-size-mobile": [
+  [
+   "var(--semantic-heading-text-xl-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-md-mobile": [
+  [
+   "var(--content-block-font-heading-font-weight) var(--content-block-font-heading-md-font-size-mobile)/var(--content-block-font-heading-md-line-height-computed-mobile) var(--content-block-font-heading-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-sm-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-lg-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-sm-desktop": [
+  [
+   "var(--content-block-font-heading-font-weight) var(--content-block-font-heading-sm-font-size-desktop)/var(--content-block-font-heading-sm-line-height-computed-desktop) var(--content-block-font-heading-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-sm-font-size-mobile": [
+  [
+   "var(--semantic-heading-text-lg-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-sm-mobile": [
+  [
+   "var(--content-block-font-heading-font-weight) var(--content-block-font-heading-sm-font-size-mobile)/var(--content-block-font-heading-sm-line-height-computed-mobile) var(--content-block-font-heading-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-xs-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-xs-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-font-family": [
+  [
+   "var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-xs-desktop": [
+  [
+   "var(--content-block-font-heading-font-weight) var(--content-block-font-heading-xs-font-size-desktop)/var(--content-block-font-heading-xs-line-height-computed-desktop) var(--content-block-font-heading-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-xs-font-size-mobile": [
+  [
+   "var(--semantic-heading-text-xs-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-xs-mobile": [
+  [
+   "var(--content-block-font-heading-font-weight) var(--content-block-font-heading-xs-font-size-mobile)/var(--content-block-font-heading-xs-line-height-computed-mobile) var(--content-block-font-heading-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-xl-desktop": [
+  [
+   "var(--content-block-font-heading-font-weight) var(--content-block-font-heading-xl-font-size-desktop)/var(--content-block-font-heading-xl-line-height-computed-desktop) var(--content-block-font-heading-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-xl-mobile": [
+  [
+   "var(--content-block-font-heading-font-weight) var(--content-block-font-heading-xl-font-size-mobile)/var(--content-block-font-heading-xl-line-height-computed-mobile) var(--content-block-font-heading-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-xl-font-size-desktop": [
+  [
+   "var(--semantic-title-text-md-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-heading-xl-font-size-mobile": [
+  [
+   "var(--semantic-title-text-md-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-lg-desktop": [
+  [
+   "var(--content-block-font-callout-font-weight) var(--content-block-font-callout-lg-font-size-desktop)/var(--content-block-font-callout-lg-line-height-computed-desktop) var(--content-block-font-callout-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-lg-mobile": [
+  [
+   "var(--content-block-font-callout-font-weight) var(--content-block-font-callout-lg-font-size-mobile)/var(--content-block-font-callout-lg-line-height-computed-mobile) var(--content-block-font-callout-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-lg-font-size-desktop": [
+  [
+   "var(--semantic-body-text-md-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-lg-font-size-mobile": [
+  [
+   "var(--semantic-body-text-md-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-md-desktop": [
+  [
+   "var(--content-block-font-callout-font-weight) var(--content-block-font-callout-md-font-size-desktop)/var(--content-block-font-callout-md-line-height-computed-desktop) var(--content-block-font-callout-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-md-font-size-mobile": [
+  [
+   "var(--semantic-body-text-md-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-font-family": [
+  [
+   "var(--semantic-body-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-md-mobile": [
+  [
+   "var(--content-block-font-callout-font-weight) var(--content-block-font-callout-md-font-size-mobile)/var(--content-block-font-callout-md-line-height-computed-mobile) var(--content-block-font-callout-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-md-font-size-desktop": [
+  [
+   "var(--semantic-body-text-md-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-sm-desktop": [
+  [
+   "var(--content-block-font-callout-font-weight) var(--content-block-font-callout-sm-font-size-desktop)/var(--content-block-font-callout-sm-line-height-computed-desktop) var(--content-block-font-callout-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-sm-mobile": [
+  [
+   "var(--content-block-font-callout-font-weight) var(--content-block-font-callout-sm-font-size-mobile)/var(--content-block-font-callout-sm-line-height-computed-mobile) var(--content-block-font-callout-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-sm-font-size-desktop": [
+  [
+   "var(--semantic-body-text-md-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-sm-font-size-mobile": [
+  [
+   "var(--semantic-body-text-md-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-xs-font-size-desktop": [
+  [
+   "var(--semantic-body-text-xs-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-xs-desktop": [
+  [
+   "var(--content-block-font-callout-font-weight) var(--content-block-font-callout-xs-font-size-desktop)/var(--content-block-font-callout-xs-line-height-computed-desktop) var(--content-block-font-callout-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-xs-font-size-mobile": [
+  [
+   "var(--semantic-body-text-sm-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-xs-mobile": [
+  [
+   "var(--content-block-font-callout-font-weight) var(--content-block-font-callout-xs-font-size-mobile)/var(--content-block-font-callout-xs-line-height-computed-mobile) var(--content-block-font-callout-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-xl-desktop": [
+  [
+   "var(--content-block-font-callout-font-weight) var(--content-block-font-callout-xl-font-size-desktop)/var(--content-block-font-callout-xl-line-height-computed-desktop) var(--content-block-font-callout-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-xl-mobile": [
+  [
+   "var(--content-block-font-callout-font-weight) var(--content-block-font-callout-xl-font-size-mobile)/var(--content-block-font-callout-xl-line-height-computed-mobile) var(--content-block-font-callout-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-xl-font-size-desktop": [
+  [
+   "var(--semantic-body-text-lg-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-callout-xl-font-size-mobile": [
+  [
+   "var(--semantic-body-text-lg-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-lg-font-size-desktop": [
+  [
+   "var(--semantic-body-text-md-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-lg-desktop": [
+  [
+   "var(--content-block-font-description-font-weight) var(--content-block-font-description-lg-font-size-desktop)/var(--content-block-font-description-lg-line-height-computed-desktop) var(--content-block-font-description-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-lg-font-size-mobile": [
+  [
+   "var(--semantic-body-text-md-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-lg-mobile": [
+  [
+   "var(--content-block-font-description-font-weight) var(--content-block-font-description-lg-font-size-mobile)/var(--content-block-font-description-lg-line-height-computed-mobile) var(--content-block-font-description-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-md-font-size-desktop": [
+  [
+   "var(--semantic-body-text-md-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-md-desktop": [
+  [
+   "var(--content-block-font-description-font-weight) var(--content-block-font-description-md-font-size-desktop)/var(--content-block-font-description-md-line-height-computed-desktop) var(--content-block-font-description-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-md-font-size-mobile": [
+  [
+   "var(--semantic-body-text-md-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-md-mobile": [
+  [
+   "var(--content-block-font-description-font-weight) var(--content-block-font-description-md-font-size-mobile)/var(--content-block-font-description-md-line-height-computed-mobile) var(--content-block-font-description-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-sm-font-size-desktop": [
+  [
+   "var(--semantic-body-text-md-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-sm-desktop": [
+  [
+   "var(--content-block-font-description-font-weight) var(--content-block-font-description-sm-font-size-desktop)/var(--content-block-font-description-sm-line-height-computed-desktop) var(--content-block-font-description-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-sm-font-size-mobile": [
+  [
+   "var(--semantic-body-text-md-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-sm-mobile": [
+  [
+   "var(--content-block-font-description-font-weight) var(--content-block-font-description-sm-font-size-mobile)/var(--content-block-font-description-sm-line-height-computed-mobile) var(--content-block-font-description-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-xs-desktop": [
+  [
+   "var(--content-block-font-description-font-weight) var(--content-block-font-description-xs-font-size-desktop)/var(--content-block-font-description-xs-line-height-computed-desktop) var(--content-block-font-description-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-xs-mobile": [
+  [
+   "var(--content-block-font-description-font-weight) var(--content-block-font-description-xs-font-size-mobile)/var(--content-block-font-description-xs-line-height-computed-mobile) var(--content-block-font-description-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-xs-font-size-desktop": [
+  [
+   "var(--semantic-body-text-xs-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-xs-font-size-mobile": [
+  [
+   "var(--semantic-body-text-sm-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-xl-desktop": [
+  [
+   "var(--content-block-font-description-font-weight) var(--content-block-font-description-xl-font-size-desktop)/var(--content-block-font-description-xl-line-height-computed-desktop) var(--content-block-font-description-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-xl-mobile": [
+  [
+   "var(--content-block-font-description-font-weight) var(--content-block-font-description-xl-font-size-mobile)/var(--content-block-font-description-xl-line-height-computed-mobile) var(--content-block-font-description-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-xl-font-size-desktop": [
+  [
+   "var(--semantic-body-text-lg-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-xl-font-size-mobile": [
+  [
+   "var(--semantic-body-text-lg-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-description-font-family": [
+  [
+   "var(--semantic-body-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-lg-desktop": [
+  [
+   "var(--content-block-font-subheading-font-weight) var(--content-block-font-subheading-lg-font-size-desktop)/var(--content-block-font-subheading-lg-line-height-computed-desktop) var(--content-block-font-subheading-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-lg-font-size-mobile": [
+  [
+   "var(--semantic-subheading-text-lg-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-lg-mobile": [
+  [
+   "var(--content-block-font-subheading-font-weight) var(--content-block-font-subheading-lg-font-size-mobile)/var(--content-block-font-subheading-lg-line-height-computed-mobile) var(--content-block-font-subheading-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-lg-font-size-desktop": [
+  [
+   "var(--semantic-subheading-text-lg-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-md-desktop": [
+  [
+   "var(--content-block-font-subheading-font-weight) var(--content-block-font-subheading-md-font-size-desktop)/var(--content-block-font-subheading-md-line-height-computed-desktop) var(--content-block-font-subheading-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-md-mobile": [
+  [
+   "var(--content-block-font-subheading-font-weight) var(--content-block-font-subheading-md-font-size-mobile)/var(--content-block-font-subheading-md-line-height-computed-mobile) var(--content-block-font-subheading-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-md-font-size-desktop": [
+  [
+   "var(--semantic-subheading-text-md-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-md-font-size-mobile": [
+  [
+   "var(--semantic-subheading-text-lg-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-xl-font-size-desktop": [
+  [
+   "var(--semantic-subheading-text-lg-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-xl-desktop": [
+  [
+   "var(--content-block-font-subheading-font-weight) var(--content-block-font-subheading-xl-font-size-desktop)/var(--content-block-font-subheading-xl-line-height-computed-desktop) var(--content-block-font-subheading-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-xl-font-size-mobile": [
+  [
+   "var(--semantic-subheading-text-lg-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-font-family": [
+  [
+   "var(--semantic-subheading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--content-block-font-subheading-xl-mobile": [
+  [
+   "var(--content-block-font-subheading-font-weight) var(--content-block-font-subheading-xl-font-size-mobile)/var(--content-block-font-subheading-xl-line-height-computed-mobile) var(--content-block-font-subheading-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-xl-font-size-desktop": [
+  [
+   "var(--semantic-title-text-lg-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-xl-desktop": [
+  [
+   "var(--header-heading-font-font-weight) var(--header-heading-font-xl-font-size-desktop)/var(--header-heading-font-xl-line-height-computed-desktop) var(--header-heading-font-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-xl-font-size-mobile": [
+  [
+   "var(--semantic-title-text-lg-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-xl-mobile": [
+  [
+   "var(--header-heading-font-font-weight) var(--header-heading-font-xl-font-size-mobile)/var(--header-heading-font-xl-line-height-computed-mobile) var(--header-heading-font-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-lg-font-size-desktop": [
+  [
+   "var(--semantic-title-text-md-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-lg-desktop": [
+  [
+   "var(--header-heading-font-font-weight) var(--header-heading-font-lg-font-size-desktop)/var(--header-heading-font-lg-line-height-computed-desktop) var(--header-heading-font-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-lg-font-size-mobile": [
+  [
+   "var(--semantic-title-text-lg-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-lg-mobile": [
+  [
+   "var(--header-heading-font-font-weight) var(--header-heading-font-lg-font-size-mobile)/var(--header-heading-font-lg-line-height-computed-mobile) var(--header-heading-font-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-md-font-size-desktop": [
+  [
+   "var(--semantic-title-text-sm-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-md-desktop": [
+  [
+   "var(--header-heading-font-font-weight) var(--header-heading-font-md-font-size-desktop)/var(--header-heading-font-md-line-height-computed-desktop) var(--header-heading-font-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-md-font-size-mobile": [
+  [
+   "var(--semantic-title-text-sm-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-md-mobile": [
+  [
+   "var(--header-heading-font-font-weight) var(--header-heading-font-md-font-size-mobile)/var(--header-heading-font-md-line-height-computed-mobile) var(--header-heading-font-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-sm-desktop": [
+  [
+   "var(--header-heading-font-font-weight) var(--header-heading-font-sm-font-size-desktop)/var(--header-heading-font-sm-line-height-computed-desktop) var(--header-heading-font-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-sm-mobile": [
+  [
+   "var(--header-heading-font-font-weight) var(--header-heading-font-sm-font-size-mobile)/var(--header-heading-font-sm-line-height-computed-mobile) var(--header-heading-font-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-sm-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-xl-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-sm-font-size-mobile": [
+  [
+   "var(--semantic-heading-text-xl-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-xs-desktop": [
+  [
+   "var(--header-heading-font-font-weight) var(--header-heading-font-xs-font-size-desktop)/var(--header-heading-font-xs-line-height-computed-desktop) var(--header-heading-font-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-xs-mobile": [
+  [
+   "var(--header-heading-font-font-weight) var(--header-heading-font-xs-font-size-mobile)/var(--header-heading-font-xs-line-height-computed-mobile) var(--header-heading-font-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-xs-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-lg-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-xs-font-size-mobile": [
+  [
+   "var(--semantic-heading-text-lg-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-font-family": [
+  [
+   "var(--semantic-title-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-xxs-mobile": [
+  [
+   "var(--header-heading-font-font-weight) var(--header-heading-font-xxs-font-size-mobile)/var(--header-heading-font-xxs-line-height-computed-mobile) var(--header-heading-font-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-xxs-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-md-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-xxs-desktop": [
+  [
+   "var(--header-heading-font-font-weight) var(--header-heading-font-xxs-font-size-desktop)/var(--header-heading-font-xxs-line-height-computed-desktop) var(--header-heading-font-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--header-heading-font-xxs-font-size-mobile": [
+  [
+   "var(--semantic-heading-text-lg-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-font-md-desktop": [
+  [
+   "var(--input-font-font-weight) var(--input-font-md-font-size-desktop)/var(--input-font-md-line-height-computed-desktop) var(--input-font-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-font-md-mobile": [
+  [
+   "var(--input-font-font-weight) var(--input-font-md-font-size-mobile)/var(--input-font-md-line-height-computed-mobile) var(--input-font-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-font-md-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-lg-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-font-md-font-size-mobile": [
+  [
+   "var(--semantic-heading-text-lg-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-font-sm-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-sm-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-font-font-family": [
+  [
+   "var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-font-sm-desktop": [
+  [
+   "var(--input-font-font-weight) var(--input-font-sm-font-size-desktop)/var(--input-font-sm-line-height-computed-desktop) var(--input-font-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-font-sm-font-size-mobile": [
+  [
+   "var(--semantic-heading-text-sm-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-font-sm-mobile": [
+  [
+   "var(--input-font-font-weight) var(--input-font-sm-font-size-mobile)/var(--input-font-sm-line-height-computed-mobile) var(--input-font-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-color-background-default": [
+  [
+   "var(--semantic-color-background-action-secondary-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--input-color-background-hover": [
+  [
+   "var(--semantic-color-background-action-secondary-pressed)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-xl-desktop": [
+  [
+   "var(--price-font-label-font-weight) var(--price-font-label-xl-font-size-desktop)/var(--price-font-label-xl-line-height-computed-desktop) var(--price-font-label-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-xl-mobile": [
+  [
+   "var(--price-font-label-font-weight) var(--price-font-label-xl-font-size-mobile)/var(--price-font-label-xl-line-height-computed-mobile) var(--price-font-label-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-xl-font-size-desktop": [
+  [
+   "var(--semantic-title-text-md-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-xl-font-size-mobile": [
+  [
+   "var(--semantic-title-text-md-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-xl-mobile": [
+  [
+   "var(--price-font-label-discount-font-weight) var(--price-font-label-discount-xl-font-size-mobile)/var(--price-font-label-discount-xl-line-height-computed-mobile) var(--price-font-label-discount-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-xl-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-xl-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-xl-desktop": [
+  [
+   "var(--price-font-label-discount-font-weight) var(--price-font-label-discount-xl-font-size-desktop)/var(--price-font-label-discount-xl-line-height-computed-desktop) var(--price-font-label-discount-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-xl-font-size-mobile": [
+  [
+   "var(--semantic-heading-text-xl-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-lg-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-lg-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-lg-desktop": [
+  [
+   "var(--price-font-label-discount-font-weight) var(--price-font-label-discount-lg-font-size-desktop)/var(--price-font-label-discount-lg-line-height-computed-desktop) var(--price-font-label-discount-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-lg-font-size-mobile": [
+  [
+   "var(--semantic-heading-text-lg-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-lg-mobile": [
+  [
+   "var(--price-font-label-discount-font-weight) var(--price-font-label-discount-lg-font-size-mobile)/var(--price-font-label-discount-lg-line-height-computed-mobile) var(--price-font-label-discount-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-md-desktop": [
+  [
+   "var(--price-font-label-discount-font-weight) var(--price-font-label-discount-md-font-size-desktop)/var(--price-font-label-discount-md-line-height-computed-desktop) var(--price-font-label-discount-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-md-mobile": [
+  [
+   "var(--price-font-label-discount-font-weight) var(--price-font-label-discount-md-font-size-mobile)/var(--price-font-label-discount-md-line-height-computed-mobile) var(--price-font-label-discount-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-md-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-sm-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-md-font-size-mobile": [
+  [
+   "var(--semantic-heading-text-md-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-sm-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-sm-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-font-family": [
+  [
+   "var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-sm-desktop": [
+  [
+   "var(--price-font-label-discount-font-weight) var(--price-font-label-discount-sm-font-size-desktop)/var(--price-font-label-discount-sm-line-height-computed-desktop) var(--price-font-label-discount-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-sm-font-size-mobile": [
+  [
+   "var(--semantic-heading-text-sm-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-discount-sm-mobile": [
+  [
+   "var(--price-font-label-discount-font-weight) var(--price-font-label-discount-sm-font-size-mobile)/var(--price-font-label-discount-sm-line-height-computed-mobile) var(--price-font-label-discount-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-font-family": [
+  [
+   "var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-lg-desktop": [
+  [
+   "var(--price-font-label-font-weight) var(--price-font-label-lg-font-size-desktop)/var(--price-font-label-lg-line-height-computed-desktop) var(--price-font-label-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-lg-mobile": [
+  [
+   "var(--price-font-label-font-weight) var(--price-font-label-lg-font-size-mobile)/var(--price-font-label-lg-line-height-computed-mobile) var(--price-font-label-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-lg-font-size-desktop": [
+  [
+   "var(--semantic-title-text-sm-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-lg-font-size-mobile": [
+  [
+   "var(--semantic-title-text-sm-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-md-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-xl-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-md-desktop": [
+  [
+   "var(--price-font-label-font-weight) var(--price-font-label-md-font-size-desktop)/var(--price-font-label-md-line-height-computed-desktop) var(--price-font-label-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-md-font-size-mobile": [
+  [
+   "var(--semantic-heading-text-xl-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-md-mobile": [
+  [
+   "var(--price-font-label-font-weight) var(--price-font-label-md-font-size-mobile)/var(--price-font-label-md-line-height-computed-mobile) var(--price-font-label-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-sm-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-sm-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-sm-desktop": [
+  [
+   "var(--price-font-label-font-weight) var(--price-font-label-sm-font-size-desktop)/var(--price-font-label-sm-line-height-computed-desktop) var(--price-font-label-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-sm-font-size-mobile": [
+  [
+   "var(--semantic-heading-text-sm-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--price-font-label-sm-mobile": [
+  [
+   "var(--price-font-label-font-weight) var(--price-font-label-sm-font-size-mobile)/var(--price-font-label-sm-line-height-computed-mobile) var(--price-font-label-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tab-standard-font-label-font-family": [
+  [
+   "var(--semantic-heading-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tab-standard-font-label-desktop": [
+  [
+   "var(--tab-standard-font-label-font-weight) var(--tab-standard-font-label-font-size-desktop)/var(--tab-standard-font-label-line-height-computed-desktop) var(--tab-standard-font-label-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tab-standard-font-label-mobile": [
+  [
+   "var(--tab-standard-font-label-font-weight) var(--tab-standard-font-label-font-size-mobile)/var(--tab-standard-font-label-line-height-computed-mobile) var(--tab-standard-font-label-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tab-standard-font-label-font-size-desktop": [
+  [
+   "var(--semantic-heading-text-xl-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tab-standard-font-label-font-size-mobile": [
+  [
+   "var(--semantic-heading-text-xl-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tooltip-font-text-font-family": [
+  [
+   "var(--semantic-body-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tooltip-font-text-font-size-desktop": [
+  [
+   "var(--semantic-body-text-md-font-size-desktop)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tooltip-font-text-desktop": [
+  [
+   "var(--tooltip-font-text-font-weight) var(--tooltip-font-text-font-size-desktop)/var(--tooltip-font-text-line-height-computed-desktop) var(--tooltip-font-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tooltip-font-text-font-size-mobile": [
+  [
+   "var(--semantic-body-text-md-font-size-mobile)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--tooltip-font-text-mobile": [
+  [
+   "var(--tooltip-font-text-font-weight) var(--tooltip-font-text-font-size-mobile)/var(--tooltip-font-text-line-height-computed-mobile) var(--tooltip-font-text-font-family)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--icon-button-color-contrast-background": [
+  [
+   "var(--semantic-color-background-action-secondary-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--icon-button-color-contrast-background-hover": [
+  [
+   "var(--semantic-color-background-action-secondary-hover)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--pill-color-background-subtle-hover": [
+  [
+   "var(--semantic-color-background-action-secondary-default)",
+   ":root, :host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--view-min": [
+  [
+   "320px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--view-xs": [
+  [
+   "480px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--view-sm": [
+  [
+   "720px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--view-md": [
+  [
+   "960px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--view-lg": [
+  [
+   "1200px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--view-xl": [
+  [
+   "1400px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--view-xxl": [
+  [
+   "1600px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--view-max": [
+  [
+   "2600px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-025": [
+  [
+   "2px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-050": [
+  [
+   "4px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-075": [
+  [
+   "6px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-100": [
+  [
+   "8px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-125": [
+  [
+   "10px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-150": [
+  [
+   "12px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-175": [
+  [
+   "14px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-200": [
+  [
+   "16px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-250": [
+  [
+   "20px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-300": [
+  [
+   "24px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-350": [
+  [
+   "28px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-400": [
+  [
+   "32px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-450": [
+  [
+   "36px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-500": [
+  [
+   "40px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-550": [
+  [
+   "44px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-600": [
+  [
+   "48px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-700": [
+  [
+   "56px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-800": [
+  [
+   "64px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-900": [
+  [
+   "72px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-1000": [
+  [
+   "80px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-size-1100": [
+  [
+   "96px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-font-default": [
+  [
+   "\"Archivo\", helvetica, arial, sans-serif, \"Microsoft YaHei\"",
+   ":host",
+   "blz-nav-footer"
+  ],
+  [
+   "\"Blizzard\", helvetica, arial, sans-serif, \"Microsoft YaHei\"",
+   ":host, body",
+   "blz-nav-footer"
+  ],
+  [
+   "var(--font-family-display)",
+   ":host([content=\"battlenet\"])",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-font-accent": [
+  [
+   "\"Archivo\", helvetica, arial, sans-serif, \"Microsoft YaHei\"",
+   ":host, body",
+   "blz-nav-footer"
+  ],
+  [
+   "var(--font-family-body)",
+   ":host([content=\"battlenet\"])",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-font-size-100": [
+  [
+   "10px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-font-size-200": [
+  [
+   "12px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-font-size-300": [
+  [
+   "14px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-font-size-400": [
+  [
+   "16px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-font-size-500": [
+  [
+   "16px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-font-size-550": [
+  [
+   "18px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-font-size-600": [
+  [
+   "20px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-font-size-700": [
+  [
+   "24px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-font-size-800": [
+  [
+   "30px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-font-size-900": [
+  [
+   "36px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-font-default-weight": [
+  [
+   "600",
+   ":host, body",
+   "blz-nav-footer"
+  ],
+  [
+   "700",
+   ":host([content=\"battlenet\"])",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-font-accent-weight": [
+  [
+   "400",
+   ":host([content=\"battlenet\"])",
+   "blz-nav-footer"
+  ],
+  [
+   "500",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-background-100": [
+  [
+   "#0a0d15",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-background-300": [
+  [
+   "#151c28",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-background-500": [
+  [
+   "#232a39",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-background-700": [
+  [
+   "#323a48",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-darken-100": [
+  [
+   "rgb(0 0 0 / 5%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-darken-300": [
+  [
+   "rgb(0 0 0 / 10%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-darken-400": [
+  [
+   "rgb(0 0 0 / 15%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-darken-500": [
+  [
+   "rgb(0 0 0 / 30%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-darken-600": [
+  [
+   "rgb(0 0 0 / 50%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-darken-700": [
+  [
+   "rgb(0 0 0 / 70%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-darken-800": [
+  [
+   "rgb(0 0 0 / 90%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-darken-900": [
+  [
+   "rgb(0 0 0 / 100%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-content-100": [
+  [
+   "rgb(255 255 255 / 5%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-content-300": [
+  [
+   "rgb(255 255 255 / 10%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-content-400": [
+  [
+   "rgb(255 255 255 / 15%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-content-500": [
+  [
+   "rgb(255 255 255 / 30%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-content-600": [
+  [
+   "rgb(255 255 255 / 50%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-content-700": [
+  [
+   "rgb(255 255 255 / 70%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-content-800": [
+  [
+   "rgb(255 255 255 / 90%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-content-900": [
+  [
+   "rgb(255 255 255 / 100%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-accent-500": [
+  [
+   "rgb(93 113 152 / 40%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-accent-600": [
+  [
+   "rgb(93 113 152 / 60%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-accent-700": [
+  [
+   "rgb(93 113 152 / 80%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-primary-500": [
+  [
+   "#009dff",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-primary-500-inverse": [
+  [
+   "#0074e0",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-primary-600": [
+  [
+   "#33b1ff",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-primary-700": [
+  [
+   "#66c4ff",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-shadow-xs": [
+  [
+   "0 1px 3px 0 rgb(0 0 0 / 12%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-success-500": [
+  [
+   "#00ff94",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-color-error-500": [
+  [
+   "#f31d77",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-line-height-default": [
+  [
+   "normal",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-filter-100": [
+  [
+   "brightness(100%) contrast(100%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-filter-200": [
+  [
+   "brightness(210%) contrast(90%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-transition-hover-speed": [
+  [
+   ".1s",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--nav-transition-hover": [
+  [
+   "color var(--nav-transition-hover-speed) ease, background-color var(--nav-transition-hover-speed) ease, text-decoration-color var(--nav-transition-hover-speed) ease, filter var(--nav-transition-hover-speed) ease, border-color var(--nav-transition-hover-speed) ease",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-background-color": [
+  [
+   "rgb(40 45 67 / 80%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-card-background-color": [
+  [
+   "rgb(40 45 67)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-background-color-no-blur": [
+  [
+   "rgb(34 38 57 / 95%)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-button-color-primary": [
+  [
+   "#0c94ec",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-button-color-primary-hover": [
+  [
+   "#25a2f4",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-button-color-secondary": [
+  [
+   "#060c11",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-button-color-secondary-hover": [
+  [
+   "#101723",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-button-color-battlenet": [
+  [
+   "#0074e0",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-button-color-battlenet-hover": [
+  [
+   "#148eff",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-menu-background-color": [
+  [
+   "#171926",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-search-background-color": [
+  [
+   "var(--nav-color-darken-600)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-button-text-color": [
+  [
+   "var( --navbar-button-font-color, var(--nav-color-content-900) )",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-badge-background-color": [
+  [
+   "var( --navbar-menu-badge-background-color, #1fb8ff )",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-content-color-primary": [
+  [
+   "var( --navbar-font-color, var(--nav-color-content-900) )",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-content-color-secondary": [
+  [
+   "var( --navbar-icon-color, var(--nav-color-content-600) )",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-content-color-tertiary": [
+  [
+   "var(--nav-color-content-500)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-blizzard-logo-background-color": [
+  [
+   "var(--nav-color-darken-500)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-menu-background-color-alt": [
+  [
+   "var( --navbar-menu-background-color--secondary, var(--nav-color-darken-500) )",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-hover-background-color": [
+  [
+   "none",
+   ":host([content=\"battlenet\"]) #bottom-links",
+   "blz-nav-footer"
+  ],
+  [
+   "var(--nav-color-content-100)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-hover-background-color-alt": [
+  [
+   "var(--nav-color-content-300)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-menu-background-color-open": [
+  [
+   "var(--navbar-menu-background-color-alt)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-badge-text-color": [
+  [
+   "var(--nav-color-darken-900)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-battletag-text-color": [
+  [
+   "var(--nav-color-primary-700)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-battletag-text-size": [
+  [
+   "var(--nav-font-size-400)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-menu-text-color-primary": [
+  [
+   "var(--navbar-content-color-primary)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-menu-icon-color-primary": [
+  [
+   "var(--navbar-content-color-secondary)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-menu-text-color-secondary": [
+  [
+   "var(--navbar-content-color-primary)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-menu-icon-color-secondary": [
+  [
+   "var(--navbar-content-color-secondary)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-background-blur": [
+  [
+   "20px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-link-padding-md": [
+  [
+   "0 var(--nav-size-100)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-link-padding-lg": [
+  [
+   "0 var(--nav-size-150)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-link-padding-xl": [
+  [
+   "0 var(--nav-size-200)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-link-white-space": [
+  [
+   "nowrap",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-button-padding-md": [
+  [
+   "0 var(--nav-size-150)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-button-padding-lg": [
+  [
+   "0 var(--nav-size-200)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-button-padding-xl": [
+  [
+   "0 var(--nav-size-300)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-button-border-radius": [
+  [
+   "var(--nav-size-100)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-z-index": [
+  [
+   "99",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-mobile-dropdown-duration": [
+  [
+   ".25s",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-logo-size": [
+  [
+   "var(--nav-size-1000)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-logo-padding": [
+  [
+   "var(--nav-size-100)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-mobile-logo-size-width": [
+  [
+   "auto",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-mobile-logo-size-height": [
+  [
+   "var(--nav-size-500)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--font-subtext-weight": [
+  [
+   "var(--nav-font-accent-weight)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-mobile-overflowed-item-font-family": [
+  [
+   "var(--nav-font-default)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-mobile-overflowed-item-font-weight": [
+  [
+   "var(--nav-font-default-weight)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-menu-border-radius": [
+  [
+   "var(--nav-size-100)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-icon-right-margin": [
+  [
+   "var(--nav-size-150)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-menu-border-size": [
+  [
+   "0px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-menu-border-color": [
+  [
+   "transparent",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-search-dropdown-max-height": [
+  [
+   "385px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--navbar-search-dropdown-width": [
+  [
+   "400px",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--footer-z-index": [
+  [
+   "98",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--footer-logo-color": [
+  [
+   "#009dff",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--footer-logo-bottom-color": [
+  [
+   "#009dff",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--footer-background-image-desktop": [
+  [
+   "none",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--footer-background-image-mobile": [
+  [
+   "none",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--footer-background-gradient": [
+  [
+   "none",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--footer-content-size": [
+  [
+   "var(--nav-font-size-200)",
+   ":host([content=\"battlenet\"])",
+   "blz-nav-footer"
+  ],
+  [
+   "var(--nav-font-size-300)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--footer-region-font-size": [
+  [
+   "var(--nav-font-size-300)",
+   ":host([content=\"battlenet\"])",
+   "blz-nav-footer"
+  ],
+  [
+   "var(--nav-font-size-500)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--footer-language-font-size": [
+  [
+   "var(--nav-font-size-400)",
+   ":host([content=\"battlenet\"])",
+   "blz-nav-footer"
+  ],
+  [
+   "var(--nav-font-size-500)",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--footer-background-blur": [
+  [
+   "none",
+   ":host, body",
+   "blz-nav-footer"
+  ]
+ ],
+ "--section-padding": [
+  [
+   "var(--nav-size-500) var(--nav-size-500)",
+   ":host",
+   "blz-nav-footer"
+  ]
+ ],
+ "--font-family-display": [
+  [
+   "object sans",
+   ":host([content=\"battlenet\"])",
+   "blz-nav-footer"
+  ]
+ ],
+ "--font-family-body": [
+  [
+   "bn noto sans",
+   ":host([content=\"battlenet\"])",
+   "blz-nav-footer"
+  ]
+ ]
+}

@@ -1,0 +1,30 @@
+.panel-button blz-button { width: 100%; }
+@media (min-width: 1400px) {
+  .panel-button blz-button { height: 56px; }
+}
+.panel-button.hide { display: none; }
+.panel-button__content { display: flex; }
+.panel-button__content blz-icon { margin-right: var(--semantic-space-between-xxxs); }
+.panel-button .blz-tooltip-extension { z-index: var(--measure-z-index-below); }
+.ellipsis { white-space: nowrap; }
+.ellipsis blz-button div { display: flex; justify-content: left; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ellipsis blz-button div blz-icon { margin-right: var(--semantic-space-between-xxxs); position: absolute; }
+.ellipsis blz-button div span { display: block; line-height: var(--global-font-line-height-relaxed); overflow: hidden; text-overflow: ellipsis; white-space: nowrap; }
+.ellipsis blz-button div span.icon { margin-left: var(--semantic-space-between-lg); }
+@media (min-width: 480px) {
+  .ellipsis blz-button div span.icon { margin-left: var(--semantic-space-between-xl); }
+}
+blz-loading-spinner { --loading-spinner-width: var(--global-size-500); }
+@keyframes slide-down { 
+  0% { opacity: 1; transform: translateX(-50%) translateY(0px); }
+  100% { opacity: 0; transform: translateX(-50%) translateY(100%); }
+}
+@keyframes slide-up { 
+  0% { opacity: 0; transform: translateX(-50%) translateY(100%); }
+  100% { opacity: 1; transform: translateX(-50%) translateY(0px); }
+}
+.direct-grant-toast { animation: 1s ease-out 0s 1 normal none running slide-up; bottom: var(--global-size-200); left: 50%; position: fixed; transform: translateX(-50%); white-space: nowrap; width: max-content; z-index: var(--measure-z-index-toast); }
+.direct-grant-toast .header { margin-bottom: var(--global-size-200); margin-right: var(--global-size-400); margin-top: var(--global-size-200); }
+.direct-grant-toast--dismissing { animation: 1s ease-in 0s 1 normal forwards running slide-down; }
+.direct-grant-toast blz-icon { height: var(--global-size-600); margin-top: auto; margin-right: auto; margin-bottom: auto; margin-left: var(--global-size-50); width: var(--global-size-600); }
+.direct-grant-toast blz-icon-button { margin-right: var(--global-size-50); margin-top: var(--global-size-50); padding: 0px; }

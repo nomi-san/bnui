@@ -1,0 +1,10 @@
+.css-1ooubvk { font: inherit; letter-spacing: inherit; color: currentcolor; border: 0px; box-sizing: content-box; background: none; height: 1.4375em; margin: 0px; -webkit-tap-highlight-color: transparent; display: block; min-width: 0px; width: 100%; animation-name: mui-auto-fill-cancel; animation-duration: 10ms; padding: 16.5px 14px 16.5px 0px; }
+.css-1ooubvk::-webkit-input-placeholder { color: currentcolor; opacity: 0.42; transition: opacity 200ms cubic-bezier(0.4, 0, 0.2, 1); }
+.css-1ooubvk:focus { outline: 0px; }
+.css-1ooubvk:invalid { box-shadow: none; }
+.css-1ooubvk::-webkit-search-decoration { appearance: none; }
+label[data-shrink="false"] + .MuiInputBase-formControl .css-1ooubvk::-webkit-input-placeholder { opacity: 0 !important; }
+label[data-shrink="false"] + .MuiInputBase-formControl .css-1ooubvk:focus::-webkit-input-placeholder { opacity: 0.42; }
+.css-1ooubvk.Mui-disabled { opacity: 1; -webkit-text-fill-color: rgba(0, 0, 0, 0.38); }
+.css-1ooubvk:-webkit-autofill { animation-duration: 5000s; animation-name: mui-auto-fill; }
+.css-1ooubvk:-webkit-autofill { border-radius: inherit; }

@@ -1,0 +1,169 @@
+@media (max-width: 479px) {
+  [bp]:not([bp~="+min"], [bp~="min"], [bp~="min+"], [bp~="+xs"], [bp~="+sm"], [bp~="+md"], [bp~="+lg"], [bp~="+xl"], [bp~="+xxl"], [bp~="+max"]) { display: none; }
+}
+@media (min-width: 480px) and (max-width: 719px) {
+  [bp]:not([bp~="min+"], [bp~="+xs"], [bp~="xs"], [bp~="xs+"], [bp~="+sm"], [bp~="+md"], [bp~="+lg"], [bp~="+xl"], [bp~="+xxl"], [bp~="+max"]) { display: none; }
+}
+@media (min-width: 720px) and (max-width: 959px) {
+  [bp]:not([bp~="min+"], [bp~="xs+"], [bp~="+sm"], [bp~="sm"], [bp~="sm+"], [bp~="+md"], [bp~="+lg"], [bp~="+xl"], [bp~="+xxl"], [bp~="+max"]) { display: none; }
+}
+@media (min-width: 960px) and (max-width: 1199px) {
+  [bp]:not([bp~="min+"], [bp~="xs+"], [bp~="sm+"], [bp~="+md"], [bp~="md"], [bp~="md+"], [bp~="+lg"], [bp~="+xl"], [bp~="+xxl"], [bp~="+max"]) { display: none; }
+}
+@media (min-width: 1200px) and (max-width: 1399px) {
+  [bp]:not([bp~="min+"], [bp~="xs+"], [bp~="sm+"], [bp~="md+"], [bp~="+lg"], [bp~="lg"], [bp~="lg+"], [bp~="+xl"], [bp~="+xxl"], [bp~="+max"]) { display: none; }
+}
+@media (min-width: 1400px) and (max-width: 1599px) {
+  [bp]:not([bp~="min+"], [bp~="xs+"], [bp~="sm+"], [bp~="md+"], [bp~="lg+"], [bp~="+xl"], [bp~="xl"], [bp~="xl+"], [bp~="+xxl"], [bp~="+max"]) { display: none; }
+}
+@media (min-width: 1600px) and (max-width: 2599px) {
+  [bp]:not([bp~="min+"], [bp~="xs+"], [bp~="sm+"], [bp~="md+"], [bp~="lg+"], [bp~="xl+"], [bp~="+xxl"], [bp~="xxl"], [bp~="xxl+"], [bp~="+max"]) { display: none; }
+}
+@media (min-width: 2600px) {
+  [bp]:not([bp~="min+"], [bp~="xs+"], [bp~="sm+"], [bp~="md+"], [bp~="lg+"], [bp~="xl+"], [bp~="xxl+"], [bp~="+max"], [bp~="max"], [bp~="max+"]) { display: none; }
+}
+[aspect-ratio] { --x: 16; --y: 9; position: relative; width: 100%; }
+[aspect-ratio]::before { content: ""; display: block; padding-bottom: calc(var(--y)/var(--x)*100%); width: 100%; }
+[aspect-ratio="9:16"] { --x: 9; --y: 16; }
+[aspect-ratio="3:4"] { --x: 3; --y: 4; }
+[aspect-ratio="4:3"] { --x: 4; --y: 3; }
+[aspect-ratio="7:8"] { --x: 7; --y: 8; }
+[aspect-ratio="1:1"] { --x: 1; --y: 1; }
+[blz-tooltip] { --tooltip-vertical-transform: calc(100% + var(--global-size-150)); cursor: pointer; position: relative; transform: translate(0px); }
+.blz-tooltip, .blz-tooltip-extension { display: none; margin: 0px; padding: 0px; pointer-events: all; position: absolute; user-select: text; z-index: var(--measure-z-index-fixed); }
+.blz-tooltip { background-color: var(--semantic-color-background-info-primary); border: var(--semantic-border-size-sm) solid var(--tooltip-color-border-primary); border-radius: var(--semantic-border-radius-action-md); bottom: 0px; font: var(--tooltip-font-text); left: 50%; max-width: min(calc(100vw - var(--global-size-150)*6),calc(360px - var(--global-size-150)*2)); padding: var(--semantic-space-around-vertical-xs-mobile) var(--semantic-space-around-horizontal-sm); text-align: start; transform: translate(-50%,var(--tooltip-vertical-transform)); white-space: normal; width: max-content; }
+.blz-tooltip > .blz-tooltip-container { display: flex; flex-direction: column; gap: var(--semantic-space-between-xxl); }
+.blz-tooltip .blz-tooltip-container > * { max-width: 100%; }
+[blz-tooltip\:place="top"] .blz-tooltip { --tooltip-vertical-transform: calc(-100% - var(--global-size-150)); bottom: auto; top: 0px; }
+[blz-tooltip\:place="top"] .blz-tooltip-extension { bottom: 0px; }
+.blz-tooltip-caret { background-color: var(--semantic-color-background-info-primary); content: ""; display: none; height: var(--global-size-200); left: 50%; margin: 0px; padding: 0px; position: absolute; transform: rotate(45deg) translate(-50%); transform-origin: center center; width: var(--global-size-200); }
+[blz-tooltip\:place="top"] .blz-tooltip-caret { top: -18px; }
+[blz-tooltip\:place="bottom"] .blz-tooltip-caret { bottom: -30px; }
+[blz-tooltip\:place="bottom"] .blz-tooltip-extension { top: 0px; }
+[blz-tooltip\:sticky="left"] .blz-tooltip { left: 0px; transform: translateY(var(--tooltip-vertical-transform)); }
+[blz-tooltip\:sticky="right"] .blz-tooltip { left: auto; right: 0px; text-align: end; transform: translateY(var(--tooltip-vertical-transform)); }
+[data-blz-tooltip-active] :is(.blz-tooltip, .blz-tooltip-caret, .blz-tooltip-extension) { display: inline-block; }
+@media (min-width: 960px) {
+  .blz-tooltip { padding: var(--semantic-space-around-vertical-xxs-desktop) var(--semantic-space-around-horizontal-sm); }
+}
+html { scroll-behavior: smooth; }
+:root { --measure-z-index-below: -1; --measure-z-index-base: 0; --measure-z-index-above: 1; --measure-z-index-docked: 4; --measure-z-index-fixed: 10; --measure-z-index-overlay: 50; --measure-z-index-menu: 999; --measure-z-index-modal: 10000; --measure-z-index-toast: 11000; --view-min: 320px; --view-xs: 480px; --view-sm: 720px; --view-md: 960px; --view-lg: 1200px; --view-xl: 1400px; --view-xxl: 1600px; --view-max: 2600px; --semantic-title-text-lg: var(--semantic-title-text-lg-mobile); --semantic-title-text-md: var(--semantic-title-text-md-mobile); --semantic-title-text-sm: var(--semantic-title-text-sm-mobile); --semantic-heading-text-xxl: var(--semantic-heading-text-xl-mobile); --semantic-heading-text-xl: var(--semantic-heading-text-xl-mobile); --semantic-heading-text-lg: var(--semantic-heading-text-lg-mobile); --semantic-heading-text-md: var(--semantic-heading-text-md-mobile); --semantic-heading-text-sm: var(--semantic-heading-text-sm-mobile); --semantic-heading-text-xs: var(--semantic-heading-text-xs-mobile); --semantic-heading-text-xxs: var(--semantic-heading-text-xxs-mobile); --semantic-subheading-text-lg: var(--semantic-subheading-text-lg-mobile); --semantic-subheading-text-md: var(--semantic-subheading-text-md-mobile); --semantic-body-text-xxl: var(--semantic-body-text-xxl-mobile); --semantic-body-text-xl: var(--semantic-body-text-xl-mobile); --semantic-body-text-lg: var(--semantic-body-text-lg-mobile); --semantic-body-text-md: var(--semantic-body-text-md-mobile); --semantic-body-text-sm: var(--semantic-body-text-sm-mobile); --semantic-body-text-xs: var(--semantic-body-text-xs-mobile); --announcement-banner-font-heading: var(
+    --announcement-banner-font-heading-mobile
+  ); --announcement-banner-font-subtext: var(
+    --announcement-banner-font-subtext-mobile
+  ); --badge-font-text: var(--badge-font-text-mobile); --button-font-label-xl: var(--button-font-label-xl-mobile); --button-font-label-lg: var(--button-font-label-lg-mobile); --button-font-label-md: var(--button-font-label-md-mobile); --button-font-label-sm: var(--button-font-label-sm-mobile); --content-block-font-subheading-xl: var(
+    --content-block-font-subheading-xl-mobile
+  ); --content-block-font-subheading-lg: var(
+    --content-block-font-subheading-lg-mobile
+  ); --content-block-font-subheading-md: var(
+    --content-block-font-subheading-md-mobile
+  ); --content-block-font-heading-xl: var(--content-block-font-heading-xl-mobile); --content-block-font-heading-lg: var(--content-block-font-heading-lg-mobile); --content-block-font-heading-md: var(--content-block-font-heading-md-mobile); --content-block-font-heading-sm: var(--content-block-font-heading-sm-mobile); --content-block-font-heading-xs: var(--content-block-font-heading-xs-mobile); --content-block-font-callout-xl: var(--content-block-font-callout-xl-mobile); --content-block-font-callout-lg: var(--content-block-font-callout-lg-mobile); --content-block-font-callout-md: var(--content-block-font-callout-md-mobile); --content-block-font-callout-sm: var(--content-block-font-callout-sm-mobile); --content-block-font-callout-xs: var(--content-block-font-callout-xs-mobile); --content-block-font-description-xl: var(
+    --content-block-font-description-xl-mobile
+  ); --content-block-font-description-lg: var(
+    --content-block-font-description-lg-mobile
+  ); --content-block-font-description-md: var(
+    --content-block-font-description-md-mobile
+  ); --content-block-font-description-sm: var(
+    --content-block-font-description-sm-mobile
+  ); --content-block-font-description-xs: var(
+    --content-block-font-description-xs-mobile
+  ); --header-heading-font-xl: var(--header-heading-font-xl-mobile); --header-heading-font-lg: var(--header-heading-font-lg-mobile); --header-heading-font-md: var(--header-heading-font-md-mobile); --header-heading-font-sm: var(--header-heading-font-sm-mobile); --header-heading-font-xs: var(--header-heading-font-xs-mobile); --header-heading-font-xxs: var(--header-heading-font-xxs-mobile); --input-font-md: var(--input-font-md-mobile); --input-font-sm: var(--input-font-sm-mobile); --tooltip-font-text: var(--tooltip-font-text-mobile); --price-font-label-xl: var(--price-font-label-xl-mobile); --price-font-label-lg: var(--price-font-label-lg-mobile); --price-font-label-md: var(--price-font-label-md-mobile); --price-font-label-sm: var(--price-font-label-sm-mobile); --price-font-label-discount-xl: var(--price-font-label-discount-xl-mobile); --price-font-label-discount-lg: var(--price-font-label-discount-lg-mobile); --price-font-label-discount-md: var(--price-font-label-discount-md-mobile); --price-font-label-discount-sm: var(--price-font-label-discount-sm-mobile); --tab-standard-font-label: var(--tab-standard-font-label-mobile); --announcement-banner-space-padding: var(
+      --announcement-banner-space-padding-mobile-vertical
+    ) var(--announcement-banner-space-padding-mobile-horizontal); --announcement-banner-sticky-space-padding: var(
+      --announcement-banner-sticky-space-padding-mobile-vertical
+    ) var(--announcement-banner-sticky-space-padding-mobile-horizontal); --announcement-banner-content-gap-horizontal: var(
+    --announcement-banner-content-gap-horizontal-mobile
+  ); --announcement-banner-content-gap-vertical: var(
+    --announcement-banner-content-gap-vertical-mobile
+  ); --button-space-padding-md-horizontal: var(
+    --button-space-padding-md-mobile-horizontal
+  ); --button-space-padding-xl: var(--button-space-padding-xl-mobile-vertical) var(--button-space-padding-xl-mobile-horizontal); --button-space-padding-lg: var(--button-space-padding-lg-mobile-vertical) var(--button-space-padding-lg-mobile-horizontal); --button-space-padding-md: var(--button-space-padding-md-mobile-vertical) var(--button-space-padding-md-mobile-horizontal); --button-space-padding-sm: var(--button-space-padding-sm-vertical) var(--button-space-padding-sm-horizontal); --base-card-space-padding-lg: var(
+      --base-card-space-padding-lg-mobile-vertical
+    ) var(--base-card-space-padding-lg-mobile-horizontal); --base-card-space-padding-md: var(
+      --base-card-space-padding-md-mobile-vertical
+    ) var(--base-card-space-padding-md-mobile-horizontal); --base-card-space-padding-sm: var(
+      --base-card-space-padding-sm-mobile-vertical
+    ) var(--base-card-space-padding-sm-mobile-horizontal); --badge-space-padding-sm: var(--badge-space-padding-sm-top) var(--badge-space-padding-sm-horizontal) var(--badge-space-padding-sm-bottom) var(--badge-space-padding-sm-horizontal); --badge-space-padding-md: var(--badge-space-md-mobile-top) var(--badge-space-md-mobile-horizontal) var(--badge-space-md-mobile-bottom) var(--badge-space-md-mobile-horizontal); --content-block-space-optional-slot-bottom: var(
+    --content-block-space-optional-slot-bottom-mobile
+  ); --content-block-space-optional-slot-top: var(
+    --content-block-space-optional-slot-top-mobile
+  ); --base-card-space-media-top-left: var(--base-card-space-media-top-left-top) var(--base-card-space-media-top-left-right) var(--base-card-space-media-top-left-bottom) var(--base-card-space-media-top-left-left); --base-card-space-media-top-right: var(--base-card-space-media-top-right-top) var(--base-card-space-media-top-right-right) var(--base-card-space-media-top-right-bottom) var(--base-card-space-media-top-right-left); --base-card-space-media-bottom-left: var(
+      --base-card-space-media-bottom-left-top
+    ) var(--base-card-space-media-bottom-left-right) var(--base-card-space-media-bottom-left-bottom) var(--base-card-space-media-bottom-left-left); --base-card-space-media-bottom-right: var(
+      --base-card-space-media-bottom-right-top
+    ) var(--base-card-space-media-bottom-right-right) var(--base-card-space-media-bottom-right-bottom) var(--base-card-space-media-bottom-right-left); --input-text-field-space-padding-sm: var(
+      --input-text-field-space-padding-sm-top
+    ) var(--input-text-field-space-padding-sm-right) var(--input-text-field-space-padding-sm-bottom) var(--input-text-field-space-padding-sm-left); --input-text-field-space-padding-md: var(
+      --input-text-field-space-padding-md-top
+    ) var(--input-text-field-space-padding-md-right) var(--input-text-field-space-padding-md-bottom) var(--input-text-field-space-padding-md-left); --input-select-space-padding-sm: var(--input-select-space-padding-sm-top) var(--input-select-space-padding-sm-right) var(--input-select-space-padding-sm-bottom) var(--input-select-space-padding-sm-left); --input-select-space-padding-md: var(--input-select-space-padding-md-top) var(--input-select-space-padding-md-right) var(--input-select-space-padding-md-bottom) var(--input-select-space-padding-md-left); --section-padding: var(--semantic-section-space-vertical-md-mobile) var(--semantic-section-space-horizontal-mobile); --banner-space-padding: var(--banner-space-padding-vertical-mobile) var(--banner-space-padding-horizontal-mobile); --semantic-size-input-height-lg: var(--semantic-size-input-height-lg-mobile); --semantic-size-input-height-md: var(--semantic-size-input-height-md-mobile); --semantic-size-input-height-sm: var(--semantic-size-input-height-sm-mobile); --semantic-size-input-height-xs: var(--semantic-size-input-height-xs-mobile); --semantic-size-nav-height: var(--semantic-size-nav-height-mobile); --semantic-grid-gap-xxs: var(--semantic-grid-gap-xxs-mobile); --button-height-md: var(--semantic-size-input-height-md-mobile); --button-height-sm: var(--semantic-size-input-height-sm-mobile); --input-height-md: var(--input-height-md-mobile); --input-height-sm: var(--input-height-sm-mobile); --global-motion-ease-out: cubic-bezier(0,0,0.2,1); --global-motion-ease-in-out: cubic-bezier(0.5,0,0.5,1); --global-motion-ease-in: cubic-bezier(0.8,0,1,1); --global-motion-duration-fast: 100ms; --global-motion-duration-medium: 200ms; --global-motion-duration-slow: 300ms; --semantic-size-icon-height-xs: var(--semantic-size-icon-height-xs-mobile); --semantic-size-icon-height-sm: var(--semantic-size-icon-height-sm-mobile); --semantic-size-icon-height-md: var(--semantic-size-icon-height-md-mobile); --semantic-size-icon-height-lg: var(--semantic-size-icon-height-lg-mobile); --semantic-size-icon-height-xl: var(--semantic-size-icon-height-xl-mobile); --semantic-icon-external-link: url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M10.5 2H14v3.5h-1.5v-.94L7.53 9.53 6.47 8.47l4.97-4.97h-.94zM3 4h4v1.5H4.5v6h6V9H12v4H3z'/%3E%3C/svg%3E"); }
+@media (min-width: 720px) {
+  :root { --announcement-banner-space-padding: var(
+        --announcement-banner-space-padding-desktop-vertical
+      ) var(--announcement-banner-space-padding-desktop-horizontal); --announcement-banner-sticky-space-padding: var(
+        --announcement-banner-sticky-space-padding-desktop-vertical
+      ) var(--announcement-banner-sticky-space-padding-desktop-horizontal); --announcement-banner-content-gap-horizontal: var(
+      --announcement-banner-content-gap-horizontal-desktop
+    ); --announcement-banner-content-gap-vertical: var(
+      --announcement-banner-content-gap-vertical-desktop
+    ); --button-space-padding-md-horizontal: var(
+      --button-space-padding-md-desktop-horizontal
+    ); --button-space-padding-xl: var(--button-space-padding-xl-desktop-vertical) var(--button-space-padding-xl-desktop-horizontal); --button-space-padding-lg: var(--button-space-padding-lg-desktop-vertical) var(--button-space-padding-lg-desktop-horizontal); --button-space-padding-md: var(--button-space-padding-md-desktop-vertical) var(--button-space-padding-md-desktop-horizontal); --base-card-space-padding-lg: var(
+        --base-card-space-padding-lg-desktop-vertical
+      ) var(--base-card-space-padding-lg-desktop-horizontal); --base-card-space-padding-md: var(
+        --base-card-space-padding-md-desktop-vertical
+      ) var(--base-card-space-padding-md-desktop-horizontal); --base-card-space-padding-sm: var(
+        --base-card-space-padding-sm-desktop-vertical
+      ) var(--base-card-space-padding-sm-desktop-horizontal); --badge-space-padding-md: var(--badge-space-md-desktop-top) var(--badge-space-md-desktop-horizontal) var(--badge-space-md-desktop-bottom) var(--badge-space-md-desktop-horizontal); --content-block-space-optional-slot-bottom: var(
+      --content-block-space-optional-slot-bottom-desktop
+    ); --content-block-space-optional-slot-top: var(
+      --content-block-space-optional-slot-top-desktop
+    ); --section-padding: var(--semantic-section-space-vertical-md-desktop) var(--semantic-section-space-horizontal-desktop); --banner-space-padding: var(--banner-space-padding-vertical-desktop) var(--banner-space-padding-horizontal-desktop); --button-height-md: var(--semantic-size-input-height-md-desktop); --button-height-sm: var(--semantic-size-input-height-sm-desktop); --input-height-md: var(--input-height-md-desktop); --input-height-sm: var(--input-height-sm-desktop); --semantic-title-text-lg: var(--semantic-title-text-lg-desktop); --semantic-title-text-md: var(--semantic-title-text-md-desktop); --semantic-title-text-sm: var(--semantic-title-text-sm-desktop); --semantic-heading-text-xxl: var(--semantic-heading-text-xxl-desktop); --semantic-heading-text-xl: var(--semantic-heading-text-xl-desktop); --semantic-heading-text-lg: var(--semantic-heading-text-lg-desktop); --semantic-heading-text-md: var(--semantic-heading-text-md-desktop); --semantic-heading-text-sm: var(--semantic-heading-text-sm-desktop); --semantic-heading-text-xs: var(--semantic-heading-text-xs-desktop); --semantic-heading-text-xxs: var(--semantic-heading-text-xxs-desktop); --semantic-subheading-text-lg: var(--semantic-subheading-text-lg-desktop); --semantic-subheading-text-md: var(--semantic-subheading-text-md-desktop); --semantic-body-text-xxl: var(--semantic-body-text-xxl-desktop); --semantic-body-text-xl: var(--semantic-body-text-xl-desktop); --semantic-body-text-lg: var(--semantic-body-text-lg-desktop); --semantic-body-text-md: var(--semantic-body-text-md-desktop); --semantic-body-text-sm: var(--semantic-body-text-sm-desktop); --semantic-body-text-xs: var(--semantic-body-text-xs-desktop); --announcement-banner-font-heading: var(
+      --announcement-banner-font-heading-desktop
+    ); --announcement-banner-font-subtext: var(
+      --announcement-banner-font-subtext-desktop
+    ); --badge-font-text: var(--badge-font-text-desktop); --button-font-label-xl: var(--button-font-label-xl-desktop); --button-font-label-lg: var(--button-font-label-lg-desktop); --button-font-label-md: var(--button-font-label-md-desktop); --button-font-label-sm: var(--button-font-label-sm-desktop); --content-block-font-subheading-xl: var(
+      --content-block-font-subheading-xl-desktop
+    ); --content-block-font-subheading-lg: var(
+      --content-block-font-subheading-lg-desktop
+    ); --content-block-font-subheading-md: var(
+      --content-block-font-subheading-md-desktop
+    ); --content-block-font-heading-xl: var(
+      --content-block-font-heading-xl-desktop
+    ); --content-block-font-heading-lg: var(
+      --content-block-font-heading-lg-desktop
+    ); --content-block-font-heading-md: var(
+      --content-block-font-heading-md-desktop
+    ); --content-block-font-heading-sm: var(
+      --content-block-font-heading-sm-desktop
+    ); --content-block-font-heading-xs: var(
+      --content-block-font-heading-xs-desktop
+    ); --content-block-font-callout-xl: var(
+      --content-block-font-callout-xl-desktop
+    ); --content-block-font-callout-lg: var(
+      --content-block-font-callout-lg-desktop
+    ); --content-block-font-callout-md: var(
+      --content-block-font-callout-md-desktop
+    ); --content-block-font-callout-sm: var(
+      --content-block-font-callout-sm-desktop
+    ); --content-block-font-callout-xs: var(
+      --content-block-font-callout-xs-desktop
+    ); --content-block-font-description-xl: var(
+      --content-block-font-description-xl-desktop
+    ); --content-block-font-description-lg: var(
+      --content-block-font-description-lg-desktop
+    ); --content-block-font-description-md: var(
+      --content-block-font-description-md-desktop
+    ); --content-block-font-description-sm: var(
+      --content-block-font-description-sm-desktop
+    ); --content-block-font-description-xs: var(
+      --content-block-font-description-xs-desktop
+    ); --header-heading-font-xl: var(--header-heading-font-xl-desktop); --header-heading-font-lg: var(--header-heading-font-lg-desktop); --header-heading-font-md: var(--header-heading-font-md-desktop); --header-heading-font-sm: var(--header-heading-font-sm-desktop); --header-heading-font-xs: var(--header-heading-font-xs-desktop); --header-heading-font-xxs: var(--header-heading-font-xxs-desktop); --input-font-md: var(--input-font-md-desktop); --input-font-sm: var(--input-font-sm-desktop); --tooltip-font-text: var(--tooltip-font-text-desktop); --price-font-label-xl: var(--price-font-label-xl-desktop); --price-font-label-lg: var(--price-font-label-lg-desktop); --price-font-label-md: var(--price-font-label-md-desktop); --price-font-label-sm: var(--price-font-label-sm-desktop); --price-font-label-discount-xl: var(--price-font-label-discount-xl-desktop); --price-font-label-discount-lg: var(--price-font-label-discount-lg-desktop); --price-font-label-discount-md: var(--price-font-label-discount-md-desktop); --price-font-label-discount-sm: var(--price-font-label-discount-sm-desktop); --tab-standard-font-label: var(--tab-standard-font-label-desktop); --semantic-size-input-height-lg: var(
+      --semantic-size-input-height-lg-desktop
+    ); --semantic-size-input-height-md: var(
+      --semantic-size-input-height-md-desktop
+    ); --semantic-size-input-height-sm: var(
+      --semantic-size-input-height-sm-desktop
+    ); --semantic-size-input-height-xs: var(
+      --semantic-size-input-height-xs-desktop
+    ); --semantic-size-nav-height: var(--semantic-size-nav-height-desktop); --semantic-grid-gap-xxs: var(--semantic-grid-gap-xxs-desktop); --semantic-size-icon-height-xs: var(--semantic-size-icon-height-xs-desktop); --semantic-size-icon-height-sm: var(--semantic-size-icon-height-sm-desktop); --semantic-size-icon-height-md: var(--semantic-size-icon-height-md-desktop); --semantic-size-icon-height-lg: var(--semantic-size-icon-height-lg-desktop); --semantic-size-icon-height-xl: var(--semantic-size-icon-height-xl-desktop); }
+}

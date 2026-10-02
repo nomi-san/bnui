@@ -1,0 +1,16 @@
+[data-device-type="Other"] [blz-device]:not([blz-device~="Other"], [blz-device~="other"]) { display: none !important; }
+[data-device-os="Other"] [blz-device-os]:not([blz-device-os~="Other"], [blz-device-os~="other"]) { display: none !important; }
+[data-device-type="Android"] [blz-device]:not([blz-device~="Android"], [blz-device~="android"], [blz-device~="mobile"]) { display: none !important; }
+[data-device-os="Android"] [blz-device-os]:not([blz-device-os~="Android"], [blz-device-os~="android"], [blz-device-os~="mobile"]) { display: none !important; }
+[data-device-type="iOS"] [blz-device]:not([blz-device~="iOS"], [blz-device~="ios"], [blz-device~="mobile"]) { display: none !important; }
+[data-device-os="iOS"] [blz-device-os]:not([blz-device-os~="iOS"], [blz-device-os~="ios"], [blz-device-os~="mobile"]) { display: none !important; }
+[data-device-type="Windows"] [blz-device]:not([blz-device~="Windows"], [blz-device~="windows"], [blz-device~="PC"], [blz-device~="pc"]) { display: none !important; }
+[data-device-os="Windows"] [blz-device-os]:not([blz-device-os~="Windows"], [blz-device-os~="windows"], [blz-device-os~="PC"], [blz-device-os~="pc"]) { display: none !important; }
+[data-device-type="macOS"] [blz-device]:not([blz-device~="macOS"], [blz-device~="macos"], [blz-device~="mac"], [blz-device~="PC"], [blz-device~="pc"]) { display: none !important; }
+[data-device-os="macOS"] [blz-device-os]:not([blz-device-os~="macOS"], [blz-device-os~="macos"], [blz-device-os~="mac"], [blz-device-os~="PC"], [blz-device-os~="pc"]) { display: none !important; }
+[data-device-platform="phoenix"] [blz-device-platform]:not([blz-device-platform~="phoenix"]) { display: none !important; }
+[data-device-platform="jupiter"] [blz-device-platform]:not([blz-device-platform~="jupiter"]) { display: none !important; }
+[data-device-platform="overlay"] [blz-device-platform]:not([blz-device-platform~="overlay"]) { display: none !important; }
+[data-device-platform="browser"] [blz-device-platform]:not([blz-device-platform~="browser"]) { display: none !important; }
+[data-device-context="standard"] [blz-device-context]:not([blz-device-context~="standard"]) { display: none !important; }
+[data-device-context="handheld"] [blz-device-context]:not([blz-device-context~="handheld"]) { display: none !important; }

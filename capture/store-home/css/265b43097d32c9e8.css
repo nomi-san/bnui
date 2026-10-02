@@ -1,0 +1,1 @@
+.back-to-top-button { z-index: var(--measure-z-index-overlay); transition: bottom var(--global-motion-duration-300,.3s) var(--global-motion-ease-out,ease-out); bottom: calc(var(--semantic-space-around-vertical-lg-desktop) + var(--announcement-banner-offset, 0px)); }

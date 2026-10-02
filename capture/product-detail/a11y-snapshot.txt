@@ -1,0 +1,208 @@
+uid=7_0 RootWebArea "Call of Duty®: Modern Warfare® 4 - Call of Duty | Battle.net" url="https://us.shop.battle.net/en-us/product/call-of-duty-modern-warfare-4"
+  uid=7_1 navigation
+    uid=7_2 menubar orientation="horizontal"
+      uid=7_3 generic
+        uid=7_4 link "Battle.net" url="https://shop.battle.net/en-us"
+      uid=7_5 generic
+        uid=7_6 link "Download Battle.net" url="https://download.battle.net/?product=bnetdesk"
+      uid=7_7 generic
+        uid=7_8 link "Support" url="https://battle.net/support/"
+      uid=7_9 menuitem "Player"
+        uid=7_10 button "Player" expandable haspopup="menu"
+  uid=7_11 main
+    uid=7_12 navigation "Battle.net Menu"
+      uid=7_13 menubar orientation="horizontal"
+        uid=7_14 menuitem "Warcraft" haspopup="menu"
+          uid=7_15 button "Warcraft"
+        uid=7_16 menuitem "Diablo" haspopup="menu"
+          uid=7_17 button "Diablo"
+        uid=7_18 menuitem "Overwatch" haspopup="menu"
+          uid=7_19 button "Overwatch"
+        uid=7_20 menuitem "Hearthstone" haspopup="menu"
+          uid=7_21 button "Hearthstone"
+        uid=7_22 menuitem "StarCraft" haspopup="menu"
+          uid=7_23 button "StarCraft"
+        uid=7_24 menuitem "Heroes" haspopup="menu"
+          uid=7_25 button "Heroes"
+        uid=7_26 menuitem "Call of Duty" haspopup="menu"
+          uid=7_27 button "Call of Duty"
+        uid=7_28 menuitem "More" haspopup="menu"
+          uid=7_29 button "More"
+      uid=7_30 combobox "Search Shop" autocomplete="list" expandable haspopup="listbox"
+      uid=7_31 button "Battle.net Balance"
+    uid=7_32 navigation "Breadcrumb"
+      uid=7_33 navigation "Breadcrumb"
+        uid=7_34 link "Breadcrumb, Home" url="https://us.shop.battle.net/en-us"
+        uid=7_35 link "Breadcrumb, Call of Duty®" url="https://us.shop.battle.net/en-us/family/call-of-duty"
+          uid=7_36 StaticText "Call of Duty"
+          uid=7_37 StaticText "®"
+        uid=7_38 StaticText "Call of Duty"
+        uid=7_39 StaticText "®"
+        uid=7_40 StaticText ": Modern Warfare"
+        uid=7_41 StaticText "®"
+        uid=7_42 StaticText " 4"
+    uid=7_43 heading "Call of Duty®: Modern Warfare® 4" level="1"
+    uid=7_44 StaticText "ACTION SHOOTER"
+    uid=7_45 StaticText "Product Notification"
+    uid=7_46 StaticText "Available October 23rd - Pre-purchase and get early access to the Campaign*!"
+    uid=7_47 StaticText "SELECT A PRODUCT"
+    uid=7_48 link "Compare" url="https://us.shop.battle.net/en-us/product/call-of-duty-modern-warfare-4#comparison-table"
+      uid=7_49 StaticText "Compare"
+    uid=7_50 radio "Vault Edition $99.99" checked
+    uid=7_51 radio "Standard Edition $69.99"
+    uid=7_52 StaticText "Available actions"
+    uid=7_53 link "Pre-purchase" url="https://us.battle.net/shop/checkout/buy/2073603?priceToken=v%3A1_whnOJ6qrinsionuMrULvxhnPrHVo2RQV5TjL8D4aE44WiqjLLUhYolhI9cntVCODNi4FZzdoMZEEJFd6JAfuwQzA9WYAWvfRSEmJb-eEt_PF89Stwk9n9demZltIFDEtND2Z94IQqZR3Ig&quantity=1&returnUrl=https%3A%2F%2Fus.shop.battle.net%2Fen-us%2Fproduct%2Fcall-of-duty-modern-warfare-4&returnContext=AUKS&pfm=COD+Modern+Warfare+4%7C%7Ccall-of-duty-modern-warfare-4"
+      uid=7_54 StaticText "Pre-purchase"
+    uid=7_55 button "Add to Wishlist"
+    uid=7_56 StaticText "HANDHELD COMPATIBILITY"
+    uid=7_57 StaticText "Handheld Optimized"
+    uid=7_58 StaticText "Internet Connection, Battle.net"
+    uid=7_59 StaticText "®"
+    uid=7_60 StaticText " desktop app, Battle.net"
+    uid=7_61 StaticText "®"
+    uid=7_62 StaticText " account and Activision account required to play. Requires acceptance of the Activision Software License and Services Agreement. A mobile phone number linked to your Activision account may be required to play Modern Warfare"
+    uid=7_63 StaticText "®"
+    uid=7_64 StaticText " 4."
+    uid=7_65 link "TPM 2.0 and Secure Boot required, other security measures may be enforced. Learn more at https://support.activision.com/tpm., This link opens a new browser window" url="https://support.activision.com/tpm"
+      uid=7_66 StaticText "TPM 2.0 and Secure Boot required, other security measures may be enforced. Learn more at https://support.activision.com/tpm."
+    uid=7_67 StaticText "*Actual play time subject to possible outages and applicable time zone differences. Actual platform availability and start date subject to change."
+    uid=7_68 link "**Based on MSRP, discount applied at checkout. To qualify, must own and have played one of the following Call of Duty® titles on the same Battle.net® account as being used for current Pre-purchase: Modern Warfare® (2019), Modern Warfare® 2 Campaign Remastered (2020), Black Ops Cold War, Vanguard, Modern Warfare® II (2022), Modern Warfare® III (2023), Black Ops 6, or Black Ops 7. Offer subject to change, applies to Pre-purchases only. Offer valid until 23rd October 2026. Visit support.activision.com/mw4 for full details., This link opens a new browser window" url="https://support.activision.com/mw4"
+      uid=7_69 StaticText "**Based on MSRP, discount applied at checkout. To qualify, must own and have played one of the following Call of Duty"
+      uid=7_70 StaticText "®"
+      uid=7_71 StaticText " titles on the same Battle.net"
+      uid=7_72 StaticText "®"
+      uid=7_73 StaticText " account as being used for current Pre-purchase: Modern Warfare"
+      uid=7_74 StaticText "®"
+      uid=7_75 StaticText " (2019), Modern Warfare"
+      uid=7_76 StaticText "®"
+      uid=7_77 StaticText " 2 Campaign Remastered (2020), Black Ops Cold War, Vanguard, Modern Warfare"
+      uid=7_78 StaticText "®"
+      uid=7_79 StaticText " II (2022), Modern Warfare"
+      uid=7_80 StaticText "®"
+      uid=7_81 StaticText " III (2023), Black Ops 6, or Black Ops 7. Offer subject to change, applies to Pre-purchases only. Offer valid until 23rd October 2026. Visit support.activision.com/mw4 for full details."
+    uid=7_82 StaticText "***Call of Duty"
+    uid=7_83 StaticText "®"
+    uid=7_84 StaticText ": Modern Warfare"
+    uid=7_85 StaticText "®"
+    uid=7_86 StaticText " 4 on Battle.net"
+    uid=7_87 StaticText "®"
+    uid=7_88 StaticText " required to redeem. Must be redeemed by October 23rd, 2027."
+    uid=7_89 StaticText "****Call of Duty"
+    uid=7_90 StaticText "®"
+    uid=7_91 StaticText ": Black Ops 7 or Call of Duty"
+    uid=7_92 StaticText "®"
+    uid=7_93 StaticText ": Warzone required to redeem. Sold / downloaded separately. Must be redeemed by October 23rd, 2027."
+    uid=7_94 StaticText "*****BlackCell, Battle Pass, Call of Duty"
+    uid=7_95 StaticText "®"
+    uid=7_96 StaticText " Points, and Tier Skips will be accessible in Modern Warfare"
+    uid=7_97 StaticText "®"
+    uid=7_98 StaticText " 4 upon availability of the Season 1 Battle Pass in-game. Redemption applies to one Season of the Modern Warfare"
+    uid=7_99 StaticText "®"
+    uid=7_100 StaticText " 4 Battle Pass only."
+    uid=7_101 StaticText "Content, features, services, online play, and support not available in all regions, and may vary, change, or terminate."
+    uid=7_102 StaticText "Additional storage space may be required for mandatory game updates."
+    uid=7_103 link "Handheld Compatibility Support Article., This link opens a new browser window" url="https://support.blizzard.com/article/0000381254"
+      uid=7_104 StaticText "Handheld Compatibility Support Article."
+    uid=7_105 region "Call of Duty®: Modern Warfare® 4" roledescription="carousel"
+      uid=7_106 generic "Call of Duty®: Modern Warfare® 4"
+      uid=7_107 status atomic live="polite" relevant="additions text"
+        uid=7_108 StaticText "1 / 18"
+      uid=7_109 button "Previous slide" disableable disabled
+      uid=7_110 button "Next slide"
+      uid=7_111 tab "Slide 1" selectable selected
+      uid=7_112 tab "Slide 2" selectable
+      uid=7_113 tab "Slide 3" selectable
+      uid=7_114 tab "Slide 4" selectable
+      uid=7_115 tab "Slide 5" selectable
+      uid=7_116 tab "Slide 6" selectable
+      uid=7_117 tab "Slide 7" selectable
+      uid=7_118 tab "Slide 8" selectable
+      uid=7_119 tab "Slide 9" selectable
+      uid=7_120 tab "Slide 10" selectable
+      uid=7_121 tab "Slide 11" selectable
+      uid=7_122 tab "Slide 12" selectable
+      uid=7_123 tab "Slide 13" selectable
+      uid=7_124 tab "Slide 14" selectable
+      uid=7_125 tab "Slide 15" selectable
+      uid=7_126 tab "Slide 16" selectable
+      uid=7_127 tab "Slide 17" selectable
+      uid=7_128 tab "Slide 18" selectable
+    uid=7_129 heading "Launching October 23rd" level="2"
+    uid=7_130 StaticText "War erupts on the Korean Peninsula as North Korea launches a full-scale invasion that threatens to destabilize the world in Call of Duty: Modern Warfare 4."
+    uid=7_131 StaticText "A young squad of South Korean soldiers fight to survive on the collapsing front lines, while half a world away a vengeful Captain Price wages a personal war from the shadows as he stays one step ahead of those hunting him. As Price’s off-book mission collides with the forces behind the invasion, the war spreads beyond anyone’s control."
+    uid=7_132 StaticText "Modern Warfare 4 pushes the series into darker and more dangerous territory, where consequence and escalation bring long-running storylines to a powerful and emotional breaking point."
+    uid=7_133 heading "Compare Products" level="2"
+    uid=7_134 image "Standard Edition" url="https://catalog.blzstatic.com//ff8/a51f96b6f25d8a31aee27ed21bf6db63-StandardEditiontextless.jpg?imwidth=320"
+    uid=7_135 StaticText "Standard Edition"
+    uid=7_136 link "$69.99" url="https://us.battle.net/shop/checkout/buy/2073612?priceToken=v%3A1_PYQ9TmbELMHFQhjiY0baqNkIkamDW53DtHGpBJOPeexdboyw6FX8HEk2iq1B89Wn8wK3NctJJZChlN4SqIDPQExlt-L6-NVRa3apR58jJFadWbrVyX2HlKHZztHtYbgO4nbqnoZIvFDSXQ&returnUrl=https%3A%2F%2Fus.shop.battle.net%2Fen-us%2Fproduct%2Fcall-of-duty-modern-warfare-4&returnContext=AUKS&pfm=COD+Modern+Warfare+4%7C%7Ccall-of-duty-modern-warfare-4"
+      uid=7_137 StaticText "$69.99"
+    uid=7_138 image "Vault Edition" url="https://catalog.blzstatic.com//43/a3cea3d654621cd540a57e7792dcb548-VaultEditionproduct_browsing_card_1920x1080.jpg?imwidth=320"
+    uid=7_139 StaticText "Vault Edition"
+    uid=7_140 link "$99.99" url="https://us.battle.net/shop/checkout/buy/2073603?priceToken=v%3A1_whnOJ6qrinsionuMrULvxhnPrHVo2RQV5TjL8D4aE44WiqjLLUhYolhI9cntVCODNi4FZzdoMZEEJFd6JAfuwQzA9WYAWvfRSEmJb-eEt_PF89Stwk9n9demZltIFDEtND2Z94IQqZR3Ig&returnUrl=https%3A%2F%2Fus.shop.battle.net%2Fen-us%2Fproduct%2Fcall-of-duty-modern-warfare-4&returnContext=AUKS&pfm=COD+Modern+Warfare+4%7C%7Ccall-of-duty-modern-warfare-4"
+      uid=7_141 StaticText "$99.99"
+    uid=7_142 StaticText "Modern Warfare® 4 for Battle.net®"
+    uid=7_143 StaticText "Campaign Early Access"
+    uid=7_144 StaticText "Instant Grat Items for BO7/WZ"
+    uid=7_145 StaticText "Hostile Alliance Operator Pack"
+    uid=7_146 StaticText "Special Forces Operator Pack"
+    uid=7_147 StaticText "Signature Weapon Collection"
+    uid=7_148 StaticText "BlackCell (1 Season)"
+    uid=7_149 StaticText "DMZ Deployment Bonus"
+  uid=7_150 contentinfo
+    uid=7_151 contentinfo
+      uid=7_152 generic
+        uid=7_153 link "Careers" url="https://careers.blizzard.com/"
+          uid=7_154 StaticText "Careers"
+      uid=7_155 generic
+        uid=7_156 link "About" url="https://www.blizzard.com/company/about/"
+          uid=7_157 StaticText "About"
+      uid=7_158 generic
+        uid=7_159 link "Support" url="https://www.battle.net/support/"
+          uid=7_160 StaticText "Support"
+      uid=7_161 generic
+        uid=7_162 link "Contact Us" url="https://www.blizzard.com/company/contact"
+          uid=7_163 StaticText "Contact Us"
+      uid=7_164 generic
+        uid=7_165 link "Press" url="https://blizzard.gamespress.com/"
+          uid=7_166 StaticText "Press"
+      uid=7_167 generic
+        uid=7_168 link "API" url="https://community.developer.battle.net/"
+          uid=7_169 StaticText "API"
+      uid=7_170 menuitem "English (US)"
+        uid=7_171 button "English (US)" expandable haspopup="menu"
+      uid=7_172 link "Battle.net" url="https://battle.net/"
+        uid=7_173 image "Battle.net"
+      uid=7_174 StaticText "©2026 Blizzard Entertainment, Inc."
+      uid=7_175 LineBreak "
+"
+      uid=7_176 StaticText "All"
+      uid=7_177 StaticText " "
+      uid=7_178 link "trademarks" url="https://www.blizzard.com/legal/b04001c4-dc81-480d-a475-5e276e241e4f/"
+        uid=7_179 StaticText "trademarks"
+      uid=7_180 StaticText " "
+      uid=7_181 StaticText "referenced herein are the properties of their respective owners."
+      uid=7_182 generic
+        uid=7_183 link "Privacy" url="https://www.blizzard.com/privacy"
+          uid=7_184 StaticText "Privacy"
+      uid=7_185 generic
+        uid=7_186 link "Legal" url="https://www.blizzard.com/legal/"
+          uid=7_187 StaticText "Legal"
+      uid=7_188 generic
+        uid=7_189 link "Terms" url="https://www.blizzard.com/tou"
+          uid=7_190 StaticText "Terms"
+      uid=7_191 generic
+        uid=7_192 link "Cookie Policy" url="https://blizzard.com/cookies"
+          uid=7_193 StaticText "Cookie Policy"
+      uid=7_194 generic
+        uid=7_195 link "Cookie Settings" url="https://blizzard.com/cookies#settings"
+          uid=7_196 StaticText "Cookie Settings"
+      uid=7_197 generic
+        uid=7_198 link "X" url="https://twitter.com/battlenet"
+          uid=7_199 image "X"
+      uid=7_200 generic
+        uid=7_201 link "Facebook" url="https://www.facebook.com/battlenet"
+          uid=7_202 image "Facebook"
+      uid=7_203 generic
+        uid=7_204 link "Instagram" url="https://instagram.com/battlenet"
+          uid=7_205 image "Instagram"
+  uid=7_206 alert atomic live="assertive" relevant="additions text"

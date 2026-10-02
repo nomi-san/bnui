@@ -1,0 +1,153 @@
+.remove-outline:focus { outline: none; }
+.blz-body-text-xxl { font: var(--semantic-body-text-xxl); }
+.blz-body-text-xl { font: var(--semantic-body-text-xl); }
+.blz-body-text-lg { font: var(--semantic-body-text-lg); }
+.blz-body-text-md { font: var(--semantic-body-text-md); }
+.blz-body-text-sm { font: var(--semantic-body-text-sm); }
+.blz-body-text-xs { font: var(--semantic-body-text-xs); }
+.blz-body-text-lg, .blz-body-text-lg::slotted(*), .blz-body-text-md, .blz-body-text-md::slotted(*), .blz-body-text-sm, .blz-body-text-sm::slotted(*), .blz-body-text-xl, .blz-body-text-xl::slotted(*), .blz-body-text-xs, .blz-body-text-xs::slotted(*), .blz-body-text-xxl, .blz-body-text-xxl::slotted(*) { color: var(--global-color-content-700); }
+.blz-heading-text-xxl { font: var(--semantic-heading-text-xxl); }
+.blz-heading-text-xl { font: var(--semantic-heading-text-xl); }
+.blz-heading-text-lg { font: var(--semantic-heading-text-lg); }
+.blz-heading-text-md { font: var(--semantic-heading-text-md); }
+.blz-heading-text-sm { font: var(--semantic-heading-text-sm); }
+.blz-heading-text-xs { font: var(--semantic-heading-text-xs); }
+.blz-heading-text-xxs { font: var(--semantic-heading-text-xxs); }
+.blz-heading-text-lg, .blz-heading-text-lg::slotted(*), .blz-heading-text-md, .blz-heading-text-md::slotted(*), .blz-heading-text-sm, .blz-heading-text-sm::slotted(*), .blz-heading-text-xl, .blz-heading-text-xl::slotted(*), .blz-heading-text-xs, .blz-heading-text-xs::slotted(*), .blz-heading-text-xxl, .blz-heading-text-xxl::slotted(*), .blz-heading-text-xxs { color: var(--semantic-color-content-default); -webkit-font-smoothing: antialiased; margin: 0px; }
+.blz-subheading-text-lg { font: var(--semantic-subheading-text-lg); }
+.blz-subheading-text-lg, .blz-subheading-text-md { letter-spacing: var(--semantic-subheading-letter-spacing); text-transform: uppercase; }
+.blz-subheading-text-md { font: var(--semantic-subheading-text-md); }
+.blz-subheading-text-lg, .blz-subheading-text-lg::slotted(*), .blz-subheading-text-md, .blz-subheading-text-md::slotted(*) { color: var(--global-color-content-700); -webkit-font-smoothing: antialiased; margin: 0px; }
+.blz-title-text-lg { font: var(--semantic-title-text-lg); }
+.blz-title-text-md { font: var(--semantic-title-text-md); }
+.blz-title-text-sm { font: var(--semantic-title-text-sm); }
+.blz-title-text-lg, .blz-title-text-lg::slotted(*), .blz-title-text-md, .blz-title-text-md::slotted(*), .blz-title-text-sm, .blz-title-text-sm::slotted(*) { color: var(--semantic-color-content-default); -webkit-font-smoothing: antialiased; margin: 0px; }
+.blz-link { color: var(--semantic-color-text-link-default); font-weight: var(--global-font-weight-bold); text-decoration: underline rgba(0, 0, 0, 0); text-underline-position: under; transition: all var(--global-motion-duration-medium) var(--global-motion-ease-out); }
+:is(h1, h2, h3, h4, h5, h6, p) > .blz-link { text-decoration: underline; }
+.blz-link:active, .blz-link:visited { color: var(--semantic-color-text-link-default); font-weight: var(--global-font-weight-bold); text-decoration-color: var(--semantic-color-text-link-default); }
+.blz-link.hover, .blz-link:hover { color: var(--semantic-color-text-link-hover); text-decoration-color: var(--semantic-color-text-link-hover); }
+.blz-link-alternate.external, .blz-link-subtle.external, .blz-link.external { white-space: nowrap; }
+.blz-link-alternate.external::after, .blz-link-subtle.external::after, .blz-link.external::after { background-color: currentcolor; content: ""; display: inline-block; height: 1em; margin-inline-start: var(--global-size-25); mask-image: var(--semantic-icon-external-link); mask-repeat: no-repeat; mask-size: 100% 100%; transform: translateY(12.5%); width: 1em; }
+.blz-link-alternate { color: var(--semantic-color-text-link-alternate-default); font-weight: var(--global-font-weight-bold); text-decoration: underline rgba(0, 0, 0, 0); text-underline-position: under; transition: all var(--global-motion-duration-medium) var(--global-motion-ease-out); }
+:is(h1, h2, h3, h4, h5, h6, p) > .blz-link-alternate { text-decoration: underline; }
+.blz-link-alternate:active, .blz-link-alternate:visited { color: var(--semantic-color-text-link-alternate-active); font-weight: var(--global-font-weight-bold); text-decoration-color: var(--semantic-color-text-link-alternate-active); }
+.blz-link-alternate.hover, .blz-link-alternate:hover { color: var(--semantic-color-text-link-alternate-hover); text-decoration-color: var(--semantic-color-text-link-alternate-hover); }
+.blz-link-subtle { color: var(--semantic-color-text-link-subtle-default); font-weight: var(--global-font-weight-bold); text-decoration: underline rgba(0, 0, 0, 0); text-underline-position: under; transition: all var(--global-motion-duration-medium) var(--global-motion-ease-out); }
+:is(h1, h2, h3, h4, h5, h6, p) > .blz-link-subtle { text-decoration: underline; }
+.blz-link-subtle:active, .blz-link-subtle:visited { color: var(--semantic-color-text-link-subtle-active); font-weight: var(--global-font-weight-bold); text-decoration-color: var(--semantic-color-text-link-subtle-active); }
+.blz-link-subtle.hover, .blz-link-subtle:hover { color: var(--semantic-color-text-link-subtle-hover); text-decoration-color: var(--semantic-color-text-link-subtle-hover); }
+.blz-menu-header { align-items: center; color: var(--semantic-color-text-description); display: inline-flex; font: var(--semantic-subheading-text-lg); letter-spacing: var(--semantic-subheading-letter-spacing); overflow: hidden; padding: var(--semantic-space-around-vertical-md-desktop) var(--semantic-space-around-horizontal-xxs) var(--semantic-space-around-vertical-xxs-desktop); text-transform: uppercase; user-select: none; white-space: nowrap; }
+*, :host { box-sizing: border-box; }
+:host { display: block; }
+:host([aspect-ratio]) > * { left: 0px; position: absolute; top: 0px; height: 100% !important; width: 100% !important; }
+:focus:not(:focus-visible) { outline: none; }
+:host([hidden]), [hidden] { display: none !important; }
+::slotted(h1), ::slotted(h2), ::slotted(h3), ::slotted(h4), ::slotted(h5), ::slotted(h6), ::slotted(p), p { font-size: inherit; font-weight: inherit; margin: 0px; }
+::slotted(a) { color: inherit; text-decoration: none; }
+button { appearance: none; background: none; border-width: medium; border-style: none; border-color: currentcolor; border-image: none; color: inherit; cursor: pointer; font: inherit; padding: 0px; }
+.screen-reader-only { border: 0px; clip-path: inset(50%); height: 1px; margin: -1px; overflow: hidden; padding: 0px; position: absolute; width: 1px; }
+:host { --base-card-animation-duration: 0s; --base-card-play-state: "running"; --base-card-animation-name: grow; --base-card-content-display: grid; --base-card-content-container-type: inline-size; --base-card-media-aspect-ratio: unset; --base-card-progress-bar-color: var(
+    --semantic-color-background-icon-selected
+  ); --base-card-size-media-width-horizontal: 60%; background-color: var(--card-backplate-color-background-default); border-radius: var(--semantic-border-radius-md); height: 100%; position: relative; transition: all var(--global-motion-duration-medium) var(--global-motion-ease-out); width: 100%; }
+:host(:not([cosmetic])[active]), :host(:not([cosmetic])[focus-hover]) { background-color: var(--card-backplate-color-background-hover); }
+::slotted([slot="media"]) { aspect-ratio: var(--base-card-media-aspect-ratio); border-top-left-radius: var(--semantic-border-radius-md); border-top-right-radius: var(--semantic-border-radius-md); height: 100%; object-fit: cover; object-position: center top; overflow: hidden; transition: all var(--global-motion-duration-medium) var(--global-motion-ease-out); width: 100%; }
+::slotted(blz-game-tile[slot="media"]) { overflow: unset; }
+::slotted(*) { height: max-content; }
+::slotted(a), ::slotted(button) { display: flex; flex-direction: column; height: 100%; width: 100%; }
+.external-icon { color: var(--semantic-color-content-inactive); display: block; inset-block-end: 0px; inset-inline-end: 0px; position: absolute; }
+.media-wrapper { align-items: center; container-type: var(--base-card-content-container-type); display: flex; position: relative; }
+.badge-container { left: 0px; position: absolute; top: 0px; }
+.badge-container, [part="card"] { height: 100%; width: 100%; }
+.vertical[part="card"] { display: flex; flex-direction: column; }
+.horizontal.reverse-position[part="card"], .vertical.reverse-position[part="card"] { display: flex; flex-direction: column-reverse; }
+::slotted([slot="bottom-left-corner"]), ::slotted([slot="bottom-right-corner"]), ::slotted([slot="top-left-corner"]), ::slotted([slot="top-right-corner"]) { position: absolute; z-index: var(--measure-z-index-above); }
+[part="content"] { display: var(--base-card-content-display); height: 100%; position: relative; }
+.horizontal [part="content"].has-footer { align-items: normal; grid-template-rows: auto; height: auto; }
+.horizontal [part="content"] { align-items: center; height: auto; width: calc(100% - var(--base-card-size-media-width-horizontal)); }
+:host([backplate]) [part="content"] { padding: var(--base-card-space-padding-sm); }
+:host([backplate]) .external-icon { inset-block-end: var(--semantic-space-around-vertical-xs-mobile); inset-inline-end: var(--semantic-space-around-horizontal-xxs); }
+:host(:not([backplate])), :host(:not([backplate])[active]), :host(:not([backplate])[focus-hover]) { background-color: initial; }
+:host(:not([backplate])) .horizontal [part="content"] { padding-block: 0px; padding-inline: var(--base-card-space-padding-sm-desktop-horizontal) 0; }
+:host(:not([backplate])) .vertical [part="content"] { padding: var(--base-card-space-padding-sm-desktop-horizontal) 0 0 0; }
+:host(:not([backplate])) :is(.horizontal.reverse-position, .vertical.reverse-position) [part="content"] { padding: 0 0 var(--base-card-space-padding-sm-desktop-vertical) 0; }
+:host(:not([backplate])) ::slotted([slot="media"]) { border-radius: var(--semantic-border-radius-md); }
+:host(:not([cosmetic])[focus-hover]) ::slotted([slot="media"]) { filter: brightness(1.1); }
+:host([backplate][orientation="vertical"]) ::slotted([slot="media"]) { border-radius: var(--semantic-border-radius-md) var(--semantic-border-radius-md) 0 0; }
+:host([backplate][orientation="horizontal"]) ::slotted([slot="media"]) { border-radius: var(--semantic-border-radius-md) 0 0 var(--semantic-border-radius-md); }
+:is(:host([backplate][orientation="vertical"][order="reverse"]), :host([backplate][orientation="vertical"][position="reverse"])) ::slotted([slot="media"]) { border-radius: 0 0 var(--semantic-border-radius-md) var(--semantic-border-radius-md); }
+:is(:host([backplate][orientation="horizontal"][order="reverse"]), :host([backplate][orientation="horizontal"][position="reverse"])) ::slotted([slot="media"]) { border-radius: 0 var(--semantic-border-radius-md) var(--semantic-border-radius-md) 0; }
+@media (min-width: 320px) {
+  :host([backplate][min-orientation="vertical"]) ::slotted([slot="media"]) { border-radius: var(--semantic-border-radius-md) var(--semantic-border-radius-md) 0 0; }
+  :host([backplate][min-orientation="horizontal"]) ::slotted([slot="media"]) { border-radius: var(--semantic-border-radius-md) 0 0 var(--semantic-border-radius-md); }
+  :is(:host([backplate][min-orientation="vertical"][order="reverse"]), :host([backplate][min-orientation="vertical"][position="reverse"])) ::slotted([slot="media"]) { border-radius: 0 0 var(--semantic-border-radius-md) var(--semantic-border-radius-md); }
+  :is(:host([backplate][min-orientation="horizontal"][order="reverse"]), :host([backplate][min-orientation="horizontal"][position="reverse"])) ::slotted([slot="media"]) { border-radius: 0 var(--semantic-border-radius-md) var(--semantic-border-radius-md) 0; }
+}
+@media (min-width: 480px) {
+  :host([backplate][xs-orientation="vertical"]) ::slotted([slot="media"]) { border-radius: var(--semantic-border-radius-md) var(--semantic-border-radius-md) 0 0; }
+  :host([backplate][xs-orientation="horizontal"]) ::slotted([slot="media"]) { border-radius: var(--semantic-border-radius-md) 0 0 var(--semantic-border-radius-md); }
+  :is(:host([backplate][xs-orientation="vertical"][order="reverse"]), :host([backplate][xs-orientation="vertical"][position="reverse"])) ::slotted([slot="media"]) { border-radius: 0 0 var(--semantic-border-radius-md) var(--semantic-border-radius-md); }
+  :is(:host([backplate][xs-orientation="horizontal"][order="reverse"]), :host([backplate][xs-orientation="horizontal"][position="reverse"])) ::slotted([slot="media"]) { border-radius: 0 var(--semantic-border-radius-md) var(--semantic-border-radius-md) 0; }
+}
+@media (min-width: 720px) {
+  :host([backplate][sm-orientation="vertical"]) ::slotted([slot="media"]) { border-radius: var(--semantic-border-radius-md) var(--semantic-border-radius-md) 0 0; }
+  :host([backplate][sm-orientation="horizontal"]) ::slotted([slot="media"]) { border-radius: var(--semantic-border-radius-md) 0 0 var(--semantic-border-radius-md); }
+  :is(:host([backplate][sm-orientation="vertical"][order="reverse"]), :host([backplate][sm-orientation="vertical"][position="reverse"])) ::slotted([slot="media"]) { border-radius: 0 0 var(--semantic-border-radius-md) var(--semantic-border-radius-md); }
+  :is(:host([backplate][sm-orientation="horizontal"][order="reverse"]), :host([backplate][sm-orientation="horizontal"][position="reverse"])) ::slotted([slot="media"]) { border-radius: 0 var(--semantic-border-radius-md) var(--semantic-border-radius-md) 0; }
+}
+@media (min-width: 960px) {
+  :host([backplate][md-orientation="vertical"]) ::slotted([slot="media"]) { border-radius: var(--semantic-border-radius-md) var(--semantic-border-radius-md) 0 0; }
+  :host([backplate][md-orientation="horizontal"]) ::slotted([slot="media"]) { border-radius: var(--semantic-border-radius-md) 0 0 var(--semantic-border-radius-md); }
+  :is(:host([backplate][md-orientation="vertical"][order="reverse"]), :host([backplate][md-orientation="vertical"][position="reverse"])) ::slotted([slot="media"]) { border-radius: 0 0 var(--semantic-border-radius-md) var(--semantic-border-radius-md); }
+  :is(:host([backplate][md-orientation="horizontal"][order="reverse"]), :host([backplate][md-orientation="horizontal"][position="reverse"])) ::slotted([slot="media"]) { border-radius: 0 var(--semantic-border-radius-md) var(--semantic-border-radius-md) 0; }
+}
+@media (min-width: 1200px) {
+  :host([backplate][lg-orientation="vertical"]) ::slotted([slot="media"]) { border-radius: var(--semantic-border-radius-md) var(--semantic-border-radius-md) 0 0; }
+  :host([backplate][lg-orientation="horizontal"]) ::slotted([slot="media"]) { border-radius: var(--semantic-border-radius-md) 0 0 var(--semantic-border-radius-md); }
+  :is(:host([backplate][lg-orientation="vertical"][order="reverse"]), :host([backplate][lg-orientation="vertical"][position="reverse"])) ::slotted([slot="media"]) { border-radius: 0 0 var(--semantic-border-radius-md) var(--semantic-border-radius-md); }
+  :is(:host([backplate][lg-orientation="horizontal"][order="reverse"]), :host([backplate][lg-orientation="horizontal"][position="reverse"])) ::slotted([slot="media"]) { border-radius: 0 var(--semantic-border-radius-md) var(--semantic-border-radius-md) 0; }
+}
+@media (min-width: 1400px) {
+  :host([backplate][xl-orientation="vertical"]) ::slotted([slot="media"]) { border-radius: var(--semantic-border-radius-md) var(--semantic-border-radius-md) 0 0; }
+  :host([backplate][xl-orientation="horizontal"]) ::slotted([slot="media"]) { border-radius: var(--semantic-border-radius-md) 0 0 var(--semantic-border-radius-md); }
+  :is(:host([backplate][xl-orientation="vertical"][order="reverse"]), :host([backplate][xl-orientation="vertical"][position="reverse"])) ::slotted([slot="media"]) { border-radius: 0 0 var(--semantic-border-radius-md) var(--semantic-border-radius-md); }
+  :is(:host([backplate][xl-orientation="horizontal"][order="reverse"]), :host([backplate][xl-orientation="horizontal"][position="reverse"])) ::slotted([slot="media"]) { border-radius: 0 var(--semantic-border-radius-md) var(--semantic-border-radius-md) 0; }
+}
+@media (min-width: 1600px) {
+  :host([backplate][xxl-orientation="vertical"]) ::slotted([slot="media"]) { border-radius: var(--semantic-border-radius-md) var(--semantic-border-radius-md) 0 0; }
+  :host([backplate][xxl-orientation="horizontal"]) ::slotted([slot="media"]) { border-radius: var(--semantic-border-radius-md) 0 0 var(--semantic-border-radius-md); }
+  :is(:host([backplate][xxl-orientation="vertical"][order="reverse"]), :host([backplate][xxl-orientation="vertical"][position="reverse"])) ::slotted([slot="media"]) { border-radius: 0 0 var(--semantic-border-radius-md) var(--semantic-border-radius-md); }
+  :is(:host([backplate][xxl-orientation="horizontal"][order="reverse"]), :host([backplate][xxl-orientation="horizontal"][position="reverse"])) ::slotted([slot="media"]) { border-radius: 0 var(--semantic-border-radius-md) var(--semantic-border-radius-md) 0; }
+}
+@media (min-width: 2600px) {
+  :host([backplate][max-orientation="vertical"]) ::slotted([slot="media"]) { border-radius: var(--semantic-border-radius-md) var(--semantic-border-radius-md) 0 0; }
+  :host([backplate][max-orientation="horizontal"]) ::slotted([slot="media"]) { border-radius: var(--semantic-border-radius-md) 0 0 var(--semantic-border-radius-md); }
+  :is(:host([backplate][max-orientation="vertical"][order="reverse"]), :host([backplate][max-orientation="vertical"][position="reverse"])) ::slotted([slot="media"]) { border-radius: 0 0 var(--semantic-border-radius-md) var(--semantic-border-radius-md); }
+  :is(:host([backplate][max-orientation="horizontal"][order="reverse"]), :host([backplate][max-orientation="horizontal"][position="reverse"])) ::slotted([slot="media"]) { border-radius: 0 var(--semantic-border-radius-md) var(--semantic-border-radius-md) 0; }
+}
+:host([backplate][order="reverse"]) ::slotted([slot="media"]) { border-radius: 0 0 var(--semantic-border-radius-md) var(--semantic-border-radius-md); }
+:host([active]) .underline { animation-direction: alternate; animation-duration: var(--base-card-animation-duration); animation-name: var(--base-card-animation-name); animation-play-state: var(--base-card-play-state); animation-timing-function: linear; background-color: var(--base-card-progress-bar-color); bottom: 0px; content: ""; height: var(--global-size-50); left: 0px; position: absolute; width: 100%; }
+::slotted([slot="top-left-corner"]) { inset-block-start: 0px; inset-inline-start: 0px; margin-block-start: var(--base-card-space-media-top-left-top); margin-inline-start: var(--base-card-space-media-top-left-left); max-width: 80%; }
+::slotted([slot="top-right-corner"]) { inset-block-start: 0px; inset-inline-end: 0px; margin-block-start: var(--base-card-space-media-top-right-top); margin-inline-end: var(--base-card-space-media-top-right-right); max-width: 80%; }
+::slotted([slot="bottom-left-corner"]) { inset-block-end: 0px; inset-inline-start: 0px; margin-block-end: var(--base-card-space-media-bottom-left-bottom); margin-inline-start: var(--base-card-space-media-bottom-left-left); max-width: 80%; }
+::slotted([slot="bottom-right-corner"]) { inset-block-end: 0px; inset-inline-end: 0px; margin-block-end: var(--base-card-space-media-bottom-right-bottom); margin-inline-end: var(--base-card-space-media-bottom-right-right); max-width: 80%; }
+::slotted([slot="footer"]) { margin-top: auto; padding-top: var(--semantic-space-around-vertical-xl-mobile); }
+@container (max-width: 320px) {
+  ::slotted([slot="bottom-left-corner"]), ::slotted([slot="bottom-right-corner"]), ::slotted([slot="top-left-corner"]), ::slotted([slot="top-right-corner"]) { margin: var(--global-size-50); }
+}
+.vertical { grid-template-rows: 1fr; }
+:host(:not([backplate])) .horizontal.reverse-position [part="content"] { padding: 0 var(--base-card-space-padding-md-desktop-vertical) 0 0; }
+.horizontal.reverse-position[part="card"] { flex-direction: row-reverse; }
+.horizontal[part="card"] { display: flex; flex-direction: row; }
+.horizontal .media-wrapper { width: var(--base-card-size-media-width-horizontal); }
+.horizontal .main { display: flex; flex-grow: 1; }
+@media (min-width: 960px) {
+  :host([backplate]) [part="content"] { padding: var(--base-card-space-padding-md); }
+  ::slotted([slot="footer"]) { padding-top: var(--semantic-space-around-vertical-xl-desktop); }
+}
+@media (min-width: 1200px) {
+  :host([backplate]) .horizontal [part="content"] { padding: var(--base-card-space-padding-lg); }
+}
+@keyframes grow { 
+  0% { width: 0px; }
+  100% { width: 100%; }
+}

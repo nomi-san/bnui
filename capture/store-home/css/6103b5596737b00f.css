@@ -1,0 +1,88 @@
+body, html { padding: 0px; margin: 0px; background-color: var(--semantic-color-background-page-primary); background-size: cover; }
+a { color: inherit; text-decoration: none; }
+* { box-sizing: border-box; }
+sup { font-size: var(--global-font-size-75); line-height: 0; }
+:root {
+  --semantic-space-around-horizontal-xxxl: var(
+    --semantic-space-around-horizontal-xxxl-mobile
+  ); --semantic-space-around-horizontal-xxl: var(
+    --semantic-space-around-horizontal-xxl-mobile
+  ); --semantic-space-around-horizontal-xl: var(
+    --semantic-space-around-horizontal-xl-mobile
+  ); --semantic-space-around-horizontal-lg: var(
+    --semantic-space-around-horizontal-lg-mobile
+  ); --semantic-space-around-horizontal-md: var(
+    --semantic-space-around-horizontal-md-mobile
+  ); --semantic-space-around-vertical-xxl: var(
+    --semantic-space-around-vertical-xxl-mobile
+  ); --semantic-space-around-vertical-xl: var(
+    --semantic-space-around-vertical-xl-mobile
+  ); --semantic-space-around-vertical-lg: var(
+    --semantic-space-around-vertical-lg-mobile
+  ); --semantic-space-around-vertical-md: var(
+    --semantic-space-around-vertical-md-mobile
+  ); --semantic-space-around-vertical-sm: var(
+    --semantic-space-around-vertical-sm-mobile
+  ); --semantic-space-around-vertical-xs: var(
+    --semantic-space-around-vertical-xs-mobile
+  ); --semantic-space-around-vertical-xxs: var(
+    --semantic-space-around-vertical-xxs-mobile
+  ); --semantic-content-space-lg: var(--semantic-content-space-lg-mobile); --semantic-section-space-horizontal: var(
+    --semantic-section-space-horizontal-mobile
+  ); --semantic-section-space-vertical-md: var(
+    --semantic-section-space-vertical-md-mobile
+  ); --semantic-section-space-vertical-sm: var(
+    --semantic-section-space-vertical-sm-mobile
+  ); --semantic-header-margin-space-xl: var(
+    --semantic-header-margin-space-xl-mobile
+  ); --semantic-header-margin-space-lg: var(--semantic-header-margin-space-lg); --semantic-header-margin-space-md: var(--semantic-header-margin-space-md); --semantic-grid-gap-xl: var(--semantic-grid-gap-xl-mobile); --semantic-grid-gap-lg: var(--semantic-grid-gap-lg-mobile); --semantic-grid-gap-md: var(--semantic-grid-gap-md-mobile); --semantic-grid-gap-sm: var(--semantic-grid-gap-sm-mobile); --semantic-grid-gap-xs: var(--semantic-grid-gap-xs-mobile); --semantic-grid-gap-xxs: var(--semantic-grid-gap-xxs-mobile);
+  @media (min-width: 720px) {
+  --semantic-section-space-horizontal: var(
+      --semantic-section-space-horizontal-tablet
+    );
+}
+  @media (min-width: 960px) {
+  --semantic-space-around-horizontal-xxxl: var(
+      --semantic-space-around-horizontal-xxxl-desktop
+    ); --semantic-space-around-horizontal-xxl: var(
+      --semantic-space-around-horizontal-xxl-desktop
+    ); --semantic-space-around-horizontal-xl: var(
+      --semantic-space-around-horizontal-xl-desktop
+    ); --semantic-space-around-horizontal-lg: var(
+      --semantic-space-around-horizontal-lg-desktop
+    ); --semantic-space-around-horizontal-md: var(
+      --semantic-space-around-horizontal-md-desktop
+    ); --semantic-space-around-vertical-xxl: var(
+      --semantic-space-around-vertical-xxl-desktop
+    ); --semantic-space-around-vertical-xl: var(
+      --semantic-space-around-vertical-xl-desktop
+    ); --semantic-space-around-vertical-lg: var(
+      --semantic-space-around-vertical-lg-desktop
+    ); --semantic-space-around-vertical-md: var(
+      --semantic-space-around-vertical-md-desktop
+    ); --semantic-space-around-vertical-sm: var(
+      --semantic-space-around-vertical-sm-desktop
+    ); --semantic-space-around-vertical-xs: var(
+      --semantic-space-around-vertical-xs-desktop
+    ); --semantic-space-around-vertical-xxs: var(
+      --semantic-space-around-vertical-xxs-desktop
+    ); --semantic-content-space-lg: var(--semantic-content-space-lg-desktop); --semantic-section-space-horizontal: var(
+      --semantic-section-space-horizontal-desktop
+    ); --semantic-section-space-vertical-md: var(
+      --semantic-section-space-vertical-md-desktop
+    ); --semantic-section-space-vertical-sm: var(
+      --semantic-section-space-vertical-sm-desktop
+    ); --semantic-header-margin-space-xl: var(
+      --semantic-header-margin-space-xl-desktop
+    ); --semantic-header-margin-space-lg: var(--semantic-header-margin-space-lg); --semantic-header-margin-space-md: var(--semantic-header-margin-space-md); --semantic-grid-gap-xl: var(--semantic-grid-gap-xl-desktop); --semantic-grid-gap-lg: var(--semantic-grid-gap-lg-desktop); --semantic-grid-gap-md: var(--semantic-grid-gap-md-desktop); --semantic-grid-gap-sm: var(--semantic-grid-gap-sm-desktop); --semantic-grid-gap-xs: var(--semantic-grid-gap-xs-desktop); --semantic-grid-gap-xxs: var(--semantic-grid-gap-xxs-desktop);
+}
+  --drop-shadow-6: 0px 3px 6px var(--global-color-accent-600); --drop-shadow-24: 0px 6px 24px var(--global-color-accent-500); --semantic-gallery-size-small: 24px; --semantic-gallery-size-default: 32px; --semantic-gallery-size-large: 40px; --gallery-size: var(--semantic-gallery-size-small);
+  @media (min-width: 720px) {
+  --gallery-size: var(--semantic-gallery-size-default);
+}
+  @media (min-width: 960px) {
+  --gallery-size: var(--semantic-gallery-size-large);
+}
+  & blz-nav-footer { z-index: var(--measure-z-index-fixed); }
+}
+html.embedded-layout, html.embedded-layout body { background-color: initial; }

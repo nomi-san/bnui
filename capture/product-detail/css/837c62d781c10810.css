@@ -1,0 +1,139 @@
+.purchase-panel__tabs { border-bottom: 1px solid var(--battle-net-color-physical-white-12); display: block; width: 100%; }
+.purchase-panel__tabs::part(tab-content) { justify-content: start; }
+.purchase-panel__tabs blz-tab-control { --tab-standard-font-label: var(--semantic-subheading-text-md); display: flex; flex-basis: 0px; flex-grow: 1; text-align: center; width: 100%; }
+.purchase-panel__tabs blz-tab-control .xbox-gamepass-logo { height: var(--global-size-200); width: 96px; }
+.gamepass-info, .gamepass-info h4 { color: var(--battle-net-color-physical-white-100); }
+.gamepass-info h4.middle-title { margin: 0px; padding-top: var(--semantic-space-around-vertical-md); }
+.gamepass-info p { color: var(--battle-net-color-physical-white-84); font: var(--semantic-body-text-md); }
+.gamepass-info .join-now-button, .gamepass-info blz-button { margin-top: var(--semantic-space-between-xxxs); }
+.gamepass-info .join-now-button { display: inline-block; }
+.purchase-info { color: var(--battle-net-color-physical-white-100); display: grid; gap: var(--semantic-space-between-lg); width: 100%; }
+@media (min-width: 960px) {
+  .purchase-info { gap: var(--semantic-space-between-lg); }
+}
+.multi-product-selection__header { align-items: center; display: grid; grid-template-areas: "description comparison-link"; padding-bottom: var(--semantic-space-between-sm); }
+@media (min-width: 960px) {
+  .multi-product-selection__header { padding-bottom: var(--semantic-space-between-xs); }
+}
+.multi-product-selection__header__description { color: var(--battle-net-color-physical-white-72); grid-area: description; justify-self: start; text-transform: uppercase; }
+.multi-product-selection__header__comparison-link { grid-area: comparison-link; justify-self: end; text-decoration: underline; }
+@media (min-width: 320px) {
+  .multi-product-selection__header__comparison-link { font-weight: var(--global-font-weight-bold); }
+}
+.product-eligibility-description p { align-items: center; color: var(--battle-net-color-physical-white-72); display: flex; margin: 0px; }
+.product-eligibility-description p .product-eligibility-badge { margin-right: var(--global-size-100); }
+.purchase-panel__alert { padding-left: var(--semantic-space-around-horizontal-lg); padding-right: var(--semantic-space-around-horizontal-lg); padding-top: var(--semantic-space-around-vertical-sm); }
+.actions, .purchase-panel__alert dd { margin: 0px; }
+.actions .panel-buttons { margin-left: 0px; }
+.app-store-badges { margin: var(--semantic-space-between-lg) 0 0 0; }
+.app-store-badges dt { color: var(--battle-net-color-physical-white-100); font-weight: var(--global-font-weight-bold); margin-bottom: var(--semantic-space-between-md); }
+.app-store-badges.mobile-only-app-store-badges { border-width: medium; border-style: none; border-color: currentcolor; border-image: none; margin: 0px; padding-top: 0px; }
+.app-store-badges .badges { margin: var(--semantic-space-between-xxl) 0 var(--semantic-space-between-sm); }
+.app-store-badges blz-store-badge-group { width: 100%; }
+.app-store-badges blz-store-badge-group blz-store-badge::part(image) { height: 50px; }
+.app-store-badges blz-store-badge-group blz-store-badge[disabled]::part(image) { filter: none; opacity: 0.4; }
+.qrcode { background-color: var(--global-color-background-300); border-radius: 8px; display: flex; margin: 0px; padding: var(--semantic-space-around-vertical-xl) var(--semantic-space-around-horizontal-lg); }
+@media (min-width: 960px) {
+  .qrcode { padding: var(--semantic-space-around-vertical-xxl) var(--semantic-space-around-horizontal-lg); }
+}
+@media (min-width: 1400px) {
+  .qrcode { padding: var(--semantic-space-around-vertical-xl) var(--semantic-space-around-horizontal-lg); }
+}
+.qrcode__code { margin-right: var(--semantic-space-between-xl); }
+@media (min-width: 960px) {
+  .qrcode__code { margin-right: var(--semantic-space-between-md); }
+}
+@media (min-width: 1400px) {
+  .qrcode__code { margin-right: var(--semantic-space-between-xl); }
+}
+.qrcode__code::part(canvas) { border-radius: 8px; }
+.qrcode__instruction { margin-bottom: auto; margin-top: auto; }
+.qrcode__headline { color: var(--battle-net-color-physical-white-100); display: flex; margin-bottom: var(--semantic-space-between-md); }
+.qrcode__headline__text { margin-left: var(--semantic-space-between-xxxs); }
+@media (min-width: 960px) {
+  .qrcode__headline__text { margin-left: 0px; }
+}
+@media (min-width: 1400px) {
+  .qrcode__headline__text { margin-left: var(--semantic-space-between-xxxs); }
+}
+.qrcode__subheadline { color: var(--battle-net-color-physical-white-84); overflow-wrap: anywhere; }
+.qrcode blz-icon { display: block; }
+@media (min-width: 960px) {
+  .qrcode blz-icon { display: none; }
+}
+@media (min-width: 1400px) {
+  .qrcode blz-icon { display: block; }
+}
+.qrcode blz-icon::part(icon) { height: var(--global-size-300); width: var(--global-size-300); }
+.qrcode blz-qr-code { align-items: center; display: flex; }
+.qrcode blz-qr-code::part(canvas) { height: 164px; width: 164px; }
+@media (min-width: 960px) {
+  .qrcode blz-qr-code::part(canvas) { height: 124px; width: 124px; }
+}
+@media (min-width: 1400px) {
+  .qrcode blz-qr-code::part(canvas) { height: 164px; width: 164px; }
+}
+.qrcode blz-qr-code.qrcode__code-mobile-pc::part(canvas) { height: 80px; width: 80px; }
+fieldset .bulk-purchase-error, fieldset .bulk-purchase-input, fieldset .bulk-purchase-total { display: flex; }
+fieldset .bulk-purchase-input { color: var(--battle-net-color-physical-white-72); padding-bottom: var(--semantic-space-around-vertical-xl); }
+fieldset .bulk-purchase-input label { color: var(--battle-net-color-physical-white-72); margin-top: var(--semantic-space-between-xxs); }
+fieldset .bulk-purchase-input .bulk-purchase-combo-input { display: inline-block; flex: 1 1 0%; text-align: right; white-space: nowrap; }
+fieldset .bulk-purchase-input .bulk-purchase-combo-input blz-icon-button { margin-left: var(--semantic-space-between-sm); margin-top: var(--semantic-space-between-xxs); }
+fieldset .bulk-purchase-input .bulk-purchase-combo-input #quantity-input { display: inline-block; height: 40px; margin-left: var(--semantic-space-between-sm); vertical-align: top; width: 56px; }
+fieldset .bulk-purchase-error { align-items: flex-start; border-radius: var(--semantic-border-radius-md); color: var(--battle-net-color-physical-white-100); display: flex; padding: var(--semantic-space-around-vertical-sm) var(--semantic-space-around-horizontal-xl); }
+fieldset .bulk-purchase-error blz-icon { color: var(--global-color-warning-400); height: 18px; margin-right: var(--semantic-space-between-xxxs); width: 18px; }
+fieldset .bulk-purchase-total { border-top: 1px solid var(--battle-net-color-physical-white-12); color: var(--battle-net-color-physical-white-60); padding-top: var(--semantic-space-around-vertical-md); }
+:root { --rt-color-white: #fff; --rt-color-dark: #222; --rt-color-success: #8dc572; --rt-color-error: #be6464; --rt-color-warning: #f0ad4e; --rt-color-info: #337ab7; --rt-opacity: 0.9; --rt-transition-show-delay: 0.15s; --rt-transition-closing-delay: 0.15s; --rt-arrow-size: 8px; }
+.core-styles-module_tooltip__3vRRp { left: 0px; opacity: 0; pointer-events: none; position: absolute; top: 0px; }
+.core-styles-module_fixed__pcSol { position: fixed; }
+.core-styles-module_arrow__cvMwQ { backface-visibility: hidden; background: inherit; position: absolute; z-index: -1; }
+.core-styles-module_content__BRKdB { position: relative; z-index: 1; }
+.core-styles-module_noArrow__xock6 { display: none; }
+.core-styles-module_clickable__ZuTTB { pointer-events: auto; }
+.core-styles-module_show__Nt9eE { opacity: var(--rt-opacity); transition: opacity var(--rt-transition-show-delay) ease-out; will-change: opacity; }
+.core-styles-module_closing__sGnxF { opacity: 0; transition: opacity var(--rt-transition-closing-delay) ease-in; will-change: opacity; }
+.styles-module_tooltip__mnnfp { border-radius: 3px; font-size: 90%; width: max-content; }
+.styles-module_content__ydYdI { background: inherit; border-radius: inherit; padding: 8px 16px; }
+.styles-module_arrow__K0L3T { height: var(--rt-arrow-size); width: var(--rt-arrow-size); }
+[class*="react-tooltip__place-top"] > .styles-module_arrow__K0L3T { transform: rotate(45deg); }
+[class*="react-tooltip__place-right"] > .styles-module_arrow__K0L3T { transform: rotate(135deg); }
+[class*="react-tooltip__place-bottom"] > .styles-module_arrow__K0L3T { transform: rotate(225deg); }
+[class*="react-tooltip__place-left"] > .styles-module_arrow__K0L3T { transform: rotate(315deg); }
+.styles-module_dark__xNqje { background: var(--rt-color-dark); color: var(--rt-color-white); }
+.styles-module_light__Z6W-X { background-color: var(--rt-color-white); color: var(--rt-color-dark); }
+.styles-module_success__A2AKt { background-color: var(--rt-color-success); color: var(--rt-color-white); }
+.styles-module_warning__SCK0X { background-color: var(--rt-color-warning); color: var(--rt-color-white); }
+.styles-module_error__JvumD { background-color: var(--rt-color-error); color: var(--rt-color-white); }
+.styles-module_info__BWdHW { background-color: var(--rt-color-info); color: var(--rt-color-white); }
+.multi-product-selection__options { list-style-type: none; margin: 0px; padding: 0px; }
+.multi-product-selection__options .product-options-container { margin-top: var(--semantic-grid-gap-xxs); }
+.react-tooltip { display: none; border: 1px solid var(--battle-net-color-physical-white-12); box-shadow: var(--drop-shadow-6); }
+@media (min-width: 960px) {
+  .react-tooltip { display: block; }
+}
+.react-tooltip .react-tooltip-arrow { border: 1px solid var(--battle-net-color-physical-white-12); box-shadow: var(--drop-shadow-6); }
+.associated-img-container { height: 144px; overflow: hidden; padding-top: 56.25%; position: relative; width: 256px; }
+.associated-img-container .associated-img { height: 100%; left: 0px; object-fit: cover; object-position: center top; position: absolute; top: 0px; width: 100%; }
+.product-option-variable-balance { padding: var(--semantic-space-around-vertical-sm) var(--semantic-space-around-horizontal-md); width: 100%; }
+.product-option-variable-balance .product-option-variable-balance-container { display: flex; justify-content: flex-end; }
+.product-option-variable-balance .product-option-variable-balance-container label { vertical-align: middle; }
+.product-option-variable-balance .product-option-variable-balance-container label.price { margin-bottom: auto; margin-right: var(--semantic-space-between-sm); margin-top: auto; }
+.total--border-top { border-top: 1px solid var(--battle-net-color-physical-white-12); padding-top: var(--semantic-space-around-vertical-xl); }
+.product-total { line-height: var(--global-font-line-height-tight); margin: 0px; }
+.product-total dd { margin-bottom: 0px; }
+.product-total__disclaimer { color: var(--battle-net-color-physical-white-60); display: block; margin: var(--semantic-space-between-xxxs) 0 0 0; }
+.product-total__price-container { margin-bottom: var(--semantic-space-between-sm); margin-inline-start: 0px; }
+.product-total__price-container--with-badge { align-items: center; display: flex; gap: var(--semantic-grid-gap-xxs); justify-content: space-between; width: calc(100% - var(--global-size-300)); }
+.panel-button-section p { color: var(--battle-net-color-physical-white-84); margin-bottom: var(--semantic-space-between-sm); padding: var(--global-size-25); }
+.panel-button-section .buttons { list-style-type: none; margin: 0px; padding: 0px; }
+.panel-button-section .buttons .gift-button--left-aligned { float: left; width: calc(50% - var(--global-size-50)); }
+.panel-button-section .buttons .wishlist-button--right-aligned { float: right; width: calc(50% - var(--global-size-50)); }
+.panel-button-section .buttons li { list-style-type: none; margin: 0px; padding-bottom: var(--global-size-125); }
+.panel-button-section .buttons li:last-child { padding-bottom: 0px; }
+.panel-button-section .buttons li:has(.hide) { margin-bottom: calc(-1*var(--global-size-125)); }
+.panel-button-section .starterPage li:not(:first-child) { display: none; }
+.panel-button-section blz-skeleton { display: block; inline-size: 100%; }
+.product-selection { color: var(--battle-net-color-physical-white-100); display: grid; gap: var(--semantic-space-between-lg); width: 100%; }
+@media (min-width: 960px) {
+  .product-selection { gap: var(--semantic-space-between-xl); }
+}

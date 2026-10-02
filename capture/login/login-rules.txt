@@ -1,0 +1,89 @@
+=== bnet-next-web.css (53)
+input[type="checkbox"], input[type="radio"] { box-sizing: border-box; padding: 0; }
+input[type="search"] { -webkit-appearance: textfield; box-sizing: content-box; }
+input[type="search"]::-webkit-search-cancel-button, input[type="search"]::-webkit-search-decoration { -webkit-appearance: none; }
+input[type="submit"].btn-block, input[type="reset"].btn-block, input[type="button"].btn-block { width: 100%; }
+.blz-password-wrapper input[type="password"], .blz-password-wrapper input[type="text"] { padding-right: 52px; }
+.modal.agegate .modal-body .btn-primary { min-width: 110px; }
+input::-moz-selection { background: #47a6ff; }
+input::selection { background: #47a6ff; }
+.breadcrumb > li > .divider { padding: 0 5px; opacity: .25; }
+.btn-primary { background-color: #0074e0; color: #ffffff; border: 2px solid transparent; font-weight: 500; border-radius: 4px; transition: background-color 0.2s, border-color 0.2s, color 0.2s; }
+.btn-primary:hover, .btn-primary:focus { background-color: #0074e0; color: #ffffff; border-color: #47a6ff; }
+.btn-primary:active, .btn-primary.active { background-color: #003f7a; color: rgba(255, 255, 255, 0.6); border-color: #005aad; box-shadow: none; }
+.btn-primary.disabled, .btn-primary[disabled], .btn-primary.disabled:hover, .btn-primary.disabled:focus, .btn-primary.disabled:active, .btn-primary.disabled.active { background-color: #003f7a !important; color: rgba(255, 255, 255, 0.6) !important; border-color: transparent !important; pointer-events: none; }
+.btn-primary.disabled.loading, .btn-primary[disabled].loading, .btn-primary.disabled:hover.loading, .btn-primary.disabled:focus.loading, .btn-primary.disabled:active.loading, .btn-primary.disabled.active.loading { color: rgba(255, 255, 255, 0) !important; }
+body.show-focus-outlines .btn-primary:focus { background-color: #0074e0; }
+.btn-primary [class^="icon-"], .btn-primary [class*=" icon-"] { background-image: url("../../images/toolkit/themes/bnet/icons/sprite-16-white.2WzHs.png"); opacity: 1; }
+.btn-primary:active [class^="icon-"], .btn-primary.active [class*=" icon-"] { opacity: 0.7; }
+.btn-primary.disabled [class^="icon-"], .btn-primary[disabled] [class^="icon-"], .btn-primary.disabled [class*=" icon-"], .btn-primary[disabled] [class*=" icon-"] { opacity: 0.15; }
+.btn-primary.disabled:active [class^="icon-"], .btn-primary[disabled]:active [class^="icon-"], .btn-primary.disabled.active [class^="icon-"], .btn-primary[disabled].active [class^="icon-"], .btn-primary.disabled:active [class*=" icon-"], .btn-primary[disabled]:active [class*=" icon-"], .btn-primary.disabled.active [class*=" icon-"], .btn-primary[disabled].active [class*=" icon-"] { opacity: 0.15; }
+.btn.btn-primary.loading:before { background-image: url("../../images/toolkit/themes/bnet-next/spinners/spinner-40-battlenet.0mCvU.png"); background-size: 420px 20px; }
+.dropdown-menu .divider { height: 1px; margin: 12px 1px 12px; overflow: hidden; border-bottom: 1px solid #3d434f; background-color: transparent; margin: 2px 0 3px 0; }
+input, select, select optgroup, select option, textarea { font-family: "Noto Sans", "Georgia", "Times New Roman", "Times", "Segoe UI Symbol", "Segoe MDL2 Assets", serif; }
+input:lang(zh-CN), select:lang(zh-CN), select optgroup:lang(zh-CN), select option:lang(zh-CN), textarea:lang(zh-CN) { font-family: "Noto Sans", "Georgia", "Times New Roman", "Times", "Segoe UI Symbol", "Segoe MDL2 Assets", "Noto Sans", "????????????", "STSong", "??????", "SimSun", "MS??????", "MS Song", "Segoe UI Symbol", "Segoe MDL2 Assets", serif; }
+input:lang(zh-TW), select:lang(zh-TW), select optgroup:lang(zh-TW), select option:lang(zh-TW), textarea:lang(zh-TW) { font-family: "Noto Sans", "Georgia", "Times New Roman", "Times", "Segoe UI Symbol", "Segoe MDL2 Assets", "Noto Sans", "????????????", "PMingLiU", "??????", "SimSun", "?????????", "Ming Light", "Segoe UI Symbol", "Segoe MDL2 Assets", serif; }
+input:lang(ko), select:lang(ko), select optgroup:lang(ko), select option:lang(ko), textarea:lang(ko) { font-family: "Noto Sans", "Georgia", "Times New Roman", "Times", "Segoe UI Symbol", "Segoe MDL2 Assets", "Noto Sans", "?????? ??????", "Malgun Gothic", "????????????????????????", "AppleSDGothicNeo", "????????????", "AppleGothic", "??????", "Dotum", "Segoe UI Symbol", "Segoe MDL2 Assets", serif; }
+input:lang(ja), select:lang(ja), select optgroup:lang(ja), select option:lang(ja), textarea:lang(ja) { font-family: "Noto Sans", "Georgia", "Times New Roman", "Times", "Segoe UI Symbol", "Segoe MDL2 Assets", "Noto Sans", "?????? ?????????", "MS PMincho", "Segoe UI Symbol", "Segoe MDL2 Assets", serif; }
+input:lang(th), select:lang(th), select optgroup:lang(th), select option:lang(th), textarea:lang(th) { font-family: "Object Sans", "Tahoma", "Arial", "Helvetica", "Segoe UI Symbol", "Segoe MDL2 Assets", serif; }
+.uneditable-input, select, textarea, input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], .select-box { display: inline-block; vertical-align: middle; height: 40px; padding: 0 12px; margin-top: 3px; margin-bottom: 3px; font-size: 16px; line-height: 24px; border: 1px solid rgba(255, 255, 255, 0.36); background-color: #171920; color: #ffffff; -moz-box-sizing: border-box; box-sizing: border-box; border-radius: 4px; }
+select, textarea, input[type="color"], input[type="date"], input[type="datetime"], input[type="datetime-local"], input[type="email"], input[type="month"], input[type="number"], input[type="password"], input[type="search"], input[type="tel"], input[type="text"], input[type="time"], input[type="url"], input[type="week"], .select-box { -webkit-appearance: none; -moz-appearance: none; -ms-appearance: none; appearance: none; transition: background-position 0.2s, background-color 0.2s, border-color 0.2s, box-shadow 0.2s; }
+input[type="number"] { -moz-appearance: textfield; }
+input.input-large { margin: 5px 0; padding: 0 12px; font-size: 16px; line-height: 56px; min-height: 56px; }
+input.input-large.active, input.input-large:active { padding: 1 11px -1 13px; }
+input.input-large.disabled:active, input.input-large[disabled]:active, input.input-large.disabled.active, input.input-large[disabled].active { padding: 0 12px !important; }
+input:invalid, input:valid, input:required { box-shadow: inherit; }
+input::-webkit-color-swatch-wrapper { border: 0; padding: 5px 0; }
+input::-webkit-color-swatch { border: 1px solid rgba(255, 255, 255, 0.36); padding: 0; }
+input::-webkit-inner-spin-button { -webkit-appearance: none; width: 0; overflow: hidden; }
+input::-webkit-outer-spin-button { -webkit-appearance: none; margin: 0; width: 0; overflow: hidden; }
+input::-webkit-calendar-picker-indicator { background: url("../../images/toolkit/themes/bnet/icons/sprite-16-white.2WzHs.png"); background-position: -16px -256px; opacity: 0.3; width: 16px; height: 16px; padding: 0; color: rgba(255, 255, 255, 0); transition: opacity 200ms; }
+input:hover::-webkit-calendar-picker-indicator { opacity: 0.5; }
+input:focus::-webkit-calendar-picker-indicator { opacity: 0.5; }
+input::-webkit-clear-button { -webkit-appearance: none; background: url("../../images/toolkit/themes/bnet/icons/sprite-16-white.2WzHs.png"); background-position: -112px -96px; opacity: 0.3; width: 16px; height: 16px; }
+input:hover::-webkit-clear-button { opacity: 0.5; }
+input:focus::-webkit-clear-button { opacity: 0.5; }
+input::-webkit-datetime-edit { padding: 0; }
+input::-webkit-datetime-edit-fields-wrapper { background: none; }
+input::-webkit-datetime-edit-text { color: rgba(255, 255, 255, 0.6); }
+input::-webkit-datetime-edit-year-field, input::-webkit-datetime-edit-month-field, input::-webkit-datetime-edit-week-field, input::-webkit-datetime-edit-day-field, input::-webkit-datetime-edit-hour-field, input::-webkit-datetime-edit-minute-field, input::-webkit-datetime-edit-second-field, input::-webkit-datetime-edit-millisecond-field, input::-webkit-datetime-edit-ampm-field { color: #ffffff; }
+input:-webkit-autofill, textarea:-webkit-autofill, select:-webkit-autofill { border: 1px solid #a9a9ac; -webkit-text-fill-color: #ffffff; -webkit-box-shadow: 0 0 0px 1000px #2e2e34 inset; transition: background-color 0.2s; }
+input:-webkit-autofill:hover, textarea:-webkit-autofill:hover, select:-webkit-autofill:hover, input:-webkit-autofill:focus, textarea:-webkit-autofill:focus, select:-webkit-autofill:focus { border: 1px solid #fafafa; }
+input:-webkit-autofill.status-error, textarea:-webkit-autofill.status-error, select:-webkit-autofill.status-error, input:-webkit-autofill.status-warning, textarea:-webkit-autofill.status-warning, select:-webkit-autofill.status-warning { border: 1px solid #a9a9ac; }
+.js-enabled .select-box.input-block { width: 100%; }
+.icon-white, .dropdown-menu > .disabled > a > [class^="icon-"], .dropdown-menu > .disabled > a > [class*=" icon-"], .btn-primary [class^="icon-"], .btn-primary [class*=" icon-"], .btn.disabled [class^="icon-"], .btn.disabled [class*=" icon-"], .btn[disabled] [class^="icon-"], .btn[disabled] [class*=" icon-"] { background-image: url("../../images/toolkit/themes/bnet/icons/sprite-32-white.3ZFCE.png"); background-size: 160px 480px; }
+=== login-global.css (34)
+body .third-party-login { flex:1 1;margin:0 9px 0 9px }
+body .btn.social-icon { width:44px;height:44px;padding:13px;border:none;border-radius:2px;margin-bottom:12px }
+body .btn.social-icon .icon-apple,body .btn.social-icon .icon-discord,body .btn.social-icon .icon-facebook,body .btn.social-icon .icon-google,body .btn.social-icon .icon-live,body .btn.social-icon .icon-nintendo,body .btn.social-icon .icon-ntes,body .btn.social-icon .icon-psn,body .btn.social-icon .icon-steam { margin-left:0;margin-right:0 }
+body .btn.social-icon .icon-ntes { margin-left:-6px }
+body .btn.social-icon.login-facebook { background-color:#1877f2 }
+body .btn.social-icon.login-facebook:focus,body .btn.social-icon.login-facebook:hover { background-color:#1860b7 }
+body .btn.social-icon.login-google { background-color:#fff }
+body .btn.social-icon.login-google:focus,body .btn.social-icon.login-google:hover { background-color:#cecece }
+body .btn.social-icon.login-apple { background-color:#fff }
+body .btn.social-icon.login-apple:focus,body .btn.social-icon.login-apple:hover { background-color:#cecece }
+body .btn.social-icon.login-steam { background-color:#fff }
+body .btn.social-icon.login-steam:focus,body .btn.social-icon.login-steam:hover { background-color:#cecece }
+body .btn.social-icon.login-psn { background-color:#0070cc }
+body .btn.social-icon.login-psn:focus,body .btn.social-icon.login-psn:hover { background-color:#00439c }
+body .btn.social-icon.login-live { background-color:#107c10 }
+body .btn.social-icon.login-live:focus,body .btn.social-icon.login-live:hover { background-color:#0a4f0a }
+body .btn.social-icon.login-nintendo { background-color:#e60012 }
+body .btn.social-icon.login-nintendo:focus,body .btn.social-icon.login-nintendo:hover { background-color:#b3000e }
+body .btn.social-icon.login-discord { background-color:#5865f2 }
+body .btn.social-icon.login-discord:focus,body .btn.social-icon.login-discord:hover { background-color:#374098 }
+body.wcag .box-wrapper .login .external-login-container>.third-party-login { margin:0 13px }
+body.wcag.show-focus-outlines .login .external-login-container .third-party-login:focus { outline-offset:1px }
+body.tk-bnet-next .btn.social-icon { position:relative;width:48px;height:48px;padding:13px;border-radius:4px;margin:12px }
+body.tk-bnet-next .btn.social-icon.btn-large { font-size:initial;min-height:initial;line-height:initial }
+body.tk-bnet-next .btn.social-icon>i { position:absolute;left:50%;top:50%;transform:translate(-50%,-50%);margin:0 }
+body.tk-bnet-next.show-focus-outlines .login .external-login-container .third-party-login:focus { outline-offset:1px }
+body.app .box-wrapper .login .social-login .social-icon { margin-bottom:16px }
+.otp input[type=text].otp__input { position:absolute;top:0;left:0;width:100%;height:100%;box-sizing:border-box;margin:0;font-size:inherit;padding:.5em;line-height:1;text-transform:uppercase;text-align:center }
+.otp input[type=text].otp__input::placeholder { font-size:16px;position:relative;top:-.25em }
+#login-wrapper .login.email-first .forgot-cta { font-size:14px;line-height:20px;margin:16px 0 0 0 }
+#login-wrapper .login.email-first .forgot-cta a.btn-tertiary,#login-wrapper .login.email-first .forgot-cta a:not(.btn) { text-decoration:none }
+#login-wrapper .login.email-first .forgot-cta a.btn-tertiary[target="_blank"]:after,#login-wrapper .login.email-first .forgot-cta a:not(.btn)[target="_blank"]:after { content:none }
+#login-wrapper .login.email-first .privacy-policy-notice { margin-top:16px;font-size:14px;line-height:20px;color:rgba(255,255,255,.6) }
+#login-wrapper .login.email-first .privacy-policy-notice a { font-weight:700;color:rgba(255,255,255,.6) }

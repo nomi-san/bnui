@@ -1,0 +1,31 @@
+.css-1hdoajr.Mui-focused .MuiAutocomplete-clearIndicator { visibility: visible; }
+@media (pointer: fine) {
+  .css-1hdoajr:hover .MuiAutocomplete-clearIndicator { visibility: visible; }
+}
+.css-1hdoajr .MuiAutocomplete-tag { margin: 3px; max-width: calc(100% - 6px); }
+.MuiAutocomplete-hasPopupIcon.css-1hdoajr .MuiAutocomplete-inputRoot, .MuiAutocomplete-hasClearIcon.css-1hdoajr .MuiAutocomplete-inputRoot { padding-right: 30px; }
+.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1hdoajr .MuiAutocomplete-inputRoot { padding-right: 56px; }
+.css-1hdoajr .MuiAutocomplete-inputRoot .MuiAutocomplete-input { width: 0px; min-width: 30px; }
+.css-1hdoajr .MuiInput-root { padding-bottom: 1px; }
+.css-1hdoajr .MuiInput-root .MuiInput-input { padding: 4px 4px 4px 0px; }
+.css-1hdoajr .MuiInput-root.MuiInputBase-sizeSmall .MuiInput-input { padding: 2px 4px 3px 0px; }
+.css-1hdoajr .MuiOutlinedInput-root { padding: 9px; }
+.MuiAutocomplete-hasPopupIcon.css-1hdoajr .MuiOutlinedInput-root, .MuiAutocomplete-hasClearIcon.css-1hdoajr .MuiOutlinedInput-root { padding-right: 39px; }
+.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1hdoajr .MuiOutlinedInput-root { padding-right: 65px; }
+.css-1hdoajr .MuiOutlinedInput-root .MuiAutocomplete-input { padding: 7.5px 4px 7.5px 5px; }
+.css-1hdoajr .MuiOutlinedInput-root .MuiAutocomplete-endAdornment { right: 9px; }
+.css-1hdoajr .MuiOutlinedInput-root.MuiInputBase-sizeSmall { padding-top: 6px; padding-bottom: 6px; padding-left: 6px; }
+.css-1hdoajr .MuiOutlinedInput-root.MuiInputBase-sizeSmall .MuiAutocomplete-input { padding: 2.5px 4px 2.5px 8px; }
+.css-1hdoajr .MuiFilledInput-root { padding-top: 19px; padding-left: 8px; }
+.MuiAutocomplete-hasPopupIcon.css-1hdoajr .MuiFilledInput-root, .MuiAutocomplete-hasClearIcon.css-1hdoajr .MuiFilledInput-root { padding-right: 39px; }
+.MuiAutocomplete-hasPopupIcon.MuiAutocomplete-hasClearIcon.css-1hdoajr .MuiFilledInput-root { padding-right: 65px; }
+.css-1hdoajr .MuiFilledInput-root .MuiFilledInput-input { padding: 7px 4px; }
+.css-1hdoajr .MuiFilledInput-root .MuiAutocomplete-endAdornment { right: 9px; }
+.css-1hdoajr .MuiFilledInput-root.MuiInputBase-sizeSmall { padding-bottom: 1px; }
+.css-1hdoajr .MuiFilledInput-root.MuiInputBase-sizeSmall .MuiFilledInput-input { padding: 2.5px 4px; }
+.css-1hdoajr .MuiInputBase-hiddenLabel { padding-top: 8px; }
+.css-1hdoajr .MuiFilledInput-root.MuiInputBase-hiddenLabel { padding-top: 0px; padding-bottom: 0px; }
+.css-1hdoajr .MuiFilledInput-root.MuiInputBase-hiddenLabel .MuiAutocomplete-input { padding-top: 16px; padding-bottom: 17px; }
+.css-1hdoajr .MuiFilledInput-root.MuiInputBase-hiddenLabel.MuiInputBase-sizeSmall .MuiAutocomplete-input { padding-top: 8px; padding-bottom: 9px; }
+.css-1hdoajr .MuiAutocomplete-input { -webkit-box-flex: 1; flex-grow: 1; text-overflow: ellipsis; opacity: 0; }
+.css-1hdoajr .MuiAutocomplete-input { opacity: 1; }

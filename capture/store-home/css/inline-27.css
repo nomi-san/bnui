@@ -1,0 +1,14 @@
+@import url("https://forge.akamaized.net/fonts/bn-noto-sans.css");
+@import url("https://forge.akamaized.net/fonts/noto-sans-sc.css");
+@import url("https://forge.akamaized.net/fonts/noto-sans-tc.css");
+@import url("https://forge.akamaized.net/fonts/noto-sans-jp.css");
+@import url("https://forge.akamaized.net/fonts/noto-sans-kr.css");
+@import url("https://forge.akamaized.net/fonts/noto-sans-thai.css");
+@import url("https://forge.akamaized.net/fonts/noto-sans-arabic.css");
+@import url("https://forge.akamaized.net/fonts/object-sans.css");
+:lang(zh-cn) { --global-font-family-default: "Noto Sans SC"; --global-font-family-accent: "Noto Sans SC"; }
+:lang(zh-tw) { --global-font-family-default: "Noto Sans TC"; --global-font-family-accent: "Noto Sans TC"; }
+:lang(ja) { --global-font-family-default: "Noto Sans JP"; --global-font-family-accent: "Noto Sans JP"; }
+:lang(ko) { --global-font-family-default: "Noto Sans KR"; --global-font-family-accent: "Noto Sans KR"; }
+:lang(th) { --global-font-family-default: "Noto Sans Thai"; --global-font-family-accent: "Noto Sans Thai"; }
+:lang(ar) { --global-font-family-default: "Noto Sans Arabic"; --global-font-family-accent: "Noto Sans Arabic"; }

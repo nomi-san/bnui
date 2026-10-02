@@ -1,0 +1,5 @@
+.split-payment-alert { cursor: auto; white-space: normal; }
+@media (min-width: 960px) {
+  .split-payment-alert { width: 320px; }
+}
+.split-payment-alert blz-icon-button { height: 40px; padding: 0px; width: 40px; }
