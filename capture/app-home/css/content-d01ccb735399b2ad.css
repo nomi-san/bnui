@@ -1,0 +1,13 @@
+.game-tile-card_GameCard__bneAJ { --base-card-media-aspect-ratio:10/13; }
+.free-to-play-section_section__s_REV { background-color: var(--color-bg-secondary); padding: 1.5rem 2.5rem; border-radius: var(--cui-border-radius); }
+.latest-news-card_LatestNewsCard__6YErb { --base-card-size-media-width-horizontal:33.3%; }
+.latest-news-card_LatestNewsCard__6YErb::part(content) { padding-left: var(--base-card-space-padding-md-desktop-horizontal); }
+.latest-news-card_LatestNewsCard__6YErb blz-timestamp { font: var(--semantic-body-text-xs); color: var(--semantic-color-content-inactive); }
+.latest-news-card_LatestNewsDescription__yMo29 { display: none; }
+@media (min-width: 480px) {
+  .latest-news-card_LatestNewsDescription__yMo29 { display: block; }
+}
+.latest-news-section_LatestNewsSection__qYhBP { max-width: var(--latest-news-section-max-width,var(--view-md)); }
+.latest-news-section_CardList__qLYfC { margin-top: var(--global-size-400); display: flex; flex-direction: column; gap: var(--semantic-space-around-vertical-xl-desktop); }
+.shop-card_ShopProductCard__CNShE .shop-card_ClaimLabelWrapper__6AU_d, .shop-card_ShopProductCard__CNShE .shop-card_ClaimLabel__0xLD1 { width: 100%; }
+.shop-section_skeleton_ShopCard__OF02Y { aspect-ratio: 365 / 445; }

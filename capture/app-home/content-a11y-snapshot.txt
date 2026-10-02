@@ -1,0 +1,509 @@
+uid=1_0 RootWebArea "Battle.net News"
+  uid=1_1 main
+    uid=1_2 heading "Homepage" level="1"
+    uid=1_3 heading "Spotlight" level="2"
+    uid=1_4 generic "Become a legendary monster slayer Includes the modernized version of the base game, plus two expansions: Hearts of Stone and Blood and Wine. Buy Now The next era of Diablo is in development Sign up to receive future updates and be among the first to discover what’s next for Diablo. Get Updates"
+      uid=1_5 generic
+        uid=1_6 heading "Become a legendary monster slayer" level="3"
+        uid=1_7 StaticText "Includes the modernized version of the base game, plus two expansions: Hearts of Stone and Blood and Wine."
+        uid=1_8 link "Buy Now"
+          uid=1_9 StaticText "Buy Now"
+      uid=1_11 heading "The next era of Diablo is in development" level="3"
+      uid=1_12 StaticText "Sign up to receive future updates and be among the first to discover what’s next for Diablo."
+      uid=1_13 link "Get Updates"
+        uid=1_14 StaticText "Get Updates"
+      uid=1_15 generic
+        uid=1_16 heading "Defend mankind" level="3"
+        uid=1_17 StaticText "A new story-driven open world shooter is coming in 2030."
+        uid=1_18 link "Get Updates"
+          uid=1_19 StaticText "Get Updates"
+      uid=1_20 generic
+        uid=1_21 heading "A new journey awaits. Join fellow adventurers on day one" level="3"
+        uid=1_22 StaticText "The Skyborne Epic Pack gives you everything you need to take your first steps into the vast world of WoW: Forever!"
+        uid=1_23 link "Pre-purchase"
+          uid=1_24 StaticText "Pre-purchase"
+      uid=2_0 generic
+        uid=1_25 heading "Become a legendary monster slayer" level="3"
+        uid=1_26 StaticText "Includes the modernized version of the base game, plus two expansions: Hearts of Stone and Blood and Wine."
+        uid=1_27 link "Buy Now"
+          uid=1_28 StaticText "Buy Now"
+      uid=1_29 generic
+        uid=1_30 heading "The next era of Diablo is in development" level="3"
+        uid=1_31 StaticText "Sign up to receive future updates and be among the first to discover what’s next for Diablo."
+        uid=1_32 link "Get Updates"
+          uid=1_33 StaticText "Get Updates"
+    uid=1_34 button
+    uid=1_35 generic
+      uid=1_36 StaticText "DIABLO V"
+      uid=1_37 heading "Announcement" level="3"
+    uid=1_38 generic
+      uid=1_39 StaticText "STARCRAFT"
+      uid=1_40 heading "Defend mankind in 2030" level="3"
+    uid=1_41 generic
+      uid=1_42 StaticText "WOW: FOREVER"
+      uid=1_43 heading "Begin your adventure" level="3"
+    uid=1_44 generic
+      uid=1_45 StaticText "THE WITCHER 3: WILD HUNT — REMASTERED"
+      uid=1_46 heading "Available now" level="3"
+    uid=1_47 button
+    uid=1_48 button
+    uid=1_49 heading "Recommended" level="2"
+    uid=1_50 link "Visit Shop"
+      uid=1_51 StaticText "Visit Shop"
+    uid=1_52 button disableable disabled
+    uid=1_53 button
+    uid=1_54 generic
+      uid=1_55 link
+        uid=1_56 StaticText "DIABLO IV"
+        uid=1_57 heading "Diablo® IV: Lord of Hatred - Standard Edition" level="3"
+        uid=1_58 StaticText "New expansion available now! Continue the fight against Mephisto with a new campaign, new region, and 2 new classes."
+        uid=1_59 StaticText "Action RPG"
+        uid=1_60 StaticText "Current Price"
+        uid=1_61 StaticText "$39.99"
+      uid=1_62 link
+        uid=1_63 StaticText "DIABLO IV"
+        uid=1_64 heading "Diablo® IV: Age of Hatred Collection" level="3"
+        uid=1_65 StaticText "New expansion available now! Continue the fight against Mephisto with a new campaign, new region, and 2 new classes."
+        uid=1_66 StaticText "Action RPG"
+        uid=1_67 StaticText "Current Price"
+        uid=1_68 StaticText "$69.99"
+      uid=1_69 link
+        uid=1_70 StaticText "PRE-PURCHASE"
+        uid=1_71 StaticText "WORLD OF WARCRAFT FOREVER"
+        uid=1_72 heading "World of Warcraft®: Forever" level="3"
+        uid=1_73 StaticText "Available November 4! Upgrade to get in-game benefits and access to the Beta."
+        uid=1_74 StaticText "Massively Multiplayer RPG"
+        uid=1_75 StaticText "Current Price"
+        uid=1_76 StaticText "From"
+        uid=1_77 StaticText "$29.99"
+      uid=1_78 link
+        uid=1_79 StaticText "WORLD OF WARCRAFT"
+        uid=1_80 heading "World of Warcraft®: Subscription" level="3"
+        uid=1_81 StaticText "Subscriptions"
+        uid=1_82 StaticText "Current Price"
+        uid=1_83 StaticText "From"
+        uid=1_84 StaticText "$12.99/month"
+      uid=1_85 link
+        uid=1_86 StaticText "WORLD OF WARCRAFT"
+        uid=1_87 heading "World of Warcraft®: Midnight" level="3"
+        uid=1_88 StaticText "Midnight is here. Jump straight into the fight against the Void with an enhanced Level 80 boost, included with Midnight."
+        uid=1_89 StaticText "Massively Multiplayer RPG"
+        uid=1_90 StaticText "Current Price"
+        uid=1_91 StaticText "From"
+        uid=1_92 StaticText "$49.99"
+      uid=1_93 link
+        uid=1_94 StaticText "DIABLO II: RESURRECTED"
+        uid=1_95 heading "Diablo II: Resurrected™ – Reign of the Warlock" level="3"
+        uid=1_96 StaticText "Action RPG"
+        uid=1_97 StaticText "Current Price"
+        uid=1_98 StaticText "$24.99"
+      uid=1_99 link
+        uid=1_100 StaticText "NEW"
+        uid=1_101 StaticText "WARCRAFT III FORSAKEN KINGDOM"
+        uid=1_102 heading "Warcraft® III Reforged: Forsaken Kingdom" level="3"
+        uid=1_103 StaticText "Wage war once more with Warcraft® III Reforged: Forsaken Kingdom available today alongside the Definitive Edition Update to Warcraft III: Reforged."
+        uid=1_104 StaticText "Real-time Strategy"
+        uid=1_105 StaticText "Current Price"
+        uid=1_106 StaticText "From"
+        uid=1_107 StaticText "$29.99"
+      uid=1_108 link
+        uid=1_109 StaticText "DIABLO II: RESURRECTED"
+        uid=1_110 heading "Diablo II: Resurrected™ – Infernal Edition" level="3"
+        uid=1_111 StaticText "Action RPG"
+        uid=1_112 StaticText "Current Price"
+        uid=1_113 StaticText "$39.99"
+      uid=1_114 link
+        uid=1_115 StaticText "HEROES OF THE STORM"
+        uid=1_116 heading "Heroes of the Storm™ Gems" level="3"
+        uid=1_117 StaticText "In-Game Content"
+        uid=1_118 StaticText "Current Price"
+        uid=1_119 StaticText "From"
+        uid=1_120 StaticText "$2.99"
+      uid=1_121 link
+        uid=1_122 StaticText "CALL OF DUTY BLACK OPS 6"
+        uid=1_123 heading "Call of Duty®: Black Ops 7 or Call of Duty®: Warzone Points (CP)" level="3"
+        uid=1_124 StaticText "Use CP to get the Battle Pass!"
+        uid=1_125 StaticText "In-game content"
+        uid=1_126 StaticText "Current Price"
+        uid=1_127 StaticText "From"
+        uid=1_128 StaticText "$1.99"
+    uid=1_129 heading "New and Trending Videos" level="2"
+    uid=1_130 button disableable disabled
+    uid=1_131 button
+    uid=1_132 generic
+      uid=1_133 link
+        uid=1_134 StaticText "NEW"
+        uid=1_135 StaticText "WOW: FOREVER"
+        uid=1_136 heading "New Horizons | Cinematic Trailer" level="3"
+      uid=1_137 link
+        uid=1_138 StaticText "NEW"
+        uid=1_139 StaticText "WARCRAFT 3: REFORGED"
+        uid=1_140 heading "Forsaken Kingdom | Launch Trailer" level="3"
+      uid=1_141 link
+        uid=1_142 StaticText "NEW"
+        uid=1_143 StaticText "HEROES OF THE STORM"
+        uid=1_144 heading "Xal'atath Announcement Trailer" level="3"
+      uid=1_145 link
+        uid=1_146 StaticText "NEW"
+        uid=1_147 StaticText "STARCRAFT"
+        uid=1_148 heading "Announce Cinematic | Dominion" level="3"
+      uid=1_149 link
+        uid=1_150 StaticText "NEW"
+        uid=1_151 StaticText "THE WITCHER 3: WILD HUNT — REMASTERED"
+        uid=1_152 heading "Official Launch Trailer" level="3"
+      uid=1_153 link
+        uid=1_154 StaticText "NEW"
+        uid=1_155 StaticText "DIABLO IMMORTAL"
+        uid=1_156 heading "Hellspawn's Vengeance Cinematic Trailer" level="3"
+      uid=1_157 link
+        uid=1_158 StaticText "NEW"
+        uid=1_159 StaticText "DIABLO IV"
+        uid=1_160 heading "Diablo 30th Anniversary" level="3"
+      uid=1_161 link
+        uid=1_162 StaticText "NEW"
+        uid=1_163 StaticText "WOW: FOREVER"
+        uid=1_164 heading "Gameplay Trailer" level="3"
+      uid=1_165 link
+        uid=1_166 StaticText "NEW"
+        uid=1_167 StaticText "WARCRAFT 3: REFORGED"
+        uid=1_168 heading "Forsaken Kingdom | Gameplay Reveal Trailer" level="3"
+      uid=1_169 link
+        uid=1_170 StaticText "NEW"
+        uid=1_171 StaticText "5:30"
+        uid=1_172 StaticText "OVERWATCH"
+        uid=1_173 heading "Doctrine Hero Trailer: Breakout" level="3"
+        uid=1_174 StaticText "2.3M"
+        uid=1_175 StaticText " "
+        uid=1_176 StaticText "views"
+      uid=1_177 link
+        uid=1_178 StaticText "NEW"
+        uid=1_179 StaticText "1:29"
+        uid=1_180 StaticText "HEARTHSTONE"
+        uid=1_181 heading "Reign of the Black Empire Cinematic Trailer" level="3"
+        uid=1_182 StaticText "235K"
+        uid=1_183 StaticText " "
+        uid=1_184 StaticText "views"
+      uid=1_185 link
+        uid=1_186 StaticText "NEW"
+        uid=1_187 StaticText "2:16"
+        uid=1_188 StaticText "CALL OF DUTY: BLACK OPS 7"
+        uid=1_189 heading "Season 06 Launch Trailer" level="3"
+        uid=1_190 StaticText "199"
+        uid=1_191 StaticText " "
+        uid=1_192 StaticText "views"
+      uid=1_193 link
+        uid=1_194 StaticText "NEW"
+        uid=1_195 StaticText "4:05"
+        uid=1_196 StaticText "HEROES OF THE STORM"
+        uid=1_197 heading "Xal'atath Spotlight" level="3"
+        uid=1_198 StaticText "619K"
+        uid=1_199 StaticText " "
+        uid=1_200 StaticText "views"
+      uid=1_201 link
+        uid=1_202 StaticText "1:46"
+        uid=1_203 StaticText "THE WITCHER 3: WILD HUNT — REMASTERED"
+        uid=1_204 heading "Official announcement trailer" level="3"
+        uid=1_205 StaticText "2K"
+        uid=1_206 StaticText " "
+        uid=1_207 StaticText "views"
+      uid=1_208 link
+        uid=1_209 StaticText "1:56"
+        uid=1_210 StaticText "WORLD OF WARCRAFT"
+        uid=1_211 heading "Curse of Ula’tek Launch Trailer" level="3"
+        uid=1_212 StaticText "203K"
+        uid=1_213 StaticText " "
+        uid=1_214 StaticText "views"
+      uid=1_215 link
+        uid=1_216 StaticText "2:21"
+        uid=1_217 StaticText "OVERWATCH"
+        uid=1_218 heading "Season 4 Launch Trailer: Heroes of Busan" level="3"
+        uid=1_219 StaticText "556K"
+        uid=1_220 StaticText " "
+        uid=1_221 StaticText "views"
+      uid=1_222 link
+        uid=1_223 StaticText "2:50"
+        uid=1_224 StaticText "CALL OF DUTY: MODERN WARFARE 4"
+        uid=1_225 heading "Reveal Trailer" level="3"
+        uid=1_226 StaticText "4K"
+        uid=1_227 StaticText " "
+        uid=1_228 StaticText "views"
+      uid=1_229 link
+        uid=1_230 StaticText "2:35"
+        uid=1_231 StaticText "OVERWATCH"
+        uid=1_232 heading "D.Mon Hero Trailer: A Tough Decision" level="3"
+        uid=1_233 StaticText "1.4M"
+        uid=1_234 StaticText " "
+        uid=1_235 StaticText "views"
+      uid=1_236 link
+        uid=1_237 StaticText "1:12"
+        uid=1_238 StaticText "HEARTHSTONE"
+        uid=1_239 heading "Escape from Violet Hold" level="3"
+        uid=1_240 StaticText "98K"
+        uid=1_241 StaticText " "
+        uid=1_242 StaticText "views"
+      uid=1_243 link
+        uid=1_244 StaticText "2:46"
+        uid=1_245 StaticText "DIABLO IV"
+        uid=1_246 heading "Season of Death Awakening Gameplay Trailer" level="3"
+        uid=1_247 StaticText "2K"
+        uid=1_248 StaticText " "
+        uid=1_249 StaticText "views"
+      uid=1_250 link
+        uid=1_251 StaticText "1:45"
+        uid=1_252 StaticText "WORLD OF WARCRAFT"
+        uid=1_253 heading "Midnight Revelations Content Update" level="3"
+        uid=1_254 StaticText "2K"
+        uid=1_255 StaticText " "
+        uid=1_256 StaticText "views"
+      uid=1_257 link
+        uid=1_258 StaticText "1:11"
+        uid=1_259 StaticText "DIABLO IMMORTAL"
+        uid=1_260 heading "Warlock Cinematic" level="3"
+        uid=1_261 StaticText "3.5M"
+        uid=1_262 StaticText " "
+        uid=1_263 StaticText "views"
+      uid=1_264 link
+        uid=1_265 StaticText "2:35"
+        uid=1_266 StaticText "DOOM: THE DARK AGES"
+        uid=1_267 heading "Revelations Official Trailer" level="3"
+        uid=1_268 StaticText "503"
+        uid=1_269 StaticText " "
+        uid=1_270 StaticText "views"
+      uid=1_271 link
+        uid=1_272 StaticText "5:20"
+        uid=1_273 StaticText "DIABLO IV"
+        uid=1_274 heading "Lord of Hatred Opening Cinematic" level="3"
+        uid=1_275 StaticText "8K"
+        uid=1_276 StaticText " "
+        uid=1_277 StaticText "views"
+      uid=1_278 link
+        uid=1_279 StaticText "1:26"
+        uid=1_280 StaticText "WORLD OF WARCRAFT"
+        uid=1_281 heading "Midnight Content Update" level="3"
+        uid=1_282 StaticText "61K"
+        uid=1_283 StaticText " "
+        uid=1_284 StaticText "views"
+      uid=1_285 link
+        uid=1_286 StaticText "3:38"
+        uid=1_287 StaticText "DIABLO IV"
+        uid=1_288 heading "Korn "Reward the Scars" Official Music Video" level="3"
+        uid=1_289 StaticText "3.7M"
+        uid=1_290 StaticText " "
+        uid=1_291 StaticText "views"
+      uid=1_292 link
+        uid=1_293 StaticText "0:49"
+        uid=1_294 StaticText "DIABLO IV"
+        uid=1_295 heading "Lord of Hatred Accolades Trailer" level="3"
+        uid=1_296 StaticText "32"
+        uid=1_297 StaticText " "
+        uid=1_298 StaticText "views"
+      uid=1_299 link
+        uid=1_300 StaticText "2:14"
+        uid=1_301 StaticText "WORLD OF WARCRAFT"
+        uid=1_302 heading "Music Video: A Place to Call Home feat. AURORA" level="3"
+        uid=1_303 StaticText "494K"
+        uid=1_304 StaticText " "
+        uid=1_305 StaticText "views"
+      uid=1_306 link
+        uid=1_307 StaticText "2:32"
+        uid=1_308 StaticText "DIABLO IV"
+        uid=1_309 heading "Lord of Hatred Launch Trailer" level="3"
+        uid=1_310 StaticText "9K"
+        uid=1_311 StaticText " "
+        uid=1_312 StaticText "views"
+      uid=1_313 link
+        uid=1_314 StaticText "0:45"
+        uid=1_315 StaticText "DIABLO IMMORTAL"
+        uid=1_316 heading "Diablo Immortal x StarCraft Gameplay Trailer" level="3"
+        uid=1_317 StaticText "6K"
+        uid=1_318 StaticText " "
+        uid=1_319 StaticText "views"
+      uid=1_320 link
+        uid=1_321 StaticText "2:02"
+        uid=1_322 StaticText "OVERWATCH"
+        uid=1_323 heading "Sierra Hero Trailer" level="3"
+        uid=1_324 StaticText "1M"
+        uid=1_325 StaticText " "
+        uid=1_326 StaticText "views"
+      uid=1_327 link
+        uid=1_328 StaticText "1:12"
+        uid=1_329 StaticText "HEARTHSTONE"
+        uid=1_330 heading "CATACLYSM Trailer Part 2" level="3"
+        uid=1_331 StaticText "50K"
+        uid=1_332 StaticText " "
+        uid=1_333 StaticText "views"
+      uid=1_334 link
+        uid=1_335 StaticText "2:32"
+        uid=1_336 StaticText "DIABLO"
+        uid=1_337 heading "Warlock Class Cinematic" level="3"
+        uid=1_338 StaticText "11K"
+        uid=1_339 StaticText " "
+        uid=1_340 StaticText "views"
+      uid=1_341 link
+        uid=1_342 StaticText "5:43"
+        uid=1_343 StaticText "DIABLO IV"
+        uid=1_344 heading "The Queen and The Saint" level="3"
+        uid=1_345 StaticText "246K"
+        uid=1_346 StaticText " "
+        uid=1_347 StaticText "views"
+      uid=1_348 link
+        uid=1_349 StaticText "0:44"
+        uid=1_350 StaticText "DIABLO IV"
+        uid=1_351 heading "Warlock Gameplay Trailer" level="3"
+        uid=1_352 StaticText "7K"
+        uid=1_353 StaticText " "
+        uid=1_354 StaticText "views"
+      uid=1_355 link
+        uid=1_356 StaticText "1:53"
+        uid=1_357 StaticText "OVERWATCH"
+        uid=1_358 heading "Hero Showcase Trailer" level="3"
+        uid=1_359 StaticText "383K"
+        uid=1_360 StaticText " "
+        uid=1_361 StaticText "views"
+      uid=1_362 link
+        uid=1_363 StaticText "0:57"
+        uid=1_364 StaticText "DIABLO IMMORTAL"
+        uid=1_365 heading "The Taking Gameplay Trailer" level="3"
+        uid=1_366 StaticText "8K"
+        uid=1_367 StaticText " "
+        uid=1_368 StaticText "views"
+      uid=1_369 link
+        uid=1_370 StaticText "2:08"
+        uid=1_371 StaticText "WORLD OF WARCRAFT"
+        uid=1_372 heading "Arator Cinematic: Immolation" level="3"
+        uid=1_373 StaticText "593K"
+        uid=1_374 StaticText " "
+        uid=1_375 StaticText "views"
+      uid=1_376 link
+        uid=1_377 StaticText "2:13"
+        uid=1_378 StaticText "WORLD OF WARCRAFT"
+        uid=1_379 heading "Midnight Launch Trailer" level="3"
+        uid=1_380 StaticText "147K"
+        uid=1_381 StaticText " "
+        uid=1_382 StaticText "views"
+    uid=1_383 heading "Featured Games" level="2"
+    uid=1_384 button "See All Games"
+    uid=1_385 button disableable disabled
+    uid=1_386 button
+    uid=1_387 generic
+      uid=1_388 link
+        uid=1_389 button "Click To Play"
+        uid=1_390 StaticText "HEROES OF THE STORM"
+        uid=1_391 heading "A Void-wielding Ranged Assassin joins the Nexus" level="3"
+        uid=1_392 StaticText "Heroes of the Storm is receiving a major new update with Patch 57, with Xal’atath as the first new Hero to enter the Nexus in six years! This new era focuses on the whimsical chaos players love, with matches that remain fair, competitive, and exciting."
+      uid=1_393 link
+        uid=1_394 button "Click To Play"
+        uid=1_395 StaticText "DIABLO IMMORTAL"
+        uid=1_396 heading "The story of Nation in Agony continues" level="3"
+        uid=1_397 StaticText "The latest Major Update drags Diablo Immortal deeper into Lut Gholein’s suffering with new story content, a corrupted zone event, Legendary Gems, Battleground updates, and dark celebrations."
+      uid=1_398 link
+        uid=1_399 StaticText "WARCRAFT 3: REFORGED"
+        uid=1_400 heading "Enter the battlefields that defined a genre" level="3"
+        uid=1_401 StaticText "Experience Warcraft III: Reforged in Forsaken Kingdom, a new campaign exploring the fall of Lordaeron and the origins of the Undercity, with upgraded visuals and performance."
+      uid=1_402 link
+        uid=1_403 button "Click To Play"
+        uid=1_404 StaticText "OVERWATCH"
+        uid=1_405 heading "Bring your best to the battlefield in Season 4: Heroes of Busan" level="3"
+        uid=1_406 StaticText "New Tank Hero D.Mon joins the rest of the MEKA Squad to protect their home! Pilot your way through the My MEKA Mania event, fight through a revamped Battle Pass, and explore revitalized versions of fan-favorite maps."
+      uid=1_407 link
+        uid=1_408 button "Click To Play"
+        uid=1_409 StaticText "WORLD OF WARCRAFT"
+        uid=1_410 heading "Vanquish the Void in Midnight" level="3"
+        uid=1_411 StaticText "Defend Azeroth against the ravenous Void in new Zones, Raids, Dungeons, and Delves, take on a challenging new Mythic+ season, make yourself at home with Housing, and adventure in style using the updated transmogrification system!"
+      uid=1_412 link
+        uid=1_413 button "Click To Play"
+        uid=1_414 StaticText "HEARTHSTONE"
+        uid=1_415 heading "Break the rules in Escape from Violet Hold" level="3"
+        uid=1_416 StaticText "Follow a ragtag group of outlaws as they hatch a daring plan to break out of Dalaran’s prison. Run duplicate Legendaries, sneak minions onto your opponent’s side of the board, and draw an extra card each turn!"
+      uid=1_417 link
+        uid=1_418 button "Click To Play"
+        uid=1_419 StaticText "DIABLO IV"
+        uid=1_420 heading "Purchase the new expansion: Lord of Hatred" level="3"
+        uid=1_421 StaticText "Mephisto’s legions lay in wait, wanderer. Master holy techniques as the Paladin, embrace forbidden power as the Warlock, explore the region of Skovos, and experience a new endgame with War Plans."
+      uid=1_422 link
+        uid=1_423 button "Click To Play"
+        uid=1_424 StaticText "THE WITCHER 3: WILD HUNT — REMASTERED"
+        uid=1_425 heading "Remastered is the definitive way to play" level="3"
+        uid=1_426 StaticText "The generation-defining RPG has been modernized with a range of upgrades to visuals, performance, gameplay, and more."
+      uid=1_427 link
+        uid=1_428 button "Click To Play"
+        uid=1_429 StaticText "CALL OF DUTY: MODERN WARFARE 4"
+        uid=1_430 heading "Pre-purchase and get Campaign Early Access starting October 16" level="3"
+        uid=1_431 StaticText "The series enters darker and more dangerous territory, where consequence and escalation bring long-running storylines to a powerful and emotional breaking point. Experience warfare without limits across Campaign, Multiplayer, and DMZ."
+      uid=1_432 link
+        uid=1_433 button "Click To Play"
+        uid=1_434 StaticText "DIABLO II: RESURRECTED"
+        uid=1_435 heading "A new reign of power begins" level="3"
+        uid=1_436 StaticText "Harness the forbidden powers of the new Warlock class, and take on expanded endgame challenges with Terror Zone updates and the Colossal Ancients fight!"
+    uid=1_437 heading "News & Updates" level="2"
+    uid=1_438 button disableable disabled
+    uid=1_439 button
+    uid=1_440 generic
+      uid=1_441 link
+        uid=1_442 StaticText "THE WITCHER 3: WILD HUNT — REMASTERED"
+        uid=1_443 heading "CD PROJEKT RED teams up with Blizzard Entertainment" level="3"
+      uid=1_444 link
+        uid=1_445 StaticText "DIABLO IV"
+        uid=1_446 heading "Diablo IV Patch Notes" level="3"
+      uid=1_447 link
+        uid=1_448 StaticText "DIABLO IV"
+        uid=1_449 heading "Diablo IV: What's Next Panel Recap" level="3"
+      uid=1_450 link
+        uid=1_451 StaticText "DIABLO IV"
+        uid=1_452 heading "Diablo V: Forging the Next Era" level="3"
+      uid=1_453 link
+        uid=1_454 StaticText "DIABLO IV"
+        uid=1_455 heading "The Divine Bovine Community Challenge" level="3"
+      uid=1_456 link
+        uid=1_457 StaticText "DIABLO IV"
+        uid=1_458 heading "Diablo’s Next Era Revealed at BlizzCon 2026: Opening Ceremonies Recap" level="3"
+      uid=1_459 link
+        uid=1_460 StaticText "DIABLO IV"
+        uid=1_461 heading "Diablo V is Coming Spring 2029" level="3"
+      uid=1_462 link
+        uid=1_463 StaticText "DIABLO IV"
+        uid=1_464 heading "Celebrate 30 Years of Diablo in Season of Hell's Legacy" level="3"
+      uid=1_465 link
+        uid=1_466 StaticText "DIABLO III"
+        uid=1_467 heading "Season 40: Light’s Calling - Preview" level="3"
+      uid=1_468 link
+        uid=1_469 StaticText "DIABLO IV"
+        uid=1_470 heading "Your Preview Guide to Diablo at BlizzCon 2026" level="3"
+      uid=1_471 link
+        uid=1_472 StaticText "DIABLO IV"
+        uid=1_473 heading "Preview seasonal Soul Splinters, new legacy Uniques, Mythic Unique changes, new Charms, and more" level="3"
+      uid=1_474 link
+        uid=1_475 StaticText "DIABLO IV"
+        uid=1_476 heading "Raise Hell with the Diablo IV BlizzCon Digital Bundle" level="3"
+      uid=1_477 link
+        uid=1_478 StaticText "WORLD OF WARCRAFT"
+        uid=1_479 heading "Hotfixes: October 1, 2026" level="3"
+    uid=1_480 heading "Start Your Adventure For Free" level="2"
+    uid=1_481 complementary
+      uid=1_482 StaticText "Includes optional in-game purchases"
+    uid=1_483 button disableable disabled
+    uid=1_484 button
+    uid=1_485 generic
+      uid=1_486 link
+        uid=1_487 heading "Diablo IV" level="3"
+      uid=1_488 link
+        uid=1_489 heading "Overwatch" level="3"
+      uid=1_490 link
+        uid=1_491 heading "Call of Duty: Warzone" level="3"
+      uid=1_492 link
+        uid=1_493 heading "Hearthstone" level="3"
+      uid=1_494 link
+        uid=1_495 heading "World of Warcraft" level="3"
+      uid=1_496 link
+        uid=1_497 heading "Diablo Immortal" level="3"
+      uid=1_498 link
+        uid=1_499 heading "StarCraft: Remastered" level="3"
+      uid=1_500 link
+        uid=1_501 heading "StarCraft II" level="3"
+      uid=1_502 link
+        uid=1_503 heading "Heroes of the Storm" level="3"
+      uid=1_504 link
+        uid=1_505 heading "Warcraft Rumble" level="3"
+      uid=1_506 link
+        uid=1_507 heading "Call of Duty: Modern Warfare 2 Campaign Remastered" level="3"
+  uid=1_508 alert atomic live="assertive" relevant="additions text"

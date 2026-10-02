@@ -1,0 +1,14 @@
+@layer foundation {
+  .container { --foundation-container-max-width:none; --foundation-container-margin:0 auto; --foundation-container-padding:0; max-width: var(--foundation-container-max-width); margin: var(--foundation-container-margin); padding: var(--foundation-container-padding); width: 100%; }
+  .section ol, .section ul { list-style: none; padding: 0px; }
+}
+@layer utilities {
+  .u-sr-only:not(:focus, :active) { clip-path: inset(50%); height: 1px; overflow: hidden; position: absolute; white-space: nowrap; width: 1px; }
+  .u-center-xy { display: grid; height: 100vh; place-items: center; }
+  .u-truncate { --line-clamp:1; display: -webkit-box; -webkit-line-clamp: var(--line-clamp,1); -webkit-box-orient: vertical; overflow: hidden; }
+}
+@layer utilities {
+}
+@layer utilities {
+}
+@layer base, vendor, foundation, components, utilities;

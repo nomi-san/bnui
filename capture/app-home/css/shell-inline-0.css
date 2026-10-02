@@ -1,0 +1,17 @@
+:root { --blz-z-app-loading: 99999; --blz-z-window-border: 100000; --blz-z-titlebar: 100001; }
+html, body { margin: 0px; }
+body.win .window-border { border: 1px solid rgba(255, 255, 255, 0.06); position: fixed; inset: 0px; margin: 0px; pointer-events: none; z-index: var(--blz-z-window-border); }
+.window-titlebar { app-region: drag; position: absolute; z-index: var(--blz-z-titlebar); left: 0px; top: 0px; display: block; width: 100%; height: 24px; }
+.window-controls-container { position: relative; width: 114px; height: 24px; margin-left: auto; display: none; }
+.win .window-controls-container { display: flex; }
+.window-controls-container > .window-control { display: inline-block; app-region: no-drag; height: 100%; width: 33.33%; background: transparent; border: none; }
+.window-controls-container > .window-control:hover { background-color: rgba(255, 255, 255, 0.06); }
+.window-controls-container > .window-control.window-close:hover { background-color: rgb(221, 19, 19); }
+.window-controls-container .window-control .window-icon:hover { background-color: rgb(255, 255, 255); }
+.window-controls-container .window-min .window-icon { -webkit-mask: url("data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 11 11\" width=\"11\" height=\"11\"><path fill=\"%23000\" d=\"M11 4.399V5.5H0V4.399h11z\"/></svg>") 50% 50% / 25% no-repeat; }
+.window-controls-container .window-max .window-icon { -webkit-mask: url("data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 11 11\" width=\"11\" height=\"11\"><path fill=\"%23000\" d=\"M11 0v11H0V0h11zM9.899 1.101H1.1V9.9h8.8V1.1z\"/></svg>") 50% 50% / 25% no-repeat; }
+.window-controls-container .window-restore .window-icon { -webkit-mask: url("data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 11 11\" width=\"11\" height=\"11\"><path fill=\"%23000\" d=\"M0 3h8v8H0V3zm1 1v6h6V4H1zm2-4v1h7v7h1V0H3z\" /></svg>") 50% 50% / 25% no-repeat; }
+.window-controls-container .window-close .window-icon { -webkit-mask: url("data:image/svg+xml,<svg xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 11 11\" width=\"11\" height=\"11\"><path fill=\"%23000\" fill-rule=\"evenodd\" d=\"M6.279 5.5L11 10.221l-.779.779L5.5 6.279.779 11 0 10.221 4.721 5.5 0 .779.779 0 5.5 4.721 10.221 0 11 .779 6.279 5.5z\" clip-rule=\"evenodd\"/></svg>") 50% 50% / 25% no-repeat; }
+.window-controls-container .window-icon { background-color: rgba(255, 255, 255, 0.5); height: 100%; width: 100%; }
+#app-loading { position: absolute; z-index: var(--blz-z-app-loading); display: flex; align-items: center; justify-content: center; width: 100%; height: 100%; top: 0px; left: 0px; background-color: rgb(28, 30, 38); opacity: 1; transition: opacity 300ms ease-out 0s; }
+#app-loading.remove { opacity: 0; }

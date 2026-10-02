@@ -1,0 +1,12 @@
+.back-to-top_BackToTopSentinel__Ilfrn { position: absolute; top: 0px; height: 1px; width: 1px; pointer-events: none; }
+.back-to-top_BackToTop__5fGpj { transition: opacity 0.2s ease-in-out 0s; position: fixed; bottom: var(--global-size-500); right: var(--global-size-500); visibility: visible; opacity: 1; }
+.back-to-top_hidden__Y9lXo { visibility: hidden; opacity: 0; }
+@layer base {
+  html { --body-bg-color:var(--battle-net-color-physical-gray-600); color: var(--color-body-primary); background-color: var(--body-bg-color); box-sizing: border-box; }
+  *, ::after, ::before { box-sizing: inherit; }
+  body { margin: 0px; }
+  hr { width: 100%; border-color: var(--battle-net-color-physical-white-12); margin: var(--global-size-300) 0; }
+  :root { --color-heading-primary:var(--battle-net-color-physical-white-100); --color-body-primary:var(--battle-net-color-physical-white-72); --color-text-primary:var(--battle-net-color-physical-white-100); --color-text-secondary:var(--battle-net-color-physical-white-60); --color-bg-primary:var(--battle-net-color-physical-gray-600); --color-bg-secondary:var(--battle-net-color-physical-white-6); --color-link-primary:var(--battle-net-color-physical-blue-500); --font-body-md:var(--semantic-body-text-md-desktop); --font-weight-bold:var(--global-font-weight-bold); --cui-border-radius:var(--semantic-border-radius-md); }
+}
+@layer base {
+}
