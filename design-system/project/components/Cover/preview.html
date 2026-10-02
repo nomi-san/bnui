@@ -1,0 +1,54 @@
+<!-- @dsCard height=288 -->
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>BNUI</title>
+<style>
+  html, body { margin: 0; height: 100%; }
+  body { background: var(--surface-page); color: var(--text-primary); font-family: var(--font-display); overflow: hidden; }
+  .cover { position: relative; width: 960px; height: 288px; overflow: hidden; background: var(--surface-page); }
+  .art { position: absolute; top: 0; left: 480px; width: 480px; height: 288px; overflow: hidden; }
+  .art svg { display: block; width: 480px; height: 288px; }
+  .fill-accent { fill: var(--accent-fill); }
+  .fill-strong { fill: var(--surface-strong); }
+  .fill-highest { fill: var(--surface-highest); }
+  .fill-success { fill: var(--success); }
+  .dash { fill: var(--text-muted); }
+  .dash.on { fill: var(--accent); }
+  .tile { rx: var(--radius-md); }
+  .chip { rx: var(--radius-md); }
+  .bar { rx: var(--radius-xs); }
+  .words { position: absolute; left: var(--space-6); bottom: var(--space-6); max-width: 440px; }
+  .name { margin: 0; font: 700 120px/0.9 var(--font-display); letter-spacing: -0.02em; color: var(--text-primary); }
+  .tag { margin: var(--space-3) 0 0 4px; font: 400 14px/20px var(--font-body); color: var(--text-secondary); }
+</style>
+</head>
+<body>
+<div class="cover">
+  <div class="art" aria-hidden="true">
+    <svg viewBox="0 0 480 288" width="480" height="288">
+      <!--
+        blocks      accent-fill 144×192 (the one hue the system is known by, first and largest) · surface-strong 144×192 · surface-highest 160×192 bleeding off the right edge · success 40×24 once, as a NEW badge (it only ever means a state) — ≈31% of 960×288
+        arrangement a carousel strip of 3:4 portrait covers, tops on one line space-6 from the top, gaps space-4, the last cover cut by the edge like a peeking carousel slide
+        pattern     carousel dash indicators, from "selection is a dash, a bar or an underline in accent": five 40×4 dashes (space-10 × space-1) at a space-2 gap, idle in text-muted, the active one 6px tall in accent
+        scales      cover sides 3:4 at 144 (space-6 × 6) × 192 (space-6 × 8); gaps space-4; dash space-10 × space-1, gap space-2; corners radius-md on covers and the badge, radius-xs on dashes
+      -->
+      <rect class="fill-accent tile" x="16" y="24" width="144" height="192" rx="4"/>
+      <rect class="fill-strong tile" x="176" y="24" width="144" height="192" rx="4"/>
+      <rect class="fill-highest tile" x="336" y="24" width="160" height="192" rx="4"/>
+      <rect class="fill-success chip" x="180" y="28" width="40" height="24" rx="4"/>
+      <rect class="dash bar" x="64" y="241" width="40" height="4" rx="2"/>
+      <rect class="dash on bar" x="112" y="240" width="40" height="6" rx="2"/>
+      <rect class="dash bar" x="160" y="241" width="40" height="4" rx="2"/>
+      <rect class="dash bar" x="208" y="241" width="40" height="4" rx="2"/>
+      <rect class="dash bar" x="256" y="241" width="40" height="4" rx="2"/>
+    </svg>
+  </div>
+  <div class="words">
+    <h1 class="name">BNUI</h1>
+    <p class="tag">Layered white light on blue-black, for storefronts and launchers.</p>
+  </div>
+</div>
+</body>
+</html>

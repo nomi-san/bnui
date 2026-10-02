@@ -1,0 +1,29 @@
+<!-- @dsCard group="Overlays" height=520 -->
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><title>Dialog</title></head>
+<body>
+<div class="bn-backdrop bn-backdrop--inline" style="height:500px">
+  <div class="bn-dialog" style="height:440px;max-height:none">
+    <div class="bn-dialog__head"><h2 class="bn-dialog__title">Settings</h2><button class="bn-icon-btn bn-icon-btn--ghost" aria-label="Close" style="width:24px;height:24px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true" style="width:16px;height:16px"><path d="M6 6l12 12M18 6 6 18"/></svg></button></div>
+    <div class="bn-dialog__layout">
+      <nav class="bn-dialog__nav"><ul class="bn-nav" style="width:auto">
+        <li><a class="bn-nav__item" aria-current="page" href="#" style="min-height:40px;font-size:15px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="3"/><path d="M19.4 15a1.7 1.7 0 0 0 .3 1.8l.1.1a2 2 0 1 1-2.8 2.8l-.1-.1a1.7 1.7 0 0 0-1.8-.3 1.7 1.7 0 0 0-1 1.5V21a2 2 0 1 1-4 0v-.1a1.7 1.7 0 0 0-1.1-1.5 1.7 1.7 0 0 0-1.8.3l-.1.1a2 2 0 1 1-2.8-2.8l.1-.1a1.7 1.7 0 0 0 .3-1.8 1.7 1.7 0 0 0-1.5-1H3a2 2 0 1 1 0-4h.1a1.7 1.7 0 0 0 1.5-1.1 1.7 1.7 0 0 0-.3-1.8l-.1-.1a2 2 0 1 1 2.8-2.8l.1.1a1.7 1.7 0 0 0 1.8.3H9a1.7 1.7 0 0 0 1-1.5V3a2 2 0 1 1 4 0v.1a1.7 1.7 0 0 0 1 1.5 1.7 1.7 0 0 0 1.8-.3l.1-.1a2 2 0 1 1 2.8 2.8l-.1.1a1.7 1.7 0 0 0-.3 1.8V9a1.7 1.7 0 0 0 1.5 1H21a2 2 0 1 1 0 4h-.1a1.7 1.7 0 0 0-1.5 1Z"/></svg> App</a></li>
+        <li><a class="bn-nav__item" href="#" style="min-height:40px;font-size:15px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v12M7 10l5 5 5-5M4 21h16"/></svg> Downloads</a></li>
+        <li><a class="bn-nav__item" aria-disabled="true" style="min-height:40px;font-size:15px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h12M9 12h12M9 18h12M4 6h.01M4 12h.01M4 18h.01"/></svg> Game Settings</a></li>
+        <li><a class="bn-nav__item" href="#" style="min-height:40px;font-size:15px"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M6 8a6 6 0 1 1 12 0c0 7 3 9 3 9H3s3-2 3-9M10.3 21a1.9 1.9 0 0 0 3.4 0"/></svg> Notifications</a></li>
+      </ul></nav>
+      <div class="bn-dialog__body">
+        <h3 class="bn-dialog__section">General</h3>
+        <div style="display:grid;gap:var(--space-5);padding-left:var(--space-6);max-width:420px">
+          <div class="bn-field-group"><span class="bn-label">App language</span><button class="bn-select bn-select--filled">English (US) <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></div>
+          <div class="bn-field-group"><span class="bn-label">On game launch</span><button class="bn-select bn-select--filled">Keep the app open <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg></button></div>
+          <label class="bn-check"><input type="checkbox" checked><span class="bn-check__box"></span><span class="bn-check__text">Use hardware acceleration</span></label>
+        </div>
+      </div>
+    </div>
+    <div class="bn-dialog__foot"><button class="bn-btn bn-btn--primary bn-btn--md">Done</button><button class="bn-btn bn-btn--md">Reset to Defaults</button></div>
+  </div>
+</div>
+</body>
+</html>
