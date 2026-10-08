@@ -1,0 +1,5153 @@
+/* =============================================================================
+/  Global Styles
+/=============================================================================*/
+
+QWidget[style~="divider"], QFrame[style~="divider"] { background: rgba(255,255,255,7%); }
+QWidget[style~="divider_border"], QFrame[style~="divider_border"]
+{
+	background: rgb(39,46,59);
+	border-image: url(resources/controls/border_white10.png) 1 1 1 1;
+	border-width: 1px;
+}
+
+/* =============================================================================
+/  Font Styles
+/=============================================================================*/
+
+/* These font names are placeholders that will be replaced with the real
+   font determined by FontEngine at runtime. */
+
+* { font-family: {font_list}; }
+*[style~="heading1"] { font-family: {blizzard_light}; }
+*[style~="heading2"] { font-family: {blizzard_light}; }
+
+/* Dark theme prefers Noto Sans */
+QWidget[darktheme=true] QWidget { font-family: {font_dark}; }
+
+/* Dark theme buttons prefer Object Sans*/
+QWidget[darktheme=true] QPushButton { font-family: {font_dark_title}; }
+
+/* Dark theme links prefer Noto Sans */
+QWidget[darktheme=true] QPushButton[style~="link"] { font-family: {font_dark}; }
+
+/* Bug 3144: A single Font-family has to be set to prevent cursor artifact
+   for password field. */
+#passwordLineEdit { font-family: {font_dark}; }
+
+/* Bug 10439: Set same font for account name field. */
+#accountNameLineEdit { font-family: {font_dark}; }
+
+* { font-size: 13px; }
+
+/* Set default font color */
+Phoenix--StyledDialog * { color: rgba(255,255,255,72%); }
+Phoenix--ArrowPopup * { color: rgba(255,255,255,72%); }
+Phoenix--LegacyToast * { color: rgba(255,255,255,72%); }
+Phoenix--DarkToast * { color: rgba(255,255,255,72%); }
+
+*[style~="font_subsmall"] { font-size: 11px; color: #61656c; }
+*[style~="font_errorMessage"] { color: #b7b7b8; }
+*[style~="font_errorCode"] { color: #0983bd; }
+*[style~="font_status"] { font-size: 13px; }
+
+*[style~="heading1"] { font-size: 34px; color: "#ffffff";}
+*[style~="heading2"] { font-size: 26px; color: "#ffffff";}
+*[style~="heading3"] { font-size: 17px; color: "#ffffff";}
+*[style~="heading4"] { font-size: 14px; color: "#ffffff";}
+*[style~="heading5"] { font-size: 13px; color: rgba(255,255,255,30%);}
+*[style~="heading6"] { font-size: 20px; color: "#ffffff";}
+
+*[style~="subheading4"] { font-size: 15px; color: rgba(255,255,255,100%) }
+*[style~="subheading5"] { font-size: 13px; color: rgba(255,255,255,50%) }
+
+QWidget[darktheme=true] *[style~="heading1"],
+QWidget[darktheme=true] *[style~="heading2"],
+QWidget[darktheme=true] *[style~="heading3"],
+QWidget[darktheme=true] *[style~="heading4"],
+QWidget[darktheme=true] *[style~="heading5"],
+QWidget[darktheme=true] *[style~="heading6"],
+QWidget[darktheme=true] *[style~="subheading4"],
+QWidget[darktheme=true] *[style~="subheading5"]
+{
+	font-family: {font_dark_title};
+}
+
+QWidget[darktheme=true] *[style~="heading4"] { font-size: 14px; font-weight: bold; }
+QWidget[darktheme=true] *[style~="heading6"] { font-size: 18px; font-weight: bold; }
+
+/* =============================================================================
+/  QCheckBox
+/=============================================================================*/
+Phoenix--StyledDialog QCheckBox[style~="global"] { spacing: 10px; }
+Phoenix--StyledDialog QCheckBox[style~="global"][style~="small"] { font-size: 12px; }
+Phoenix--StyledDialog QCheckBox[style~="global"]:disabled { color: rgba(255,255,255,20%) }
+
+/* Use disabled and indeterminate state as read only state */
+
+/* QTreeView indicator (checkbox) Theme */
+
+Phoenix--StyledDialog QTreeView[style~="global"]:indicator { width: 20px; height: 20px; }
+
+Phoenix--Install--InstallPackageTreeView::item:selected:active,
+Phoenix--Install--InstallPackageTreeView::item:selected:!active
+{
+	background: transparent;
+}
+
+Phoenix--Install--InstallPackageTreeView::item:selected
+{
+	color: rgba(255,255,255,72%);
+}
+
+/* QCheckbox Legacy Theme */
+
+Phoenix--StyledDialog QCheckBox[style~="global"]:disabled:indeterminate { color: #ffffff; }
+Phoenix--StyledDialog QCheckBox[style~="global"][style~="small"]:indicator { width: 16px; height: 16px; }
+Phoenix--StyledDialog QCheckBox[style~="global"]:indicator { width: 20px; height: 20px; }
+Phoenix--StyledDialog QCheckBox[style~="global"]::indicator:disabled:indeterminate { image: url(resources/controls/checkbox_checked_required.png) }
+Phoenix--StyledDialog QCheckBox[style~="global"]::indicator:unchecked { image: url(resources/controls/checkbox_unchecked.png) }
+Phoenix--StyledDialog QCheckBox[style~="global"]::indicator:unchecked:hover { image: url(resources/controls/checkbox_unchecked_hover.png) }
+Phoenix--StyledDialog QCheckBox[style~="global"][hover="true"]::indicator:unchecked { image: url(resources/controls/checkbox_unchecked_hover.png) }
+Phoenix--StyledDialog QCheckBox[style~="global"]::indicator:unchecked:focus { image: url(resources/controls/checkbox_unchecked_hover.png) }
+Phoenix--StyledDialog QCheckBox[style~="global"]::indicator:unchecked:pressed { image: url(resources/controls/checkbox_unchecked_pressed.png) }
+Phoenix--StyledDialog QCheckBox[style~="global"][pressed="true"]::indicator:unchecked { image: url(resources/controls/checkbox_unchecked_pressed.png) }
+Phoenix--StyledDialog QCheckBox[style~="global"]::indicator:unchecked:disabled { image: url(resources/controls/checkbox_unchecked_disabled.png) }
+Phoenix--StyledDialog QCheckBox[style~="global"]::indicator:checked { image: url(resources/controls/checkbox_checked.png) }
+Phoenix--StyledDialog QCheckBox[style~="global"]::indicator:checked:hover { image: url(resources/controls/checkbox_checked_hover.png) }
+Phoenix--StyledDialog QCheckBox[style~="global"][hover="true"]::indicator:checked { image: url(resources/controls/checkbox_checked_hover.png) }
+Phoenix--StyledDialog QCheckBox[style~="global"]::indicator:checked:focus { image: url(resources/controls/checkbox_checked_hover.png) }
+Phoenix--StyledDialog QCheckBox[style~="global"]::indicator:checked:pressed { image: url(resources/controls/checkbox_checked_pressed.png) }
+Phoenix--StyledDialog QCheckBox[style~="global"][pressed="true"]::indicator:checked { image: url(resources/controls/checkbox_checked_pressed.png) }
+Phoenix--StyledDialog QCheckBox[style~="global"]::indicator:checked:disabled { image: url(resources/controls/checkbox_checked_disabled.png) }
+
+Phoenix--StyledDialog[highdpi=true] QCheckBox[style~="global"]::indicator:disabled:indeterminate { image: url("resources/controls/checkbox_checked_required@2x.png") }
+Phoenix--StyledDialog[highdpi=true] QCheckBox[style~="global"]::indicator:unchecked { image: url("resources/controls/checkbox_unchecked@2x.png") }
+Phoenix--StyledDialog[highdpi=true] QCheckBox[style~="global"]::indicator:unchecked:hover { image: url("resources/controls/checkbox_unchecked_hover@2x.png") }
+Phoenix--StyledDialog[highdpi=true] QCheckBox[style~="global"][hover="true"]::indicator:unchecked { image: url("resources/controls/checkbox_unchecked_hover@2x.png") }
+Phoenix--StyledDialog[highdpi=true] QCheckBox[style~="global"]::indicator:unchecked:focus { image: url("resources/controls/checkbox_unchecked_hover@2x.png") }
+Phoenix--StyledDialog[highdpi=true] QCheckBox[style~="global"]::indicator:unchecked:pressed { image: url("resources/controls/checkbox_unchecked_pressed@2x.png") }
+Phoenix--StyledDialog[highdpi=true] QCheckBox[style~="global"][pressed="true"]::indicator:unchecked { image: url("resources/controls/checkbox_unchecked_pressed@2x.png") }
+Phoenix--StyledDialog[highdpi=true] QCheckBox[style~="global"]::indicator:unchecked:disabled { image: url("resources/controls/checkbox_unchecked_disabled@2x.png") }
+Phoenix--StyledDialog[highdpi=true] QCheckBox[style~="global"]::indicator:checked { image: url("resources/controls/checkbox_checked@2x.png") }
+Phoenix--StyledDialog[highdpi=true] QCheckBox[style~="global"]::indicator:checked:hover { image: url("resources/controls/checkbox_checked_hover@2x.png") }
+Phoenix--StyledDialog[highdpi=true] QCheckBox[style~="global"][hover="true"]::indicator:checked { image: url("resources/controls/checkbox_checked_hover@2x.png") }
+Phoenix--StyledDialog[highdpi=true] QCheckBox[style~="global"]::indicator:checked:focus { image: url("resources/controls/checkbox_checked_hover@2x.png") }
+Phoenix--StyledDialog[highdpi=true] QCheckBox[style~="global"]::indicator:checked:pressed { image: url("resources/controls/checkbox_checked_pressed@2x.png") }
+Phoenix--StyledDialog[highdpi=true] QCheckBox[style~="global"][pressed="true"]::indicator:checked { image: url("resources/controls/checkbox_checked_pressed@2x.png") }
+Phoenix--StyledDialog[highdpi=true] QCheckBox[style~="global"]::indicator:checked:disabled { image: url("resources/controls/checkbox_checked_disabled@2x.png") }
+
+/* QCheckbox Dark Theme */
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]:disabled,
+Phoenix--DarkToast QCheckBox[style~="global"]:disabled,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::item:disabled
+{
+	color: rgba(255,255,255,48%)
+}
+
+/* Unchecked */
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:unchecked,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:unchecked,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:unchecked
+{
+	image: url("resources/controls/darktheme/checkbox_unchecked.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:unchecked:hover,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:unchecked:focus,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"][hover="true"]::indicator:unchecked,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:unchecked:hover,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:unchecked:focus,
+Phoenix--DarkToast QCheckBox[style~="global"][hover="true"]::indicator:unchecked,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:unchecked:hover,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:unchecked:focus,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:unchecked:selected
+{
+	image: url("resources/controls/darktheme/checkbox_unchecked_hover.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:unchecked:pressed,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"][pressed="true"]::indicator:unchecked,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:unchecked:pressed,
+Phoenix--DarkToast QCheckBox[style~="global"][pressed="true"]::indicator:unchecked,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:unchecked:pressed
+{
+	image: url("resources/controls/darktheme/checkbox_unchecked_pressed.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:unchecked:disabled,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:disabled:indeterminate,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:unchecked:disabled,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:disabled:indeterminate,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:unchecked:disabled,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:disabled:indeterminate
+{
+	image: url("resources/controls/darktheme/checkbox_unchecked_disabled.svg");
+}
+
+/* Checked*/
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:checked,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:checked,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:checked
+{
+	image: url("resources/controls/darktheme/checkbox_checked.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:checked:hover,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:checked:focus,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"][hover="true"]::indicator:checked,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:checked:hover,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:checked:focus,
+Phoenix--DarkToast QCheckBox[style~="global"][hover="true"]::indicator:checked,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:checked:hover,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:checked:focus,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:checked:selected
+{
+	image: url("resources/controls/darktheme/checkbox_checked_hover.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:checked:pressed,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"][pressed="true"]::indicator:checked,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:checked:pressed,
+Phoenix--DarkToast QCheckBox[style~="global"][pressed="true"]::indicator:checked,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:checked:pressed
+{
+	image: url("resources/controls/darktheme/checkbox_checked_pressed.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:checked:disabled,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:checked:disabled,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:checked:disabled
+{
+	image: url("resources/controls/darktheme/checkbox_checked_disabled.svg");
+}
+
+/* Partially Checked (Indeterminate) */
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:indeterminate,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:indeterminate,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:indeterminate
+{
+	image: url("resources/controls/darktheme/checkbox_indeterminate.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:indeterminate:hover,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:indeterminate:focus,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"][hover="true"]::indicator:indeterminate,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:indeterminate:hover,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:indeterminate:focus,
+Phoenix--DarkToast QCheckBox[style~="global"][hover="true"]::indicator:indeterminate,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:indeterminate:hover,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:indeterminate:focus,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:indeterminate:selected
+{
+	image: url("resources/controls/darktheme/checkbox_indeterminate_hover.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:indeterminate:pressed,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"][pressed="true"]::indicator:indeterminate,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:indeterminate:pressed,
+Phoenix--DarkToast QCheckBox[style~="global"][pressed="true"]::indicator:indeterminate,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:indeterminate:pressed
+{
+	image: url("resources/controls/darktheme/checkbox_indeterminate_pressed.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:indeterminate:disabled,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:indeterminate:disabled,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:indeterminate:disabled
+{
+	image: url("resources/controls/darktheme/checkbox_indeterminate_disabled.svg");
+}
+
+/* =============================================================================
+/  QSlider
+/=============================================================================*/
+
+QSlider[style~="global"]::groove:horizontal
+{
+    /* Not setting a height at all will cause the height to expand to the height of the slider itself.
+       We don't want to add any height.*/
+	height: 0px;
+	/* The higher this number, the more spaced out the top and bottom halves will be.*/
+	border-width: 4 4 4 4;
+	border-image: url(resources/controls/slider_filled.png) 4 4 4 4;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+QSlider[style~="global"]::groove:horizontal:disabled
+{
+    /* Not setting a height at all will cause the height to expand to the height of the slider itself.
+       We don't want to add any height.*/
+	height: 0px;
+	border-width: 4 4 4 4;
+	border-image: url(resources/controls/slider_empty.png) 4 4 4 4;
+	margin-left: 6px;
+	margin-right: 6px;
+}
+
+QSlider[style~="global"]::handle:horizontal
+{
+	image: url(resources/controls/slider_handle_normal.png);
+	width: 18px;
+	height: 18px;
+	margin: -11px -11px -11px -11px; /*handle is placed by default on the contents rect of the groove. Expand outside the groove */
+
+}
+
+QSlider[style~="global"]::handle:horizontal:hover
+{
+    /* TODO: We need a hovered state asset for this. */
+	image: url(resources/controls/slider_handle_normal.png);
+}
+
+QSlider[style~="global"]::handle:horizontal:pressed
+{
+	image: url(resources/controls/slider_handle_pressed.png);
+}
+
+QSlider[style~="global"]::handle:horizontal:disabled
+{
+	image: url(resources/controls/slider_handle_disabled.png);
+}
+
+/* disabled pseudostate doesn't behave in a usable way for vertical QSlider, so add-page and sub-page are used to spec the appropriate images */
+QSlider[style~="global"]::groove:vertical
+{
+	width: 6px; /* the groove expands to the size of the slider by default. by giving it a width, it has a fixed size */
+	border-width: 2 2 2 2;
+	margin: 8px 0px 8px 0px;
+}
+
+QSlider[style~="global"]::add-page:vertical
+{
+	border-image: url(resources/controls/slider_active.png) 2 2 2 2;
+	border-width: 2 2 2 2;
+	margin: 6px 0px 6px 0px;
+}
+
+QSlider[style~="global"]::sub-page:vertical
+{
+	border-image: url(resources/controls/slider_inactive.png) 2 2 2 2;
+	border-width: 2 2 2 2;
+	margin: 6px 0px 6px 0px;
+}
+
+QSlider[style~="global"]::handle:vertical
+{
+	image: url(resources/controls/vslider_pointer.png);
+	width: 22px;
+	height: 22px;
+	margin: -11px -11px -11px -11px; /* handle is placed by default on the contents rect of the groove. Expand outside the groove */
+	left: 4px;
+}
+
+QSlider[style~="global"]::handle:vertical:hover
+{
+	image: url(resources/controls/vslider_pointer_hover.png);
+}
+
+QSlider[style~="global"]::handle:vertical:pressed
+{
+	image: url(resources/controls/vslider_pointer_pressed.png);
+}
+
+QSlider[style~="global"]::handle:vertical:disabled
+{
+	image: url(resources/controls/vslider_pointer_disabled.png);
+}
+
+/* QSlider darktheme styles */
+QSlider[style~="darktheme"]:focus
+{
+	border: 1px solid #26496c;
+	border-radius: 2px;
+}
+
+QSlider[style~="darktheme"]::groove:horizontal
+{
+	height: 4px;
+	border-image: url("resources/controls/darktheme/slider_filled.svg");
+	border-radius: 2px;
+	margin: 6px 6px 6px 6px;
+}
+
+QSlider[style~="darktheme"]::groove:horizontal:disabled
+{
+	border-image: url("resources/controls/darktheme/slider_empty.svg");
+}
+
+QSlider[style~="darktheme"]::groove:horizontal:focus
+{
+	margin: 5px 5px 5px 5px;
+}
+
+QSlider[style~="darktheme"]::handle:horizontal
+{
+	image: url("resources/controls/darktheme/slider_handle_normal.svg");
+	/* Changing height here must be accompanied by a change in groove margin top/bottom */
+	height: 24px;
+	margin: -11px -6px -11px -6px; /*handle is placed by default on the contents rect of the groove. Expand outside the groove */
+	width: 24px;
+}
+
+QSlider[style~="darktheme"]::handle:horizontal:hover
+{
+	image: url("resources/controls/darktheme/slider_handle_hover.svg");
+}
+
+QSlider[style~="darktheme"]::handle:horizontal:pressed
+{
+	image: url("resources/controls/darktheme/slider_handle_pressed.svg");
+}
+
+QSlider[style~="darktheme"]::handle:horizontal:disabled
+{
+	image: url("resources/controls/darktheme/slider_handle_disabled.svg");
+}
+
+/* QSlider small variant styles */
+QSlider[style~="darktheme"][style~="small"]:focus
+{
+	border: none;
+}
+
+QSlider[style~="darktheme"][style~="small"]::groove:horizontal
+{
+	border-radius: 2px;
+	height: 2px;
+	margin: 0px 6px 0px 6px;
+}
+
+QSlider[style~="darktheme"][style~="small"]::groove:horizontal:focus
+{
+	margin: 0px 6px 0px 6px;
+}
+
+QSlider[style~="darktheme"][style~="small"]::handle:horizontal
+{
+	/* Changing height here must be accompanied by a change in groove margin top/bottom */
+	height: 18px;
+	width: 18px;
+}
+
+/* =============================================================================
+/  QRadioButton
+/=============================================================================*/
+
+QRadioButton[style~="global"]
+{
+	color: rgba(255,255,255,72%);
+	spacing: 10px;
+}
+
+QRadioButton[style~="global"]:disabled
+{
+	color: rgba(255,255,255,48%);
+}
+
+QRadioButton[style~="global"]:indicator
+{
+	width: 20px;
+	height: 20px;
+	padding: 1px 0px 0px 0px;
+}
+
+QRadioButton[style~="global"]::indicator:unchecked { image: url("resources/controls/radiobutton_unchecked.svg") }
+QRadioButton[style~="global"]::indicator:unchecked:hover { image: url("resources/controls/radiobutton_unchecked_hover.svg") }
+QRadioButton[style~="global"][hover="true"]::indicator:unchecked { image: url("resources/controls/radiobutton_unchecked_hover.svg") }
+QRadioButton[style~="global"]::indicator:unchecked:focus { image: url("resources/controls/radiobutton_unchecked_hover.svg") }
+QRadioButton[style~="global"]::indicator:unchecked:pressed { image: url("resources/controls/radiobutton_unchecked_pressed.svg") }
+QRadioButton[style~="global"]::indicator:unchecked:disabled { image: url("resources/controls/radiobutton_unchecked_disabled.svg") }
+QRadioButton[style~="global"]::indicator:checked { image: url("resources/controls/radiobutton_checked.svg") }
+QRadioButton[style~="global"]::indicator:checked:hover { image: url("resources/controls/radiobutton_checked_hover.svg") }
+QRadioButton[style~="global"][hover="true"]::indicator:checked { image: url("resources/controls/radiobutton_checked_hover.svg") }
+QRadioButton[style~="global"]::indicator:checked:focus { image: url("resources/controls/radiobutton_checked_hover.svg") }
+QRadioButton[style~="global"]::indicator:checked:pressed { image: url("resources/controls/radiobutton_checked_pressed.svg") }
+QRadioButton[style~="global"]::indicator:checked:disabled { image: url("resources/controls/radiobutton_checked_disabled.svg") }
+
+/* =============================================================================
+/  QComboBox
+/=============================================================================*/
+
+/* =============================================================================
+/  StyledComboBox
+/=============================================================================*/
+
+Phoenix--StyledComboBox
+{
+	padding: 0 10 0 10;
+	min-height: 30px;
+
+	color: #B2B2B2;
+
+	border-width: 2 2 2 2;
+	border-image: url("resources/controls/input_normal.png") 2 2 2 2;
+}
+
+Phoenix--StyledDialog[highdpi=true] Phoenix--StyledComboBox
+{
+	border-image: url("resources/controls/input_normal@2x.png") 4 4 4 4;
+}
+
+Phoenix--StyledComboBox:disabled
+{
+	color: rgba(255,255,255,20%);
+	border-image: url(resources/controls/input_disabled.png) 2 2 2 2;
+}
+
+Phoenix--StyledDialog[highdpi=true] Phoenix--StyledComboBox:disabled
+{
+	border-image: url("resources/controls/input_disabled@2x.png") 4 4 4 4;
+}
+
+Phoenix--StyledComboBox:hover
+{
+	color: #ffffff;
+	border-image: url(resources/controls/input_hover.png) 2 2 2 2;
+}
+
+Phoenix--StyledDialog[highdpi=true] Phoenix--StyledComboBox:hover
+{
+	border-image: url("resources/controls/input_hover@2x.png") 4 4 4 4;
+}
+
+Phoenix--StyledComboBox:focus
+{
+	color: #ffffff;
+	border-image: url(resources/controls/input_hover.png) 2 2 2 2;
+}
+
+Phoenix--StyledDialog[highdpi=true] Phoenix--StyledComboBox:focus
+{
+	border-image: url("resources/controls/input_hover@2x.png") 4 4 4 4;
+}
+
+/* Change bottom border not to have radius so that it matches with dropdown menu. */
+Phoenix--StyledComboBox[active="true"][popupMode="false"][popupIsBelow="true"]
+{
+	border-image: url(resources/controls/input_active_popup.png) 2 2 2 2;
+}
+
+/* Change bottom border not to have radius so that it matches with dropdown menu. */
+Phoenix--StyledDialog[highdpi=true] Phoenix--StyledComboBox[active="true"][popupMode="false"][popupIsBelow="true"]
+{
+	border-image: url("resources/controls/input_active_popup@2x.png") 4 4 4 4;
+}
+
+/* Change top border not to have radius so that it matches with dropdown menu. */
+Phoenix--StyledComboBox[active="true"][popupMode="false"][popupIsBelow="false"]
+{
+	border-image: url(resources/controls/input_active_popup_flip.png) 2 2 2 2;
+}
+
+Phoenix--StyledDialog[highdpi=true] Phoenix--StyledComboBox[active="true"][popupMode="false"][popupIsBelow="false"]
+{
+	border-image: url("resources/controls/input_active_popup_flip@2x.png") 4 4 4 4;
+}
+
+Phoenix--StyledComboBox[popupMode="true"]
+{
+	/* This removes warning. QCommonStyle::drawComplexControl: Control # not handled*/
+	border-width: 0 0 0 0;
+	border-image: url(resources/images/empty_pixel.png) 0 0 0 0;
+	padding: 0 10 0 0;
+}
+
+Phoenix--StyledComboBox::drop-down
+{
+	subcontrol-origin: padding;
+	subcontrol-position: right;
+	right: 6px;
+	width: 10px; height: 16px;
+	image: url(resources/controls/icon_combo_selector.png);
+}
+
+Phoenix--StyledDialog[highdpi=true] Phoenix--StyledComboBox::drop-down
+{
+	image: url("resources/controls/icon_combo_selector@2x.png");
+}
+
+Phoenix--StyledComboBox::drop-down:!enabled
+{
+	image: url(resources/controls/icon_combo_selector_disabled.png);
+}
+
+Phoenix--StyledDialog[highdpi=true] Phoenix--StyledComboBox::drop-down:!enabled
+{
+	image: url("resources/controls/icon_combo_selector_disabled@2x.png");
+}
+
+Phoenix--StyledComboBox::drop-down[popupMode="true"]
+{
+	width: 17px; height: 14px;
+	image: url(resources/images/contextMenu_moreoptions_on.png);
+}
+
+Phoenix--StyledComboBox::drop-down[popupMode="true"]:!enabled
+{
+	image: url(resources/images/contextMenu_moreoptions_off.png);
+}
+
+Phoenix--StyledComboBox QWidget
+{
+	background: transparent;
+}
+
+/* =============================================================================
+/  DarkComboBox
+/=============================================================================*/
+
+Phoenix--DarkComboBox,
+Phoenix--DarkComboBox:!on,
+Phoenix--DarkComboBox:!focus,
+Phoenix--DarkComboBox:!hover,
+Phoenix--DarkComboBox:!focus:!on,
+Phoenix--DarkComboBox:!hover:!on
+{
+	background-color: rgba(255,255,255,6%);
+	border-radius: 4px;
+	color: rgba(255,255,255,72%);
+	font-size: 14px;
+	padding: 4px 8px 7px 12px;
+}
+
+Phoenix--DarkComboBox:disabled
+{
+	background-color: rgba(255,255,255,12%);
+	color: rgba(255,255,255,20%);
+}
+
+Phoenix--DarkComboBox:focus,
+Phoenix--DarkComboBox:hover,
+Phoenix--DarkComboBox:focus:!on,
+Phoenix--DarkComboBox:hover:!on
+{
+	background-color: rgba(255,255,255,12%);
+	color: #ffffff;
+}
+
+Phoenix--DarkComboBox:pressed,
+Phoenix--DarkComboBox:on
+{
+	background-color: rgba(255,255,255,12%);
+	color: rgba(255,255,255,48%);
+}
+
+Phoenix--DarkComboBox::drop-down
+{
+	background-color: transparent;
+}
+
+Phoenix--DarkComboBox::down-arrow
+{
+	image: url("resources/controls/darktheme/combobox_arrow_normal.svg");
+	padding-right: 10px;
+}
+
+Phoenix--DarkComboBox::down-arrow:disabled
+{
+	image: url("resources/controls/darktheme/combobox_arrow_pressed.svg");
+}
+
+Phoenix--DarkComboBox::down-arrow:focus,
+Phoenix--DarkComboBox::down-arrow:hover
+{
+	image: url("resources/controls/darktheme/combobox_arrow_hover.svg");
+}
+
+Phoenix--DarkComboBox::down-arrow:pressed,
+Phoenix--DarkComboBox::down-arrow:on
+{
+	image: url("resources/controls/darktheme/combobox_arrow_pressed.svg");
+}
+
+/* This is the pop-up item view that shows when you click the combo box */
+Phoenix--DarkComboBox QAbstractItemView
+{
+	background-color: transparent;
+	border-image: url("resources/images/darktheme/contextMenu_border.png") 3 3 3 3;
+	border-width: 3 3 3 3;
+	margin: 3px 0px 3px 0px;
+	padding: 5px 0px 5px 0px;
+}
+
+Phoenix--StyledDialog[highdpi=true] Phoenix--DarkComboBox QAbstractItemView
+{
+	border-image: url("resources/images/darktheme/contextMenu_border@2x.png") 6 6 6 6;
+}
+
+Phoenix--DarkComboBox QAbstractItemView::item
+{
+	color: rgba(255,255,255,72%);
+	height: 30px;
+	margin: 1px 5px 1px 5px;
+	padding: 0px 7px 0px 7px;
+}
+
+Phoenix--DarkComboBox QAbstractItemView::item:hover
+{
+	background-color: rgba(255,255,255,6%);
+	border-radius: 3px;
+	color: #ffffff;
+}
+
+Phoenix--DarkComboBox QAbstractItemView::item:pressed
+{
+	background-color: rgba(255,255,255,3%);
+	border-radius: 3px;
+}
+
+Phoenix--DarkComboBox QAbstractItemView::item:selected
+{
+	background-color: rgba(255,255,255,6%);
+	background-image: url("resources/images/darktheme/contextMenu_checked_2x30.svg");
+	background-repeat: no-repeat;
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+	color: #ffffff;
+}
+
+Phoenix--DarkComboBox QAbstractItemView::item:disabled
+{
+	color: rgba(255,255,255,24%);
+}
+
+Phoenix--DarkComboBox QAbstractItemView::indicator
+{
+	image: none;
+	height: 0px;
+	width: 0px;
+}
+
+/* =============================================================================
+/  StyledCheckBox
+/=============================================================================*/
+
+Phoenix--StyledCheckBox[style="global"] > QLabel:disabled
+{
+	color: rgba(255,255,255,20%)
+}
+
+Phoenix--StyledCheckBox[style~="global"][style~="small"] > QLabel
+{
+	font-size: 12px;
+}
+
+/* =============================================================================
+/  StyledRadioButton
+/=============================================================================*/
+
+Phoenix--StyledRadioButton QRadioButton {
+	padding-bottom: 1px;
+}
+
+Phoenix--StyledRadioButton[style="global"] > QLabel:disabled
+{
+	color: rgba(255,255,255,12%)
+}
+
+Phoenix--StyledDialog[darktheme=true] Phoenix--StyledRadioButton[style="global"] > QLabel:disabled
+{
+	color: rgba(255,255,255,48%);
+}
+
+Phoenix--StyledRadioButton[style~="global"][style~="small"] > QLabel
+{
+	font-size: 12px;
+}
+
+/* =============================================================================
+/  StyledCompleter
+/=============================================================================*/
+
+QListView#completerPopup
+{
+	background-color: #111218;
+	border: 1px solid #148eff;
+	border-image: none;
+	border-radius: 4px;
+	margin: 0 1 0 1;
+	padding: 2px;
+	selection-background-color: rgba(20,142,255,24%);
+}
+
+QListView#completerPopup::item
+{
+	padding: 5px 5px 5px 2px;
+	background: transparent;
+	color: rgba(255,255,255,60%);
+}
+
+QListView#completerPopup::item:selected
+{
+	padding: 5px 5px 5px 2px;
+	color: #ffffff;
+	background: rgba(20,142,255,24%);
+}
+
+QListView#completerPopup::item:hover:!selected
+{
+	padding: 5px 5px 5px 2px;
+	color: #ffffff;
+	background: rgba(255,255,255,6%);
+}
+
+QListView#completerPopup QScrollBar:vertical
+{
+	border-left: 1px solid #3b3b3d;
+}
+
+QListView#completerPopup QScrollBar:horizontal
+{
+	height: 0px;
+}
+
+QListView#completerPopup QWidget#cornerWidget
+{
+	height: 0px;
+}
+
+/* =============================================================================
+/  GroupTitleWidget
+/
+/  NOTE :: we are enabling/disabling hover by use of manipulating Qt::WA_UnderMouse
+/  attribute to trigger the css style sheet differences and overloading setEnabled
+/  in lieu of being able to modify "selected" manually as these flags are controlled
+/  deep within Qt.  We have structured the use case and the UI element around this
+/  in order to crank out higher performance.  It should be said that presently
+/  (as it also was in the past) we do not support current location (for keyboard users)
+/  which we should look into at some point.
+/
+/
+/=============================================================================*/
+
+Phoenix--GroupTitleWidget #groupNameLabel
+{
+	color: rgb(179,179,179);
+}
+
+Phoenix--GroupTitleWidget #groupCountLabel
+{
+	color: rgba(255,255,255,40%);
+}
+
+Phoenix--GroupTitleWidget QFrame#groupCountLabel
+{
+	min-height: 17px;
+	max-height: 17px;
+}
+
+Phoenix--GroupTitleWidget QFrame#groupNameLabel
+{
+	min-height: 17px;
+	max-height: 17px;
+}
+
+Phoenix--GroupTitleWidget QFrame#itemBackground:hover
+{
+	background-color: rgba(255,255,255,5%);
+	border: 1px solid rgb(74,74,77);
+	padding: -1px -1px -1px -1px;
+}
+
+Phoenix--GroupTitleWidget QFrame#itemSelectedBackground:enabled
+{
+	border: 1px solid rgb(74,74,77);
+	padding: -1px -1px -1px -1px;
+
+}
+
+/* =============================================================================
+/  Popup Border
+/=============================================================================*/
+
+/* QFrame[style~="TopToBottom"] */
+Phoenix--StyledComboBox QFrame QListView
+{
+	border-width: 0 1 1 1;
+	border-image: url(resources/images/styledComboBox_popup_border.png) 0 1 1 1;
+	padding: 0 0 0 0;
+
+	icon-size: 0px;
+}
+
+Phoenix--StyledComboBox QFrame[style~="BottomToTop"] QListView
+{
+	border-width: 1 1 0 1;
+	border-image: url(resources/images/styledComboBox_popup_border_flip.png) 1 1 0 1;
+}
+
+
+/* QFrame[style~="TopToBottom"] */
+Phoenix--StyledComboBox QFrame QListView
+{
+	border-width: 0 1 1 1;
+	border-image: url(resources/images/styledComboBox_popup_border.png) 0 1 1 1;
+	padding: 0 0 0 0;
+
+	icon-size: 0px;
+}
+
+Phoenix--StyledComboBox QFrame QFrame#arrow
+{
+	border-image: url(resources/images/styledComboBox_popup_arrow.png) 0;
+}
+
+Phoenix--StyledComboBox QFrame[style~="BottomToTop"] QFrame#arrow
+{
+	border-image: url(resources/images/styledComboBox_popup_arrow_flip.png) 0;
+}
+
+/* =============================================================================
+/  QLabel for tooltips
+/=============================================================================*/
+Phoenix--ToolTipLabel
+{
+}
+
+Phoenix--ToolTipLabel[nodefault=false]
+{
+	image: url("resources/images/icon_question.png");
+}
+
+Phoenix--ToolTipLabel[highdpi=true][nodefault=false]
+{
+	image: url("resources/images/icon_question@2x.png");
+}
+
+Phoenix--ToolTipLabel[darktheme=true],
+Phoenix--ToolTipLabel[darktheme=true][highdpi=true]
+{
+	image: url("resources/controls/darktheme/icon_tooltip.svg");
+}
+
+Phoenix--ToolTipLabel[darktheme=true]:disabled,
+Phoenix--ToolTipLabel[darktheme=true][highdpi=true]:disabled
+{
+	image: url("resources/controls/darktheme/icon_tooltip_disabled.svg");
+}
+
+/* =============================================================================
+/  QLabel for tooltips
+/=============================================================================*/
+Phoenix--ToolTipInternal QTextEdit
+{
+	background: transparent;
+}
+
+Phoenix--ToolTipInternal[popupDebug="true"] QWidget
+{
+	background: purple;
+}
+
+/* =============================================================================
+/  QLabel for notifications
+/=============================================================================*/
+
+QLabel[notification~="normal"]
+{
+	color: #6cdb00;
+}
+
+QLabel[notification~="error"]
+{
+	color: #ffb400;
+}
+
+/* =============================================================================
+/  Arrow Image
+/=============================================================================*/
+
+/* QFrame[style~="TopToBottom"] */
+Phoenix--StyledComboBox QFrame QFrame#arrowFrame
+{
+	border-width: 0 1 10 1;
+	border-image: url(resources/images/styledComboBox_popup_arrow_border.png) 0 1 10 1;
+}
+
+Phoenix--StyledComboBox	QFrame[style~="BottomToTop"] QFrame#arrowFrame
+{
+	border-width: 0 1 10 1;
+	border-image: url(resources/images/styledComboBox_popup_arrow_border_flip.png) 0 1 10 1;
+}
+
+/* =============================================================================
+/  QLineEdit
+/  Add 8px to the height since there're 4px paddings on top and bottom of QLineEdit.
+/=============================================================================*/
+
+Phoenix--StyledDialog QLineEdit[style~="global"]
+{
+	color: rgb(179,179,179);
+
+	min-height: 30px;
+	max-height: 30px;
+
+	border-width: 2 2 2 2;
+	border-image: url(resources/controls/input_normal.png) 2 2 2 2;
+
+	/* Align with QPushButton. Border images for QPushButton have more pixels for shadow.*/
+	margin-bottom: 2px;
+	margin-top: 2px;
+	margin-left: 1px;
+	margin-right: 1px;
+
+	selection-background-color: #787878;
+
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+Phoenix--StyledDialog[highdpi=true] QLineEdit[style~="global"]
+{
+	border-image: url("resources/controls/input_normal@2x.png") 4 4 4 4;
+}
+
+Phoenix--StyledDialog QLineEdit[style~="no_frame"]
+{
+	color: rgb(179,179,179);
+	selection-background-color: #787878;
+}
+
+Phoenix--StyledDialog QLineEdit[style~="global"]:hover
+{
+	color: #ffffff;
+	border-image: url(resources/controls/input_hover.png) 2 2 2 2;
+}
+
+Phoenix--StyledDialog[highdpi=true] QLineEdit[style~="global"]:hover
+{
+	border-image: url("resources/controls/input_hover@2x.png") 4 4 4 4;
+}
+
+Phoenix--StyledDialog QLineEdit[style~="global"]:focus
+{
+	color: #ffffff;
+	border-image: url(resources/controls/input_active.png) 2 2 2 2;
+}
+
+Phoenix--StyledDialog[highdpi=true] QLineEdit[style~="global"]:focus
+{
+	border-image: url("resources/controls/input_active@2x.png") 4 4 4 4;
+}
+
+Phoenix--StyledDialog QLineEdit[style~="global"]:disabled
+{
+	color: rgb(100,100,100); /* QLineEdit is applying its own opacity to dim the text */
+	border-image: url(resources/controls/input_disabled.png) 2 2 2 2;
+}
+
+Phoenix--StyledDialog[highdpi=true] QLineEdit[style~="global"]:disabled
+{
+	color: rgb(100,100,100); /* QLineEdit is applying its own opacity to dim the text */
+	border-image: url("resources/controls/input_disabled@2x.png") 4 4 4 4;
+}
+
+Phoenix--StyledDialog[darktheme=true] QLineEdit[style~="global"]
+{
+	background-color: rgba(0,0,0,24%);
+	border: 1px solid #696b6f;
+	border-image: none;
+	border-radius: 4px;
+	color: #ffffff;
+	min-height: 30px;
+	max-height: 30px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QLineEdit[style~="global"]:hover
+{
+	border: 1px solid #85868a;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QLineEdit[style~="global"]:focus
+{
+	border: 1px solid #148eff;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QLineEdit[style~="global"]:disabled
+{
+	border: 1px solid #313337;
+	border-image: none;
+	color: rgb(100,100,100); /* QLineEdit is applying its own opacity to dim the text */
+}
+
+Phoenix--StyledDialog[darktheme=true] QLineEdit[style~="global"][readOnly=true]
+{
+	border: 1px solid #313337;
+	border-image: none;
+	color: rgba(255,255,255,72%);
+}
+
+Phoenix--StyledDialog[darktheme=true] QLineEdit[style~="global"][state~="error"]
+{
+	border: 1px solid #ffb400;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QLineEdit[style~="global"][style~="search"]
+{
+	background-image: url("resources/images/icon_find_friend.svg");
+	background-repeat: no-repeat;
+	background-origin: padding;
+	background-position: left center;
+	padding-left: 30px;
+}
+
+/* =============================================================================
+/  Phoenix::StyledLineEdit
+/=============================================================================*/
+
+Phoenix--StyledLineEdit[style~="global"]
+{
+	/* Use custome properties instead of the standard margin and padding properties
+	   so that we can access these from code to calculate the text content width */
+	qproperty-contentMarginLeft: 1;
+	qproperty-contentMarginRight: 1;
+	qproperty-textMarginLeft: 5;
+	qproperty-textMarginRight: 5;
+}
+
+Phoenix--StyledLineEdit > QLineEdit[style~="global"]
+{
+	/* Override QLineEdit's margins and paddings since we are using custom properties. */
+	margin-left: 0px;
+	margin-right: 0px;
+	padding-left: 0px;
+	padding-right: 0px;
+}
+
+Phoenix--StyledLineEdit > QLabel
+{
+	color: rgba(255, 255, 255, 30%);
+	margin: 7 6 6 0;
+}
+
+
+/* =============================================================================
+/  Phoenix::ContextualErrorEdit
+/=============================================================================*/
+
+Phoenix--ContextualErrorEdit QLabel#errorLabel
+{
+	color: #ffb400;
+	font-size: 12px;
+}
+
+Phoenix--ContextualErrorEdit QLabel#errorIcon
+{
+	image: url("resources/images/darktheme/alert.svg");
+}
+
+/* =============================================================================
+/  QAbstractSpinBox
+/  Applies to any subclass of QAbstractSpinBox, including QSpinBox and QTimeEdit
+/=============================================================================*/
+
+Phoenix--StyledDialog QAbstractSpinBox[style~="global"] {
+	color: rgba(255,255,255,72%);
+
+	min-height: 28px;
+	max-height: 28px;
+
+	border-width: 2 2 2 2;
+	border-image: url(resources/controls/input_normal.png) 2 2 2 2;
+
+	/* Align with QPushButton. Border images for QPushButton have more pixels for shadow.*/
+	margin-bottom: 2px;
+	margin-top: 2px;
+	margin-left: 1px;
+	margin-right: 1px;
+
+	selection-background-color: #787878;
+
+	padding-left: 5px;
+	padding-right: 5px;
+}
+
+Phoenix--StyledDialog[highdpi=true] QAbstractSpinBox[style~="global"] {
+    border-image: url("resources/controls/input_normal@2x.png") 4 4 4 4;
+}
+
+Phoenix--StyledDialog QAbstractSpinBox[style~="global"]:hover {
+    color: #ffffff;
+    border-image: url("resources/controls/input_hover.png") 2 2 2 2;
+}
+
+Phoenix--StyledDialog[highdpi=true] QAbstractSpinBox[style~="global"]:hover {
+    border-image: url("resources/controls/input_hover@2x.png") 4 4 4 4;
+}
+
+Phoenix--StyledDialog QAbstractSpinBox[style~="global"]:focus {
+    color: #ffffff;
+    border-image: url(resources/controls/input_active.png) 2 2 2 2;
+}
+
+Phoenix--StyledDialog[highdpi=true] QAbstractSpinBox[style~="global"]:focus {
+    border-image: url("resources/controls/input_active@2x.png") 4 4 4 4;
+}
+
+Phoenix--StyledDialog QAbstractSpinBox[style~="global"]:disabled {
+    color: rgb(100,100,100); /* QAbstractSpinBox is applying its own opacity to dim the text */
+    border-image: url(resources/controls/input_disabled.png) 2 2 2 2;
+}
+
+Phoenix--StyledDialog[highdpi=true] QAbstractSpinBox[style~="global"]:disabled {
+    color: rgb(100,100,100); /* QAbstractSpinBox is applying its own opacity to dim the text */
+    border-image: url("resources/controls/input_disabled@2x.png") 4 4 4 4;
+}
+
+Phoenix--StyledDialog QAbstractSpinBox[style~="global"]::up-button {
+    subcontrol-origin: border;
+    subcontrol-position: top right;
+
+    image: url("resources/controls/spinbox_upbutton_default.svg");
+    margin: 1px 1px 0 0;
+}
+
+Phoenix--StyledDialog QAbstractSpinBox[style~="global"]::up-button:disabled {
+    image: url("resources/controls/spinbox_upbutton_disabled.svg");
+}
+
+Phoenix--StyledDialog QAbstractSpinBox[style~="global"]::up-button:hover {
+    image: url("resources/controls/spinbox_upbutton_hover.svg");
+}
+
+Phoenix--StyledDialog QAbstractSpinBox[style~="global"]::up-button:pressed {
+    image: url("resources/controls/spinbox_upbutton_pressed.svg");
+}
+
+Phoenix--StyledDialog QAbstractSpinBox[style~="global"]::down-button {
+    subcontrol-origin: border;
+    subcontrol-position: bottom right;
+
+    image: url("resources/controls/spinbox_downbutton_default.svg");
+    border-width: 1px;
+    margin: 0 1px 1px 0;
+}
+
+Phoenix--StyledDialog QAbstractSpinBox[style~="global"]::down-button:disabled {
+    image: url("resources/controls/spinbox_downbutton_disabled.svg");
+}
+
+Phoenix--StyledDialog QAbstractSpinBox[style~="global"]::down-button:hover {
+    image: url("resources/controls/spinbox_downbutton_hover.svg");
+}
+
+Phoenix--StyledDialog QAbstractSpinBox[style~="global"]::down-button:pressed {
+    image: url("resources/controls/spinbox_downbutton_pressed.svg");
+}
+
+/* Darktheme QSpinBox styles */
+Phoenix--StyledDialog[darktheme=true] QAbstractSpinBox[style~="global"]
+{
+	background-color: rgba(0,0,0,24%);
+	border: 1px solid #696b6f;
+	border-image: none;
+	border-radius: 4px;
+	max-height: 30px;
+	min-height: 30px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QAbstractSpinBox[style~="global"]:hover
+{
+	border: 1px solid #85868a;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QAbstractSpinBox[style~="global"]:focus
+{
+	border: 1px solid #148eff;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QAbstractSpinBox[style~="global"]:disabled
+{
+	border: 1px solid #313337;
+	border-image: none;
+	color: rgb(100,100,100); /* QAbstractSpinBox is applying its own opacity to dim the text */
+}
+
+/* =============================================================================
+/  StyledMenu
+/=============================================================================*/
+
+Phoenix--StyledMenu
+{
+	background: transparent;
+}
+
+Phoenix--StyledMenu QWidget
+{
+	background: transparent;
+}
+
+Phoenix--StyledMenu[style~="WebMenuTheme"] QWidget
+{
+	background: #21242d;
+	border-width: 0 0 0 0;
+	padding: 1 1 1 1;
+}
+
+Phoenix--StyledMenu[style~="WebMenuTheme"] QSlider
+{
+	background: transparent;
+}
+
+Phoenix--StyledMenu[style~="WebMenuTheme"] QPushButton
+{
+	background: transparent;
+}
+
+Phoenix--StyledMenu[style~="WebMenuTheme"] QListView
+{
+	padding: 0 0 0 0;
+}
+
+Phoenix--StyledMenu QListView
+{
+	margin: 3 0 3 0; /* 3px spacing on top and bottom of ListView. */
+}
+
+Phoenix--StyledMenu[style~="PageSelector"] QListView
+{
+	margin: 6 0 6 0; /* 6px spacing on top and bottom of ListView. */
+}
+
+Phoenix--StyledMenu[style~="PageSelector"] QListView::item
+{
+	/* color for normal and disabled items are specified in StyledMenu.h */
+	padding: 2px 6px 2px 12px;
+	min-height: 30px;
+	background: transparent;
+}
+
+Phoenix--StyledMenu QListView::item
+{
+	/* color for normal and disabled items are specified in StyledMenu.h */
+	padding: 2px 2px 2px 3px;
+	min-height: 21px;
+	background: transparent;
+}
+
+Phoenix--StyledMenu QWidget[direction~="BottomToTop"] QListView
+{
+	margin: 0 0 0 0;
+}
+
+Phoenix--StyledMenu QWidget[direction~="BottomToTop"] QListView::item
+{
+	margin: 0 0 0 0;
+}
+
+Phoenix--StyledMenu QListView::item:selected
+{
+	color: #ffffff;
+	background: #323945;
+}
+
+Phoenix--StyledMenu QListView::item:hover
+{
+	color: #ffffff;
+}
+
+Phoenix--StyledMenu Phoenix--ErrorBox[style~="comboBox"] QListView::item
+{
+	/* Combobox popup has fixed width. Minimize right padding so that text doesn't get elided. */
+	padding: 4px 7px 4px 7px;
+}
+
+Phoenix--StyledMenu Phoenix--ErrorBox[style~="comboBox"] QListView::item:disabled
+{
+	color: #4c4c4c;
+}
+
+Phoenix--StyledMenu QLabel#battleTagString
+{
+	color: rgb(130, 197, 255);
+	font-size: 16px;
+}
+
+Phoenix--StyledMenu QLabel#battleTagIdString
+{
+	color: rgba(255, 255, 255, 50%);
+	font-size: 16px;
+}
+
+Phoenix--StyledMenu QLabel#regionLabel
+{
+	color: rgba(255, 255, 255, 30%);
+	font-size: 12px;
+}
+
+/* =============================================================================
+/  QMenu
+/=============================================================================*/
+
+QMenu
+{
+	background-color: transparent;
+	border-image: url("resources/images/darktheme/contextMenu_border.png") 3 3 3 3;
+	border-width: 3 3 3 3;
+	font-family: {font_dark};
+	font-size: 14px;
+	padding: 6px 0px;
+}
+
+QMenu[highdpi=true]
+{
+	border-image: url("resources/images/darktheme/contextMenu_border@2x.png") 6 6 6 6;
+}
+
+QMenu::item
+{
+	background-color: transparent;
+	color: rgba(255,255,255,72%);
+	height: 28px;
+	margin: 1px 6px;
+	padding: 0px 8px;
+}
+
+QMenu::separator
+{
+	background-color: rgba(255,255,255,12%);
+	height: 1px;
+	margin: 8px 6px;
+}
+
+QMenu::item:selected
+{
+	background-color: rgba(255,255,255,6%);
+	border-radius: 3px;
+	color: #ffffff;
+}
+
+QMenu::item:pressed
+{
+	color: rgba(255,255,255,60%);
+}
+
+QMenu::item:disabled
+{
+	background-color: transparent;
+	color: rgba(255,255,255,48%);
+}
+
+QMenu::item:checked
+{
+	background-color: rgba(255,255,255,6%);
+	border-radius: 3px;
+	color: #ffffff;
+	padding: 0px 8px 0px 6px;
+}
+
+QMenu::icon
+{
+	padding: 6px 8px;
+}
+
+QMenu::indicator
+{
+	image: none;
+	height: 0px;
+	width: 0px;
+}
+
+QMenu::indicator:checked
+{
+	image: url("resources/images/darktheme/contextMenu_checked_2x28.svg");
+	height: 28px;
+	width: 2px;
+}
+
+QMenu::right-arrow
+{
+	image: url("resources/images/darktheme/contextMenu_arrow_normal.svg");
+	padding-right: 4px;
+}
+
+QMenu::right-arrow:disabled
+{
+	image: url("resources/images/darktheme/contextMenu_arrow_pressed.svg");
+}
+
+QMenu::right-arrow:selected
+{
+	image: url("resources/images/darktheme/contextMenu_arrow_hover.svg");
+}
+
+QMenu::right-arrow:pressed
+{
+	image: url("resources/images/darktheme/contextMenu_arrow_pressed.svg");
+}
+
+QMenu QLabel[style~="groupheader"]
+{
+	color: rgba(255,255,255,72%);
+	font-family: {font_dark_title};
+	font-weight: bold;
+	font-size: 12px;
+	margin: 12px 0 6px 6px;
+	text-transform: uppercase;
+}
+
+/* =============================================================================
+/  ApplicationMenu
+/=============================================================================*/
+
+QMenu#applicationMenu
+{
+	font-size: 13px;
+}
+
+QMenu#applicationMenu::item
+{
+	height: 26px;
+	padding: 0px 13px;
+}
+
+/* =============================================================================
+/  QTextEdit
+/  Add 8px to the height since there're 4px paddings on top and bottom of QLineEdit.
+/=============================================================================*/
+
+QTextEdit[style~="global"]
+{
+	color: rgb(179,179,179);
+
+	border-width: 2 2 2 2;
+	border-image: url(resources/controls/input_normal.png) 2 2 2 2;
+
+	selection-background-color: #787878;
+}
+
+QTextEdit[style~="eula"]
+{
+	background-color: #161d26;
+	color: rgba(255,255,255,70%);
+	border-top: 1px solid rgba(255, 255, 255, 7%);
+	border-bottom: 1px solid rgba(255, 255, 255, 7%);
+	selection-background-color: #787878;
+
+	/* Add margin on the left and right, so that it aligns with global buttons. */
+	margin-left: 2px;
+	margin-right: 2px;
+	padding-left: 17px;
+}
+
+QTextEdit[style~="flavorless"]
+{
+	background-color: transparent;
+	color: rgba(255,255,255,70%);
+	selection-background-color: #787878;
+
+	/* Add margin on the left and right, so that it aligns with global buttons. */
+	margin-left: 2px;
+	margin-right: 2px;
+}
+
+QTextEdit[style~="placeholder"]
+{
+	color: rgba(179,179,179,128);
+}
+
+QTextEdit[style~="global"]:hover
+{
+	color: #ffffff;
+	border-image: url(resources/controls/input_hover.png) 2 2 2 2;
+}
+
+QTextEdit[style~="global"]:focus
+{
+	color: #ffffff;
+	border-image: url(resources/controls/input_active.png) 2 2 2 2;
+}
+
+QTextEdit[style~="global"]:disabled
+{
+	color: rgb(100,100,100); /* QLineEdit is applying its own opacity to dim the text */
+	border-image: url(resources/controls/input_disabled.png) 2 2 2 2;
+}
+
+QTextEdit[style~="global"] QScrollBar:horizontal
+{
+	height: 0px;
+}
+
+QTextEdit[style~="global"] QWidget#cornerWidget
+{
+	background-color: Red;
+	max-height: 5px;
+}
+
+/* =============================================================================
+/  DynamicTextEdit
+/=============================================================================*/
+
+Phoenix--DynamicTextEdit
+{
+	color: rgb(179,179,179);
+	background-color: rgba(0,0,0,50%); /* this is needed for the ime cursor text color */
+
+	selection-background-color: #787878;
+	margin: 0 0 0 0;
+}
+
+/* =============================================================================
+/  QPushButton
+/  Add 4px to the height since there're 2px paddings on top and bottom of QPushButton.
+/=============================================================================*/
+
+/* QPushButton global defaults */
+Phoenix--StyledDialog QPushButton[style~="global"],
+Phoenix--LegacyToast QPushButton[style~="global"]
+{
+	min-height: 28px;
+	min-width: 58px;
+	padding: 0 13 0 13;
+}
+
+Phoenix--StyledDialog QPushButton[style~="global"]:pressed
+{
+	padding: 1 12 -1 14;
+}
+
+/* Primary Button style */
+Phoenix--StyledDialog QPushButton[style~="global"]:default,
+Phoenix--LegacyToast QPushButton[style~="global"]:default
+{
+	border-width: 5 4 5 4;
+	color: #ffffff;
+	border-image: url(resources/controls/btn_primary_normal.png) 5 4 5 4;
+}
+
+Phoenix--StyledDialog[highdpi=true] QPushButton[style~="global"]:default
+{
+	border-image: url("resources/controls/btn_primary_normal@2x.png") 10 8 10 8;
+}
+
+Phoenix--StyledDialog QPushButton[style~="global"]:default:hover,
+Phoenix--LegacyToast QPushButton[style~="global"]:default:hover
+{
+	border-image: url(resources/controls/btn_primary_hover.png) 5 4 5 4;
+}
+
+Phoenix--StyledDialog[highdpi=true] QPushButton[style~="global"]:default:hover
+{
+	border-image: url("resources/controls/btn_primary_hover@2x.png") 10 8 10 8;
+}
+
+Phoenix--StyledDialog QPushButton[style~="global"]:default:focus,
+Phoenix--LegacyToast QPushButton[style~="global"]:default:focus
+{
+	border-image: url(resources/controls/btn_primary_hover.png) 5 4 5 4;
+}
+
+Phoenix--StyledDialog[highdpi=true] QPushButton[style~="global"]:default:focus
+{
+	border-image: url("resources/controls/btn_primary_hover@2x.png") 10 8 10 8;
+}
+
+Phoenix--StyledDialog QPushButton[style~="global"]:default:pressed,
+Phoenix--LegacyToast QPushButton[style~="global"]:default:pressed
+{
+	border-image: url(resources/controls/btn_primary_pressed.png) 5 4 5 4;
+}
+
+Phoenix--StyledDialog[highdpi=true] QPushButton[style~="global"]:default:pressed
+{
+	border-image: url("resources/controls/btn_primary_pressed@2x.png") 10 8 10 8;
+}
+
+Phoenix--StyledDialog QPushButton[style~="global"]:default:disabled,
+Phoenix--StyledDialog QPushButton[style~="global"][disabled=true]:default,
+Phoenix--StyledDialog QPushButton[style~="global"][disabled=true]:default:focus,
+Phoenix--StyledDialog QPushButton[style~="global"][disabled=true]:default:hover,
+Phoenix--LegacyToast QPushButton[style~="global"]:default:disabled
+{
+	border-image: url(resources/controls/btn_primary_disabled.png) 5 4 5 4;
+}
+
+Phoenix--StyledDialog[highdpi=true] QPushButton[style~="global"]:default:disabled,
+Phoenix--StyledDialog[highdpi=true] QPushButton[style~="global"][disabled=true]:default,
+Phoenix--StyledDialog[highdpi=true] QPushButton[style~="global"][disabled=true]:default:focus,
+Phoenix--StyledDialog[highdpi=true] QPushButton[style~="global"][disabled=true]:default:hover
+{
+	border-image: url("resources/controls/btn_primary_disabled@2x.png") 10 8 10 8;
+}
+
+Phoenix--StyledDialog QPushButton[disabled=true][style~="global"]:default,
+Phoenix--StyledDialog QPushButton[disabled=true][style~="global"]:hover,
+Phoenix--StyledDialog QPushButton[style~="global"]:default:disabled,
+Phoenix--LegacyToast QPushButton[style~="global"]:default:disabled
+{
+	color: rgba(255,255,255,10%);
+}
+
+/* Secondary Button style */
+Phoenix--StyledDialog QPushButton[style~="global"]:!default,
+Phoenix--LegacyToast QPushButton[style~="global"]:!default
+{
+	border-width: 5 4 5 4;
+	color: #00aeff;
+	border-image: url(resources/controls/btn_secondary_normal.png) 5 4 5 4;
+}
+
+Phoenix--StyledDialog[highdpi=true] QPushButton[style~="global"]:!default
+{
+	border-image: url("resources/controls/btn_secondary_normal@2x.png") 10 8 10 8;
+}
+
+Phoenix--StyledDialog QPushButton[style~="global"]:!default:focus,
+Phoenix--LegacyToast QPushButton[style~="global"]:!default:focus
+{
+	border-image: url(resources/controls/btn_secondary_hover.png) 5 4 5 4;
+	color: #ffffff;
+}
+
+Phoenix--StyledDialog[highdpi=true] QPushButton[style~="global"]:!default:focus
+{
+	border-image: url("resources/controls/btn_secondary_hover@2x.png") 10 8 10 8;
+	color: #ffffff;
+}
+
+Phoenix--StyledDialog QPushButton[style~="global"]:!default:hover,
+Phoenix--LegacyToast QPushButton[style~="global"]:!default:hover
+{
+	border-image: url(resources/controls/btn_secondary_hover.png) 5 4 5 4;
+	color: #ffffff;
+}
+
+Phoenix--StyledDialog[highdpi=true] QPushButton[style~="global"]:!default:hover
+{
+	border-image: url("resources/controls/btn_secondary_hover@2x.png") 10 8 10 8;
+}
+
+Phoenix--StyledDialog QPushButton[style~="global"]:!default:pressed,
+Phoenix--LegacyToast QPushButton[style~="global"]:!default:pressed
+{
+	border-image: url(resources/controls/btn_secondary_pressed.png) 5 4 5 4;
+	color: rgb(179, 179, 179);
+}
+
+Phoenix--StyledDialog[highdpi=true] QPushButton[style~="global"]:!default:pressed
+{
+	border-image: url("resources/controls/btn_secondary_pressed@2x.png") 10 8 10 8;
+}
+
+Phoenix--StyledDialog QPushButton[style~="global"]:!default:disabled,
+Phoenix--StyledDialog QPushButton[style~="global"][disabled=true]:!default,
+Phoenix--StyledDialog QPushButton[style~="global"][disabled=true]:!default:focus,
+Phoenix--StyledDialog QPushButton[style~="global"][disabled=true]:!default:hover,
+Phoenix--LegacyToast QPushButton[style~="global"]:!default:disabled
+{
+	border-image: url(resources/controls/btn_secondary_disabled.png) 5 4 5 4;
+	color: #3f3f3f; /* Using rgba color will make artifact when a font is too small. */
+}
+
+Phoenix--StyledDialog[highdpi=true] QPushButton[style~="global"]:!default:disabled,
+Phoenix--StyledDialog[highdpi=true] QPushButton[style~="global"][disabled=true]:!default,
+Phoenix--StyledDialog[highdpi=true] QPushButton[style~="global"][disabled=true]:!default:focus,
+Phoenix--StyledDialog[highdpi=true] QPushButton[style~="global"][disabled=true]:!default:hover
+{
+	border-image: url("resources/controls/btn_secondary_disabled@2x.png") 10 8 10 8;
+}
+
+/* Dark theme QPushButton global defaults */
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"],
+Phoenix--DarkToast QPushButton[style~="global"]
+{
+	border-image: none;
+	border-radius: 4px;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	max-height: 28px;
+	min-height: 28px;
+	padding: 0px 17px 0px 17px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:pressed,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:disabled,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][disabled=true],
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][disabled=true]:focus,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][disabled=true]:hover,
+Phoenix--DarkToast QPushButton[style~="global"]:pressed,
+Phoenix--DarkToast QPushButton[style~="global"]:disabled
+{
+	border-image: none;
+	color: rgba(255,255,255,60%);
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="extralarge"],
+Phoenix--DarkToast QPushButton[style~="global"][style~="extralarge"]
+{
+	font-size: 20px;
+	max-height: 52px;
+	min-height: 52px;
+	padding: 0px 38px 0px 38px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="large"],
+Phoenix--DarkToast QPushButton[style~="global"][style~="large"]
+{
+	font-size: 16px;
+	max-height: 36px;
+	min-height: 36px;
+	padding: 0px 28px 0px 28px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="small"],
+Phoenix--DarkToast QPushButton[style~="global"][style~="small"]
+{
+	border-radius: 3px;
+	font-size: 12px;
+	max-height: 20px;
+	min-height: 20px;
+	padding: 0px 5px 0px 5px;
+}
+
+/* Dark theme primary button style */
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:default,
+Phoenix--DarkToast QPushButton[style~="global"]:default
+{
+	background-color: #0074e0;
+	border: 2px solid #0074e0;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:default:hover,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:default:focus,
+Phoenix--DarkToast QPushButton[style~="global"]:default:hover,
+Phoenix--DarkToast QPushButton[style~="global"]:default:focus
+{
+	border: 2px solid #47a6ff;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:default:pressed,
+Phoenix--DarkToast QPushButton[style~="global"]:default:pressed
+{
+	background-color: #003f7a;
+	border: 2px solid #005aad;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:default:disabled,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][disabled=true]:default,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][disabled=true]:default:hover,
+Phoenix--DarkToast QPushButton[style~="global"]:default:disabled
+{
+	background-color: #003f7a;
+	border: 2px solid #003f7a;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][disabled=true]:default:focus
+{
+	border: 2px solid #005aad;
+	border-image: none;
+}
+
+/* Dark theme secondary button style */
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:!default,
+Phoenix--DarkToast QPushButton[style~="global"]:!default
+{
+	background-color: #313339;
+	border: 2px solid #313339;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:!default:hover,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:!default:focus,
+Phoenix--DarkToast QPushButton[style~="global"]:!default:hover,
+Phoenix--DarkToast QPushButton[style~="global"]:!default:focus
+{
+	border: 2px solid #56585d;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:!default:pressed,
+Phoenix--DarkToast QPushButton[style~="global"]:!default:pressed
+{
+	background-color: #23252b;
+	border: 2px solid #3e4045;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:!default:disabled,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][disabled=true]:!default,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][disabled=true]:!default:hover,
+Phoenix--DarkToast QPushButton[style~="global"]:!default:disabled
+{
+	background-color: #23252b;
+	border: 2px solid #23252b;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][disabled=true]:!default:focus
+{
+	border: 2px solid #3e4045;
+	border-image: none;
+}
+
+/* Dark theme tertiary button style */
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="tertiary"],
+Phoenix--DarkToast QPushButton[style~="global"][style~="tertiary"]
+{
+	background-color: transparent;
+	border: 1px solid #4d4e54;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="tertiary"]:hover,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="tertiary"]:focus,
+Phoenix--DarkToast QPushButton[style~="global"][style~="tertiary"]:hover,
+Phoenix--DarkToast QPushButton[style~="global"][style~="tertiary"]:focus
+{
+	background-color: transparent;
+	border: 2px solid #696b6f;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="tertiary"]:pressed,
+Phoenix--DarkToast QPushButton[style~="global"][style~="tertiary"]:pressed
+{
+	background-color: transparent;
+	border: 2px solid #3f4147;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="tertiary"]:disabled,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="tertiary"][disabled=true],
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="tertiary"][disabled=true]:hover,
+Phoenix--DarkToast QPushButton[style~="global"][style~="tertiary"]:disabled
+{
+	background-color: transparent;
+	border: 1px solid #313339;
+	color: rgba(255,255,255,48%);
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="tertiary"][disabled=true]:focus
+{
+	background-color: transparent;
+	border: 2px solid #3f4147;
+	border-image: none;
+}
+
+/* Secondary Button with Icon */
+QPushButton[style~="global"][style~="icon"]:!default
+{
+	color: rgb(179,179,179);
+}
+
+QPushButton[style~="global"][style~="image"]
+{
+	min-height: 0px;
+	min-width: 0px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="image"]:!default,
+Phoenix--DarkToast QPushButton[style~="image"]
+{
+	background-color: rgba(255, 255, 255, 0%);
+	padding: 0 0 0 0;
+	min-height: 0px;
+	min-width: 0px;
+}
+
+QPushButton[style~="link"]
+{
+	border: none;
+	margin: 0 0 0 0;
+	padding: 0 0 0 0;
+	text-align:left;
+	background: transparent;
+	color: #00aeff;
+	qproperty-focusPolicy: TabFocus;
+}
+
+QPushButton[style~="link"]:disabled
+{
+	color: #3f3f3f;
+}
+
+QPushButton[style~="link"]:hover
+{
+	color: #ffffff;
+}
+
+QPushButton[style~="link"]::focus
+{
+	border: 1px solid rgba(0,174,255,30%);
+	padding: -1px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"]
+{
+	color: #148eff;
+	font-weight: bold;
+	padding: 0px 5px 1px 5px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"]:hover
+{
+	color: #47a6ff;
+	text-decoration: underline;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"]:pressed
+{
+	color: #148eff;
+	text-decoration: underline;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"]:focus
+{
+	border: 1px solid #26496c;
+	border-radius: 2px;
+	padding: 0px 4px 1px 4px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"]:disabled
+{
+	color: rgba(20,142,255,48%);
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"][style~="white"],
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"][style~="white"]:pressed
+{
+	color: rgba(255,255,255,72%);
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"][style~="white"]:hover
+{
+	color: #ffffff;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"][style~="white"]:focus
+{
+	border: 1px solid #bebec0;
+	border-radius: 2px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"][style~="white"]:disabled
+{
+	color: rgba(255,255,255,48%);
+}
+
+/* Small Button style */
+
+QPushButton[style~="small"][style~="icon"]
+{
+	color: rgb(179,179,179);
+}
+
+/* =============================================================================
+/  QTextBrowser
+/=============================================================================*/
+
+QTextBrowser[style~="link"]
+{
+	margin: 0 -5 0 -5;
+	text-align:left;
+	background: transparent;
+}
+
+QTextBrowser[style~="global"]
+{
+	color: rgb(179,179,179);
+
+	border-width: 2 2 2 2;
+	border-image: url(resources/controls/input_normal.png) 2 2 2 2;
+
+	selection-background-color: #787878;
+}
+
+/* =============================================================================
+/  QScrollArea
+/=============================================================================*/
+
+/* This is required to fix background issue on Mac. */
+QScrollArea
+{
+    background: transparent;
+}
+
+QScrollArea > QWidget > QWidget
+{
+    background: transparent;
+}
+
+/* =============================================================================
+/  QScrollBar
+/  TODO: why are there so many different styles for scrollbars? Can we combine
+/  them into one, and then specialize individual components for those that
+/  want the scrollbar to look differently?
+/=============================================================================*/
+
+/* Vertical ScrollBar */
+QScrollBar:vertical
+{
+	background: transparent;
+	width: 19px;
+	margin: 0px 0 0px 0;
+}
+
+QScrollBar::handle:vertical
+{
+	border-image: url(resources/images/scrollbar_handle_normal.png) 8 0 8 0;
+	border-width: 8 0 8 0;
+	min-height: 20px;
+	width: 19px;
+}
+
+QScrollBar::handle:vertical:hover
+{
+	border-image: url(resources/images/scrollbar_handle_hover.png) 8 0 8 0;
+}
+
+QScrollBar::handle:vertical:pressed
+{
+	border-image: url(resources/images/scrollbar_handle_pressed.png) 8 0 8 0;
+}
+QScrollBar::add-line:vertical
+{
+	background: none;
+	border: 0px;
+	height: 0px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical
+{
+	background: none;
+	border: 0px;
+	height: 0px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+
+/* Horizontal ScrollBar */
+QScrollBar:horizontal
+{
+	background: transparent;
+	height: 0px;
+	margin: 0px 0 0px 0;
+}
+
+QScrollBar::handle:horizontal
+{
+	border-image: url(resources/images/scrollbar_handle_normal.png) 0 8 0 8;
+	border-width: 0 8 0 8;
+	min-width: 20px;
+	height: 19px;
+}
+
+QScrollBar::handle:horizontal:hover
+{
+	border-image: url(resources/images/scrollbar_handle_hover.png) 0 8 0 8;
+}
+
+QScrollBar::handle:horizontal:pressed
+{
+	border-image: url(resources/images/scrollbar_handle_pressed.png) 0 8 0 8;
+}
+
+QScrollBar::add-line:horizontal
+{
+	background: none;
+	border: 0px;
+	width: 0px;
+	subcontrol-position: right;
+	subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal
+{
+	background: none;
+	border: 0px;
+	width: 0px;
+	subcontrol-position: right;
+	subcontrol-origin: margin;
+}
+
+/* =============================================================================
+/  Common Widget style
+/  For classes in a namespace, use "Namespace--" as prefix.
+/=============================================================================*/
+
+Phoenix--LoginWindow QPushButton#loginSettingsButton
+{
+	background-color: transparent;
+	border: none;
+	image: url("resources/controls/darktheme/btn_win_cog_normal.svg") 0;
+}
+Phoenix--LoginWindow QPushButton#loginSettingsButton:pressed { image: url("resources/controls/darktheme/btn_win_cog_pressed.svg") 0; }
+Phoenix--LoginWindow QPushButton#loginSettingsButton:hover:!pressed { image: url("resources/controls/darktheme/btn_win_cog_hover.svg") 0; }
+Phoenix--LoginWindow QPushButton#loginSettingsButton:focus:!pressed { image: url("resources/controls/darktheme/btn_win_cog_hover.svg") 0; }
+Phoenix--LoginWindow QPushButton#loginSettingsButton:disabled { image: url("resources/controls/darktheme/btn_win_cog_disabled.svg") 0; }
+
+Phoenix--LoginWindow QPushButton#serverSelector { border-image: url(resources/controls/btn_serverSelect_normal.png) 0; margin-left: 1px;}
+Phoenix--LoginWindow QPushButton#serverSelector:pressed { border-image: url(resources/controls/btn_serverSelect_pressed.png) 0; }
+Phoenix--LoginWindow QPushButton#serverSelector:hover:!pressed { border-image: url(resources/controls/btn_serverSelect_hovered.png) 0; }
+Phoenix--LoginWindow QPushButton#serverSelector:focus:!pressed { border-image: url(resources/controls/btn_serverSelect_hovered.png) 0; }
+Phoenix--LoginWindow QPushButton#serverSelector:disabled { border-image: url(resources/controls/btn_serverSelect_disabled.png) 0; }
+
+Phoenix--LoginWindow[highdpi=true] QPushButton#serverSelector { border-image: url("resources/controls/btn_serverSelect_normal@2x.png") 0; }
+Phoenix--LoginWindow[highdpi=true] QPushButton#serverSelector:pressed { border-image: url("resources/controls/btn_serverSelect_pressed@2x.png") 0; }
+Phoenix--LoginWindow[highdpi=true] QPushButton#serverSelector:hover:!pressed { border-image: url("resources/controls/btn_serverSelect_hovered@2x.png") 0; }
+Phoenix--LoginWindow[highdpi=true] QPushButton#serverSelector:focus:!pressed { border-image: url("resources/controls/btn_serverSelect_hovered@2x.png") 0; }
+Phoenix--LoginWindow[highdpi=true] QPushButton#serverSelector:disabled { border-image: url("resources/controls/btn_serverSelect_disabled@2x.png") 0; }
+
+Phoenix--LoginWindow QPushButton#createAccountButton{ font-size: 15px; min-height: 38px; margin: 0 1 0 1; }
+Phoenix--LoginWindow QPushButton#cantLoginButton { padding-left: 5px; padding-right: 5px; }
+Phoenix--LoginWindow QPushButton#signOutButton { padding-left: 5px; padding-right: 5px; }
+Phoenix--LoginWindow QPushButton::menu-indicator { image: none; }
+Phoenix--LoginWindow #createAccountLabel:disabled { color: rgba(255,255,255,20%); }
+Phoenix--LoginWindow Phoenix--BorderFrame#formFrame { qproperty-bottom: 0; }
+Phoenix--LoginWindow #serverSelector
+{
+	margin: 0px;
+}
+Phoenix--LoginWindow QLabel#serverName
+{
+	padding-top: -1px;
+	padding-left: 5px;
+}
+Phoenix--LoginWindow QLabel#serverName:disabled
+{
+	color: rgba(255,255,255,20%);
+}
+Phoenix--LoginWindow Phoenix--ErrorMessageBox QLabel { color: rgba(255,255,255,84%); }
+Phoenix--LoginWindow #loginButtonFrame { background-color: rgb(29, 34, 44); }
+Phoenix--LoginWindow #webContainer { background-color: rgb(29, 34, 44); }
+Phoenix--LoginWindow Phoenix--BorderFrame#loginButtonFrame { qproperty-bottom: 1; }
+
+Phoenix--LoginWindow QMenu#loginSettingsMenu,
+Phoenix--LoginWindow QMenu#serverSelectMenu
+{
+	border-image: url("resources/images/darktheme/contextMenu_border_shadow.png") 4 6 8 6;
+	border-width: 4 6 8 6;
+	font-size: 13px;
+	margin: 4px 0px 0px 0px;
+	padding: 6px 0px 0px 0px;
+}
+Phoenix--LoginWindow[highdpi=true] QMenu#loginSettingsMenu,
+Phoenix--LoginWindow[highdpi=true] QMenu#serverSelectMenu
+{
+	border-image: url("resources/images/darktheme/contextMenu_border_shadow@2x.png") 8 12 16 12;
+}
+Phoenix--LoginWindow QMenu#loginSettingsMenu::item,
+Phoenix--LoginWindow QMenu#serverSelectMenu::item
+{
+	padding: 0px 32px 0px 10px;
+}
+
+/* =============================================================================
+/  LoginWidget style in the InstallDialog
+/=============================================================================*/
+Phoenix--Install--LoginView Phoenix--LoginWidget #formFrame { margin: 0 120 0 120; }
+Phoenix--Install--LoginView Phoenix--LoginWidget #createAccountFrame { margin: 0 120 0 120; }
+
+/* =============================================================================
+/  RegionSeletorDialog
+/=============================================================================*/
+
+Phoenix--RegionSelectorDialog
+{
+	font-size: 14px;
+}
+
+Phoenix--RegionSelectorDialog QWidget#regionSelectorControlWidget
+{
+	border-top: 1px solid rgba(255,255,255,12%);
+}
+
+/* =============================================================================
+/  LoginWindow
+/=============================================================================*/
+
+Phoenix--LoginWindow Phoenix--BorderFrame#loginFrame
+{
+	margin-left: 1px;
+	qproperty-left: 1;
+}
+
+Phoenix--LoginWebView #rejectButton,
+Phoenix--LoginWebView #acceptButton { padding-left: 30; padding-right: 30; }
+
+/* -----------------------------------------------------------------------------
+/  Default margins for LoginWindow (no game background)
+-----------------------------------------------------------------------------*/
+Phoenix--LoginWindow #formFrame { min-width: 358; min-height: 40;}
+Phoenix--LoginWindow #createAccountFrame { background: transparent; }
+Phoenix--LoginMethodClassicWidget #createAccountFrame { background-color: rgba(15, 24, 32, 50%); }
+
+/* -----------------------------------------------------------------------------
+/  GameBranded LoginWindow's LoginWidget
+-----------------------------------------------------------------------------*/
+
+Phoenix--LoginGameBrandWidget #gameBrandLogo
+{
+	margin: 0 -120 -80 -120;
+}
+
+/* -----------------------------------------------------------------------------
+/  Maintenance News Widget
+-----------------------------------------------------------------------------*/
+Phoenix--LoginWindow[breakingNews="true"] #formFrame { margin: 0 1 0 1; }
+
+Phoenix--LoginMaintenanceMessageWidget #backgroundWidget
+{
+	background-color: #1a1c23;
+}
+
+Phoenix--LoginMaintenanceMessageWidget #messageIcon
+{
+	image: url("resources/images/darktheme/alert.svg");
+}
+
+Phoenix--LoginMaintenanceMessageWidget #messageText
+{
+	background: transparent;
+}
+
+Phoenix--LoginMaintenanceMessageWidget #messageHeader
+{
+	border-bottom: 1px solid rgba(255,255,255,12%);
+}
+
+/* =============================================================================
+/  BreakingNewsBanner
+==============================================================================*/
+Phoenix--BreakingNewsBanner #background
+{
+	background-color: #420000;
+	border: none;
+}
+
+Phoenix--BreakingNewsBanner[hover=true] #background
+{
+	background-color: #580000;
+}
+
+Phoenix--BreakingNewsBanner #breakingNewsIcon
+{
+	image: url("resources/images/darktheme/alert-serious.svg");
+}
+
+Phoenix--BreakingNewsBanner #breakingNewsText
+{
+	font-size: 13px;
+}
+
+Phoenix--BreakingNewsBanner[hover=true] #breakingNewsText
+{
+	color: #ffffff;
+}
+
+/* =============================================================================
+/  AuthenticationKeyDialog
+/=============================================================================*/
+
+Phoenix--AuthenticationKeyDialog *
+{
+	font-size: 14px;
+}
+
+Phoenix--AuthenticationKeyDialog #authenticationKeyEdit *
+{
+	margin: 8px 0px 16px 0px;
+}
+
+Phoenix--AuthenticationKeyDialog #authenticationKeyEdit QLineEdit
+{
+	text-transform: uppercase;
+}
+
+Phoenix--AuthenticationKeyDialog QBusyButton#busyButton
+{
+	background: transparent;
+}
+
+Phoenix--AuthenticationKeyDialog QWidget#topButtonWidget
+{
+	border-bottom: 1px solid rgba(255,255,255,12%);
+}
+
+Phoenix--AuthenticationKeyDialog QPushButton#errorCodeLink
+{
+	font-weight: normal;
+}
+
+Phoenix--AuthenticationKeyDialog QLabel#errorCodeIcon
+{
+	image: url("resources/images/darktheme/icon_web_link.svg");
+}
+
+/* =============================================================================
+/  Authenticator Widgets
+/=============================================================================*/
+
+Phoenix--BattleNetDialog QFrame#content
+{
+	background-color: #1a1c23;
+}
+
+Phoenix--BattleNetDialog #logo
+{
+	margin-left: -7px;
+}
+
+Phoenix--AuthBasicWidget #helpLabel
+{
+	border-width: 4 4 4 4;
+
+	min-height: 30px;
+	max-height: 30px;
+	padding-left: 2px;
+	padding-right: 2px;
+	border-image: url(resources/controls/btn_secondary_normal.png) 4 4 4 4;
+}
+
+Phoenix--AuthBasicWidget #helpLabel:hover
+{
+	border-image: url(resources/controls/btn_secondary_hover.png) 4 4 4 4;
+}
+
+/* =============================================================================
+/  TextComponentWidget
+/=============================================================================*/
+
+Phoenix--TextComponentWidget #topPane
+{
+	border-bottom: 1px solid rgba(255,255,255,12%);
+}
+
+Phoenix--TextComponentWidget Phoenix--StyledTextBrowser
+{
+	background-color: transparent;
+	selection-background-color: #787878;
+}
+
+Phoenix--TextComponentWidget #bottomPane
+{
+	border-top: 1px solid rgba(255,255,255,12%);
+}
+
+/* =============================================================================
+/  Friends Tooltip
+/=============================================================================*/
+
+Phoenix--FriendsTooltip #battleTagLabel,
+Phoenix--FriendsTooltip #battleTagLabel[online=true],
+Phoenix--FriendsTooltip #realNameLabel,
+Phoenix--FriendsTooltip #realNameLabel[online=true]
+{
+    color: rgba(130, 197, 255, 100%);
+    font-size: 14px;
+}
+
+Phoenix--FriendsTooltip #battleTagLabel[online=false],
+Phoenix--FriendsTooltip #realNameLabel[online=false]
+{
+    color: rgba(255, 255, 255, 60%);
+}
+
+Phoenix--FriendsTooltip #battleTagIDLabel,
+Phoenix--FriendsTooltip #battleTagIDLabel[online=true]
+{
+    color: rgba(255, 255, 255, 50%);
+    font-size: 13px;
+}
+
+Phoenix--FriendsTooltip #battleTagIDLabel[online=false]
+{
+    color: rgba(255, 255, 255, 30%);
+}
+
+Phoenix--FriendsTooltip #statusLabel
+{
+    color: rgba(255, 255, 255, 70%);
+    font-size: 12px;
+}
+
+Phoenix--FriendsTooltip #richPresenceTextLabel
+{
+    color: #b7b8ba;
+}
+
+Phoenix--FriendsTooltip #lastOnlineGameTimeLabel
+{
+    color: #555a5e;
+    font-size: 12px;
+}
+
+Phoenix--FriendsTooltip #topPiece
+{
+    border-bottom: 1px solid rgba(61,67,79,100%);
+}
+
+/* =============================================================================
+/  SuggestedFriendsTooltip
+/=============================================================================*/
+
+Phoenix--SuggestedFriendsTooltip #battleTagLabel
+{
+    color: #add8ff;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+Phoenix--SuggestedFriendsTooltip #battleTagIDLabel
+{
+    color: rgba(255,255,255,72%);
+    font-size: 14px;
+    padding-bottom: 2px 0px;
+}
+
+Phoenix--SuggestedFriendsTooltip #realNameLabel
+{
+    color: #add8ff;
+    font-size: 14px;
+}
+
+Phoenix--SuggestedFriendsTooltip #topPiece
+{
+    background-color: #1a1c23;
+    border: none;
+}
+
+Phoenix--SuggestedFriendsTooltip #detailsFrame
+{
+    margin: 0px 8px 8px 8px;
+}
+
+/* =============================================================================
+/  Phoenix::ErrorBox
+/  Do not use "global" style selector since this is custom widget.
+/=============================================================================*/
+
+Phoenix--ErrorBox
+{
+	border-width: 3 5 7 5;
+	border-image: url(resources/images/errorbox_red_border.png) 3 5 7 5;
+	min-height: 10px;
+}
+
+/* NO_ARROW */
+Phoenix--ErrorBox[arrowDirection="-1"]
+{
+	margin: 5 5 5 5;
+}
+
+/* ARROWDIR_UP */
+Phoenix--ErrorBox[arrowDirection="0"]
+{
+	margin: 14 0 0 0; /* Arrow height plus additional margin. Arrow Height: 9 */
+	qproperty-arrowImageUri: url(resources/images/errorbox_red_arrow_up.png);
+}
+
+/* ARROWDIR_RIGHT */
+Phoenix--ErrorBox[arrowDirection="1"]
+{
+	margin: 0 14 0 0; /* Arrow height plus additional margin. Arrow Height: 9 */
+	qproperty-arrowImageUri: url(resources/images/errorbox_red_arrow_right.png);
+}
+
+/* ARROWDIR_DOWN */
+Phoenix--ErrorBox[arrowDirection="2"]
+{
+	margin: 0 0 14 0; /* Arrow height plus additional margin. Arrow Height: 9 */
+	qproperty-arrowImageUri: url(resources/images/errorbox_red_arrow_down.png);
+}
+
+/* ARROWDIR_LEFT */
+Phoenix--ErrorBox[arrowDirection="3"]
+{
+	margin: 0 0 0 14; /* Arrow height plus additional margin. Arrow Height: 9 */
+	qproperty-arrowImageUri: url(resources/images/errorbox_red_arrow_left.png);
+}
+
+/* If ErrorBox is used in a top most widget such as ArrowPopup,
+   have margin on both side in case ArrowPopup changes the arrow direction
+   so that final geometry is always same. This is to fix BUG 7125 */
+Phoenix--ArrowPopup > Phoenix--ErrorBox[arrowDirection="-1"] { margin: 5 5 5 5; }
+Phoenix--ArrowPopup > Phoenix--ErrorBox[arrowDirection="0"] {	margin: 14; }
+Phoenix--ArrowPopup > Phoenix--ErrorBox[arrowDirection="1"] {	margin: 14; }
+Phoenix--ArrowPopup > Phoenix--ErrorBox[arrowDirection="2"] {	margin: 14; }
+Phoenix--ArrowPopup > Phoenix--ErrorBox[arrowDirection="3"] {	margin: 14; }
+
+/* blue */
+Phoenix--ErrorBox[style~="blue"]                     { border-image: url(resources/images/errorbox_blue_border.png) 3 5 7 5; }
+Phoenix--ErrorBox[style~="blue"][arrowDirection="0"] { qproperty-arrowImageUri: url(resources/images/errorbox_blue_arrow_up.png); }
+Phoenix--ErrorBox[style~="blue"][arrowDirection="1"] { qproperty-arrowImageUri: url(resources/images/errorbox_blue_arrow_right.png); }
+Phoenix--ErrorBox[style~="blue"][arrowDirection="2"] { qproperty-arrowImageUri: url(resources/images/errorbox_blue_arrow_down.png); }
+Phoenix--ErrorBox[style~="blue"][arrowDirection="3"] { qproperty-arrowImageUri: url(resources/images/errorbox_blue_arrow_left.png); }
+
+/* yellow */
+Phoenix--ErrorBox[style~="yellow"]                     { border-image: url(resources/images/errorbox_yellow_border.png) 3 5 7 5; }
+Phoenix--ErrorBox[style~="yellow"][arrowDirection="0"] { qproperty-arrowImageUri: url(resources/images/errorbox_yellow_arrow_up.png); }
+Phoenix--ErrorBox[style~="yellow"][arrowDirection="1"] { qproperty-arrowImageUri: url(resources/images/errorbox_yellow_arrow_right.png); }
+Phoenix--ErrorBox[style~="yellow"][arrowDirection="2"] { qproperty-arrowImageUri: url(resources/images/errorbox_yellow_arrow_down.png); }
+Phoenix--ErrorBox[style~="yellow"][arrowDirection="3"] { qproperty-arrowImageUri: url(resources/images/errorbox_yellow_arrow_left.png); }
+
+/* green */
+Phoenix--ErrorBox[style~="green"]                     { border-image: url(resources/images/errorbox_green_border.png) 3 5 7 5; }
+Phoenix--ErrorBox[style~="green"][arrowDirection="0"] { qproperty-arrowImageUri: url(resources/images/errorbox_green_arrow_up.png); }
+Phoenix--ErrorBox[style~="green"][arrowDirection="1"] { qproperty-arrowImageUri: url(resources/images/errorbox_green_arrow_right.png); }
+Phoenix--ErrorBox[style~="green"][arrowDirection="2"] { qproperty-arrowImageUri: url(resources/images/errorbox_green_arrow_down.png); }
+Phoenix--ErrorBox[style~="green"][arrowDirection="3"] { qproperty-arrowImageUri: url(resources/images/errorbox_green_arrow_left.png); }
+
+/* contextMenu */
+Phoenix--ErrorBox[style~="contextMenu"]                     { border-image: url(resources/images/errorbox_blue_border.png) 3 5 7 5; }
+Phoenix--ErrorBox[style~="contextMenu"][arrowDirection="0"] { qproperty-arrowImageUri: url(resources/images/errorbox_blue_arrow_up.png); }
+Phoenix--ErrorBox[style~="contextMenu"][arrowDirection="1"] { qproperty-arrowImageUri: url(resources/images/errorbox_blue_arrow_right.png); }
+Phoenix--ErrorBox[style~="contextMenu"][arrowDirection="2"] { qproperty-arrowImageUri: url(resources/images/errorbox_blue_arrow_down.png); }
+Phoenix--ErrorBox[style~="contextMenu"][arrowDirection="3"] { qproperty-arrowImageUri: url(resources/images/errorbox_blue_arrow_left.png); }
+
+/* lightblue */
+Phoenix--ErrorBox[style~="lightblue"]                     { border-image: url(resources/images/errorbox_lightblue_border.png) 3 5 7 5; }
+Phoenix--ErrorBox[style~="lightblue"][arrowDirection="0"] { qproperty-arrowImageUri: url(resources/images/errorbox_lightblue_arrow_up.png); }
+Phoenix--ErrorBox[style~="lightblue"][arrowDirection="1"] { qproperty-arrowImageUri: url(resources/images/errorbox_lightblue_arrow_right.png); }
+Phoenix--ErrorBox[style~="lightblue"][arrowDirection="2"] { qproperty-arrowImageUri: url(resources/images/errorbox_lightblue_arrow_down.png); }
+Phoenix--ErrorBox[style~="lightblue"][arrowDirection="3"] { qproperty-arrowImageUri: url(resources/images/errorbox_lightblue_arrow_left.png); }
+
+/* dark */
+Phoenix--ErrorBox[style~="dark"]
+{
+	border-image: url("resources/images/darktheme/contextMenu_border_shadow.png") 5 7 9 7;
+	border-width: 5 7 9 7;
+	padding: -3px;
+	qproperty-arrowImagePixelRatio: 1;
+}
+Phoenix--ErrorBox[style~="dark"] *
+{
+	font-size: 14px;
+}
+Phoenix--ErrorBox[style~="dark"][arrowDirection="0"] { margin: 8px 11px; qproperty-arrowImageUri: url("resources/images/darktheme/tooltip-arrow-up.png"); }
+Phoenix--ErrorBox[style~="dark"][arrowDirection="1"] { margin: 8px 11px; qproperty-arrowImageUri: url("resources/images/darktheme/tooltip-arrow-right.png"); }
+Phoenix--ErrorBox[style~="dark"][arrowDirection="2"] { margin: 8px 11px; qproperty-arrowImageUri: url("resources/images/darktheme/tooltip-arrow-down.png"); }
+Phoenix--ErrorBox[style~="dark"][arrowDirection="3"] { margin: 8px 11px; qproperty-arrowImageUri: url("resources/images/darktheme/tooltip-arrow-left.png"); }
+
+Phoenix--ArrowPopup[highdpi=true] Phoenix--ErrorBox[style~="dark"]
+{
+	border-image: url("resources/images/darktheme/contextMenu_border_shadow@2x.png") 10 14 18 14;
+	qproperty-arrowImagePixelRatio: 2;
+}
+Phoenix--ArrowPopup[highdpi=true] Phoenix--ErrorBox[style~="dark"][arrowDirection="0"] { qproperty-arrowImageUri: url("resources/images/darktheme/tooltip-arrow-up@2x.png"); }
+Phoenix--ArrowPopup[highdpi=true] Phoenix--ErrorBox[style~="dark"][arrowDirection="1"] { qproperty-arrowImageUri: url("resources/images/darktheme/tooltip-arrow-right@2x.png"); }
+Phoenix--ArrowPopup[highdpi=true] Phoenix--ErrorBox[style~="dark"][arrowDirection="2"] { qproperty-arrowImageUri: url("resources/images/darktheme/tooltip-arrow-down@2x.png"); }
+Phoenix--ArrowPopup[highdpi=true] Phoenix--ErrorBox[style~="dark"][arrowDirection="3"] { qproperty-arrowImageUri: url("resources/images/darktheme/tooltip-arrow-left@2x.png"); }
+
+/* grey shadow box for login window */
+Phoenix--ErrorBox[style~="login"]
+{
+	background-color: #22242c;
+	border: 1px solid #3d3f46;
+	border-image: none;
+	border-radius: 4px;
+	margin: 4px 27px 8px 27px;
+	padding: 0px;
+}
+
+/* grey shadow box for settings window */
+Phoenix--ErrorBox[style~="settings"]
+{
+	background-color: #22242c;
+	border: 1px solid #3d3f46;
+	border-image: none;
+	border-radius: 4px;
+	margin: 4px 0px 4px 0px;
+	padding: 0px;
+}
+
+/* ComboBox */
+Phoenix--ErrorBox[style~="comboBox"][direction~="TopToBottom"]
+{
+	border-image: url(resources/images/combobox_popup_border.png) 1 2 2 2;
+	border-width: 1 2 2 2;
+	padding: 0 -1 -1 -1; /* Content area that's included in the border area. */
+	margin: 0;
+}
+
+Phoenix--ErrorBox[style~="comboBox"][direction~="BottomToTop"]
+{
+	border-image: url(resources/images/combobox_popup_border_up.png) 2 2 1 2;
+	border-width: 2 2 1 2;
+	padding: -1 -1 0 -1; /* Content area that's included in the border area. */
+	margin: 0;
+}
+
+/* offline bubble on friends list */
+Phoenix--ErrorBox[style~="offline"]
+{
+	padding: -3 1 1 1; /* Content area that's included in the border area. */
+	border-width: 1 1 1 1;
+	border-image: url(resources/images/offline_bubble_box.png) 1 1 1 1;
+	qproperty-arrowImageUri: url(resources/images/offline_bubble_arrow.png);
+}
+
+/* =============================================================================
+/  Phoenix::ErrorMessageBox
+/=============================================================================*/
+
+Phoenix--ErrorMessageBox QPushButton#closeButton { border-image: url(resources/controls/btn_win_close_normal.png) 0; }
+Phoenix--ErrorMessageBox QPushButton#closeButton:pressed { border-image: url(resources/controls/btn_win_close_pressed.png) 0; }
+Phoenix--ErrorMessageBox QPushButton#closeButton:hover:!pressed { border-image: url(resources/controls/btn_win_close_hover.png) 0; }
+Phoenix--ErrorMessageBox QLabel#errorCodeIcon { image: url("resources/images/icon_web_link.png"); }
+Phoenix--StyledDialog[darktheme=true] Phoenix--ErrorMessageBox QLabel#errorCodeIcon { image: url("resources/images/darktheme/icon_web_link.svg"); }
+Phoenix--StyledDialog[darktheme=true] Phoenix--ErrorMessageBox QLabel#icon { image: none; }
+Phoenix--StyledDialog[darktheme=true] Phoenix--ErrorMessageBox QLabel#icon[state~="error"] { image: url("resources/images/darktheme/error.svg"); }
+Phoenix--StyledDialog[darktheme=true] Phoenix--ErrorMessageBox QLabel#icon[state~="alert"] { image: url("resources/images/darktheme/alert.svg"); }
+
+/* =============================================================================
+/  StyledDialog
+/=============================================================================*/
+
+Phoenix--StyledDialog { background: #1d222c; }
+Phoenix--StyledDialog[darktheme=true] { background: #15171e; }
+
+Phoenix--StyledDialog[platform="mac"] Phoenix--StyledTopLayer { border-top: 1px solid rgba(255,255,255,10%); }
+
+Phoenix--StyledDialog #settingsButton { border-image: url(resources/controls/btn_win_cog_normal.png) 0; }
+Phoenix--StyledDialog #settingsButton:pressed { border-image: url(resources/controls/btn_win_cog_pressed.png) 0; }
+Phoenix--StyledDialog #settingsButton:hover:!pressed { border-image: url(resources/controls/btn_win_cog_hover.png) 0; }
+
+/* =============================================================================
+/  Page specific stylesheet
+/  - When you define page specific style, always start with page id.
+/=============================================================================*/
+
+Phoenix--Install--InstallDialog[darktheme=true],
+Phoenix--Install--ModifyInstallDialog[darktheme=true]
+{
+	background: qradialgradient(cx:1, cy:1, radius: 0.45, fx:1, fy:1, stop:0.4 #141a25, stop:1 #15171e);
+}
+
+/* Install Dialog font styles */
+Phoenix--Install--InstallDialog *,
+Phoenix--Install--ModifyInstallDialog *
+{
+	font-size: 14px;
+}
+Phoenix--Install--InstallDialog *[style~="title"],
+Phoenix--Install--ModifyInstallDialog *[style~="title"]
+{
+	color: #ffffff;
+	font-family: {font_dark_title};
+	font-weight: bold;
+}
+Phoenix--Install--InstallDialog *[style~="subtitle"],
+Phoenix--Install--ModifyInstallDialog *[style~="subtitle"]
+{
+	color: #ffffff;
+	font-family: {font_dark_title};
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+Phoenix--Install--InstallDialog *[style~="message"],
+Phoenix--Install--ModifyInstallDialog *[style~="message"]
+{
+	font-size: 15px;
+}
+
+Phoenix--Install--InstallDialog QBusyButton,
+Phoenix--Install--ModifyInstallDialog QBusyButton
+{
+	background: transparent;
+}
+
+/* Install Background on the right frame */
+/*
+Phoenix--Install--InstallDialog #viewStack
+{
+	background-image: url(resources/images/install_background.jpg);
+	margin: 1 1 1 0;
+}
+*/
+
+/* Global style for bottom QFrame in InstallDialogPage */
+QFrame#InstallBottomFrame
+{
+	background: transparent;
+	margin-bottom: 1px; /* Don't overlap with bottom border. */
+	border-top: 1px solid rgba(255,255,255,26);
+	max-height: 78px;
+	min-height: 78px;
+}
+
+Phoenix--Install--InstallDialog #diskSpaceIconInfoLabel,
+Phoenix--Install--ModifyInstallDialog #diskSpaceIconInfoLabel
+{
+	min-width: 16px;
+}
+
+QFrame#InstallBottomFrame #buttonCancel,
+QFrame#InstallBottomFrame #buttonBack,
+QFrame#InstallBottomFrame #buttonConfirm
+{
+	padding: 0px 25px 0px 25px;
+}
+
+/* RequiredDiskSpaceWidget ==========================================================*/
+
+Phoenix--Install--RequiredDiskSpaceWidget #spaceErrorMessageLabel {
+	color: #ffb400;
+	font-size: 12px;
+}
+
+Phoenix--Install--RequiredDiskSpaceWidget #spaceIconLabel[icon~="default"] {
+	image: url("resources/images/darktheme/download-green.svg");
+}
+
+Phoenix--Install--RequiredDiskSpaceWidget #spaceIconLabel[icon~="warning"] {
+	image: url("resources/images/darktheme/alert.svg");
+}
+
+/* InstallStartView ==========================================================*/
+
+#InstallStartView { background: transparent; }
+
+#InstallStartView #sharedContainerComboBox { margin-top: 6px; }
+
+/* InstallStartPageView ======================================*/
+
+Phoenix--Install--InstallDialog #installLocationMessageLabel {
+	font-size: 14px;
+	margin-bottom: 1px;
+}
+
+Phoenix--Install--InstallDialog #installLocationMessageLabel[error="false"] {
+	color: #6cdb00;
+}
+
+Phoenix--Install--InstallDialog #installLocationMessageLabel[error="true"] {
+	color: #ffb400;
+}
+
+Phoenix--Install--InstallDialog #installLocationMessageIcon[icon~="default"] {
+	image: url("resources/images/darktheme/check.svg");
+}
+
+Phoenix--Install--InstallDialog #installLocationMessageIcon[icon~="alert"] {
+	image: url("resources/images/darktheme/alert.svg");
+}
+
+/* LanguagePageView ==========================================================*/
+
+Phoenix--Install--InstallDialog #LanguagePageView,
+Phoenix--Install--ModifyInstallDialog #LanguagePageView {
+	background: transparent;
+}
+
+Phoenix--Install--InstallDialog #langErrorMessageLabel,
+Phoenix--Install--ModifyInstallDialog #langErrorMessageLabel {
+	color: #ffb400;
+	font-size: 14px;
+	margin-bottom: 1px;
+}
+
+Phoenix--Install--InstallDialog #langErrorMessageIcon,
+Phoenix--Install--ModifyInstallDialog #langErrorMessageIcon,
+Phoenix--Install--InstallDialog #speechWarningIcon,
+Phoenix--Install--ModifyInstallDialog #speechWarningIcon {
+	image: url("resources/images/darktheme/alert.svg");
+}
+
+/* Headers TEXT and SPEECH for combo boxes */
+Phoenix--Install--InstallDialog #textLabel,
+Phoenix--Install--InstallDialog #speechLabel,
+Phoenix--Install--ModifyInstallDialog #textLabel,
+Phoenix--Install--ModifyInstallDialog #speechLabel {
+	font-family: {font_dark_title};
+	font-size: 10px;
+	text-transform: uppercase;
+}
+
+/* * Text-only footer note */
+Phoenix--Install--InstallDialog #textOnlyLabel,
+Phoenix--Install--InstallDialog #textOnlyAsteriskLabel,
+Phoenix--Install--ModifyInstallDialog #textOnlyLabel,
+Phoenix--Install--ModifyInstallDialog #textOnlyAsteriskLabel {
+	color: rgb(120,120,120);
+}
+
+/* LoginView =================================================================*/
+
+#LoginView { background: transparent; }
+/* min-height in css doesn't include border height. */
+
+/* InstallPackagesSummaryWidget ============================================================*/
+
+QLabel#packageWarningLabel
+{
+	color: rgba(255,255,255,48%);
+	font-size: 12px;
+}
+
+/* InstallPackagesWidget =====================================================*/
+
+Phoenix--Install--InstallDialog QTreeView,
+Phoenix--Install--ModifyInstallDialog QTreeView
+{
+	background: transparent;
+}
+
+Phoenix--Install--InstallDialog QTreeView::item,
+Phoenix--Install--ModifyInstallDialog QTreeView::item
+{
+	/* control left padding of item for distance from checkbox to expand/collapse control */
+	padding: 5px 5px 4px 0px;
+}
+
+Phoenix--Install--InstallDialog QTreeView::indicator,
+Phoenix--Install--ModifyInstallDialog QTreeView::indicator
+{
+	/* padding between checkbox and label */
+	padding-right: 1px;
+}
+
+Phoenix--Install--InstallDialog QTreeView::branch,
+Phoenix--Install--ModifyInstallDialog QTreeView::branch
+{
+	background: transparent;
+}
+
+Phoenix--Install--InstallDialog QTreeView::branch:has-children:closed,
+Phoenix--Install--ModifyInstallDialog QTreeView::branch:closed:has-children
+{
+	border-image: none;
+	image: url("resources/images/img_friendsArrow_right.svg");
+	/* workaround to shrink the branch:closed size */
+	padding: 2px;
+}
+
+Phoenix--Install--InstallDialog QTreeView::branch:open:has-children,
+Phoenix--Install--ModifyInstallDialog QTreeView::branch:open:has-children
+{
+	border-image: none;
+	image: url("resources/images/img_friendsArrow_down.svg");
+	/* workaround to shrink the branch:open size */
+	padding: 2px;
+}
+
+/*
+Phoenix--Install--InstallDialog QTreeView::branch:open,
+Phoenix--Install--ModifyInstallDialog QTreeView::branch:open
+{
+	background: white;
+}
+*/
+
+/* =============================================================================
+/  Login Settings page specification stylesheet
+/=============================================================================*/
+
+Phoenix--LoginSettingsDialog *
+{
+	font-size: 14px;
+}
+
+Phoenix--LoginSettingsDialog #frameTitle
+{
+	border-bottom: 1px solid rgba(255,255,255,12%);
+}
+
+Phoenix--LoginSettingsDialog #labelTitle
+{
+	padding: 27px 0px 27px 0px;
+}
+
+Phoenix--LoginSettingsDialog[platform="mac"] #labelTitle
+{
+	padding: 37px 0px 17px 0px;
+}
+
+Phoenix--LoginSettingsDialog #leftContents
+{
+	background-color: #111218;
+}
+
+Phoenix--LoginSettingsDialog #savedSetting
+{
+	border-top: 1px solid rgba(255,255,255,12%);
+}
+
+Phoenix--LoginSettingsDialog QLabel#savedLabel
+{
+	font-size: 12px;
+}
+
+Phoenix--LoginSettingsDialog QLabel#savedIcon
+{
+	image: url("resources/images/darktheme/check.svg");
+}
+
+Phoenix--LoginSettingsDialog #settingTabs
+{
+	background-color: transparent;
+	icon-size: 20px;
+	padding: 16px 6px 38px 8px;
+}
+
+Phoenix--LoginSettingsDialog #settingTabs::item
+{
+	border-radius: 2px;
+	color: rgba(255,255,255,60%);
+	height: 36px;
+	padding-left: 13px;
+}
+
+Phoenix--LoginSettingsDialog #settingTabs::item:hover
+{
+	background-color: rgba(255,255,255,6%);
+	color: #ffffff;
+}
+
+Phoenix--LoginSettingsDialog #settingTabs::item:selected
+{
+	background-color: rgba(255,255,255,6%);
+	background-image: url("resources/images/darktheme/contextMenu_checked_2x36.svg");
+	background-repeat: no-repeat;
+	color: #ffffff;
+}
+
+Phoenix--LoginSettingsDialog #versionLabel
+{
+	background-color: transparent;
+	color: rgba(255,255,255,48%);
+	font-size: 12px;
+	margin: 0px 0px 22px 22px;
+	selection-background-color: #787878;
+}
+
+/* =============================================================================
+/  Client Settings page specific stylesheet
+/=============================================================================*/
+
+QLabel[style~="optionHeader"]
+{
+	color: #ffffff;
+	font-family: {font_dark_title};
+	font-size: 18px;
+	font-weight: bold;
+}
+
+QWidget[style~="settings"] *[style~="subheading3"]
+{
+	color: rgba(255,255,255,72%);
+	font-family: {font_dark_title};
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+Phoenix--StyledDialog[darktheme=true] Phoenix--SettingsAccordionButton,
+Phoenix--SettingsAccordionButton
+{
+	background-color: #23252b;
+	border: 1px solid #23252b;
+	border-radius: 4px;
+	font-family: {font_dark};
+	font-weight: normal;
+	padding-left: 38px;
+	text-align: left;
+}
+
+Phoenix--StyledDialog[darktheme=true] Phoenix--SettingsAccordionButton:hover,
+Phoenix--SettingsAccordionButton:hover
+{
+	background-color: #313337;
+	border: 1px solid #313337;
+}
+
+Phoenix--StyledDialog[darktheme=true] Phoenix--SettingsAccordionButton:focus,
+Phoenix--SettingsAccordionButton:focus
+{
+	border: 1px solid #47494d;
+}
+
+Phoenix--StyledDialog[darktheme=true] Phoenix--SettingsAccordionButton:checked,
+Phoenix--SettingsAccordionButton:checked
+{
+	/* Remove the bottom border so the content pane is flush with the accordion */
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+Phoenix--StyledDialog[darktheme=true] Phoenix--SettingsAccordionButton #arrow,
+Phoenix--SettingsAccordionButton #arrow
+{
+	image: url("resources/images/img_friendsArrow_right.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] Phoenix--SettingsAccordionButton[isExpanded=true] #arrow,
+Phoenix--SettingsAccordionButton[isExpanded=true] #arrow
+{
+	image: url("resources/images/img_friendsArrow_down.svg");
+}
+
+Phoenix--ClientSettingsDialog QFrame[style~="accordionPane"]
+{
+	background-color: rgba(255,255,255,3%);
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+Phoenix--ClientSettingsDialog *
+{
+	font-size: 14px;
+}
+
+/* #contentContainer is part of StyledDialog and ClientSettingsDialog can spawn
+   another StyledDialog, ConfirmationDialog for example. Since the ConfirmationDialog
+   is child of ClientSettings in that case, background of ConfirmationDialog will
+   also would be affected by this change if we use descendant selector here (separated by spaces only). */
+Phoenix--ClientSettingsDialog > QWidget > #contentContainer
+{
+	background: #15171e;
+}
+
+Phoenix--SettingsTabPage #versionLabel
+{
+	background-color: transparent;
+	color: rgba(255,255,255,48%);
+	margin: 0px 0px 20px 22px;
+	selection-background-color: #787878;
+}
+
+Phoenix--SettingsTabPage #secondLevelContainer
+{
+	background: #111218;
+}
+
+Phoenix--SettingsTabPage QWidget#separator
+{
+	border-top: 1px solid rgba(255,255,255,12%);
+}
+
+Phoenix--SettingsTabPage QLabel#changesSavedIcon
+{
+	image: url("resources/images/darktheme/check.svg");
+}
+
+Phoenix--SettingsTabWidget #label
+{
+	color: rgba(255,255,255,60%);
+}
+
+Phoenix--SettingsTabWidget[selected="true"] #label
+{
+	color: #ffffff;
+}
+
+Phoenix--SettingsTabWidget #label:disabled
+{
+	color: rgba(255,255,255,20%);
+}
+
+Phoenix--GameInstallUpdateSettings #gameUpdateHeader QLabel
+{
+	font-weight: bold;
+}
+
+Phoenix--GameInstallUpdateSettings QLabel:disabled
+{
+	color: rgba(255,255,255,48%);
+}
+
+Phoenix--GameUpdateSettingWidget #gameWidgetFrame
+{
+	background-color: rgba(255, 255, 255, 3%);
+	border-radius: 4px;
+}
+
+Phoenix--GameSettingsWidget #launchArgumentText
+{
+	margin: 0px 250px 0px 24px;
+}
+
+Phoenix--InDevelopmentSettings QLabel#lblCheckMark
+{
+	image: url("resources/images/darktheme/check.svg");
+}
+
+Phoenix--InDevelopmentSettings QLabel#lblInstalledMessage
+{
+	color: #6cdb00;
+}
+
+Phoenix--InDevelopmentSettings QPushButton#btnDownload
+{
+	padding: 0px 18px 0px 18px;
+}
+
+Phoenix--AboutSettings #legalWebLinkButton
+{
+	margin-top: 1px;
+}
+
+/* =============================================================================
+/  QTabWidget
+/=============================================================================*/
+QTabWidget::pane[style~="settings"]
+{
+	margin-top: 1px;
+	border-top: 1px solid rgba(255,255,255,12%);
+}
+
+QTabWidget::tab-bar[style~="settings"]
+{
+    left: 25px;
+}
+
+QTabWidget[style~="settings"] > QTabBar
+{
+	color: #ffffff;
+	font-family: {font_dark_title};
+	font-size: 18px;
+	font-weight: bold;
+}
+
+QTabWidget[style~="settings"] > QTabBar::tab
+{
+	border: none;
+	padding: 27px 0px 27px 0px;
+}
+
+QTabWidget[style~="settings"][platform="mac"] > QTabBar::tab
+{
+	padding: 37px 0px 17px 0px;
+}
+
+QTabWidget[style~="settings"] > QTabBar::tab:selected
+{
+	color: #ffffff;
+}
+
+QTabWidget[style~="settings"][style~="inner"]
+{
+    font-size:12px;
+}
+
+QTabWidget::pane[style~="settings"] > QStackedWidget
+{
+	background-color: #15171e;
+}
+
+QTabWidget[style~="settings"][style~="inner"] > QTabBar::tab
+{
+    padding: 6px 30px 6px 0px;
+}
+
+QTabWidget[style~="settings"] #secondLevelTabs
+{
+	background-color: transparent;
+	font-size:14px;
+	padding: 18px 8px 40px 8px;
+}
+
+QTabWidget[style~="settings"] #secondLevelTabs::item
+{
+	border-radius: 2px;
+}
+
+QTabWidget[style~="settings"] #secondLevelTabs::item:hover
+{
+	background-color: rgba(255,255,255,6%);
+}
+
+QTabWidget[style~="settings"] #secondLevelTabs::item:selected
+{
+	background-color: rgba(255,255,255,6%);
+	background-image: url("resources/images/darktheme/contextMenu_checked_2x36.svg");
+	background-repeat: no-repeat;
+}
+
+/* --- General tab bottom bar --- */
+
+QTabWidget[style~="settings"] #bottomBorderFrame
+{
+	border-top: 1px solid rgba(255,255,255,12%);
+}
+
+QTabWidget[style~="settings"] #bottomBar
+{
+	background-color: #15171e;
+	max-height: 78px;
+	min-height: 78px;
+}
+
+QWidget[style~="settings"] #defaultInstallPathEdit, #proxyAddressLineEdit, #proxyPortLineEdit
+{
+	/* There's no button to align with. */
+	margin-left: 0px; margin-right: 0px;
+}
+
+/* =============================================================================
+/  Phoenix::StyledTextEdit
+/=============================================================================*/
+
+Phoenix--StyledTextEdit > QLabel
+{
+	color: rgba(255, 255, 255, 20%);
+	margin: 5 5 5 5;
+}
+
+/* =============================================================================
+/  Phoenix::DarkToast
+/=============================================================================*/
+
+Phoenix--DarkToast #background
+{
+	/* top right bottom left */
+	border-image: url("resources/controls/darktheme/toast_base_dark.png") 10 18 28 18;
+	border-width: 5 9 14 9;
+}
+
+Phoenix--DarkToast[highdpi=true] #background
+{
+	border-image: url("resources/controls/darktheme/toast_base_dark@2x.png") 10 18 28 18;
+	border-width: 5 9 14 9;
+}
+
+Phoenix--DarkToast[hover~="true"] #background
+{
+	border-image: url("resources/controls/darktheme/toast_base_dark_hover.png") 10 18 28 18;
+	border-width: 5 9 14 9;
+}
+
+Phoenix--DarkToast[highdpi=true][hover~="true"] #background
+{
+	border-image: url("resources/controls/darktheme/toast_base_dark_hover@2x.png") 10 18 28 18;
+	border-width: 5 9 14 9;
+}
+
+Phoenix--DarkToast QPushButton#closeButton
+{
+	background-color: transparent;
+	border: none;
+	image: url("resources/controls/darktheme/btn_win_close_normal.svg") 0;
+}
+
+Phoenix--DarkToast QPushButton#closeButton:pressed
+{
+	image: url("resources/controls/darktheme/btn_win_close_pressed.svg") 0;
+}
+
+Phoenix--DarkToast QPushButton#closeButton:hover:!pressed
+{
+	image: url("resources/controls/darktheme/btn_win_close_hover.svg") 0;
+}
+
+Phoenix--DarkToast QPushButton#settingsButton
+{
+	background-color: transparent;
+	border: none;
+	image: url("resources/controls/darktheme/btn_win_cog_normal.svg") 0;
+}
+Phoenix--DarkToast QPushButton#settingsButton:pressed
+{
+	image: url("resources/controls/darktheme/btn_win_cog_pressed.svg") 0;
+
+}
+Phoenix--DarkToast QPushButton#settingsButton:hover:!pressed
+{
+	image: url("resources/controls/darktheme/btn_win_cog_hover.svg") 0;
+}
+
+/* badge */
+
+Phoenix--DarkToast #badgeCutoutLabel
+{
+	border-radius: 15px;
+}
+
+Phoenix--DarkToast #badgeCutoutLabel[style~="availability"]
+{
+	border-radius: 8px;
+}
+
+Phoenix--DarkToast #badgeCutoutLabel
+{
+	background-color: #15171e;
+}
+
+Phoenix--DarkToast #badgeCutoutLabel[hover~="true"]
+{
+	background-color: #1a1c23;
+}
+
+Phoenix--DarkToast #badgeLabel[style~="online"],
+Phoenix--DarkToast #badgeLabel[style~="offline"],
+Phoenix--DarkToast #badgeLabel[style~="away"],
+Phoenix--DarkToast #badgeLabel[style~="busy"]
+{
+	width: 12px;
+	height: 12px;
+	min-height:12px;
+	max-height:12px;
+}
+
+Phoenix--DarkToast #badgeLabel[style~="online"]
+{
+	image: url("resources/images/darktheme/status-online.svg");
+}
+
+Phoenix--DarkToast #badgeLabel[style~="offline"] {
+	image: url("resources/images/darktheme/status-offline.svg");
+}
+
+Phoenix--DarkToast #badgeLabel[style~="away"] {
+	image: url("resources/images/darktheme/status-away.svg");
+}
+
+Phoenix--DarkToast #badgeLabel[style~="busy"] {
+	image: url("resources/images/darktheme/status-busy.svg");
+}
+
+/* title */
+Phoenix--DarkToast #titleLabel
+{
+	color: rgba(255, 255, 255, 100%);
+	font-size: 14px;
+	font-weight: bold;
+}
+
+Phoenix--DarkToast #titleLabel[style~="name"]
+{
+	color: rgba(173, 216, 255, 100%);
+}
+
+Phoenix--DarkToast #titleLabel[style~="multichatTitle"]
+{
+	font-size:12px;
+}
+
+/* body */
+Phoenix--DarkToast #bodyLabel
+{
+	color: rgba(255, 255, 255, 72%);
+	font-size: 14px
+}
+
+Phoenix--DarkToast #bodyLabel[style~="name"]
+{
+	color: rgba(173, 216, 255, 100%);
+}
+
+/* extra info */
+
+Phoenix--DarkToast #extraInfoLabel
+{
+	color: rgba(255, 255, 255, 100%);
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 8px;
+}
+
+Phoenix--DarkToast #extraInfoLabel[style~="name"]
+{
+	color: rgba(173, 216, 255, 100%);
+	font-weight: normal;
+}
+
+Phoenix--DarkToast #extraInfoLabel[style~="chat"]
+{
+	color: rgba(255, 255, 255, 72%);
+	font-weight: normal;
+}
+
+/* checkbox */
+Phoenix--DarkToast #checkBox
+{
+	font-size: 14px;
+	color: rgba(255, 255, 255, 72%);
+}
+Phoenix--DarkToast QCheckBox::indicator
+{
+	width: 18px;
+	height: 18px;
+	max-height: 18px;
+	max-width: 18px;
+}
+
+/* =============================================================================
+/  Phoenix::LegacyToast
+/=============================================================================*/
+
+/* icon */
+Phoenix--LegacyToast AvatarWidget#mainIcon[style="gift"]
+{
+	border-image: url(resources/images/icon_gift.png);
+}
+
+Phoenix--LegacyToast #topGradient
+{
+	border-image: url(resources/controls/toast_topGradient.png);
+}
+
+Phoenix--LegacyToast[hover~="true"] #topGradient
+{
+	border-image: url(resources/controls/toast_topGradient_hover.png);
+}
+
+Phoenix--LegacyToast #bottomGradient
+{
+	border-image: url(resources/controls/toast_bottomGradient.png);
+}
+
+Phoenix--LegacyToast[hover~="true"] #bottomGradient
+{
+	border-image: url(resources/controls/toast_bottomGradient_hover.png);
+}
+
+Phoenix--LegacyToast #ToastBackground
+{
+	border-image: url(resources/controls/toast_base.png) 17 10 21 10;
+	border-width: 17 10 21 10;
+}
+
+Phoenix--LegacyToast[hover~="true"] #ToastBackground
+{
+	border-image: url(resources/controls/toast_base_hover.png) 17 10 21 10;
+	border-width: 17 10 21 10;
+}
+/* Game Id */
+Phoenix--LegacyToast #titleLabel
+{
+	font-size: 15px;
+	color: rgba(255,255,255,100%);
+}
+
+/* User name */
+Phoenix--LegacyToast #titleLabel[style~="friendRequest"]
+{
+	font-size: 15px;
+	color: rgba(130,197,255,80%);
+}
+
+
+/* has sent you a friend request */
+Phoenix--LegacyToast #extraInfoLabelLabel
+{
+	color: rgba(255,255,255,50%);
+}
+
+/*Online 2nd Line of Text*/
+Phoenix--LegacyToast #bodyLabel
+{
+	color: rgba(255,255,255,50%);
+}
+
+Phoenix--LegacyToast #bodyLabel[style~="rollup"]
+{
+	color: rgba(255,255,255,80%);
+}
+
+Phoenix--LegacyToast #bodyLabel[style~="friendRequest"]
+{
+	font-size: 14px;
+	color: rgba(255,255,255,40%);
+}
+
+Phoenix--LegacyToast #bodyLabel[style~="chat"]
+{
+	color: rgba(255,255,255,80%);
+}
+
+Phoenix--LegacyToast[hover~="true"] #bodyLabel[style~="chat"]
+{
+	color: rgba(255,255,255,100%);
+}
+
+Phoenix--LegacyToast #friendAcceptCheckbox::indicator { width: 14px; height: 14px; image: url(resources/images/checkMark_green.png); }
+Phoenix--LegacyToast #topBarArea { border-image: url(resources/controls/border_topbar.png) 0 11 0 11; border-width: 0 11 0 11; }
+Phoenix--LegacyToast QPushButton#winCloseButton { border-image: url(resources/controls/btn_win_close_normal.png) 0; }
+Phoenix--LegacyToast QPushButton#winCloseButton:pressed { border-image: url(resources/controls/btn_win_close_pressed.png) 0; }
+Phoenix--LegacyToast QPushButton#winCloseButton:hover:!pressed { border-image: url(resources/controls/btn_win_close_hover.png) 0; }
+
+Phoenix--LegacyToast #primaryButton, Phoenix--LegacyToast #secondaryButton { padding-left: 5; padding-right: 5; font-size: 12px; min-height: 20px; min-width: 54 }
+
+Phoenix--LegacyToast QPushButton#settingsButton { border-image: url(resources/controls/btn_win_cog_normal.png) 0; }
+Phoenix--LegacyToast QPushButton#settingsButton:pressed { border-image: url(resources/controls/btn_win_cog_pressed.png) 0; }
+Phoenix--LegacyToast QPushButton#settingsButton:hover:!pressed { border-image: url(resources/controls/btn_win_cog_hover.png) 0; }
+Phoenix--LegacyToast QPushButton#settingsButton:disabled { border-image: url(resources/controls/btn_win_cog_disabled.png) 0; }
+
+Phoenix--LegacyToast #imageLayoutFrame { padding: 16 3 1 10; }
+Phoenix--LegacyToast #buttonLayoutFrame { padding: 1 14 1 1; }
+
+/* -----------------------------------------------------------------------------
+/  Padding override to have more space for button texts based on locale
+/-----------------------------------------------------------------------------*/
+Phoenix--LegacyToast[cssLocale="ruRU"] #imageLayoutFrame { padding-left: 0px; padding-right: 0px; }
+Phoenix--LegacyToast[cssLocale="ruRU"] #buttonLayoutFrame { padding-right: 10px; }
+Phoenix--LegacyToast[cssLocale="frFR"] #imageLayoutFrame { padding-left: 0px; padding-right: 0px; }
+Phoenix--LegacyToast[cssLocale="frFR"] #buttonLayoutFrame { padding-right: 10px; }
+
+
+/* =============================================================================
+/  Phoenix::ConfirmationDialog
+/=============================================================================*/
+
+Phoenix--ConfirmationDialog QPushButton[style~="global"]
+{
+	min-width: 70px;
+}
+
+Phoenix--ConfirmationDialog *
+{
+	font-size: 14px;
+}
+
+/* =============================================================================
+/  Phoenix::ErrorDialog
+/=============================================================================*/
+
+Phoenix--ErrorDialog *
+{
+	font-size: 14px;
+}
+
+Phoenix--ErrorDialog QBusyButton#busyButton
+{
+	background: transparent;
+}
+
+Phoenix--ErrorDialog QWidget#optionWidget
+{
+	border-bottom: 1px solid rgba(255,255,255,12%);
+}
+
+Phoenix--ErrorDialog QPushButton#errorCodeLink
+{
+	font-weight: normal;
+}
+
+Phoenix--ErrorDialog QLabel#errorCodeIcon
+{
+	image: url("resources/images/darktheme/icon_web_link.svg");
+}
+
+/* =============================================================================
+/  Phoenix::DiskEjectErrorDialog
+/=============================================================================*/
+
+Phoenix--DiskEjectErrorDialog #text
+{
+	color: rgb(255, 255, 255);
+	font-size: 15px;
+}
+
+/* =============================================================================
+/  Phoenix::FriendsWindow
+/=============================================================================*/
+
+Phoenix--FriendsWindow #friendsButton
+{
+	min-height: 24px;
+	padding: 5px 5px 5px 5px;
+	background: transparent;
+	border-style: hidden hidden solid hidden;
+	border-width: 1px;
+	border-color: rgb(49,55,68);
+}
+
+Phoenix--FriendsWindow #friendsButton:checked
+{
+	background: qlineargradient(x1: 0, y1: 0, x2: 1, y2: 0, stop: 0 #1e232e, stop: 1 #202835);
+	border-style: solid solid hidden hidden;
+	color: rgb(255, 255, 255);
+}
+
+Phoenix--FriendsWindow #settingsButton { border-image: url(resources/controls/btn_win_cog_normal.png) 0; }
+Phoenix--FriendsWindow #settingsButton:disabled { border-image: url(resources/controls/btn_win_cog_disabled.png) 0; }
+Phoenix--FriendsWindow #settingsButton:pressed,
+Phoenix--FriendsWindow #settingsButton:focus:pressed { border-image: url(resources/controls/btn_win_cog_pressed.png) 0; }
+Phoenix--FriendsWindow #settingsButton:hover:!pressed,
+Phoenix--FriendsWindow #settingsButton:focus:!pressed { border-image: url(resources/controls/btn_win_cog_hover.png) 0; }
+
+Phoenix--FriendsWindow Phoenix--BorderFrame#topAreaFrame
+{
+	background-color: rgb(35,42,56);
+}
+
+Phoenix--FriendsWindow Phoenix--BorderFrame#topAreaFrame:active
+{
+	background-color: rgb(40,50,68);
+}
+
+Phoenix--FriendsWindow #btnGoOnline
+{
+	font-size: 13px;
+	min-height: 13px;
+	min-width: 58px;
+}
+
+Phoenix--FriendsWindow #btnGoOnline:disabled
+{
+	border-image: url(resources/controls/btn_primary_disabled_offline_connect.png) 5 4 5 4;
+	color: rgba(255,255,255,50%);
+}
+
+Phoenix--FriendsWindow #offlineIcon { border-image: url(resources/images/icon_offline_48.png) 0; }
+Phoenix--FriendsWindow #offlineIcon:disabled { border-image: url(resources/images/icon_disconnect_disabled.png) 0; }
+
+Phoenix--FriendsWindow #scrollAreaFriendContents
+{
+	background: transparent;
+}
+
+/* =============================================================================
+/  Phoenix::FriendsWidget
+/=============================================================================*/
+
+Phoenix--FriendsWidget Phoenix--AppearOfflineMessageBox #messageFrame
+{
+    margin: 10px 12px 0px 12px;
+}
+
+Phoenix--FriendsWidget Phoenix--BorderFrame#buttonLayout
+{
+	background-color: rgb(35,42,56);
+}
+
+Phoenix--FriendsWidget Phoenix--BorderFrame#buttonLayout:active
+{
+	background-color: rgb(40,50,68);
+}
+
+Phoenix--FriendsWidget Phoenix--BorderFrame#buttonInset
+{
+	border-style: hidden hidden solid hidden;
+	border-width: 1px;
+	border-color: rgb(48,55,69);
+}
+
+Phoenix--FriendsWidget Phoenix--BorderFrame#buttonInset
+{
+	border-style: solid hidden solid hidden;
+}
+
+Phoenix--FriendsWidget Phoenix--BorderFrame#buttonInset:active
+{
+    border-color: rgb(53,63,80);
+}
+
+Phoenix--FriendsWidget #btnAddFriend
+{
+	color: rgb(0,174,255);
+	font-size: 11px;
+	margin: 0px;
+	min-height: 20px;
+	background: transparent;
+	border-color: rgb(92,104,118);
+}
+
+Phoenix--FriendsWidget #btnAddFriend
+{
+    color: rgb(207,208,211);
+}
+
+Phoenix--FriendsWidget #editFilter
+{
+	min-width: 127px;
+	qproperty-textMarginLeft: 2;
+}
+
+Phoenix--FriendsWidget #editFilter > QLineEdit
+{
+	font-size: 12px;
+	min-height: 22px;
+	padding-left: -1px;
+	margin-bottom: 1px;
+	background: transparent;
+	border-color: rgb(57,64,76);
+}
+
+Phoenix--FriendsWidget #editFilter > QLineEdit:hover
+{
+	color: #ffffff;
+}
+
+Phoenix--FriendsWidget #editFilter > QLineEdit:focus
+{
+	color: #ffffff;
+    border-color: rgb(30,94,153);
+}
+
+Phoenix--FriendsWidget #editFilter > QLabel
+{
+	font-size: 12px;
+	padding-bottom: 1px;
+}
+
+Phoenix--FriendsWidget QListView#friendRequestListView
+{
+	background-color: #11141a;
+	padding: 0px 0px 0px 0px;
+}
+
+Phoenix--FriendsWidget Phoenix--BorderFrame#filterLayout
+{
+	qproperty-bottom: 1;
+}
+
+/* =============================================================================
+/  Phoenix::RecommendedFriendsContainer
+/=============================================================================*/
+
+Phoenix--RecommendedFriendsContainer #contents
+{
+	background-color: #11141a;
+	padding: 0px 0px 0px 0px;
+}
+
+Phoenix--RecommendedFriendsContainer #closeBanner { border-image: url(resources/controls/btn_win_close_normal.png) 0; }
+Phoenix--RecommendedFriendsContainer #closeBanner:pressed { border-image: url(resources/controls/btn_win_close_pressed.png) 0; }
+Phoenix--RecommendedFriendsContainer #closeBanner:hover:!pressed { border-image: url(resources/controls/btn_win_close_hover.png) 0; }
+
+Phoenix--RecommendedFriendsContainer #bannerLabel
+{
+	color: rgba(255,255,255,100%);
+}
+
+Phoenix--RecommendedFriendsContainer QFrame#bannerFrame
+{
+	background-color: #3b5998;
+	border: 1px solid #4a4e56;
+	padding: -1px -1px -1px -1px;
+}
+
+Phoenix--RecommendedFriendsContainer QFrame#bannerFrame:hover
+{
+	background-color: #1675c6;
+	border: 1px solid #4a4e56;
+	padding: -1px -1px -1px -1px;
+}
+
+Phoenix--RecommendedFriendsListView
+{
+	background-color: #11141a;
+	padding: 0px 0px 0px 0px;
+}
+
+Phoenix--FriendsWidget #recommendedFriendsView QScrollBar
+{
+	padding: 15px -2px -5px 0px;
+    background-color: #11141a;
+}
+
+Phoenix--FriendsWidget Phoenix--BorderFrame#incomingWidget
+{
+	background-color: rgb(46,57,77);
+	qproperty-top: 1;
+	qproperty-bottom: 1;
+}
+
+Phoenix--FriendsWidget Phoenix--BorderFrame[notification=true]#suggestedFriendsHeader,
+Phoenix--FriendsWidget Phoenix--BorderFrame[notification=true]#incomingWidget
+{
+	background-color: rgb(119, 60, 0);
+}
+
+Phoenix--FriendsWidget Phoenix--FriendsTree#treeFriends
+{
+	background-color: transparent;
+	border: none;
+}
+
+Phoenix--FriendsWidget Phoenix--BorderFrame#suggestedFriendsHeader
+{
+	background-color: rgb(46,57,77);
+	qproperty-top: 1;
+	qproperty-bottom: 1;
+}
+
+Phoenix--OfflineWidget Phoenix--BorderFrame#frame
+{
+    qproperty-top: 1;
+}
+
+/* =============================================================================
+/  Phoenix::DetailFriendWidget
+/
+/  NOTE :: we are enabling/disabling hover by use of manipulating Qt::WA_UnderMouse
+/  attribute to trigger the css style sheet differences annd overloading setEnabled
+/  in lieu of being able to modify "selected" manually as these flags are controlled
+/  deep within Qt.  We have structured the use case and the UI element around this
+/  in order to crank out higher performance.  It should be said that presently
+/  (as it also was in the past) we do not support current location (for keyboard users)
+/  which we should look into at some point.
+/
+/=============================================================================*/
+
+Phoenix--DetailFriendWidget QLabel[style~="Status"]
+{
+	font-size:12px;
+}
+
+Phoenix--DetailFriendWidget QFrame#itemBackground:hover
+{
+	background-color: #242932;
+	border: 1px solid #4a4e56;
+	padding: -1px -1px -1px -1px;
+}
+
+Phoenix--DetailFriendWidget QFrame#itemSelectedBackground:enabled
+{
+	background-color: #192d47;
+	border: 1px solid #256cab;
+	padding: -1px -1px -1px -1px;
+}
+
+Phoenix--DetailFriendWidget[selected~="true"] QFrame#itemBackground:hover
+{
+	background-color: #192d47;
+	border: 1px solid #256cab;
+	padding: -1px -1px -1px -1px;
+}
+
+Phoenix--DetailFriendWidget QFrame#friendNoteIcon,
+Phoenix--DetailFriendWidget QFrame#friendNoteIcon2
+{
+	border-image: url(resources/images/icon_friend_note.png) 0;
+}
+
+Phoenix--DetailFriendWidget QFrame#friendFavIcon,
+Phoenix--DetailFriendWidget QFrame#friendFavIcon2
+{
+	border-image: url(resources/images/icon_friend_star.png) 0;
+}
+
+Phoenix--DetailFriendWidget #gameIcon
+{
+	margin: 0px;
+}
+
+/* =============================================================================
+/  Phoenix::SuggestedFriendWidget
+/=============================================================================*/
+
+Phoenix--SuggestedFriendWidget QLabel[style~="Status"]
+{
+	font-size: 12px;
+}
+
+Phoenix--SuggestedFriendWidget QFrame#itemBackground
+{
+	background-color: transparent;
+	border: none;
+	border-radius: 4px;
+}
+
+Phoenix--SuggestedFriendWidget QFrame#itemBackground:hover
+{
+	background-color: rgba(255,255,255,6%);
+}
+
+Phoenix--SuggestedFriendWidget[focused~="true"] QFrame#itemBackground,
+Phoenix--SuggestedFriendWidget[selected~="true"] QFrame#itemBackground
+{
+	background-color: rgba(255,255,255,6%);
+	border: 1px solid #3a3b40;
+	padding: -1px -1px -1px -1px;
+}
+
+Phoenix--SuggestedFriendWidget QLabel[style~="DisplayName"]
+{
+	color: #add8ff;
+}
+
+Phoenix--SuggestedFriendWidget QPushButton#addButton
+{
+	padding: 0px;
+}
+
+Phoenix--SuggestedFriendWidget QPushButton#addButton:hover,
+Phoenix--SuggestedFriendWidget QPushButton#addButton:focus
+{
+	padding: -2px;
+}
+
+Phoenix--SuggestedFriendWidget QPushButton#dismissButton
+{
+	color: #ffffff;
+	border-image: url(resources/images/icon_dismiss_16.png);
+}
+
+Phoenix--SuggestedFriendWidget QPushButton#dismissButton:pressed
+{
+	padding: 1 1 -1 1;
+    border-image: url(resources/images/icon_dismiss_16_hover.png);
+}
+
+Phoenix--SuggestedFriendWidget QPushButton#dismissButton:hover
+{
+	border-image: url(resources/images/icon_dismiss_16_hover.png);
+}
+
+Phoenix--SuggestedFriendWidget QPushButton#dismissButton:focus
+{
+	border-image: url(resources/images/icon_dismiss_16_hover.png);
+}
+
+Phoenix--SuggestedFriendWidget QPushButton#dismissButton:focus:pressed
+{
+	border-image: url(resources/images/icon_dismiss_16_hover.png);
+}
+
+/* =============================================================================
+/  Phoenix::AddFriendWidget
+/=============================================================================*/
+
+Phoenix--AddFriendWidget #showListView
+{
+	background-color: transparent;
+	border: none;
+	border-radius: 3px;
+	color: rgba(255,255,255,72%);
+	font-family: {font_dark};
+	padding: 0px 8px 0px 8px;
+	text-align: left;
+}
+
+Phoenix--AddFriendWidget #showListView:focus
+{
+	background-color: rgba(255,255,255,6%);
+	border: 1px solid #3a3b40;
+	padding: 0px 7px 0px 7px;
+}
+
+Phoenix--AddFriendWidget #showListView:pressed,
+Phoenix--AddFriendWidget #showListView:hover
+{
+	background-color: rgba(255,255,255,6%);
+}
+
+Phoenix--AddFriendWidget #showListView[expanded=false]
+{
+	icon: url("resources/images/img_friendsArrow_right.svg");
+}
+
+Phoenix--AddFriendWidget #showListView[expanded=true]
+{
+	icon: url("resources/images/img_friendsArrow_down.svg");
+}
+
+/* =============================================================================
+/  Phoenix::FriendRequestLevelButtons
+/=============================================================================*/
+
+Phoenix--FriendRequestLevelButtons #realIdRequestLabel,
+Phoenix--FriendRequestLevelButtons #btagRequestLabel
+{
+	font-size: 13px;
+	color: #b6b6b7;
+}
+
+/* =============================================================================
+/  Phoenix::FriendRequestWidget
+/=============================================================================*/
+
+Phoenix--FriendRequestWidget QFrame#backgroundFrame[style~="Error"]
+{
+	background-color: #360E10;
+	margin: 1px 0px 0px 0px
+}
+
+/* Note that Hover states are managed in FriendRequestWidget as the menu drop down button and
+	this text have to toggle hover state together. */
+Phoenix--FriendRequestWidget QLabel#nameLabel,
+Phoenix--FriendRequestWidget QLabel#battleTagLabel
+{
+	color: rgba(130,197,255,80%);
+	font-size: 17px;
+}
+
+Phoenix--FriendRequestWidget #nameLabel[style="hover"],
+Phoenix--FriendRequestWidget #battleTagLabel[style="hover"]
+{
+	color: #ffffff;
+	font-size: 17px;
+}
+
+Phoenix--FriendRequestWidget QLabel#subTitleLabel
+{
+	color: #9a9b9e;
+}
+
+Phoenix--FriendRequestWidget QLabel#errorLabel
+{
+	font-size: 14px;
+}
+
+Phoenix--FriendRequestWidget QPushButton#buttonAccept
+{
+	font-size: 12px;
+	min-height: 18px;
+	padding: 0 3 0 3;
+}
+
+Phoenix--FriendRequestWidget QPushButton#buttonDecline
+{
+	font-size: 12px;
+	min-height: 18px;
+	padding: 0 3 0 3;
+}
+
+Phoenix--FriendRequestWidget #menuDownArrow
+{
+	border-image: url(resources/images/arrow_down_blue.png) 0;
+}
+
+Phoenix--FriendRequestWidget #menuDownArrow[style~="hover"]
+{
+	border-image: url(resources/images/arrow_down_white.png) 0;
+}
+
+Phoenix--FriendRequestWidget #realIdTooltip
+{
+	min-width: 16px;
+}
+
+/* =============================================================================
+/  Phoenix::SendFriendRequestDialog
+/=============================================================================*/
+
+Phoenix--SendFriendRequestDialog #contentFrame
+{
+	border: 1px solid rgba(255,255,255,12%);
+	border-style: solid none solid none;
+}
+
+Phoenix--SendFriendRequestDialog #inviteeLabel,
+Phoenix--SendFriendRequestDialog #senderLabel
+{
+	color: #add8ff;
+	font-size: 14px;
+	font-weight: bold;
+}
+
+Phoenix--SendFriendRequestDialog #buttonSend,
+Phoenix--SendFriendRequestDialog #buttonCancel
+{
+	padding: 0px 25px 0px 25px;
+}
+
+/* =============================================================================
+/  Phoenix::ReportPlayerDialog
+/=============================================================================*/
+
+Phoenix--ReportPlayerDialog #comboLabel
+{
+}
+
+Phoenix--ReportPlayerDialog QWidget#topLayer
+{
+    background-color: rgb(40,50,68);
+	margin: 1 1 0 1;
+	border-bottom: 1px solid rgba(255,255,255,5%);
+}
+
+/* =============================================================================
+/  Phoenix::AddFriendDialog
+/=============================================================================*/
+
+Phoenix--AddFriendDialog *
+{
+	font-size: 14px;
+}
+
+Phoenix--AddFriendDialog #tabFrame QPushButton
+{
+	border: 1px solid rgba(255,255,255,12%);
+	border-style: solid none solid none;
+	color: rgba(255,255,255,72%);
+	font-family: {font_dark};
+	font-weight: bold;
+	icon-size: 24px;
+	padding: 11px 0px 14px 0px;
+}
+
+Phoenix--AddFriendDialog #tabFrame QPushButton:focus,
+Phoenix--AddFriendDialog #tabFrame QPushButton:hover
+{
+	border-bottom: 1px solid rgba(255,255,255,24%);
+	color: #ffffff;
+}
+
+Phoenix--AddFriendDialog #tabFrame QPushButton:pressed
+{
+	border-bottom: 1px solid rgba(255,255,255,12%);
+	color: rgba(255,255,255,48%);
+}
+
+Phoenix--AddFriendDialog #tabFrame QPushButton:checked
+{
+	border-bottom: 2px solid #148eff;
+	color: #ffffff;
+	padding: 11px 0px 13px 0px;
+}
+
+Phoenix--AddFriendDialog #battleNetButton
+{
+	icon: url("resources/images/addfrienddialog/icon_bnet.svg");
+}
+
+Phoenix--AddFriendDialog #battleNetButton:!checked:pressed
+{
+	icon: url("resources/images/addfrienddialog/icon_bnet_pressed.svg");
+}
+
+Phoenix--AddFriendDialog #facebookButton
+{
+	icon: url("resources/images/addfrienddialog/icon_facebook.svg");
+}
+
+Phoenix--AddFriendDialog #facebookButton:!checked:pressed
+{
+	icon: url("resources/images/addfrienddialog/icon_facebook_pressed.svg");
+}
+
+Phoenix--AddFriendDialog #buttonSendRequest QPushButton
+{
+	padding: 0px 24px 0px 24px;
+}
+
+Phoenix--AddFriendDialog QLabel#labelSelectedPlayerName
+{
+	font-size: 14px;
+	color: #ffffff;
+}
+
+Phoenix--AddFriendDialog QLabel#labelPermissionHeadline,
+Phoenix--AddFriendDialog QLabel#labelUnconnectedHeadline,
+Phoenix--AddFriendDialog QLabel#labelAllAddedHeadline,
+Phoenix--AddFriendDialog QLabel#labelNoneLinkedHeadline,
+Phoenix--AddFriendDialog QLabel#labelActivateHeadline,
+Phoenix--AddFriendDialog QLabel#labelErrorHeadline {
+	font-family: {font_dark_title};
+	font-size: 20px;
+	font-weight: bold;
+}
+
+Phoenix--AddFriendDialog QPushButton#btnSendRequestFromList
+{
+	min-height: 28px;
+	min-width: 108px;
+}
+
+Phoenix--AddFriendDialog QPushButton#btnCancelRequestFromList
+{
+	min-height: 28px;
+	min-width: 58px;
+}
+
+Phoenix--AddFriendDialog QPushButton#buttonCancel
+{
+	min-height: 28px;
+	min-width: 58px;
+}
+
+Phoenix--AddFriendDialog #labelRecommendedFriendsTitle,
+Phoenix--AddFriendDialog #labelAddFriendsTitle,
+Phoenix--AddFriendDialog #labelFacebookFriendsTitle
+{
+	color: rgba(255,255,255,90%);
+}
+
+Phoenix--AddFriendDialog QLabel#imageLabelBlizzard
+{
+	image: url("resources/images/addfrienddialog/icon_battlenet_friends.svg");
+}
+
+Phoenix--AddFriendDialog QLabel#imageLabelArrow
+{
+	image: url("resources/images/addfrienddialog/arrow.svg");
+}
+
+Phoenix--AddFriendDialog QLabel#imageLabelFacebook
+{
+	image: url("resources/images/addfrienddialog/icon_facebook_85.svg");
+}
+
+Phoenix--AddFriendDialog QLabel#imageLabelDisabled,
+Phoenix--AddFriendDialog QLabel#imageLabelError
+{
+	image: url("resources/images/addfrienddialog/icon_disabled_85.svg");
+}
+
+Phoenix--AddFriendDialog QLabel#imageLabelPermissions
+{
+	image: url("resources/images/addfrienddialog/icon_permissions_85.svg");
+}
+
+Phoenix--AddFriendDialog QLabel#imageLabelAllAdded
+{
+	image: url("resources/images/addfrienddialog/icon_all_friends_added_85.svg");
+}
+
+Phoenix--AddFriendDialog QLabel#imageLabelNoLinkedFriends,
+Phoenix--AddFriendDialog QLabel#imageLabelWaitingExternal
+{
+	image: url("resources/images/addfrienddialog/icon_no_facebook_friends_85.svg");
+}
+
+/* =============================================================================
+/  Phoenix::PotentialFriendsWindow
+/=============================================================================*/
+Phoenix--PotentialFriendsWindow *
+{
+	font-size: 14px;
+}
+
+Phoenix--PotentialFriendsWindow #topLayer
+{
+	background-color: transparent;
+	border-bottom: 1px solid rgba(255,255,255,12%);
+}
+
+Phoenix--PotentialFriendsWindow QLabel#filteredResultLabel
+{
+	color: rgba(255,255,255,48%);
+	font-size: 12px;
+}
+
+Phoenix--PotentialFriendsWindow #lineEdit > QLineEdit
+{
+	min-height: 28;
+}
+
+Phoenix--PotentialFriendsWindow #lineEdit > QLabel
+{
+	color: rgba(255,255,255,30%);
+}
+
+/* =============================================================================
+/  Phoenix::PotentialFriendsListView
+/=============================================================================*/
+
+Phoenix--PotentialFriendsListView
+{
+    background-color: transparent;
+    border: none
+}
+
+/*==============================================================================
+/ Phoenix - Friend Request Result Notification
+/=============================================================================*/
+
+QWidget#resultNotification
+{
+	background-color: rgba(84,168,0,12%);
+	margin: 0px 1px 1px 1px;
+	min-height: 40px;
+}
+
+QWidget#resultNotification QLabel
+{
+	color: #6cdb00;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+QWidget#resultNotification QLabel#labelResultMessage
+{
+	padding-bottom: 1px;
+}
+
+QWidget#resultNotification QLabel#labelResultImage
+{
+	image: url("resources/images/darktheme/check.svg");
+}
+
+QWidget#resultNotification[type~="error"]
+{
+	background-color: rgba(255,180,0,12%);
+}
+
+QWidget#resultNotification[type~="error"] QLabel
+{
+	color: #ffb400;
+}
+
+QWidget#resultNotification[type~="error"] QLabel#labelResultImage
+{
+	image: url("resources/images/darktheme/alert.svg");
+}
+
+/*==============================================================================
+/ Phoenix - Appear Offline Message Box
+/=============================================================================*/
+
+Phoenix--AppearOfflineMessageBox #messageFrame {
+    min-height: 26px;
+    max-height: 26px;
+    padding: 0 0 0 0;
+    border-width: 2 2 2 2;
+    border-image: url(resources/images/errorbox_yellow_border_no_shadow.png) 2 2 2 2;
+}
+
+Phoenix--AppearOfflineMessageBox #message {
+    font-size: 12px;
+    color: #cfc2b3
+}
+
+Phoenix--AppearOfflineMessageBox #goOnlineButton {
+    font-size: 12px;
+}
+
+/*==============================================================================
+/ Phoenix - Chat Widget
+/=============================================================================*/
+
+Phoenix--ChatWindow #chatWidgetFrame
+{
+    /* Match the background color of resize handle area in web ui */
+    background-color: rgb(40, 50, 67);
+    /* Prevent chat message background overlap with window focus border */
+    margin: 0px 2px 0px 2px;
+}
+
+/*==============================================================================
+/ Phoenix - Chat Window
+/=============================================================================*/
+
+Phoenix--ChatWindow #name
+{
+    color: rgba(130, 197, 255, 100%);
+    font-size: 17px;
+}
+
+Phoenix--ChatWindow #topAreaFrame
+{
+    background-color: rgb(40,50,68);
+    qproperty-bottom: 1;
+}
+
+Phoenix--ChatWindow #topAreaFrame:disabled
+{
+    background-color: rgb(35,42,56);
+}
+
+Phoenix--ChatWindow #headerSubtitle {
+	color: rgba(255, 255, 255, 48%);
+	font-size: 14px;
+}
+
+Phoenix--ProfileWindow { background: #15171e; }
+
+
+/*==============================================================================
+/ Phoenix - Voice Settings
+/=============================================================================*/
+
+Phoenix--VoiceSettingsWidget #keyChordLabel,
+Phoenix--VoiceSettingsWidget #toggleMuteKeyChordLabel
+{
+	background-color: transparent;
+	border: 1px solid #4d4e54;
+	border-radius: 4px;
+	color: #ffffff;
+	font-family: {font_dark_title};
+	font-weight: bold;
+	max-height: 28px;
+	min-height: 28px;
+	padding: 0px 38px 0px 38px;
+}
+
+Phoenix--VoiceSettingsWidget #keyChordLabel:hover,
+Phoenix--VoiceSettingsWidget #keyChordLabel:focus,
+Phoenix--VoiceSettingsWidget #toggleMuteKeyChordLabel:hover,
+Phoenix--VoiceSettingsWidget #toggleMuteKeyChordLabel:focus
+{
+	border: 2px solid #696b6f;
+}
+
+Phoenix--VoiceSettingsWidget #keyChordLabel[listening~="true"],
+Phoenix--VoiceSettingsWidget #toggleMuteKeyChordLabel[listening~="true"]
+{
+	border: 1px solid #3f4147;
+}
+
+Phoenix--VoiceSettingsWidget #keyChordLabel:pressed,
+Phoenix--VoiceSettingsWidget #toggleMuteKeyChordLabel:pressed
+{
+	border: 2px solid #3f4147;
+}
+
+Phoenix--VoiceSettingsWidget #keyChordLabel:disabled,
+Phoenix--VoiceSettingsWidget #toggleMuteKeyChordLabel:disabled
+{
+	border: 1px solid #313339;
+	color: rgba(255,255,255,48%);
+}
+
+Phoenix--VoiceSettingsWidget #trustedInfoLabel
+{
+	image: url("resources/images/darktheme/info-yellow.svg");
+}
+
+Phoenix--VoiceSettingsWidget #trustedSystemPrefLink,
+Phoenix--VoiceSettingsWidget #trustedSystemPrefLink:pressed
+{
+	color: rgba(255,255,255,72%);
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+Phoenix--VoiceSettingsWidget #trustedSystemPrefLink:hover
+{
+	color: #ffffff;
+}
+
+Phoenix--VoiceSettingsWidget #trustedSystemPrefLink:focus
+{
+	border: 1px solid #bebec0;
+	border-radius: 2px;
+}
+
+Phoenix--VoiceSettingsWidget #macOsxWidgetContents
+{
+	background-color: rgba(255,255,255,6%);
+	border-radius: 4px;
+	margin: 15px 24px 0px 24px;
+}
+
+Phoenix--VoiceSettingsWidget #macOsxWidgetContents QLabel
+{
+	font-size: 12px;
+}
+
+/*==============================================================================
+/ Phoenix - FriendInvitationsDialog
+/=============================================================================*/
+
+Phoenix--FriendInvitationsDialog *
+{
+	font-size: 14px;
+}
+
+Phoenix--FriendInvitationsDialog #labelNoResults
+{
+	font-size: 16px;
+}
+
+Phoenix--FriendInvitationsDialog #listView
+{
+	background-color: #15171e;
+}
+
+Phoenix--FriendInvitationsDialog #topLayer
+{
+	background-color: transparent;
+	border-bottom: 1px solid rgba(255,255,255,12%);
+}
+
+/* =============================================================================
+/  Phoenix::SentFriendInvitationWidget
+/=============================================================================*/
+
+Phoenix--SentFriendInvitationWidget
+{
+	background-color: transparent;
+}
+
+Phoenix--SentFriendInvitationWidget QLabel[style~="Status"]
+{
+	font-size: 12px;
+}
+
+Phoenix--SentFriendInvitationWidget QFrame#itemBackground
+{
+	background-color: #15171e;
+	border: none;
+	border-radius: 4px;
+}
+
+Phoenix--SentFriendInvitationWidget QFrame#itemBackground:hover
+{
+	background-color: #23252b;
+}
+
+Phoenix--SentFriendInvitationWidget QLabel[style~="DisplayName"]
+{
+	color: #add8ff;
+}
+
+Phoenix--SentFriendInvitationWidget QPushButton#cancelButton
+{
+	padding: 0px 6px 0px 6px;
+}
+
+/*==============================================================================
+/ Phoenix - BlockListDialog
+/=============================================================================*/
+
+Phoenix--BlockListDialog #topArea
+{
+    background-color: rgb(35,42,56);
+	margin: 1 1 0 1;
+	border-bottom: 1px solid rgba(255,255,255,5%);
+}
+
+Phoenix--BlockListDialog #topArea:active
+{
+    background-color: rgb(40,50,68);
+	margin: 1 1 0 1;
+	border-bottom: 1px solid rgba(255,255,255,10%);
+}
+
+Phoenix--BlockListDialog #bottomArea
+{
+    background-color: rgb(35,42,56);
+	margin: 0 1 1 1;
+	border-top: 1px solid rgba(255,255,255,5%);
+}
+
+Phoenix--BlockListDialog #bottomArea:active
+{
+    background-color: rgb(40,50,68);
+	margin: 0 1 1 1;
+	border-top: 1px solid rgba(255,255,255,10%);
+}
+
+Phoenix--BlockListDialog QListWidget
+{
+	background: transparent;
+}
+
+Phoenix--BlockListDialog QListWidget::item
+{
+	color: #b3b3b3;
+	border: 0px;
+	padding: 6px 9px 6px 9px;
+}
+
+Phoenix--BlockListDialog QListWidget::item:selected
+{
+	color: #ffffff;
+	background-color: #192d47;
+	border: 1px solid #256cab;
+	padding: 5px 8px 6px 8px;
+}
+
+Phoenix--BlockListDialog QListWidget::item:hover:!selected
+{
+	color: #ffffff;
+	background-color: #242932;
+	border: 1px solid #4a4e56;
+	padding: 6px 8px 6px 8px;
+}
+
+Phoenix--BlockListDialog QListWidget QScrollBar:horizontal
+{
+	height: 0px;
+}
+
+Phoenix--BlockListDialog QListWidget QWidget#cornerWidget
+{
+	height: 0px;
+}
+
+Phoenix--BlockListDialog #descriptionLabel
+{
+	font-size: 14px;
+	color: rgb(179,179,179);
+}
+
+Phoenix--BlockListDialog #emptyListLabel
+{
+	padding: 2px 10px 2px 10px;
+}
+
+/*==============================================================================
+/ Phoenix - LicenseWidget
+/=============================================================================*/
+
+Phoenix--LicenseWidget QLabel
+{
+	font-size: 14px;
+}
+
+Phoenix--LicenseWidget QTextBrowser
+{
+	background-color: rgba(255,255,255,6%);
+	border-radius: 4px;
+	color: rgba(255,255,255,72%);
+	font-size: 12px;
+	padding: 2px 0px 2px 4px;
+}
+
+/*==============================================================================
+/ Phoenix - RiskChallengeWidget
+/==============================================================================*/
+Phoenix--RiskChallengeWidget #errorLabel
+{
+	color: #fe0000;
+}
+
+Phoenix--RiskChallengeWidget #stkChallenges
+{
+	margin: 0 -3 0 -3;
+}
+
+Phoenix--RiskChallengeWidget #btnCancel
+{
+	margin: 0 -1 0 -1;
+}
+/* vim: set ts=4 sts=4 sw=4 noet: */
+
+Phoenix--RiskChallengeWidget #bottomPane { margin: 0 2 0 2; background-color: rgba(15, 24, 32, 50%); border-top: 1px solid rgba(255, 255, 255, 7%);}
+
+/* =============================================================================
+/  Phoenix::ExitPromptDialog
+/=============================================================================*/
+
+Phoenix--ExitPromptDialog *
+{
+	font-size: 14px;
+}
+
+Phoenix--ExitPromptDialog QFrame#bottomFrame
+{
+	border-top: 1px solid rgba(255,255,255,12%);
+}
+
+Phoenix--ExitPromptDialog #reminderLabel
+{
+	color: rgba(255,255,255,48%);
+	font-size: 12px;
+	margin: 18px 0px 24px 0px;
+}
+
+Phoenix--ExitPromptDialog QPushButton#okButton
+{
+	margin: 16px 0px 24px 0px;
+}
+
+/*==============================================================================
+/ Phoenix - AutoLogoutDialog
+/==============================================================================*/
+
+Phoenix--AutoLogoutDialog * { font-size: 14px; }
+
+/*==============================================================================
+/ Phoenix - LoginQueueWidget
+/==============================================================================*/
+
+Phoenix--LoginQueueWidget #bottomPane { margin: 0 2 0 2; background-color: rgba(15, 24, 32, 50%); border-top: 1px solid rgba(255, 255, 255, 7%);}
+Phoenix--LoginQueueWidget #fancyLine { color: rgba(255,255,255,10%); }
+Phoenix--LoginQueueWidget #switchLink {  }
+Phoenix--LoginQueueWidget #switchLink:hover { color: #ffffff; }
+Phoenix--LoginQueueWidget #bodyLabel {  }
+Phoenix--LoginQueueWidget #goOfflineLink {  }
+Phoenix--LoginQueueWidget #estimatedWaitLabel { font-size: 15px; color: rgba(255,255,255,41%);}
+Phoenix--LoginQueueWidget #timeLabel { font-size: 15px; color: rgb(255,255,255); }
+Phoenix--LoginQueueWidget #accountLabel { color: rgba(255,255,255,50%) }
+Phoenix--LoginQueueWidget #accountNameLabel { color: #ffffff; }
+
+
+/*==============================================================================
+/ Phoenix - SelfUpdateProgressDialog
+/==============================================================================*/
+
+Phoenix--SelfUpdateProgressWidget QBusyButton
+{
+	background: transparent;
+}
+
+/*==============================================================================
+/ Phoenix - FriendsTooltipGameAccountWidget
+/==============================================================================*/
+
+Phoenix--FriendsTooltipGameAccountWidget #itemBackground
+{
+    background-color: rgba(0,0,0,25%);
+    border-top: 1px solid rgba(53, 57, 66, 100%);
+}
+
+Phoenix--FriendsTooltipGameAccountWidget #tooltipText
+{
+	background: transparent;
+	font-size: 13px;
+}
+
+/*==============================================================================
+/ Phoenix - FriendsTooltipFriendNoteWidget
+/==============================================================================*/
+
+Phoenix--FriendsTooltipFacebookWidget #itemBackground,
+Phoenix--FriendsTooltipFriendNoteWidget #itemBackground,
+Phoenix--FriendsTooltipClientInfoWidget #itemBackground
+{
+    background-color: rgba(0, 0, 0, 45%);
+    border-top: 1px solid rgba(53, 57, 66, 100%);
+}
+
+Phoenix--FriendsTooltipFacebookWidget #facebookText,
+Phoenix--FriendsTooltipFriendNoteWidget #friendNoteText,
+Phoenix--FriendsTooltipClientInfoWidget #infoText
+{
+    font-size: 13px;
+    color: rgba(255,255,255,70%);
+    background: transparent;
+}
+
+Phoenix--FriendsTooltipFriendNoteWidget #friendNoteHeader,
+Phoenix--SFTooltipMutualFriendsWidget #mutualFriendsHeader,
+Phoenix--SFTooltipRecentPlayWidget #recentPlayFooter
+{
+    font-size: 12px;
+    color: rgba(255,255,255,30%);
+}
+
+Phoenix--SuggestedFriendsTooltip Phoenix--FriendsTooltipFacebookWidget #itemBackground,
+Phoenix--SFTooltipMutualFriendsWidget #itemBackground,
+Phoenix--SFTooltipRecentPlayWidget #itemBackground
+{
+    background-color: rgba(255,255,255,6%);
+    border: none;
+    border-radius: 4px;
+}
+
+Phoenix--SFTooltipMutualFriendsWidget #mutualFriendsText,
+Phoenix--SFTooltipRecentPlayWidget #recentPlayText
+{
+    background-color: transparent;
+    color: rgba(255,255,255,72%);
+    font-size: 12px;
+}
+
+Phoenix--SFTooltipMutualFriendsWidget #mutualFriendsHeader
+{
+    color: #ffffff;
+    font-size: 14px;
+}
+
+Phoenix--SFTooltipMutualFriendsWidget #andMoreFooter,
+Phoenix--SFTooltipRecentPlayWidget #recentPlayFooter
+{
+    color: rgba(255,255,255,48%);
+    font-size: 12px;
+}
+
+
+/* =============================================================================
+/  Phoenix::FriendNoteDialog
+/=============================================================================*/
+
+Phoenix--FriendNoteDialog #topArea
+{
+    background-color: rgb(35,42,56);
+	margin: 1 1 0 1;
+	border-bottom: 1px solid rgba(255,255,255,5%);
+}
+
+Phoenix--FriendNoteDialog #topArea:active
+{
+    background-color: rgb(40,50,68);
+	margin: 1 1 0 1;
+	border-bottom: 1px solid rgba(255,255,255,10%);
+}
+
+Phoenix--FriendNoteDialog #noteMessage
+{
+    background-color: #1d222c;
+	border-image: url(resources/images/border_bottom.png) 1 1 1 1;
+	border-width: 0 1 1 1;
+	margin: 0 1 1 1;
+}
+
+Phoenix--FriendNoteDialog QPushButton#doneButton
+{
+	min-height: 28px;
+	min-width: 121px;
+}
+
+Phoenix--FriendNoteDialog QPushButton#cancelButton
+{
+	min-height: 28px;
+	min-width: 121px;
+}
+
+/* =============================================================================
+/  Phoenix::GameAccountDisambiguationDialog
+/=============================================================================*/
+
+Phoenix--GameAccountDisambiguationDialog #topArea
+{
+    background-color: rgb(35,42,56);
+	margin: 1 1 0 1;
+	border-bottom: 1px solid rgba(255,255,255,5%);
+}
+
+Phoenix--GameAccountDisambiguationDialog #topArea:active
+{
+    background-color: rgb(40,50,68);
+	margin: 1 1 0 1;
+	border-bottom: 1px solid rgba(255,255,255,10%);
+}
+
+Phoenix--GameAccountDisambiguationDialog QPushButton#launchButton
+{
+	min-height: 28px;
+	min-width: 121px;
+}
+
+Phoenix--GameAccountDisambiguationDialog QPushButton#cancelButton
+{
+	min-height: 28px;
+	min-width: 121px;
+}
+
+Phoenix--StatusWidget #btnGoOnline
+{
+  font-size: 13px;
+  min-height: 15px;
+  min-width: 74px;
+  padding-top: -2px;
+  padding-bottom: -2px;
+  margin-top: -2px;
+  margin-bottom: -2px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+Phoenix--StatusWidget #statusLabel
+{
+    color: rgba(255,255,255,80%);
+    font-size: 12px;
+	margin: -2 0 0 0;
+}
+
+Phoenix--StatusWidget #nameLabel,
+Phoenix--StatusWidget #displayNameLabel,
+Phoenix--StatusWidget #battleTagLabel
+{
+    color: rgba(130, 197, 255, 100%);
+    font-size: 17px;
+}
+
+Phoenix--StatusWidget #nameLabel[offline="true"]
+{
+	color: rgba(255,255,255,50%);
+}
+
+Phoenix--StatusWidget #battleTagIDLabel
+{
+    color: rgba(255,255,255,50%);
+}
+
+Phoenix--StatusWidget #statusFrame
+{
+	padding-top: 3px;
+}
+
+/* =============================================================================
+/  Phoenix::FlatButton
+/=============================================================================*/
+
+Phoenix--FlatButton
+{
+	background-color:rgba(255, 255, 255, 0);
+}
+
+/* =============================================================================
+/  Phoenix::VoiceMenuItems
+/=============================================================================*/
+
+Phoenix--VoiceMenuMicrophoneItem #contentContainer,
+Phoenix--VoiceMenuSpeakerItem #contentContainer
+{
+	background-color: transparent;
+	margin: 0px 6px;
+}
+
+Phoenix--VoiceMenuMicrophoneItem[hovered=true] #contentContainer,
+Phoenix--VoiceMenuSpeakerItem[hovered=true] #contentContainer
+{
+	background-color: rgba(255,255,255,6%);
+	border-radius: 3px;
+}
+
+Phoenix--VoiceMenuMicrophoneItem QPushButton,
+Phoenix--VoiceMenuSpeakerItem QPushButton
+{
+	icon-size: 20px;
+}
+
+/* =============================================================================
+/  Phoenix::AddPhoneNumberDialog
+/=============================================================================*/
+
+Phoenix--AddPhoneNumberDialog *
+{
+	font-size: 14px;
+}
+
+Phoenix--AddPhoneNumberDialog QLabel#phoneImage
+{
+	image: url("resources/images/darktheme/phone.svg");
+}
+
+Phoenix--AddPhoneNumberDialog QLabel#messageLabel
+{
+	font-size: 16px;
+}
+
+Phoenix--AddPhoneNumberDialog QLabel#webImage
+{
+	image: url("resources/images/darktheme/browser.svg");
+}
+
+Phoenix--AddPhoneNumberDialog QLabel#waitingMessageLabel
+{
+	font-size: 16px;
+}
+
+Phoenix--AddPhoneNumberDialog QLabel#webLinkIcon
+{
+	image: url("resources/images/darktheme/icon_web_link.svg");
+}
+
+Phoenix--AddPhoneNumberDialog QWidget#frameHeader
+{
+	border-bottom: 1px solid rgba(255,255,255,12%);
+}
+
+Phoenix--AddPhoneNumberDialog QWidget#promptButtons,
+Phoenix--AddPhoneNumberDialog QWidget#waitButtons
+{
+	border-top: 1px solid rgba(255,255,255,12%);
+}
+
+/* =============================================================================
+/  Phoenix::GameLocatorWidget
+/=============================================================================*/
+
+Phoenix--GameLocatorWidget QWidget#pageBackdropNormal
+{
+	background-color: rgba(255,255,255,6%);
+	border-radius: 4px;
+}
+
+Phoenix--GameLocatorWidget QWidget#pageBackdropResult
+{
+	background-color: #212d1f;
+	border-radius: 4px;
+}
+
+Phoenix--GameLocatorWidget QLabel#labelGamePath
+{
+	color: rgba(255,255,255,48%);
+}
+
+Phoenix--GameLocatorWidget QLabel#labelGamePath[state~="checking"]
+{
+	font-style: italic;
+}
+
+Phoenix--GameLocatorWidget QLabel#labelGamePath[state~="success"]
+{
+	color: #6cdb00;
+	font-weight: bold;
+}
+
+Phoenix--DeveloperSettings QLabel#developerModeStatusLabel[style~="success"]
+{
+	color: #6cdb00;
+	font-weight: normal;
+}
+
+Phoenix--DeveloperSettings QLabel#developerModeStatusIcon[style~="success"]
+{
+	image: url(resources/images/check_green.png);
+}
+
+Phoenix--GameLocatorDialog QBusyButton
+{
+	background: transparent;
+}
+
+/* =============================================================================
+/  Phoenix::GameLocatorFindWidget
+/=============================================================================*/
+
+Phoenix--GameLocatorFindWidget QWidget#pageBackdrop
+{
+	background-color: rgba(255,255,255,3%);
+	border-radius: 4px;
+}
+
+Phoenix--GameLocatorFindWidget QWidget#labelIcon
+{
+	image: url("resources/images/darktheme/locate-game.svg");
+}
+
+/* =============================================================================
+/  Phoenix::GameLocatorDialog
+/=============================================================================*/
+
+Phoenix--GameLocatorDialog *
+{
+	font-size: 14px;
+}
+
+Phoenix--GameLocatorDialog QWidget#frameLoading
+{
+	background-color: rgba(255,255,255,3%);
+	border-radius: 4px;
+}
+
+Phoenix--GameLocatorDialog QScrollBar::handle:vertical
+{
+	/* We want the scroll area to shrink to fit when there is little to no content
+	   but the fuzzy math in QScrollBar::sizeHint will not let it get small enough
+	   unless we reduce the min-height of the handle here. */
+	min-height: 10px;
+}
+
+/* =============================================================================
+/  Phoenix::WebWindow
+/=============================================================================*/
+
+Phoenix--WebWindow #titleFrame
+{
+	background-color: transparent;
+	max-height: 78px;
+	min-height: 78px;
+	padding: 0px 24px 0px 24px;
+}
+
+Phoenix--WebWindow[platform="mac"] #titleFrame
+{
+	padding: 10px 24px -10px 24px;
+}
+
+Phoenix--WebWindow #titleLabel
+{
+	background-color: transparent;
+	border-bottom: 1px solid rgba(255,255,255,12%);
+}
+
+Phoenix--WebWindow,
+Phoenix--WebWindow[background="qt"]
+{
+	background-color: #15171e;
+}
+
+Phoenix--WebWindow[background="web"]
+{
+	background-color: #1a1c23;
+}

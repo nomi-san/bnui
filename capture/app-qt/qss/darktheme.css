@@ -1,0 +1,1577 @@
+/* Dark-theme subset of battle.net.css (Battle.net 2.53.4.17896), extracted by capture/_tools/extract_qt_styles.py.
+   239 of 894 rules, in source order, comments dropped. <font_dark> = Noto Sans, <font_dark_title> = Object Sans
+   (filled in at runtime by FontEngine). url(resources/...) paths resolve under ../assets/. */
+
+QWidget[darktheme=true] QWidget
+{
+	font-family: <font_dark>;
+}
+
+QWidget[darktheme=true] QPushButton
+{
+	font-family: <font_dark_title>;
+}
+
+QWidget[darktheme=true] QPushButton[style~="link"]
+{
+	font-family: <font_dark>;
+}
+
+Phoenix--DarkToast *
+{
+	color: rgba(255,255,255,72%);
+}
+
+QWidget[darktheme=true] *[style~="heading1"],
+QWidget[darktheme=true] *[style~="heading2"],
+QWidget[darktheme=true] *[style~="heading3"],
+QWidget[darktheme=true] *[style~="heading4"],
+QWidget[darktheme=true] *[style~="heading5"],
+QWidget[darktheme=true] *[style~="heading6"],
+QWidget[darktheme=true] *[style~="subheading4"],
+QWidget[darktheme=true] *[style~="subheading5"]
+{
+	font-family: <font_dark_title>;
+}
+
+QWidget[darktheme=true] *[style~="heading4"]
+{
+	font-size: 14px;
+	font-weight: bold;
+}
+
+QWidget[darktheme=true] *[style~="heading6"]
+{
+	font-size: 18px;
+	font-weight: bold;
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]:disabled,
+Phoenix--DarkToast QCheckBox[style~="global"]:disabled,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::item:disabled
+{
+	color: rgba(255,255,255,48%);
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:unchecked,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:unchecked,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:unchecked
+{
+	image: url("resources/controls/darktheme/checkbox_unchecked.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:unchecked:hover,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:unchecked:focus,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"][hover="true"]::indicator:unchecked,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:unchecked:hover,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:unchecked:focus,
+Phoenix--DarkToast QCheckBox[style~="global"][hover="true"]::indicator:unchecked,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:unchecked:hover,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:unchecked:focus,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:unchecked:selected
+{
+	image: url("resources/controls/darktheme/checkbox_unchecked_hover.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:unchecked:pressed,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"][pressed="true"]::indicator:unchecked,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:unchecked:pressed,
+Phoenix--DarkToast QCheckBox[style~="global"][pressed="true"]::indicator:unchecked,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:unchecked:pressed
+{
+	image: url("resources/controls/darktheme/checkbox_unchecked_pressed.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:unchecked:disabled,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:disabled:indeterminate,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:unchecked:disabled,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:disabled:indeterminate,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:unchecked:disabled,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:disabled:indeterminate
+{
+	image: url("resources/controls/darktheme/checkbox_unchecked_disabled.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:checked,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:checked,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:checked
+{
+	image: url("resources/controls/darktheme/checkbox_checked.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:checked:hover,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:checked:focus,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"][hover="true"]::indicator:checked,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:checked:hover,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:checked:focus,
+Phoenix--DarkToast QCheckBox[style~="global"][hover="true"]::indicator:checked,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:checked:hover,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:checked:focus,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:checked:selected
+{
+	image: url("resources/controls/darktheme/checkbox_checked_hover.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:checked:pressed,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"][pressed="true"]::indicator:checked,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:checked:pressed,
+Phoenix--DarkToast QCheckBox[style~="global"][pressed="true"]::indicator:checked,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:checked:pressed
+{
+	image: url("resources/controls/darktheme/checkbox_checked_pressed.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:checked:disabled,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:checked:disabled,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:checked:disabled
+{
+	image: url("resources/controls/darktheme/checkbox_checked_disabled.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:indeterminate,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:indeterminate,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:indeterminate
+{
+	image: url("resources/controls/darktheme/checkbox_indeterminate.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:indeterminate:hover,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:indeterminate:focus,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"][hover="true"]::indicator:indeterminate,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:indeterminate:hover,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:indeterminate:focus,
+Phoenix--DarkToast QCheckBox[style~="global"][hover="true"]::indicator:indeterminate,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:indeterminate:hover,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:indeterminate:focus,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:indeterminate:selected
+{
+	image: url("resources/controls/darktheme/checkbox_indeterminate_hover.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:indeterminate:pressed,
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"][pressed="true"]::indicator:indeterminate,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:indeterminate:pressed,
+Phoenix--DarkToast QCheckBox[style~="global"][pressed="true"]::indicator:indeterminate,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:indeterminate:pressed
+{
+	image: url("resources/controls/darktheme/checkbox_indeterminate_pressed.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QCheckBox[style~="global"]::indicator:indeterminate:disabled,
+Phoenix--DarkToast QCheckBox[style~="global"]::indicator:indeterminate:disabled,
+Phoenix--StyledDialog[darktheme=true] QTreeView[style~="global"]::indicator:indeterminate:disabled
+{
+	image: url("resources/controls/darktheme/checkbox_indeterminate_disabled.svg");
+}
+
+QSlider[style~="darktheme"]:focus
+{
+	border: 1px solid #26496c;
+	border-radius: 2px;
+}
+
+QSlider[style~="darktheme"]::groove:horizontal
+{
+	height: 4px;
+	border-image: url("resources/controls/darktheme/slider_filled.svg");
+	border-radius: 2px;
+	margin: 6px 6px 6px 6px;
+}
+
+QSlider[style~="darktheme"]::groove:horizontal:disabled
+{
+	border-image: url("resources/controls/darktheme/slider_empty.svg");
+}
+
+QSlider[style~="darktheme"]::groove:horizontal:focus
+{
+	margin: 5px 5px 5px 5px;
+}
+
+QSlider[style~="darktheme"]::handle:horizontal
+{
+	image: url("resources/controls/darktheme/slider_handle_normal.svg");
+	height: 24px;
+	margin: -11px -6px -11px -6px;
+	width: 24px;
+}
+
+QSlider[style~="darktheme"]::handle:horizontal:hover
+{
+	image: url("resources/controls/darktheme/slider_handle_hover.svg");
+}
+
+QSlider[style~="darktheme"]::handle:horizontal:pressed
+{
+	image: url("resources/controls/darktheme/slider_handle_pressed.svg");
+}
+
+QSlider[style~="darktheme"]::handle:horizontal:disabled
+{
+	image: url("resources/controls/darktheme/slider_handle_disabled.svg");
+}
+
+QSlider[style~="darktheme"][style~="small"]:focus
+{
+	border: none;
+}
+
+QSlider[style~="darktheme"][style~="small"]::groove:horizontal
+{
+	border-radius: 2px;
+	height: 2px;
+	margin: 0px 6px 0px 6px;
+}
+
+QSlider[style~="darktheme"][style~="small"]::groove:horizontal:focus
+{
+	margin: 0px 6px 0px 6px;
+}
+
+QSlider[style~="darktheme"][style~="small"]::handle:horizontal
+{
+	height: 18px;
+	width: 18px;
+}
+
+Phoenix--DarkComboBox,
+Phoenix--DarkComboBox:!on,
+Phoenix--DarkComboBox:!focus,
+Phoenix--DarkComboBox:!hover,
+Phoenix--DarkComboBox:!focus:!on,
+Phoenix--DarkComboBox:!hover:!on
+{
+	background-color: rgba(255,255,255,6%);
+	border-radius: 4px;
+	color: rgba(255,255,255,72%);
+	font-size: 14px;
+	padding: 4px 8px 7px 12px;
+}
+
+Phoenix--DarkComboBox:disabled
+{
+	background-color: rgba(255,255,255,12%);
+	color: rgba(255,255,255,20%);
+}
+
+Phoenix--DarkComboBox:focus,
+Phoenix--DarkComboBox:hover,
+Phoenix--DarkComboBox:focus:!on,
+Phoenix--DarkComboBox:hover:!on
+{
+	background-color: rgba(255,255,255,12%);
+	color: #ffffff;
+}
+
+Phoenix--DarkComboBox:pressed,
+Phoenix--DarkComboBox:on
+{
+	background-color: rgba(255,255,255,12%);
+	color: rgba(255,255,255,48%);
+}
+
+Phoenix--DarkComboBox::drop-down
+{
+	background-color: transparent;
+}
+
+Phoenix--DarkComboBox::down-arrow
+{
+	image: url("resources/controls/darktheme/combobox_arrow_normal.svg");
+	padding-right: 10px;
+}
+
+Phoenix--DarkComboBox::down-arrow:disabled
+{
+	image: url("resources/controls/darktheme/combobox_arrow_pressed.svg");
+}
+
+Phoenix--DarkComboBox::down-arrow:focus,
+Phoenix--DarkComboBox::down-arrow:hover
+{
+	image: url("resources/controls/darktheme/combobox_arrow_hover.svg");
+}
+
+Phoenix--DarkComboBox::down-arrow:pressed,
+Phoenix--DarkComboBox::down-arrow:on
+{
+	image: url("resources/controls/darktheme/combobox_arrow_pressed.svg");
+}
+
+Phoenix--DarkComboBox QAbstractItemView
+{
+	background-color: transparent;
+	border-image: url("resources/images/darktheme/contextMenu_border.png") 3 3 3 3;
+	border-width: 3 3 3 3;
+	margin: 3px 0px 3px 0px;
+	padding: 5px 0px 5px 0px;
+}
+
+Phoenix--StyledDialog[highdpi=true] Phoenix--DarkComboBox QAbstractItemView
+{
+	border-image: url("resources/images/darktheme/contextMenu_border@2x.png") 6 6 6 6;
+}
+
+Phoenix--DarkComboBox QAbstractItemView::item
+{
+	color: rgba(255,255,255,72%);
+	height: 30px;
+	margin: 1px 5px 1px 5px;
+	padding: 0px 7px 0px 7px;
+}
+
+Phoenix--DarkComboBox QAbstractItemView::item:hover
+{
+	background-color: rgba(255,255,255,6%);
+	border-radius: 3px;
+	color: #ffffff;
+}
+
+Phoenix--DarkComboBox QAbstractItemView::item:pressed
+{
+	background-color: rgba(255,255,255,3%);
+	border-radius: 3px;
+}
+
+Phoenix--DarkComboBox QAbstractItemView::item:selected
+{
+	background-color: rgba(255,255,255,6%);
+	background-image: url("resources/images/darktheme/contextMenu_checked_2x30.svg");
+	background-repeat: no-repeat;
+	border-bottom-right-radius: 3px;
+	border-top-right-radius: 3px;
+	color: #ffffff;
+}
+
+Phoenix--DarkComboBox QAbstractItemView::item:disabled
+{
+	color: rgba(255,255,255,24%);
+}
+
+Phoenix--DarkComboBox QAbstractItemView::indicator
+{
+	image: none;
+	height: 0px;
+	width: 0px;
+}
+
+Phoenix--StyledDialog[darktheme=true] Phoenix--StyledRadioButton[style="global"] > QLabel:disabled
+{
+	color: rgba(255,255,255,48%);
+}
+
+Phoenix--ToolTipLabel[darktheme=true],
+Phoenix--ToolTipLabel[darktheme=true][highdpi=true]
+{
+	image: url("resources/controls/darktheme/icon_tooltip.svg");
+}
+
+Phoenix--ToolTipLabel[darktheme=true]:disabled,
+Phoenix--ToolTipLabel[darktheme=true][highdpi=true]:disabled
+{
+	image: url("resources/controls/darktheme/icon_tooltip_disabled.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QLineEdit[style~="global"]
+{
+	background-color: rgba(0,0,0,24%);
+	border: 1px solid #696b6f;
+	border-image: none;
+	border-radius: 4px;
+	color: #ffffff;
+	min-height: 30px;
+	max-height: 30px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QLineEdit[style~="global"]:hover
+{
+	border: 1px solid #85868a;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QLineEdit[style~="global"]:focus
+{
+	border: 1px solid #148eff;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QLineEdit[style~="global"]:disabled
+{
+	border: 1px solid #313337;
+	border-image: none;
+	color: rgb(100,100,100);
+}
+
+Phoenix--StyledDialog[darktheme=true] QLineEdit[style~="global"][readOnly=true]
+{
+	border: 1px solid #313337;
+	border-image: none;
+	color: rgba(255,255,255,72%);
+}
+
+Phoenix--StyledDialog[darktheme=true] QLineEdit[style~="global"][state~="error"]
+{
+	border: 1px solid #ffb400;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QLineEdit[style~="global"][style~="search"]
+{
+	background-image: url("resources/images/icon_find_friend.svg");
+	background-repeat: no-repeat;
+	background-origin: padding;
+	background-position: left center;
+	padding-left: 30px;
+}
+
+Phoenix--ContextualErrorEdit QLabel#errorIcon
+{
+	image: url("resources/images/darktheme/alert.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] QAbstractSpinBox[style~="global"]
+{
+	background-color: rgba(0,0,0,24%);
+	border: 1px solid #696b6f;
+	border-image: none;
+	border-radius: 4px;
+	max-height: 30px;
+	min-height: 30px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QAbstractSpinBox[style~="global"]:hover
+{
+	border: 1px solid #85868a;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QAbstractSpinBox[style~="global"]:focus
+{
+	border: 1px solid #148eff;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QAbstractSpinBox[style~="global"]:disabled
+{
+	border: 1px solid #313337;
+	border-image: none;
+	color: rgb(100,100,100);
+}
+
+QMenu
+{
+	background-color: transparent;
+	border-image: url("resources/images/darktheme/contextMenu_border.png") 3 3 3 3;
+	border-width: 3 3 3 3;
+	font-family: <font_dark>;
+	font-size: 14px;
+	padding: 6px 0px;
+}
+
+QMenu[highdpi=true]
+{
+	border-image: url("resources/images/darktheme/contextMenu_border@2x.png") 6 6 6 6;
+}
+
+QMenu::item
+{
+	background-color: transparent;
+	color: rgba(255,255,255,72%);
+	height: 28px;
+	margin: 1px 6px;
+	padding: 0px 8px;
+}
+
+QMenu::separator
+{
+	background-color: rgba(255,255,255,12%);
+	height: 1px;
+	margin: 8px 6px;
+}
+
+QMenu::item:selected
+{
+	background-color: rgba(255,255,255,6%);
+	border-radius: 3px;
+	color: #ffffff;
+}
+
+QMenu::item:pressed
+{
+	color: rgba(255,255,255,60%);
+}
+
+QMenu::item:disabled
+{
+	background-color: transparent;
+	color: rgba(255,255,255,48%);
+}
+
+QMenu::item:checked
+{
+	background-color: rgba(255,255,255,6%);
+	border-radius: 3px;
+	color: #ffffff;
+	padding: 0px 8px 0px 6px;
+}
+
+QMenu::icon
+{
+	padding: 6px 8px;
+}
+
+QMenu::indicator
+{
+	image: none;
+	height: 0px;
+	width: 0px;
+}
+
+QMenu::indicator:checked
+{
+	image: url("resources/images/darktheme/contextMenu_checked_2x28.svg");
+	height: 28px;
+	width: 2px;
+}
+
+QMenu::right-arrow
+{
+	image: url("resources/images/darktheme/contextMenu_arrow_normal.svg");
+	padding-right: 4px;
+}
+
+QMenu::right-arrow:disabled
+{
+	image: url("resources/images/darktheme/contextMenu_arrow_pressed.svg");
+}
+
+QMenu::right-arrow:selected
+{
+	image: url("resources/images/darktheme/contextMenu_arrow_hover.svg");
+}
+
+QMenu::right-arrow:pressed
+{
+	image: url("resources/images/darktheme/contextMenu_arrow_pressed.svg");
+}
+
+QMenu QLabel[style~="groupheader"]
+{
+	color: rgba(255,255,255,72%);
+	font-family: <font_dark_title>;
+	font-weight: bold;
+	font-size: 12px;
+	margin: 12px 0 6px 6px;
+	text-transform: uppercase;
+}
+
+QMenu#applicationMenu
+{
+	font-size: 13px;
+}
+
+QMenu#applicationMenu::item
+{
+	height: 26px;
+	padding: 0px 13px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"],
+Phoenix--DarkToast QPushButton[style~="global"]
+{
+	border-image: none;
+	border-radius: 4px;
+	color: #ffffff;
+	font-size: 14px;
+	font-weight: bold;
+	max-height: 28px;
+	min-height: 28px;
+	padding: 0px 17px 0px 17px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:pressed,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:disabled,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][disabled=true],
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][disabled=true]:focus,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][disabled=true]:hover,
+Phoenix--DarkToast QPushButton[style~="global"]:pressed,
+Phoenix--DarkToast QPushButton[style~="global"]:disabled
+{
+	border-image: none;
+	color: rgba(255,255,255,60%);
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="extralarge"],
+Phoenix--DarkToast QPushButton[style~="global"][style~="extralarge"]
+{
+	font-size: 20px;
+	max-height: 52px;
+	min-height: 52px;
+	padding: 0px 38px 0px 38px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="large"],
+Phoenix--DarkToast QPushButton[style~="global"][style~="large"]
+{
+	font-size: 16px;
+	max-height: 36px;
+	min-height: 36px;
+	padding: 0px 28px 0px 28px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="small"],
+Phoenix--DarkToast QPushButton[style~="global"][style~="small"]
+{
+	border-radius: 3px;
+	font-size: 12px;
+	max-height: 20px;
+	min-height: 20px;
+	padding: 0px 5px 0px 5px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:default,
+Phoenix--DarkToast QPushButton[style~="global"]:default
+{
+	background-color: #0074e0;
+	border: 2px solid #0074e0;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:default:hover,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:default:focus,
+Phoenix--DarkToast QPushButton[style~="global"]:default:hover,
+Phoenix--DarkToast QPushButton[style~="global"]:default:focus
+{
+	border: 2px solid #47a6ff;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:default:pressed,
+Phoenix--DarkToast QPushButton[style~="global"]:default:pressed
+{
+	background-color: #003f7a;
+	border: 2px solid #005aad;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:default:disabled,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][disabled=true]:default,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][disabled=true]:default:hover,
+Phoenix--DarkToast QPushButton[style~="global"]:default:disabled
+{
+	background-color: #003f7a;
+	border: 2px solid #003f7a;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][disabled=true]:default:focus
+{
+	border: 2px solid #005aad;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:!default,
+Phoenix--DarkToast QPushButton[style~="global"]:!default
+{
+	background-color: #313339;
+	border: 2px solid #313339;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:!default:hover,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:!default:focus,
+Phoenix--DarkToast QPushButton[style~="global"]:!default:hover,
+Phoenix--DarkToast QPushButton[style~="global"]:!default:focus
+{
+	border: 2px solid #56585d;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:!default:pressed,
+Phoenix--DarkToast QPushButton[style~="global"]:!default:pressed
+{
+	background-color: #23252b;
+	border: 2px solid #3e4045;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"]:!default:disabled,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][disabled=true]:!default,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][disabled=true]:!default:hover,
+Phoenix--DarkToast QPushButton[style~="global"]:!default:disabled
+{
+	background-color: #23252b;
+	border: 2px solid #23252b;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][disabled=true]:!default:focus
+{
+	border: 2px solid #3e4045;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="tertiary"],
+Phoenix--DarkToast QPushButton[style~="global"][style~="tertiary"]
+{
+	background-color: transparent;
+	border: 1px solid #4d4e54;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="tertiary"]:hover,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="tertiary"]:focus,
+Phoenix--DarkToast QPushButton[style~="global"][style~="tertiary"]:hover,
+Phoenix--DarkToast QPushButton[style~="global"][style~="tertiary"]:focus
+{
+	background-color: transparent;
+	border: 2px solid #696b6f;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="tertiary"]:pressed,
+Phoenix--DarkToast QPushButton[style~="global"][style~="tertiary"]:pressed
+{
+	background-color: transparent;
+	border: 2px solid #3f4147;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="tertiary"]:disabled,
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="tertiary"][disabled=true],
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="tertiary"][disabled=true]:hover,
+Phoenix--DarkToast QPushButton[style~="global"][style~="tertiary"]:disabled
+{
+	background-color: transparent;
+	border: 1px solid #313339;
+	color: rgba(255,255,255,48%);
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="global"][style~="tertiary"][disabled=true]:focus
+{
+	background-color: transparent;
+	border: 2px solid #3f4147;
+	border-image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="image"]:!default,
+Phoenix--DarkToast QPushButton[style~="image"]
+{
+	background-color: rgba(255, 255, 255, 0%);
+	padding: 0 0 0 0;
+	min-height: 0px;
+	min-width: 0px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"]
+{
+	color: #148eff;
+	font-weight: bold;
+	padding: 0px 5px 1px 5px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"]:hover
+{
+	color: #47a6ff;
+	text-decoration: underline;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"]:pressed
+{
+	color: #148eff;
+	text-decoration: underline;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"]:focus
+{
+	border: 1px solid #26496c;
+	border-radius: 2px;
+	padding: 0px 4px 1px 4px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"]:disabled
+{
+	color: rgba(20,142,255,48%);
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"][style~="white"],
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"][style~="white"]:pressed
+{
+	color: rgba(255,255,255,72%);
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"][style~="white"]:hover
+{
+	color: #ffffff;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"][style~="white"]:focus
+{
+	border: 1px solid #bebec0;
+	border-radius: 2px;
+}
+
+Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"][style~="white"]:disabled
+{
+	color: rgba(255,255,255,48%);
+}
+
+Phoenix--LoginWindow QPushButton#loginSettingsButton
+{
+	background-color: transparent;
+	border: none;
+	image: url("resources/controls/darktheme/btn_win_cog_normal.svg") 0;
+}
+
+Phoenix--LoginWindow QPushButton#loginSettingsButton:pressed
+{
+	image: url("resources/controls/darktheme/btn_win_cog_pressed.svg") 0;
+}
+
+Phoenix--LoginWindow QPushButton#loginSettingsButton:hover:!pressed
+{
+	image: url("resources/controls/darktheme/btn_win_cog_hover.svg") 0;
+}
+
+Phoenix--LoginWindow QPushButton#loginSettingsButton:focus:!pressed
+{
+	image: url("resources/controls/darktheme/btn_win_cog_hover.svg") 0;
+}
+
+Phoenix--LoginWindow QPushButton#loginSettingsButton:disabled
+{
+	image: url("resources/controls/darktheme/btn_win_cog_disabled.svg") 0;
+}
+
+Phoenix--LoginWindow QMenu#loginSettingsMenu,
+Phoenix--LoginWindow QMenu#serverSelectMenu
+{
+	border-image: url("resources/images/darktheme/contextMenu_border_shadow.png") 4 6 8 6;
+	border-width: 4 6 8 6;
+	font-size: 13px;
+	margin: 4px 0px 0px 0px;
+	padding: 6px 0px 0px 0px;
+}
+
+Phoenix--LoginWindow[highdpi=true] QMenu#loginSettingsMenu,
+Phoenix--LoginWindow[highdpi=true] QMenu#serverSelectMenu
+{
+	border-image: url("resources/images/darktheme/contextMenu_border_shadow@2x.png") 8 12 16 12;
+}
+
+Phoenix--LoginMaintenanceMessageWidget #messageIcon
+{
+	image: url("resources/images/darktheme/alert.svg");
+}
+
+Phoenix--BreakingNewsBanner #breakingNewsIcon
+{
+	image: url("resources/images/darktheme/alert-serious.svg");
+}
+
+Phoenix--AuthenticationKeyDialog QLabel#errorCodeIcon
+{
+	image: url("resources/images/darktheme/icon_web_link.svg");
+}
+
+Phoenix--ErrorBox[style~="dark"]
+{
+	border-image: url("resources/images/darktheme/contextMenu_border_shadow.png") 5 7 9 7;
+	border-width: 5 7 9 7;
+	padding: -3px;
+	qproperty-arrowImagePixelRatio: 1;
+}
+
+Phoenix--ErrorBox[style~="dark"] *
+{
+	font-size: 14px;
+}
+
+Phoenix--ErrorBox[style~="dark"][arrowDirection="0"]
+{
+	margin: 8px 11px;
+	qproperty-arrowImageUri: url("resources/images/darktheme/tooltip-arrow-up.png");
+}
+
+Phoenix--ErrorBox[style~="dark"][arrowDirection="1"]
+{
+	margin: 8px 11px;
+	qproperty-arrowImageUri: url("resources/images/darktheme/tooltip-arrow-right.png");
+}
+
+Phoenix--ErrorBox[style~="dark"][arrowDirection="2"]
+{
+	margin: 8px 11px;
+	qproperty-arrowImageUri: url("resources/images/darktheme/tooltip-arrow-down.png");
+}
+
+Phoenix--ErrorBox[style~="dark"][arrowDirection="3"]
+{
+	margin: 8px 11px;
+	qproperty-arrowImageUri: url("resources/images/darktheme/tooltip-arrow-left.png");
+}
+
+Phoenix--ArrowPopup[highdpi=true] Phoenix--ErrorBox[style~="dark"]
+{
+	border-image: url("resources/images/darktheme/contextMenu_border_shadow@2x.png") 10 14 18 14;
+	qproperty-arrowImagePixelRatio: 2;
+}
+
+Phoenix--ArrowPopup[highdpi=true] Phoenix--ErrorBox[style~="dark"][arrowDirection="0"]
+{
+	qproperty-arrowImageUri: url("resources/images/darktheme/tooltip-arrow-up@2x.png");
+}
+
+Phoenix--ArrowPopup[highdpi=true] Phoenix--ErrorBox[style~="dark"][arrowDirection="1"]
+{
+	qproperty-arrowImageUri: url("resources/images/darktheme/tooltip-arrow-right@2x.png");
+}
+
+Phoenix--ArrowPopup[highdpi=true] Phoenix--ErrorBox[style~="dark"][arrowDirection="2"]
+{
+	qproperty-arrowImageUri: url("resources/images/darktheme/tooltip-arrow-down@2x.png");
+}
+
+Phoenix--ArrowPopup[highdpi=true] Phoenix--ErrorBox[style~="dark"][arrowDirection="3"]
+{
+	qproperty-arrowImageUri: url("resources/images/darktheme/tooltip-arrow-left@2x.png");
+}
+
+Phoenix--ErrorBox[style~="settings"]
+{
+	background-color: #22242c;
+	border: 1px solid #3d3f46;
+	border-image: none;
+	border-radius: 4px;
+	margin: 4px 0px 4px 0px;
+	padding: 0px;
+}
+
+Phoenix--StyledDialog[darktheme=true] Phoenix--ErrorMessageBox QLabel#errorCodeIcon
+{
+	image: url("resources/images/darktheme/icon_web_link.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] Phoenix--ErrorMessageBox QLabel#icon
+{
+	image: none;
+}
+
+Phoenix--StyledDialog[darktheme=true] Phoenix--ErrorMessageBox QLabel#icon[state~="error"]
+{
+	image: url("resources/images/darktheme/error.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] Phoenix--ErrorMessageBox QLabel#icon[state~="alert"]
+{
+	image: url("resources/images/darktheme/alert.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true]
+{
+	background: #15171e;
+}
+
+Phoenix--Install--InstallDialog[darktheme=true],
+Phoenix--Install--ModifyInstallDialog[darktheme=true]
+{
+	background: qradialgradient(cx:1, cy:1, radius: 0.45, fx:1, fy:1, stop:0.4 #141a25, stop:1 #15171e);
+}
+
+Phoenix--Install--RequiredDiskSpaceWidget #spaceIconLabel[icon~="default"]
+{
+	image: url("resources/images/darktheme/download-green.svg");
+}
+
+Phoenix--Install--RequiredDiskSpaceWidget #spaceIconLabel[icon~="warning"]
+{
+	image: url("resources/images/darktheme/alert.svg");
+}
+
+Phoenix--Install--InstallDialog #installLocationMessageIcon[icon~="default"]
+{
+	image: url("resources/images/darktheme/check.svg");
+}
+
+Phoenix--Install--InstallDialog #installLocationMessageIcon[icon~="alert"]
+{
+	image: url("resources/images/darktheme/alert.svg");
+}
+
+Phoenix--Install--InstallDialog #langErrorMessageIcon,
+Phoenix--Install--ModifyInstallDialog #langErrorMessageIcon,
+Phoenix--Install--InstallDialog #speechWarningIcon,
+Phoenix--Install--ModifyInstallDialog #speechWarningIcon
+{
+	image: url("resources/images/darktheme/alert.svg");
+}
+
+Phoenix--LoginSettingsDialog QLabel#savedIcon
+{
+	image: url("resources/images/darktheme/check.svg");
+}
+
+Phoenix--LoginSettingsDialog #settingTabs::item:selected
+{
+	background-color: rgba(255,255,255,6%);
+	background-image: url("resources/images/darktheme/contextMenu_checked_2x36.svg");
+	background-repeat: no-repeat;
+	color: #ffffff;
+}
+
+QLabel[style~="optionHeader"]
+{
+	color: #ffffff;
+	font-family: <font_dark_title>;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+QWidget[style~="settings"] *[style~="subheading3"]
+{
+	color: rgba(255,255,255,72%);
+	font-family: <font_dark_title>;
+	font-size: 12px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+Phoenix--StyledDialog[darktheme=true] Phoenix--SettingsAccordionButton,
+Phoenix--SettingsAccordionButton
+{
+	background-color: #23252b;
+	border: 1px solid #23252b;
+	border-radius: 4px;
+	font-family: <font_dark>;
+	font-weight: normal;
+	padding-left: 38px;
+	text-align: left;
+}
+
+Phoenix--StyledDialog[darktheme=true] Phoenix--SettingsAccordionButton:hover,
+Phoenix--SettingsAccordionButton:hover
+{
+	background-color: #313337;
+	border: 1px solid #313337;
+}
+
+Phoenix--StyledDialog[darktheme=true] Phoenix--SettingsAccordionButton:focus,
+Phoenix--SettingsAccordionButton:focus
+{
+	border: 1px solid #47494d;
+}
+
+Phoenix--StyledDialog[darktheme=true] Phoenix--SettingsAccordionButton:checked,
+Phoenix--SettingsAccordionButton:checked
+{
+	border-bottom-left-radius: 0px;
+	border-bottom-right-radius: 0px;
+}
+
+Phoenix--StyledDialog[darktheme=true] Phoenix--SettingsAccordionButton #arrow,
+Phoenix--SettingsAccordionButton #arrow
+{
+	image: url("resources/images/img_friendsArrow_right.svg");
+}
+
+Phoenix--StyledDialog[darktheme=true] Phoenix--SettingsAccordionButton[isExpanded=true] #arrow,
+Phoenix--SettingsAccordionButton[isExpanded=true] #arrow
+{
+	image: url("resources/images/img_friendsArrow_down.svg");
+}
+
+Phoenix--ClientSettingsDialog QFrame[style~="accordionPane"]
+{
+	background-color: rgba(255,255,255,3%);
+	border-bottom-left-radius: 4px;
+	border-bottom-right-radius: 4px;
+}
+
+Phoenix--ClientSettingsDialog *
+{
+	font-size: 14px;
+}
+
+Phoenix--ClientSettingsDialog > QWidget > #contentContainer
+{
+	background: #15171e;
+}
+
+Phoenix--SettingsTabPage #versionLabel
+{
+	background-color: transparent;
+	color: rgba(255,255,255,48%);
+	margin: 0px 0px 20px 22px;
+	selection-background-color: #787878;
+}
+
+Phoenix--SettingsTabPage #secondLevelContainer
+{
+	background: #111218;
+}
+
+Phoenix--SettingsTabPage QWidget#separator
+{
+	border-top: 1px solid rgba(255,255,255,12%);
+}
+
+Phoenix--SettingsTabPage QLabel#changesSavedIcon
+{
+	image: url("resources/images/darktheme/check.svg");
+}
+
+Phoenix--SettingsTabWidget #label
+{
+	color: rgba(255,255,255,60%);
+}
+
+Phoenix--SettingsTabWidget[selected="true"] #label
+{
+	color: #ffffff;
+}
+
+Phoenix--SettingsTabWidget #label:disabled
+{
+	color: rgba(255,255,255,20%);
+}
+
+Phoenix--GameInstallUpdateSettings #gameUpdateHeader QLabel
+{
+	font-weight: bold;
+}
+
+Phoenix--GameInstallUpdateSettings QLabel:disabled
+{
+	color: rgba(255,255,255,48%);
+}
+
+Phoenix--GameUpdateSettingWidget #gameWidgetFrame
+{
+	background-color: rgba(255, 255, 255, 3%);
+	border-radius: 4px;
+}
+
+Phoenix--GameSettingsWidget #launchArgumentText
+{
+	margin: 0px 250px 0px 24px;
+}
+
+Phoenix--InDevelopmentSettings QLabel#lblCheckMark
+{
+	image: url("resources/images/darktheme/check.svg");
+}
+
+Phoenix--InDevelopmentSettings QLabel#lblInstalledMessage
+{
+	color: #6cdb00;
+}
+
+Phoenix--InDevelopmentSettings QPushButton#btnDownload
+{
+	padding: 0px 18px 0px 18px;
+}
+
+Phoenix--AboutSettings #legalWebLinkButton
+{
+	margin-top: 1px;
+}
+
+QTabWidget::pane[style~="settings"]
+{
+	margin-top: 1px;
+	border-top: 1px solid rgba(255,255,255,12%);
+}
+
+QTabWidget::tab-bar[style~="settings"]
+{
+	left: 25px;
+}
+
+QTabWidget[style~="settings"] > QTabBar
+{
+	color: #ffffff;
+	font-family: <font_dark_title>;
+	font-size: 18px;
+	font-weight: bold;
+}
+
+QTabWidget[style~="settings"] > QTabBar::tab
+{
+	border: none;
+	padding: 27px 0px 27px 0px;
+}
+
+QTabWidget[style~="settings"][platform="mac"] > QTabBar::tab
+{
+	padding: 37px 0px 17px 0px;
+}
+
+QTabWidget[style~="settings"] > QTabBar::tab:selected
+{
+	color: #ffffff;
+}
+
+QTabWidget[style~="settings"][style~="inner"]
+{
+	font-size: 12px;
+}
+
+QTabWidget::pane[style~="settings"] > QStackedWidget
+{
+	background-color: #15171e;
+}
+
+QTabWidget[style~="settings"][style~="inner"] > QTabBar::tab
+{
+	padding: 6px 30px 6px 0px;
+}
+
+QTabWidget[style~="settings"] #secondLevelTabs
+{
+	background-color: transparent;
+	font-size: 14px;
+	padding: 18px 8px 40px 8px;
+}
+
+QTabWidget[style~="settings"] #secondLevelTabs::item
+{
+	border-radius: 2px;
+}
+
+QTabWidget[style~="settings"] #secondLevelTabs::item:hover
+{
+	background-color: rgba(255,255,255,6%);
+}
+
+QTabWidget[style~="settings"] #secondLevelTabs::item:selected
+{
+	background-color: rgba(255,255,255,6%);
+	background-image: url("resources/images/darktheme/contextMenu_checked_2x36.svg");
+	background-repeat: no-repeat;
+}
+
+QTabWidget[style~="settings"] #bottomBorderFrame
+{
+	border-top: 1px solid rgba(255,255,255,12%);
+}
+
+QTabWidget[style~="settings"] #bottomBar
+{
+	background-color: #15171e;
+	max-height: 78px;
+	min-height: 78px;
+}
+
+QWidget[style~="settings"] #defaultInstallPathEdit,
+#proxyAddressLineEdit,
+#proxyPortLineEdit
+{
+	margin-left: 0px;
+	margin-right: 0px;
+}
+
+Phoenix--DarkToast #background
+{
+	border-image: url("resources/controls/darktheme/toast_base_dark.png") 10 18 28 18;
+	border-width: 5 9 14 9;
+}
+
+Phoenix--DarkToast[highdpi=true] #background
+{
+	border-image: url("resources/controls/darktheme/toast_base_dark@2x.png") 10 18 28 18;
+	border-width: 5 9 14 9;
+}
+
+Phoenix--DarkToast[hover~="true"] #background
+{
+	border-image: url("resources/controls/darktheme/toast_base_dark_hover.png") 10 18 28 18;
+	border-width: 5 9 14 9;
+}
+
+Phoenix--DarkToast[highdpi=true][hover~="true"] #background
+{
+	border-image: url("resources/controls/darktheme/toast_base_dark_hover@2x.png") 10 18 28 18;
+	border-width: 5 9 14 9;
+}
+
+Phoenix--DarkToast QPushButton#closeButton
+{
+	background-color: transparent;
+	border: none;
+	image: url("resources/controls/darktheme/btn_win_close_normal.svg") 0;
+}
+
+Phoenix--DarkToast QPushButton#closeButton:pressed
+{
+	image: url("resources/controls/darktheme/btn_win_close_pressed.svg") 0;
+}
+
+Phoenix--DarkToast QPushButton#closeButton:hover:!pressed
+{
+	image: url("resources/controls/darktheme/btn_win_close_hover.svg") 0;
+}
+
+Phoenix--DarkToast QPushButton#settingsButton
+{
+	background-color: transparent;
+	border: none;
+	image: url("resources/controls/darktheme/btn_win_cog_normal.svg") 0;
+}
+
+Phoenix--DarkToast QPushButton#settingsButton:pressed
+{
+	image: url("resources/controls/darktheme/btn_win_cog_pressed.svg") 0;
+}
+
+Phoenix--DarkToast QPushButton#settingsButton:hover:!pressed
+{
+	image: url("resources/controls/darktheme/btn_win_cog_hover.svg") 0;
+}
+
+Phoenix--DarkToast #badgeCutoutLabel
+{
+	border-radius: 15px;
+}
+
+Phoenix--DarkToast #badgeCutoutLabel[style~="availability"]
+{
+	border-radius: 8px;
+}
+
+Phoenix--DarkToast #badgeCutoutLabel
+{
+	background-color: #15171e;
+}
+
+Phoenix--DarkToast #badgeCutoutLabel[hover~="true"]
+{
+	background-color: #1a1c23;
+}
+
+Phoenix--DarkToast #badgeLabel[style~="online"],
+Phoenix--DarkToast #badgeLabel[style~="offline"],
+Phoenix--DarkToast #badgeLabel[style~="away"],
+Phoenix--DarkToast #badgeLabel[style~="busy"]
+{
+	width: 12px;
+	height: 12px;
+	min-height: 12px;
+	max-height: 12px;
+}
+
+Phoenix--DarkToast #badgeLabel[style~="online"]
+{
+	image: url("resources/images/darktheme/status-online.svg");
+}
+
+Phoenix--DarkToast #badgeLabel[style~="offline"]
+{
+	image: url("resources/images/darktheme/status-offline.svg");
+}
+
+Phoenix--DarkToast #badgeLabel[style~="away"]
+{
+	image: url("resources/images/darktheme/status-away.svg");
+}
+
+Phoenix--DarkToast #badgeLabel[style~="busy"]
+{
+	image: url("resources/images/darktheme/status-busy.svg");
+}
+
+Phoenix--DarkToast #titleLabel
+{
+	color: rgba(255, 255, 255, 100%);
+	font-size: 14px;
+	font-weight: bold;
+}
+
+Phoenix--DarkToast #titleLabel[style~="name"]
+{
+	color: rgba(173, 216, 255, 100%);
+}
+
+Phoenix--DarkToast #titleLabel[style~="multichatTitle"]
+{
+	font-size: 12px;
+}
+
+Phoenix--DarkToast #bodyLabel
+{
+	color: rgba(255, 255, 255, 72%);
+	font-size: 14px;
+}
+
+Phoenix--DarkToast #bodyLabel[style~="name"]
+{
+	color: rgba(173, 216, 255, 100%);
+}
+
+Phoenix--DarkToast #extraInfoLabel
+{
+	color: rgba(255, 255, 255, 100%);
+	font-size: 14px;
+	font-weight: bold;
+	margin-top: 8px;
+}
+
+Phoenix--DarkToast #extraInfoLabel[style~="name"]
+{
+	color: rgba(173, 216, 255, 100%);
+	font-weight: normal;
+}
+
+Phoenix--DarkToast #extraInfoLabel[style~="chat"]
+{
+	color: rgba(255, 255, 255, 72%);
+	font-weight: normal;
+}
+
+Phoenix--DarkToast #checkBox
+{
+	font-size: 14px;
+	color: rgba(255, 255, 255, 72%);
+}
+
+Phoenix--DarkToast QCheckBox::indicator
+{
+	width: 18px;
+	height: 18px;
+	max-height: 18px;
+	max-width: 18px;
+}
+
+Phoenix--ErrorDialog QLabel#errorCodeIcon
+{
+	image: url("resources/images/darktheme/icon_web_link.svg");
+}
+
+QWidget#resultNotification QLabel#labelResultImage
+{
+	image: url("resources/images/darktheme/check.svg");
+}
+
+QWidget#resultNotification[type~="error"] QLabel#labelResultImage
+{
+	image: url("resources/images/darktheme/alert.svg");
+}
+
+Phoenix--VoiceSettingsWidget #keyChordLabel,
+Phoenix--VoiceSettingsWidget #toggleMuteKeyChordLabel
+{
+	background-color: transparent;
+	border: 1px solid #4d4e54;
+	border-radius: 4px;
+	color: #ffffff;
+	font-family: <font_dark_title>;
+	font-weight: bold;
+	max-height: 28px;
+	min-height: 28px;
+	padding: 0px 38px 0px 38px;
+}
+
+Phoenix--VoiceSettingsWidget #keyChordLabel:hover,
+Phoenix--VoiceSettingsWidget #keyChordLabel:focus,
+Phoenix--VoiceSettingsWidget #toggleMuteKeyChordLabel:hover,
+Phoenix--VoiceSettingsWidget #toggleMuteKeyChordLabel:focus
+{
+	border: 2px solid #696b6f;
+}
+
+Phoenix--VoiceSettingsWidget #keyChordLabel[listening~="true"],
+Phoenix--VoiceSettingsWidget #toggleMuteKeyChordLabel[listening~="true"]
+{
+	border: 1px solid #3f4147;
+}
+
+Phoenix--VoiceSettingsWidget #keyChordLabel:pressed,
+Phoenix--VoiceSettingsWidget #toggleMuteKeyChordLabel:pressed
+{
+	border: 2px solid #3f4147;
+}
+
+Phoenix--VoiceSettingsWidget #keyChordLabel:disabled,
+Phoenix--VoiceSettingsWidget #toggleMuteKeyChordLabel:disabled
+{
+	border: 1px solid #313339;
+	color: rgba(255,255,255,48%);
+}
+
+Phoenix--VoiceSettingsWidget #trustedInfoLabel
+{
+	image: url("resources/images/darktheme/info-yellow.svg");
+}
+
+Phoenix--VoiceSettingsWidget #trustedSystemPrefLink,
+Phoenix--VoiceSettingsWidget #trustedSystemPrefLink:pressed
+{
+	color: rgba(255,255,255,72%);
+	font-weight: bold;
+	text-decoration: underline;
+}
+
+Phoenix--VoiceSettingsWidget #trustedSystemPrefLink:hover
+{
+	color: #ffffff;
+}
+
+Phoenix--VoiceSettingsWidget #trustedSystemPrefLink:focus
+{
+	border: 1px solid #bebec0;
+	border-radius: 2px;
+}
+
+Phoenix--VoiceSettingsWidget #macOsxWidgetContents
+{
+	background-color: rgba(255,255,255,6%);
+	border-radius: 4px;
+	margin: 15px 24px 0px 24px;
+}
+
+Phoenix--VoiceSettingsWidget #macOsxWidgetContents QLabel
+{
+	font-size: 12px;
+}
+
+Phoenix--VoiceMenuMicrophoneItem #contentContainer,
+Phoenix--VoiceMenuSpeakerItem #contentContainer
+{
+	background-color: transparent;
+	margin: 0px 6px;
+}
+
+Phoenix--VoiceMenuMicrophoneItem[hovered=true] #contentContainer,
+Phoenix--VoiceMenuSpeakerItem[hovered=true] #contentContainer
+{
+	background-color: rgba(255,255,255,6%);
+	border-radius: 3px;
+}
+
+Phoenix--VoiceMenuMicrophoneItem QPushButton,
+Phoenix--VoiceMenuSpeakerItem QPushButton
+{
+	icon-size: 20px;
+}
+
+Phoenix--AddPhoneNumberDialog QLabel#phoneImage
+{
+	image: url("resources/images/darktheme/phone.svg");
+}
+
+Phoenix--AddPhoneNumberDialog QLabel#webImage
+{
+	image: url("resources/images/darktheme/browser.svg");
+}
+
+Phoenix--AddPhoneNumberDialog QLabel#webLinkIcon
+{
+	image: url("resources/images/darktheme/icon_web_link.svg");
+}
+
+Phoenix--GameLocatorFindWidget QWidget#labelIcon
+{
+	image: url("resources/images/darktheme/locate-game.svg");
+}

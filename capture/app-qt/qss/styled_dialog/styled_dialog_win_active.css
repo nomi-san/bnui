@@ -1,0 +1,15 @@
+/* =============================================================================
+/  Styled Dialog (Active Window)
+/  These styles are used for both focus and flash on
+/=============================================================================*/
+
+Phoenix--StyledDialog[platform="win"] #topBarArea { border-image: none; }
+Phoenix--StyledDialog[platform="win"] #buttonGroup > QPushButton { border: none; }
+Phoenix--StyledDialog[platform="win"] #winCloseButton { image: url(resources/controls/btn_win_close_normal.svg); }
+Phoenix--StyledDialog[platform="win"] #winCloseButton:hover { image: url(resources/controls/btn_win_close_hover.svg); background-color: #dd1313; }
+Phoenix--StyledDialog[platform="win"] #winMinButton { image: url(resources/controls/btn_win_minimize_normal.svg); }
+Phoenix--StyledDialog[platform="win"] #winMinButton:hover { image: url(resources/controls/btn_win_minimize_hover.svg); background-color: rgba(255, 255, 255, 0.06); }
+Phoenix--StyledDialog[platform="win"][maximized=true] #winMaxButton { image: url(resources/controls/btn_win_restore_normal.svg); }
+Phoenix--StyledDialog[platform="win"][maximized=true] #winMaxButton:hover { image: url(resources/controls/btn_win_restore_hover.svg); background-color: rgba(255, 255, 255, 0.06); }
+Phoenix--StyledDialog[platform="win"] #winMaxButton { image: url(resources/controls/btn_win_maximize_normal.svg); }
+Phoenix--StyledDialog[platform="win"] #winMaxButton:hover { image: url(resources/controls/btn_win_maximize_hover.svg); background-color: rgba(255, 255, 255, 0.06); }
