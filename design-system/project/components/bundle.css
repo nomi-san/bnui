@@ -23,6 +23,14 @@ body { margin: 0; background: var(--surface-page); color: var(--text-body); font
   outline: none; box-shadow: var(--ring-focus);
 }
 
+/* motion: focus and press snap, as in the native app; only hovers ease (duration-fast).
+   data-motion="instant" on <html> or any container zeroes every duration (native Qt feel). */
+.bn-focusable:focus-visible, .bn-btn:focus-visible, .bn-icon-btn:focus-visible, .bn-pill:focus-visible,
+.bn-link:focus-visible, .bn-tab:focus-visible, .bn-nav__item:focus-visible, .bn-menu__item:focus-visible,
+.bn-card:focus-visible, .bn-tile:focus-visible, .bn-option:focus-visible, .bn-field:focus, .bn-select:focus-visible,
+.bn-btn:active { transition-duration: 0ms; }
+:root[data-motion="instant"], [data-motion="instant"] { --duration-fast: 0ms; --duration-medium: 0ms; --duration-slow: 0ms; }
+
 /* ---------- Button ---------- */
 .bn-btn {
   position: relative; display: inline-flex; align-items: center; justify-content: center; gap: var(--space-2);

@@ -12,9 +12,9 @@
   },
   "groups": [],
   "lastChange": {
-    "at": "2026-10-02T16:40:00Z",
+    "at": "2026-10-08T05:27:20Z",
     "by": "Nguyen Duy",
-    "note": "Added HeroCarousel, AnnouncementBanner, MediaGallery, Lightbox, ComparisonTable, Dialog, Tooltip, Alert, Toast; status tint, toast and scrim tokens",
+    "note": "Motion: focus rings and press states snap like the native app; data-motion=\"instant\" sets every duration to 0ms",
     "via": "Claude Code"
   },
   "layout": "files",

@@ -77,6 +77,8 @@ All hovers use `duration-fast` with `ease-out`. Only colour, background, box-sha
 
 ### Motion
 - `duration-fast` for hovers, `duration-medium` for menus fading in and media arrows appearing, `duration-slow` for dismissing banners. Carousels advance every 5–7s and pause on hover. No bounces, no slide-ins, no parallax. Honour `prefers-reduced-motion` by removing transitions and the cover-tile scale.
+- Focus and press never animate: the focus ring, the field's accent border and a button's pressed fill appear at once (`duration-instant`), as in the native desktop app. Only hovers ease.
+- **Instant mode:** put `data-motion="instant"` on `<html>` (or any container) to set every duration to 0ms, for the native app's snap. It combines with any `data-theme`.
 
 ### Focus
 - Every interactive element shows `ring-focus` on `:focus-visible`: a 2px `focus-inner` gap and a 2px `focus-outer` ring, legible on fills and on artwork. Text fields show focus with an `accent` border instead.
