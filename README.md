@@ -11,7 +11,7 @@ BNUI is a dark design system for game storefronts, launchers and account dashboa
 - **37 components** in plain HTML + CSS (`bn-` classes), plus 4 foundation pages.
 - **Interaction rules:** hovers change colour, fill or an inset ring in 100ms, never the layout. Minimal animation.
 
-The next step is a SolidJS + Tailwind v3 implementation built on these tokens.
+A SolidJS + Tailwind v3 implementation is under way in [`ui/`](ui/): the token preset, ten components and a working replica of the desktop app's Settings window.
 
 ## Preview
 
@@ -54,6 +54,7 @@ The next step is a SolidJS + Tailwind v3 implementation built on these tokens.
 | Path | What it holds |
 |---|---|
 | [`design-system/project/`](design-system/project/) | The design system source: `tokens.json` (every token and accent theme), `README.md` (brand book), `components/bundle.css` (all `bn-` classes), and one folder per component with a `preview.html` and usage `README.md`. It mirrors the BNUI Design System artifact on claude.ai. |
+| [`ui/`](ui/) | The SolidJS + Tailwind 3 implementation: a Tailwind preset that reads `tokens.json` directly, components built on Kobalte, and demos (component gallery, Settings window). See [`ui/README.md`](ui/README.md). |
 | [`capture/`](capture/) | Reference captures of Battle.net pages, one folder per page: screenshots, accessibility snapshot, extracted CSS and tokens, hover states, and a `NOTES.md` spec. `store-home/tokens-root-resolved.json` holds the canonical resolved Battle.net tokens. |
 | [`capture/_tools/cdp.mjs`](capture/_tools/cdp.mjs) | A small Chrome DevTools Protocol client for the Battle.net desktop app (CEF / Chrome 108), whose shell the DevTools MCP can't reach. |
 | [`capture/_tools/extract_qt_styles.py`](capture/_tools/extract_qt_styles.py) | Unpacks the desktop app's native Qt styles (QML sources, the `battle.net.css` Qt stylesheet and its dark-theme skins) from `Battle.net.mpq` into [`capture/app-qt/`](capture/app-qt/), with every colour mapped to a BNUI token. |
