@@ -11,6 +11,10 @@
 | `02-app-dropdown-open.png` | "On startup, view" select **open** (option list) + Advanced checkboxes (checked) |
 | `03-downloads.png` | Downloads: path field + "Change", "Scan for Games", nested checkboxes, numeric KB/s inputs (one enabled, one disabled) |
 | `04-voice-chat.png` | Voice Chat: selects, **volume sliders**, **input level meter**, outlined "Click to set" key-binding button |
+| `05-notifications.png` | Notifications: two selects side by side, nested checkboxes, full sound slider, **accordion** ("Friends") with TOAST/SOUND columns and small selects, "Collapse All" link (added 2026-10-08) |
+| `06-beta.png` | Beta: body copy, bold white "beta patch notes" link, "Switch to Beta" secondary button, "Done" alone in the footer |
+| `07-about.png` | About: version lines, "Blizzard Legal" link, licence **text boxes** (monospace, own scrollbar), main scrollbar |
+| `08-app-tooltip.png` | App → Startup: ⓘ hovered → **tooltip popup with caret** beside "Clear Saved Login Info" |
 
 ## Layout
 ```
