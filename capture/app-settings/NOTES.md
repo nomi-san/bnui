@@ -1,6 +1,7 @@
 # Battle.net desktop app: Settings window (Qt5 native)
 
 - Native Qt5 dialog (not web), so there's no DOM/CSS. Values below are **read from the screenshots** (approximate, ±1–2px), mapped to the web tokens they visibly match.
+- **Superseded by exact values:** the dialog's Qt stylesheet was extracted on 2026-10-08. See [`../app-qt/NOTES.md`](../app-qt/NOTES.md), which also lists where the estimates below were off.
 - Window ~996×708. Captured by the user 2026-10-02. App version 2.53.4.17896.
 
 ## Files
@@ -8,7 +9,7 @@
 |---|---|
 | `01-app-general.png` | App → General + Startup (selects, secondary buttons, checkboxes, disabled checkbox) |
 | `02-app-dropdown-open.png` | "On startup, view" select **open** (option list) + Advanced checkboxes (checked) |
-| `03-downloads.png` | Downloads: path field + "Change", "Scan for Games", nested checkboxes, numeric KB/s inputs (one focused) |
+| `03-downloads.png` | Downloads: path field + "Change", "Scan for Games", nested checkboxes, numeric KB/s inputs (one enabled, one disabled) |
 | `04-voice-chat.png` | Voice Chat: selects, **volume sliders**, **input level meter**, outlined "Click to set" key-binding button |
 
 ## Layout
@@ -38,7 +39,7 @@ Title bar "Settings" (Object Sans 700 ~20, padding ~24) ········· ✕ (
 | **Checkbox** | 18–20px, radius 3, 1px `white/48%` border, transparent; **checked: `#148eff` check mark** (no fill); label Noto Sans 14 white/84%; disabled: border + label white/24% |
 | Nested checkbox | indented 24 under its parent |
 | **Text/path input** | 32px, bg `#111218`-ish (darker than selects), 1px `white/24%` border, radius 3; read-only path field |
-| **Numeric input** (KB/s) | 76×32, right-aligned value; **focused: 1px white border** |
+| **Numeric input** (KB/s) | 76×32, right-aligned value; enabled border `white/36%` (`#696b6f`), disabled `#313337` (not focused; see `../app-qt/`) |
 | **Slider** | track 3px `white/24%`, **filled part `#148eff`**, thumb 16px circle `#148eff` |
 | **Level meter** | row of ~36 segmented bars (6×20, gap 4), inactive `white/18%` (active would be accent/green) |
 | Info icon ⓘ | 14px outline circle, `white/60%`, sits after labels/buttons |
