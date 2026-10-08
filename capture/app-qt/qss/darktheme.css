@@ -1,5 +1,5 @@
 /* Dark-theme subset of battle.net.css (Battle.net 2.53.4.17896), extracted by capture/_tools/extract_qt_styles.py.
-   239 of 894 rules, in source order, comments dropped. <font_dark> = Noto Sans, <font_dark_title> = Object Sans
+   275 of 894 rules, in source order, comments dropped. <font_dark> = Noto Sans, <font_dark_title> = Object Sans
    (filled in at runtime by FontEngine). url(resources/...) paths resolve under ../assets/. */
 
 QWidget[darktheme=true] QWidget
@@ -15,6 +15,11 @@ QWidget[darktheme=true] QPushButton
 QWidget[darktheme=true] QPushButton[style~="link"]
 {
 	font-family: <font_dark>;
+}
+
+Phoenix--ArrowPopup *
+{
+	color: rgba(255,255,255,72%);
 }
 
 Phoenix--DarkToast *
@@ -234,6 +239,84 @@ QSlider[style~="darktheme"][style~="small"]::handle:horizontal
 	width: 18px;
 }
 
+QRadioButton[style~="global"]
+{
+	color: rgba(255,255,255,72%);
+	spacing: 10px;
+}
+
+QRadioButton[style~="global"]:disabled
+{
+	color: rgba(255,255,255,48%);
+}
+
+QRadioButton[style~="global"]:indicator
+{
+	width: 20px;
+	height: 20px;
+	padding: 1px 0px 0px 0px;
+}
+
+QRadioButton[style~="global"]::indicator:unchecked
+{
+	image: url("resources/controls/radiobutton_unchecked.svg");
+}
+
+QRadioButton[style~="global"]::indicator:unchecked:hover
+{
+	image: url("resources/controls/radiobutton_unchecked_hover.svg");
+}
+
+QRadioButton[style~="global"][hover="true"]::indicator:unchecked
+{
+	image: url("resources/controls/radiobutton_unchecked_hover.svg");
+}
+
+QRadioButton[style~="global"]::indicator:unchecked:focus
+{
+	image: url("resources/controls/radiobutton_unchecked_hover.svg");
+}
+
+QRadioButton[style~="global"]::indicator:unchecked:pressed
+{
+	image: url("resources/controls/radiobutton_unchecked_pressed.svg");
+}
+
+QRadioButton[style~="global"]::indicator:unchecked:disabled
+{
+	image: url("resources/controls/radiobutton_unchecked_disabled.svg");
+}
+
+QRadioButton[style~="global"]::indicator:checked
+{
+	image: url("resources/controls/radiobutton_checked.svg");
+}
+
+QRadioButton[style~="global"]::indicator:checked:hover
+{
+	image: url("resources/controls/radiobutton_checked_hover.svg");
+}
+
+QRadioButton[style~="global"][hover="true"]::indicator:checked
+{
+	image: url("resources/controls/radiobutton_checked_hover.svg");
+}
+
+QRadioButton[style~="global"]::indicator:checked:focus
+{
+	image: url("resources/controls/radiobutton_checked_hover.svg");
+}
+
+QRadioButton[style~="global"]::indicator:checked:pressed
+{
+	image: url("resources/controls/radiobutton_checked_pressed.svg");
+}
+
+QRadioButton[style~="global"]::indicator:checked:disabled
+{
+	image: url("resources/controls/radiobutton_checked_disabled.svg");
+}
+
 Phoenix--DarkComboBox,
 Phoenix--DarkComboBox:!on,
 Phoenix--DarkComboBox:!focus,
@@ -370,6 +453,16 @@ Phoenix--ToolTipLabel[darktheme=true]:disabled,
 Phoenix--ToolTipLabel[darktheme=true][highdpi=true]:disabled
 {
 	image: url("resources/controls/darktheme/icon_tooltip_disabled.svg");
+}
+
+Phoenix--ToolTipInternal QTextEdit
+{
+	background: transparent;
+}
+
+Phoenix--ToolTipInternal[popupDebug="true"] QWidget
+{
+	background: purple;
 }
 
 Phoenix--StyledDialog[darktheme=true] QLineEdit[style~="global"]
@@ -819,6 +912,92 @@ Phoenix--StyledDialog[darktheme=true] QPushButton[style~="link"][style~="white"]
 	color: rgba(255,255,255,48%);
 }
 
+QScrollBar:vertical
+{
+	background: transparent;
+	width: 19px;
+	margin: 0px 0 0px 0;
+}
+
+QScrollBar::handle:vertical
+{
+	border-image: url(resources/images/scrollbar_handle_normal.png) 8 0 8 0;
+	border-width: 8 0 8 0;
+	min-height: 20px;
+	width: 19px;
+}
+
+QScrollBar::handle:vertical:hover
+{
+	border-image: url(resources/images/scrollbar_handle_hover.png) 8 0 8 0;
+}
+
+QScrollBar::handle:vertical:pressed
+{
+	border-image: url(resources/images/scrollbar_handle_pressed.png) 8 0 8 0;
+}
+
+QScrollBar::add-line:vertical
+{
+	background: none;
+	border: 0px;
+	height: 0px;
+	subcontrol-position: bottom;
+	subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:vertical
+{
+	background: none;
+	border: 0px;
+	height: 0px;
+	subcontrol-position: top;
+	subcontrol-origin: margin;
+}
+
+QScrollBar:horizontal
+{
+	background: transparent;
+	height: 0px;
+	margin: 0px 0 0px 0;
+}
+
+QScrollBar::handle:horizontal
+{
+	border-image: url(resources/images/scrollbar_handle_normal.png) 0 8 0 8;
+	border-width: 0 8 0 8;
+	min-width: 20px;
+	height: 19px;
+}
+
+QScrollBar::handle:horizontal:hover
+{
+	border-image: url(resources/images/scrollbar_handle_hover.png) 0 8 0 8;
+}
+
+QScrollBar::handle:horizontal:pressed
+{
+	border-image: url(resources/images/scrollbar_handle_pressed.png) 0 8 0 8;
+}
+
+QScrollBar::add-line:horizontal
+{
+	background: none;
+	border: 0px;
+	width: 0px;
+	subcontrol-position: right;
+	subcontrol-origin: margin;
+}
+
+QScrollBar::sub-line:horizontal
+{
+	background: none;
+	border: 0px;
+	width: 0px;
+	subcontrol-position: right;
+	subcontrol-origin: margin;
+}
+
 Phoenix--LoginWindow QPushButton#loginSettingsButton
 {
 	background-color: transparent;
@@ -862,6 +1041,12 @@ Phoenix--LoginWindow[highdpi=true] QMenu#serverSelectMenu
 	border-image: url("resources/images/darktheme/contextMenu_border_shadow@2x.png") 8 12 16 12;
 }
 
+Phoenix--LoginWindow QMenu#loginSettingsMenu::item,
+Phoenix--LoginWindow QMenu#serverSelectMenu::item
+{
+	padding: 0px 32px 0px 10px;
+}
+
 Phoenix--LoginMaintenanceMessageWidget #messageIcon
 {
 	image: url("resources/images/darktheme/alert.svg");
@@ -875,6 +1060,31 @@ Phoenix--BreakingNewsBanner #breakingNewsIcon
 Phoenix--AuthenticationKeyDialog QLabel#errorCodeIcon
 {
 	image: url("resources/images/darktheme/icon_web_link.svg");
+}
+
+Phoenix--ArrowPopup > Phoenix--ErrorBox[arrowDirection="-1"]
+{
+	margin: 5 5 5 5;
+}
+
+Phoenix--ArrowPopup > Phoenix--ErrorBox[arrowDirection="0"]
+{
+	margin: 14;
+}
+
+Phoenix--ArrowPopup > Phoenix--ErrorBox[arrowDirection="1"]
+{
+	margin: 14;
+}
+
+Phoenix--ArrowPopup > Phoenix--ErrorBox[arrowDirection="2"]
+{
+	margin: 14;
+}
+
+Phoenix--ArrowPopup > Phoenix--ErrorBox[arrowDirection="3"]
+{
+	margin: 14;
 }
 
 Phoenix--ErrorBox[style~="dark"]

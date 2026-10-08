@@ -29,11 +29,13 @@ TOKENS = ROOT / 'design-system' / 'project' / 'tokens.json'
 PAGE = (0x15, 0x17, 0x1e)  # surface-page, the background every dark dialog paints
 
 # Rules that make up the current dark look. Most carry [darktheme=true]; the Settings
-# dialog, QMenu and the Dark* widgets are dark without the attribute.
+# dialog, QMenu, the Dark* widgets, the login cog menu, tooltips (ArrowPopup), scrollbars
+# and radio buttons are dark without the attribute (checked against screenshots).
 DARK_SELECTORS = re.compile(r'darktheme|Phoenix--Dark|^QMenu|style~="dark"|style~="settings"|optionHeader|'
                             r'ClientSettings|SettingsTab|SettingsAccordion|GameInstallUpdateSettings|'
                             r'GameUpdateSettingWidget|GameSettingsWidget|InDevelopmentSettings|AboutSettings|'
-                            r'VoiceSettingsWidget|VoiceMenu')
+                            r'VoiceSettingsWidget|VoiceMenu|loginSettings|Phoenix--ArrowPopup|ToolTipInternal|'
+                            r'^QScrollBar|^QRadioButton')
 NINE_PATCHES = ['images/darktheme/contextMenu_border.png', 'images/darktheme/contextMenu_border_shadow.png',
                 'controls/darktheme/toast_base_dark.png', 'controls/darktheme/toast_base_dark_hover.png']
 
@@ -185,14 +187,14 @@ def main():
     files = {raw.decode('utf-8', 'replace').replace('\\', '/'): raw for raw in arc.files}
     read = lambda rel: arc.read_file(files['resources/' + rel])
 
-    counts = collections.Counter()
+    counts, assets = collections.Counter(), set()
     for name in sorted(files):
         if not name.startswith('resources/') or '..' in name.split('/'): continue
         rel = name[len('resources/'):]
         if rel.endswith('.qml') or rel == 'common/util.js':
             write('qml/' + rel, lf(read(rel))); counts['qml' if rel.endswith('.qml') else 'js'] += 1
         elif rel.startswith(('controls/darktheme/', 'images/darktheme/')):
-            write('assets/' + rel, read(rel)); counts['assets'] += 1
+            write('assets/' + rel, read(rel)); assets.add(rel)
 
     qss = read('battle.net.css')
     write('qss/battle.net.css', lf(qss))
@@ -201,12 +203,12 @@ def main():
 
     rules = parse_qss(qss.decode('utf-8'))
     dark = [r for r in rules if is_dark(*r)]
-    # Images the dark rules use outside the darktheme folders (arrows, search icon).
+    # Images the dark rules use outside the darktheme folders (arrows, search icon, radios, scrollbar).
     for _, decls in dark:
         for _, v in decls:
             for ref in re.findall(r'url\("?resources/([^")]+)"?\)', v):
-                if 'darktheme/' not in ref and 'resources/' + ref in files:
-                    write('assets/' + ref, read(ref)); counts['assets'] += 1
+                if ref not in assets and 'resources/' + ref in files:
+                    write('assets/' + ref, read(ref)); assets.add(ref)
     header = ('/* Dark-theme subset of battle.net.css (Battle.net %s), extracted by capture/_tools/extract_qt_styles.py.\n'
               '   %d of %d rules, in source order, comments dropped. <font_dark> = Noto Sans, <font_dark_title> = Object Sans\n'
               '   (filled in at runtime by FontEngine). url(resources/...) paths resolve under ../assets/. */\n\n'
@@ -241,7 +243,7 @@ def main():
     }
     write('tokens-qss-dark.json', (json.dumps(out, indent=1) + '\n').encode('utf-8'))
     print('Battle.net %s: %d QML files + %d JS, %d assets, %d/%d dark QSS rules, %d colours -> %s'
-          % (version, counts['qml'], counts['js'], counts['assets'], len(dark), len(rules), len(colours),
+          % (version, counts['qml'], counts['js'], len(assets), len(dark), len(rules), len(colours),
              OUT.relative_to(ROOT)))
 
 

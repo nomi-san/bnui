@@ -11,7 +11,7 @@
     "focus-outer"
    ],
    "match": "exact",
-   "count": 61,
+   "count": 69,
    "uses": [
     "Phoenix--DarkComboBox:focus { color }",
     "Phoenix--DarkComboBox QAbstractItemView::item:hover { color }",
@@ -27,14 +27,14 @@
     "text-secondary"
    ],
    "match": "exact",
-   "count": 26,
+   "count": 28,
    "uses": [
+    "Phoenix--ArrowPopup * { color }",
     "Phoenix--DarkToast * { color }",
+    "QRadioButton[style~=\"global\"] { color }",
     "Phoenix--DarkComboBox { color }",
     "Phoenix--DarkComboBox QAbstractItemView::item { color }",
-    "Phoenix--StyledDialog[darktheme=true] QLineEdit[style~=\"global\"][readOnly=true] { color }",
-    "QMenu::item { color }",
-    "QMenu QLabel[style~=\"groupheader\"] { color }"
+    "Phoenix--StyledDialog[darktheme=true] QLineEdit[style~=\"global\"][readOnly=true] { color }"
    ]
   },
   {
@@ -43,14 +43,30 @@
     "text-muted"
    ],
    "match": "exact",
-   "count": 24,
+   "count": 27,
    "uses": [
     "Phoenix--StyledDialog[darktheme=true] QCheckBox[style~=\"global\"]:disabled { color }",
+    "QRadioButton[style~=\"global\"]:disabled { color }",
     "Phoenix--DarkComboBox:pressed { color }",
     "Phoenix--StyledDialog[darktheme=true] Phoenix--StyledRadioButton[style=\"global\"] > QLabel:disabled { color }",
     "QMenu::item:disabled { color }",
-    "Phoenix--StyledDialog[darktheme=true] QPushButton[style~=\"global\"][style~=\"tertiary\"]:disabled { color }",
-    "Phoenix--StyledDialog[darktheme=true] QPushButton[style~=\"link\"][style~=\"white\"]:disabled { color }"
+    "Phoenix--StyledDialog[darktheme=true] QPushButton[style~=\"global\"][style~=\"tertiary\"]:disabled { color }"
+   ]
+  },
+  {
+   "value": "#0000003d",
+   "bnui": [
+    "fill-dark"
+   ],
+   "match": "exact",
+   "count": 22,
+   "uses": [
+    "Phoenix--StyledDialog[darktheme=true] QLineEdit[style~=\"global\"] { background-color }",
+    "Phoenix--StyledDialog[darktheme=true] QAbstractSpinBox[style~=\"global\"] { background-color }",
+    "assets/controls/darktheme/checkbox_checked.svg",
+    "assets/controls/darktheme/checkbox_checked_disabled.svg",
+    "assets/controls/darktheme/checkbox_checked_hover.svg",
+    "assets/controls/darktheme/checkbox_checked_pressed.svg"
    ]
   },
   {
@@ -60,7 +76,7 @@
     "info"
    ],
    "match": "exact",
-   "count": 18,
+   "count": 19,
    "uses": [
     "Phoenix--StyledDialog[darktheme=true] QLineEdit[style~=\"global\"]:focus { border }",
     "Phoenix--StyledDialog[darktheme=true] QAbstractSpinBox[style~=\"global\"]:focus { border }",
@@ -71,19 +87,20 @@
    ]
   },
   {
-   "value": "#0000003d",
+   "value": "#ffffff1f",
    "bnui": [
-    "fill-dark"
+    "fill-strong",
+    "line-subtle"
    ],
    "match": "exact",
-   "count": 14,
+   "count": 15,
    "uses": [
-    "Phoenix--StyledDialog[darktheme=true] QLineEdit[style~=\"global\"] { background-color }",
-    "Phoenix--StyledDialog[darktheme=true] QAbstractSpinBox[style~=\"global\"] { background-color }",
-    "assets/controls/darktheme/checkbox_checked.svg",
-    "assets/controls/darktheme/checkbox_checked_disabled.svg",
-    "assets/controls/darktheme/checkbox_checked_hover.svg",
-    "assets/controls/darktheme/checkbox_checked_pressed.svg"
+    "Phoenix--DarkComboBox:disabled { background-color }",
+    "Phoenix--DarkComboBox:focus { background-color }",
+    "Phoenix--DarkComboBox:pressed { background-color }",
+    "QMenu::separator { background-color }",
+    "Phoenix--SettingsTabPage QWidget#separator { border-top }",
+    "QTabWidget::pane[style~=\"settings\"] { border-top }"
    ]
   },
   {
@@ -103,23 +120,6 @@
    ]
   },
   {
-   "value": "#ffffff1f",
-   "bnui": [
-    "fill-strong",
-    "line-subtle"
-   ],
-   "match": "exact",
-   "count": 13,
-   "uses": [
-    "Phoenix--DarkComboBox:disabled { background-color }",
-    "Phoenix--DarkComboBox:focus { background-color }",
-    "Phoenix--DarkComboBox:pressed { background-color }",
-    "QMenu::separator { background-color }",
-    "Phoenix--SettingsTabPage QWidget#separator { border-top }",
-    "QTabWidget::pane[style~=\"settings\"] { border-top }"
-   ]
-  },
-  {
    "value": "#ffffff99",
    "bnui": [
     "text-tertiary"
@@ -133,6 +133,19 @@
     "assets/controls/darktheme/btn_win_cog_pressed.svg",
     "assets/images/darktheme/mic-active-pressed.svg",
     "assets/images/darktheme/mic-muted-pressed.svg"
+   ]
+  },
+  {
+   "value": "#ffffff3d",
+   "match": "none",
+   "count": 11,
+   "uses": [
+    "Phoenix--DarkComboBox QAbstractItemView::item:disabled { color }",
+    "assets/controls/darktheme/btn_win_close_pressed.svg",
+    "assets/controls/darktheme/checkbox_checked_disabled.svg",
+    "assets/controls/darktheme/checkbox_checked_pressed.svg",
+    "assets/controls/darktheme/checkbox_indeterminate_disabled.svg",
+    "assets/controls/darktheme/checkbox_indeterminate_pressed.svg"
    ]
   },
   {
@@ -152,16 +165,19 @@
    ]
   },
   {
-   "value": "#ffffff3d",
-   "match": "none",
+   "value": "#003f7a",
+   "bnui": [
+    "accent-fill-pressed"
+   ],
+   "match": "exact",
    "count": 8,
    "uses": [
-    "Phoenix--DarkComboBox QAbstractItemView::item:disabled { color }",
-    "assets/controls/darktheme/btn_win_close_pressed.svg",
-    "assets/controls/darktheme/checkbox_checked_disabled.svg",
+    "Phoenix--StyledDialog[darktheme=true] QPushButton[style~=\"global\"]:default:pressed { background-color }",
+    "Phoenix--StyledDialog[darktheme=true] QPushButton[style~=\"global\"]:default:disabled { background-color }",
+    "Phoenix--StyledDialog[darktheme=true] QPushButton[style~=\"global\"]:default:disabled { border }",
     "assets/controls/darktheme/checkbox_checked_pressed.svg",
-    "assets/controls/darktheme/checkbox_indeterminate_disabled.svg",
-    "assets/controls/darktheme/checkbox_indeterminate_pressed.svg"
+    "assets/controls/darktheme/checkbox_indeterminate_pressed.svg",
+    "assets/controls/darktheme/slider_handle_disabled.svg"
    ]
   },
   {
@@ -195,22 +211,6 @@
    ]
   },
   {
-   "value": "#003f7a",
-   "bnui": [
-    "accent-fill-pressed"
-   ],
-   "match": "exact",
-   "count": 7,
-   "uses": [
-    "Phoenix--StyledDialog[darktheme=true] QPushButton[style~=\"global\"]:default:pressed { background-color }",
-    "Phoenix--StyledDialog[darktheme=true] QPushButton[style~=\"global\"]:default:disabled { background-color }",
-    "Phoenix--StyledDialog[darktheme=true] QPushButton[style~=\"global\"]:default:disabled { border }",
-    "assets/controls/darktheme/checkbox_checked_pressed.svg",
-    "assets/controls/darktheme/checkbox_indeterminate_pressed.svg",
-    "assets/controls/darktheme/slider_handle_disabled.svg"
-   ]
-  },
-  {
    "value": "#15171e",
    "bnui": [
     "surface-page",
@@ -228,6 +228,22 @@
    ]
   },
   {
+   "value": "#47a6ff",
+   "bnui": [
+    "accent-ring"
+   ],
+   "match": "exact",
+   "count": 6,
+   "uses": [
+    "Phoenix--StyledDialog[darktheme=true] QPushButton[style~=\"global\"]:default:hover { border }",
+    "Phoenix--StyledDialog[darktheme=true] QPushButton[style~=\"link\"]:hover { color }",
+    "assets/controls/darktheme/checkbox_checked_hover.svg",
+    "assets/controls/darktheme/checkbox_indeterminate_hover.svg",
+    "assets/controls/darktheme/slider_handle_hover.svg",
+    "assets/controls/radiobutton_checked_hover.svg"
+   ]
+  },
+  {
    "value": "#313337",
    "composite": "white/12% over surface-page",
    "match": "composite",
@@ -242,21 +258,6 @@
     "Phoenix--StyledDialog[darktheme=true] QAbstractSpinBox[style~=\"global\"]:disabled { border }",
     "Phoenix--StyledDialog[darktheme=true] Phoenix--SettingsAccordionButton:hover { background-color }",
     "Phoenix--StyledDialog[darktheme=true] Phoenix--SettingsAccordionButton:hover { border }"
-   ]
-  },
-  {
-   "value": "#47a6ff",
-   "bnui": [
-    "accent-ring"
-   ],
-   "match": "exact",
-   "count": 5,
-   "uses": [
-    "Phoenix--StyledDialog[darktheme=true] QPushButton[style~=\"global\"]:default:hover { border }",
-    "Phoenix--StyledDialog[darktheme=true] QPushButton[style~=\"link\"]:hover { color }",
-    "assets/controls/darktheme/checkbox_checked_hover.svg",
-    "assets/controls/darktheme/checkbox_indeterminate_hover.svg",
-    "assets/controls/darktheme/slider_handle_hover.svg"
    ]
   },
   {
@@ -290,6 +291,22 @@
     "Phoenix--StyledDialog[darktheme=true] QPushButton[style~=\"global\"]:!default:disabled { border }",
     "Phoenix--StyledDialog[darktheme=true] Phoenix--SettingsAccordionButton { background-color }",
     "Phoenix--StyledDialog[darktheme=true] Phoenix--SettingsAccordionButton { border }"
+   ]
+  },
+  {
+   "value": "#ffffff5c",
+   "bnui": [
+    "line-strong",
+    "text-disabled"
+   ],
+   "match": "exact",
+   "count": 5,
+   "uses": [
+    "assets/controls/darktheme/checkbox_checked.svg",
+    "assets/controls/darktheme/checkbox_indeterminate.svg",
+    "assets/controls/darktheme/checkbox_unchecked.svg",
+    "assets/controls/radiobutton_checked.svg",
+    "assets/controls/radiobutton_unchecked.svg"
    ]
   },
   {
@@ -384,20 +401,6 @@
     "Phoenix--DarkToast #titleLabel[style~=\"name\"] { color }",
     "Phoenix--DarkToast #bodyLabel[style~=\"name\"] { color }",
     "Phoenix--DarkToast #extraInfoLabel[style~=\"name\"] { color }"
-   ]
-  },
-  {
-   "value": "#ffffff5c",
-   "bnui": [
-    "line-strong",
-    "text-disabled"
-   ],
-   "match": "exact",
-   "count": 3,
-   "uses": [
-    "assets/controls/darktheme/checkbox_checked.svg",
-    "assets/controls/darktheme/checkbox_indeterminate.svg",
-    "assets/controls/darktheme/checkbox_unchecked.svg"
    ]
   },
   {
