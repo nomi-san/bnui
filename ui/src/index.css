@@ -1,0 +1,16 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root { color-scheme: dark; }
+  body { @apply m-0 bg-surface-page text-body font-body antialiased; font-size: 16px; line-height: 24px; }
+  ::selection { @apply bg-accent-fill text-on-accent; }
+  /* Thin scrollbars like the desktop app (a pale pill on a transparent track; the app uses white/15%). */
+  * { scrollbar-width: thin; scrollbar-color: var(--fill-strong) transparent; }
+}
+
+/* Honour reduced motion the same way the design system does. */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { transition-duration: 0ms !important; animation-duration: 0ms !important; }
+}
